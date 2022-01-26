@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import * as d3 from "d3";
 
 import Network from "./Network";
-import { data } from "./SDG";
+import { data } from "./RI";
 
 const sdgColors = {
   1: "#E5243B",

@@ -4,7 +4,7 @@ import * as d3 from "d3";
 
 import NetworkContainer from "./NetworkContainer";
 // import Explanation from "./Explanation";
-import { data } from "./SDG";
+import { data } from "./RI";
 
 const sdgColors = {
   1: "#E5243B",
@@ -112,7 +112,7 @@ class DataComponent extends Component {
       });
       this.setState({ height: newHeight, width: newWidth });
       // Re-render chart with new size
-      this.renderNetwork();
+      // this.renderNetwork();
     });
   };
 
