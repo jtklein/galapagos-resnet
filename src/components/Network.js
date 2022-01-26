@@ -2,6 +2,9 @@ import * as d3 from "d3";
 
 import './Network.css';
 
+const nodeRadius = 20;
+const linkWidth = 2;
+
 export default function Network(el, properties) {
   const props = Object.assign(
     {
@@ -9,10 +12,6 @@ export default function Network(el, properties) {
     },
     properties
   );
-  const linkWeightsSet =
-    props.selectedLinkWeights && props.selectedLinkWeights.length !== 0;
-  const goalsSet =
-    props.selectedGoals && props.selectedGoals.length !== 0;
 
   const anchorElement = d3.select(el);
   let svg = anchorElement.select("svg");
@@ -55,33 +54,6 @@ export default function Network(el, properties) {
     return isLinkOfNode(link, props.selectedNode);
   }
 
-  function isSelectedLinkWeight(link) {
-    if (!linkWeightsSet) {
-      return false;
-    }
-    return  props.selectedLinkWeights.indexOf(link.weight) !== -1;
-  }
-
-  function isIncomingLink(link, node) {
-    return (link.target.id || link.target) === node.id;
-  }
-
-  function isOutgoingLink(link, node) {
-    return (link.source.id || link.source) === node.id;
-  }
-
-  function isSelectedDirection(link) {
-    if (!props.selectedDirection || !props.selectedNode) {
-      return false;
-    }
-    if (props.selectedDirection === "incoming") {
-      return isIncomingLink(link, props.selectedNode);
-    }
-    if (props.selectedDirection === "outgoing") {
-      return isOutgoingLink(link, props.selectedNode);
-    }
-  }
-
   function isSelectedNode(node) {
     if (!props.selectedNode) {
       return false;
@@ -89,75 +61,9 @@ export default function Network(el, properties) {
     return node.id === props.selectedNode.id;
   }
 
-  function isConnectedNode(node) {
-    if (!props.selectedNode) {
-      return false;
-    }
-    const connectedIDs = [];
-    linksOfSelectedNode.map((link) => {
-      if (
-        linkWeightsSet &&
-        props.selectedLinkWeights.indexOf(link.weight) === -1
-      ) {
-        return false;
-      }
-      if (props.selectedDirection && !isSelectedDirection(link)) {
-        return false;
-      }
-      connectedIDs.push(link.source);
-      connectedIDs.push(link.target);
-      return true;
-    });
-    return connectedIDs.includes(node.id);
-  }
-
-  function isSelectedGoal(node) {
-    if (!goalsSet) {
-      return false;
-    }
-    return props.selectedGoals.indexOf(node.id.split(".")[0]) !== -1 ;
-  }
-
-  const linkWidth = (d) => {
-    return d.weight;
-  };
-
   const nodeSize = (d) => {
-    const radius = d.size * 200;
-    d.radius = radius;
-    return d.radius;
-  };
-
-  const textDx = (d) => {
-    return d.size * -100;
-  };
-
-  const shakeNode = () => {
-    const transitionTime = 100;
-    const centralDistance = 4;
-    const randomY = Math.random() * centralDistance;
-    const xDist = Math.random() > 0.5 ? centralDistance : centralDistance * -1;
-    const yDist = Math.random() > 0.5 ? randomY : randomY * -1;
-    node
-      .transition()
-      .delay((d, i) => i * 10 * d.delayFactor)
-      .duration(transitionTime)
-      .attr("transform", (d) => `translate(${d.x + xDist * d.directionFactor}, ${d.y + yDist})`)
-      .transition()
-      .duration(transitionTime * 2)
-      .attr("transform", (d) => `translate(${d.x - xDist * d.directionFactor}, ${d.y - yDist})`)
-      .transition()
-      .duration(transitionTime)
-      .attr("transform", (d) => `translate(${d.x}, ${d.y})`);
-  };
-
-  const jiggle = () => {
-    node
-     .each(d => {
-       d.delayFactor = Math.random();
-       d.directionFactor = (Math.random() * 2) - 1;
-      });
-    shakeNode();
+    d.radius = nodeRadius;
+    return nodeRadius;
   };
 
   const draw = () => {
@@ -183,39 +89,6 @@ export default function Network(el, properties) {
     node.attr("transform", (d) => `translate(${d.x}, ${d.y})`);
   };
 
-  var defs = svg.append("svg:defs");
-
-  function marker(d) {
-    defs
-      .append("svg:marker")
-      .attr("id", props.linkColor(d).replace("#", ""))
-      .attr("viewBox", "0 -5 10 10")
-      .attr("refX", 10)
-      .attr("refY", 0)
-      .attr("markerWidth", 9)
-      .attr("markerHeight", 9)
-      .attr("orient", "auto")
-      .attr("markerUnits", "userSpaceOnUse")
-      .append("svg:path")
-      .attr("d", "M0,-5L10,0L0,5")
-      .style("fill", props.linkColor(d));
-    return "url(" + props.linkColor(d) + ")";
-  }
-
-  defs
-    .append("svg:marker")
-    .attr("id", "grey-marker")
-    .attr("viewBox", "0 -5 10 10")
-    .attr("refX", 10)
-    .attr("refY", 0)
-    .attr("markerWidth", 9)
-    .attr("markerHeight", 9)
-    .attr("orient", "auto")
-    .attr("markerUnits", "userSpaceOnUse")
-    .append("svg:path")
-    .attr("d", "M0,-5L10,0L0,5")
-    .style("fill", "lightgray");
-
   // The links between the nodes
   const path = g
     .append("g")
@@ -225,42 +98,12 @@ export default function Network(el, properties) {
     .append("path")
     .attr("class", "link")
     .attr("stroke", "lightgray")
-    .attr("stroke-width", (d) => linkWidth(d))
+    .attr("stroke-width", linkWidth)
     .style("fill", "none")
-    .attr("marker-end", function (d) {
-      if (!props.selectedNode) {
-        return "url(#grey-marker)";
-      }
-      // If a link weight and link direction is highlighted only color the according links
-      if (linkWeightsSet && props.selectedDirection) {
-        return isSelectedLinkWeight(d) && isSelectedDirection(d)
-          ? marker(d)
-          : "url(#grey-marker)";
-      }
-      if (linkWeightsSet) {
-        return isSelectedLinkWeight(d) ? marker(d) : "url(#grey-marker)";
-      }
-      if (props.selectedDirection) {
-        return isSelectedDirection(d) ? marker(d) : "url(#grey-marker)";
-      }
-      return isLinkOfSelectedNode(d) ? marker(d) : "url(#grey-marker)";
-    })
     .attr("stroke", function (d) {
       // If there is no node selected, all links are grey
       if (!props.selectedNode) {
         return "lightgray";
-      }
-      // If a link weight and link direction is highlighted only color the according links
-      if (linkWeightsSet && props.selectedDirection) {
-        return isSelectedLinkWeight(d) && isSelectedDirection(d)
-          ? props.linkColor(d)
-          : "lightgray";
-      }
-      if (linkWeightsSet) {
-        return isSelectedLinkWeight(d) ? props.linkColor(d) : "lightgray";
-      }
-      if (props.selectedDirection) {
-        return isSelectedDirection(d) ? props.linkColor(d) : "lightgray";
       }
       // Only color links that are connected to the highlighted node
       return isLinkOfSelectedNode(d) ? props.linkColor(d) : "lightgray";
@@ -268,18 +111,6 @@ export default function Network(el, properties) {
     .attr("opacity", function (d) {
       if (!props.selectedNode) {
         return 0.3;
-      }
-      // If a link weight and link direction is highlighted only color the according links
-      if (linkWeightsSet && props.selectedDirection) {
-        return isSelectedLinkWeight(d) && isSelectedDirection(d)
-          ? 1
-          : 0.3;
-      }
-      if (linkWeightsSet) {
-        return isSelectedLinkWeight(d) ? 1 : 0.3;
-      }
-      if (props.selectedDirection) {
-        return isSelectedDirection(d) ? 1 : 0.3;
       }
       return isLinkOfSelectedNode(d) ? 1 : 0.3;
     });
@@ -306,36 +137,20 @@ export default function Network(el, properties) {
         .attr("stroke-width", 1.5)
         .attr("r", (d) => nodeSize(d))
         .attr("fill", function (d) {
-          if (goalsSet) {
-            return isSelectedGoal(d) ? props.nodeColor(d) : "lightgray";
-          }
           if (!props.selectedNode) {
-            return props.nodeColor(d);
+            return d.color;
           }
-          return isConnectedNode(d) || isSelectedNode(d) ? props.nodeColor(d) : "lightgray";
+          return isSelectedNode(d) ? d.color : "lightgray";
         })
     )
+    // TODO: Place a call iterating over these after the first round of mapping, so that the labels are alwys above other nodes
     .call((g) =>
       g
         .append("text")
-        .attr("textLength", (d) => nodeSize(d))
-        .attr("lengthAdjust", "spacingAndGlyphs")
-        .attr("fill", "#fff")
-        .attr("dx", (d) => textDx(d))
-        .attr("dy", ".35em")
+        .attr("fill", "#000")
+        .attr("dx", 20)
+        .attr("dy", 20)
         .text((d) => d.id)
-    )
-    .call((g) =>
-      g
-        // A circle to highlight nodes of the selected goal
-        .append("circle")
-        .attr("class", "highlight-circle")
-        .attr("r", (d) => nodeSize(d) + 3)
-        .attr("fill", "none")
-        .attr("stroke", (d) => {
-          return isSelectedGoal(d) ? props.nodeColor(d) : null;
-        })
-        .attr("stroke-width", 1.5)
     )
     .call(
       d3
@@ -361,7 +176,4 @@ export default function Network(el, properties) {
         .on("start.update drag.update end.update", draw)
     );
   draw();
-  if (props.shouldJiggle) {
-    jiggle();
-  }
 }
