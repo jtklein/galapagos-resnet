@@ -128,7 +128,6 @@ class NetworkContainer extends Component {
   };
 
   onNetworkClickNode = (d) => {
-    console.log('d :>> ', d);
     const { onNodeClicked } = this.props;
     onNodeClicked(d, () => this.renderNetwork())
   };
