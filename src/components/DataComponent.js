@@ -61,7 +61,6 @@ class DataComponent extends Component {
     // Add an event listener that fires when the window get's clicked
     window.addEventListener("click", this.onClick);
     this.initData();
-    this.renderNetwork();
   }
 
   initData() {
