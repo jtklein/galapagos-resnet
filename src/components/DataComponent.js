@@ -143,14 +143,15 @@ class DataComponent extends Component {
     const { data, selectedNode } = this.state;
     return (
       <Grid container>
-        <Grid item className="grid-item section section-0" xs={12}>
+        <Grid item className="grid-item section section-0" xs={6}>
           <NetworkContainer
             data={data}
             selectedNode={selectedNode}
             onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
           />
         </Grid>
-        <Grid item className="grid-item section section-1" xs={12}>
+        <Grid item className="grid-item section section-1" xs={6}>
+          <div></div>
           {/* <Explanation /> */}
         </Grid>
       </Grid>
