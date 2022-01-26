@@ -70,7 +70,6 @@ export default function Network(el, properties) {
     path.attr("d", function (d) {
       const sourceNode = data.nodes.filter((node) => node.id === d.source)[0];
       const targetNode = data.nodes.filter((node) => node.id === d.target)[0];
-
       // Total difference in x and y from source to target
       const dx = targetNode.x - sourceNode.x;
       const dy = targetNode.y - sourceNode.y;

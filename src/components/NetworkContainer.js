@@ -4,23 +4,6 @@ import * as d3 from "d3";
 import Network from "./Network";
 import { data } from "./RI";
 
-const sdgColors = {
-  1: "#E5243B",
-  2: "#DDA63A",
-  3: "#4C9F38",
-  4: "#C5192D",
-  5: "#FF3A21",
-  6: "#26BDE2",
-  7: "#FCC30B",
-  8: "#A21942",
-  9: "#FD6925",
-  11: "#FD9D24",
-  12: "#BF8B2E",
-  14: "#0A97D9",
-  15: "#56C02B",
-  16: "#00689D",
-};
-
 const linkColors = {
   "-3": "#660000",
   "-2": "#cc0000",
@@ -115,14 +98,6 @@ class NetworkContainer extends Component {
     });
   };
 
-  nodeGoal = (node) => {
-    return node.id.split(".")[0];
-  };
-
-  nodeColor = (d) => {
-    return sdgColors[this.nodeGoal(d)];
-  };
-
   linkColor = (d) => {
     return linkColors[d.weight];
   };
@@ -141,7 +116,6 @@ class NetworkContainer extends Component {
       data,
       selectedNode,
       onClick: this.onNetworkClickNode,
-      nodeColor: this.nodeColor,
       linkColor: this.linkColor,
     });
   }
