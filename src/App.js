@@ -1,6 +1,6 @@
 import Grid from "@material-ui/core/Grid";
 
-import NetworkComponent from "./components/NetworkComponent";
+import DataComponent from "./components/DataComponent";
 // import Explanation from "./Explanation";
 
 import "./App.css";
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Grid container>
         <Grid item className="grid-item section section-0" xs={12}>
-          <NetworkComponent />
+          <DataComponent />
         </Grid>
         <Grid item className="grid-item section section-1" xs={12}>
           {/* <Explanation /> */}

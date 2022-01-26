@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import Grid from "@material-ui/core/Grid";
 import * as d3 from "d3";
 
-import Network from "./Network";
+import NetworkContainer from "./NetworkContainer";
+// import Explanation from "./Explanation";
 import { data } from "./SDG";
 
 const sdgColors = {
@@ -31,7 +32,7 @@ const linkColors = {
   3: "#1c4587",
 };
 
-class NetworkComponent extends Component {
+class DataComponent extends Component {
   constructor(props) {
     super(props);
     this.refNetworkComponent = React.createRef();
@@ -128,56 +129,33 @@ class NetworkComponent extends Component {
     return linkColors[d.weight];
   };
 
-  onNetworkClickNode = (d) => {
+  onNetworkClickNode = (d, callback) => {
     const { selectedNode } = this.state;
     this.setState(
       {
         selectedNode: selectedNode?.id === d.id ? null : d,
       },
-      () => this.renderNetwork()
+      () => callback()
     );
   };
 
-  renderNetwork(shouldJiggle) {
-    const {
-      data,
-      selectedNode,
-      selectedGoals,
-      selectedLinkWeights,
-      selectedDirection,
-    } = this.state;
-    Network(this.refNetworkComponent.current, {
-      data,
-      selectedNode,
-      onClick: this.onNetworkClickNode,
-      nodeColor: this.nodeColor,
-      linkColor: this.linkColor,
-      selectedGoals,
-      selectedLinkWeights,
-      selectedDirection,
-      shouldJiggle,
-    });
-  }
-
   render() {
-    const height = window.innerHeight;
-    const minHeight = 520;
-
+    const { data, selectedNode } = this.state;
     return (
-      <Grid
-        container
-        direction="row"
-        style={{ height, minHeight, alignItems: "center" }}
-        justifyContent="space-between"
-      >
-        <div
-          id="network"
-          ref={this.refNetworkComponent}
-          style={{ height, maxWidth: height, margin: "0 auto" }}
-        />
+      <Grid container>
+        <Grid item className="grid-item section section-0" xs={12}>
+          <NetworkContainer
+            data={data}
+            selectedNode={selectedNode}
+            onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
+          />
+        </Grid>
+        <Grid item className="grid-item section section-1" xs={12}>
+          {/* <Explanation /> */}
+        </Grid>
       </Grid>
     );
   }
 };
 
-export default NetworkComponent;
+export default DataComponent;
