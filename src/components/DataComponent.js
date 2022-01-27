@@ -183,14 +183,14 @@ class DataComponent extends Component {
     }
     return (
       <Grid container>
-        <Grid item className="grid-item section section-0" xs={6}>
+        <Grid item className="grid-item" xs={6}>
           <NetworkContainer
             data={shownData}
             selectedNode={selectedNode}
             onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
           />
         </Grid>
-        <Grid item className="grid-item section section-1" xs={6}>
+        <Grid item className="grid-item" xs={6}>
           <MapComponent
             markers={markers}
             onMarkerClicked={(m, cb) => this.onMarkerClicked(m, cb)}
