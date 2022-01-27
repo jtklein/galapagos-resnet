@@ -2,15 +2,6 @@ import React, { Component } from "react";
 
 import Network from "./Network2";
 
-const linkColors = {
-  "-3": "#660000",
-  "-2": "#cc0000",
-  "-1": "#ea9999",
-  1: "#a4c2f4",
-  2: "#3c78d8",
-  3: "#1c4587",
-};
-
 class NetworkContainer extends Component {
   constructor(props) {
     super(props);
@@ -36,10 +27,6 @@ class NetworkContainer extends Component {
     });
   };
 
-  linkColor = (d) => {
-    return linkColors[d.weight];
-  };
-
   onNetworkClickNode = (d) => {
     const { onNodeClicked } = this.props;
     onNodeClicked(d, () => this.renderNetwork())
@@ -54,7 +41,6 @@ class NetworkContainer extends Component {
       data,
       selectedNode,
       onClick: this.onNetworkClickNode,
-      linkColor: this.linkColor,
     });
   }
 

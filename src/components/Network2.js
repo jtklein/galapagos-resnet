@@ -35,7 +35,6 @@ export default function Network(el, props) {
     .classed("link", true)
     .attr("stroke", "lightgray")
     .attr("stroke-width", linkWidth);
-;
 
   const node = g
     .selectAll(".node")
