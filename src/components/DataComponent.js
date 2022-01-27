@@ -17,36 +17,44 @@ class DataComponent extends Component {
     };
   }
 
-  isLinkOfNode(link, node) {
+  isLinkOfNodeByID(link, nodeID) {
     return (
-      ((link.source.id || link.source) === node.id) |
-      ((link.target.id || link.target) === node.id)
+      ((link.source.id || link.source) === nodeID) |
+      ((link.target.id || link.target) === nodeID)
     );
-  }
-
-  areConnectedNodes(node1, node2) {
-    const connectedIDs = [];
-    data.links
-      .filter((link) =>
-        this.isLinkOfNode(link, node1)
-      )
-      .map((link) => {
-        connectedIDs.push(link.source.id);
-        connectedIDs.push(link.target.id);
-        return true;
-      });
-    return connectedIDs.includes(node2.id);
   }
 
   onNetworkClickNode = (d, callback) => {
     const { selectedNode } = this.state;
     if (!selectedNode) {
+      // Map over all links to get lins of this node
+      const connectedIDs = new Set();
+      const connectedLinks = new Set();
+      data.links
+        .filter((link) => this.isLinkOfNodeByID(link, d.id))
+        .map((link) => {
+          connectedIDs.add(link.source.id);
+          connectedIDs.add(link.target.id);
+          connectedLinks.add(link);
+          return true;
+        });
+      // Map over all links again to get all ids of second degree connected nodes
+      data.links
+        .filter((link) => connectedIDs.has(link.source.id) || connectedIDs.has(link.target.id))
+        .map((link) => {
+          connectedIDs.add(link.source.id);
+          connectedIDs.add(link.target.id);
+          connectedLinks.add(link);
+          return true;
+        });
+      // Map over all nodes to get connected nodes by ID
       const connectedNodes = data.nodes.filter((node) =>
-        this.areConnectedNodes(d, node)
+        connectedIDs.has(node.id)
       );
+
       const newData = Object.assign({}, data);
       newData.nodes = connectedNodes;
-      newData.links = data.links.filter((link) => this.isLinkOfNode(link, d));
+      newData.links = connectedLinks.values();
       this.setState(
         {
           shownData: newData,
