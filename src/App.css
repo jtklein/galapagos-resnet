@@ -7,39 +7,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .grid-item {
-  padding: 20px;
-}
-
-.section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.section-0 {
-}
-
-@media only screen and (max-width: 600px) {
-  .section {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  padding: 12px;
 }
 
 .section-1 {
-  padding: 0px;
   background-color: #f6f6f6;
 }
 
 .network {
   position: relative;
-}
-
-@media only screen and (min-width: 600px) {
-  .clickable {
-    cursor: pointer;
-  }
-
-  .clickable:hover {
-    transform: scale(1.1);
-  }
 }
