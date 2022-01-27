@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const API_KEY = "AIzaSyCMuC02bW7Wt_syqQ6U6zmlYa7bZ2Hs6Is";
-const DEV_KEY = "AIzaSyDX27j-pKdH5O8XpkjMHdXUAXVUn5RfzW8";
+// const DEV_KEY = "AIzaSyDX27j-pKdH5O8XpkjMHdXUAXVUn5RfzW8";
 
 const containerStyle = {
   width: "100%",
@@ -15,7 +15,7 @@ const zoom = 7.6;
 export default class MyComponents extends Component {
   render() {
     return (
-      <LoadScript googleMapsApiKey={DEV_KEY}>
+      <LoadScript googleMapsApiKey={API_KEY}>
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={center}
