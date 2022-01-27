@@ -2,7 +2,7 @@ import * as d3 from "d3";
 
 import './Network.css';
 
-const nodeRadius = 12;
+const nodeRadius = 8;
 const linkWidth = 2;
 
 export default function Network(el, props) {
