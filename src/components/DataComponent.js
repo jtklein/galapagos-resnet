@@ -167,7 +167,6 @@ class DataComponent extends Component {
   };
 
   onMarkerClicked = (marker, callback) => {
-    const { selectedNode } = this.state;
     console.log('marker :>> ', marker);
   };
 
