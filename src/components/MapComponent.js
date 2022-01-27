@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
-const API_KEY = "AIzaSyCMuC02bW7Wt_syqQ6U6zmlYa7bZ2Hs6Is";
-// const DEV_KEY = "AIzaSyDX27j-pKdH5O8XpkjMHdXUAXVUn5RfzW8";
+const API_KEY = process.env.GOOGLE_MAPS_API_KEY;
+// const DEV_KEY = process.env.GOOGLE_MAPS_DEV_KEY;
 
 const containerStyle = {
   width: "100%",
