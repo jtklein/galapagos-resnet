@@ -69,7 +69,7 @@ export default function Network(el, props) {
       if (!props.selectedNode) {
         return 1;
       }
-      return isConnectedNode(d) || isSelectedNode(d) ? 1 : 0.1;
+      return isConnectedNode(d) || isSelectedNode(d) ? 1 : 0.3;
     })
     .on("click", function (event, d) {
       if (event.defaultPrevented) return; // dragged
@@ -99,16 +99,21 @@ export default function Network(el, props) {
     .call((g) =>
       g
         .append("text")
-        .attr("fill", "#000")
+        .attr("fill", function (d) {
+          if (!props.selectedNode) {
+            return "#000";
+          }
+          return isConnectedNode(d) || isSelectedNode(d)
+            ? "#000"
+            : "lightgray";
+        })
         .attr("dx", nodeRadius)
         .attr("dy", nodeRadius)
         .attr("text-decoration", function (d) {
           if (!props.selectedNode) {
             return "none";
           }
-          return isSelectedNode(d)
-            ? "underline"
-            : "none";
+          return isSelectedNode(d) ? "underline" : "none";
         })
         .text((d) => d.id)
     )
