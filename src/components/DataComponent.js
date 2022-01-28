@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import _ from "lodash";
 import Grid from "@material-ui/core/Grid";
 
 import NetworkContainer from "./NetworkContainer2";
