@@ -26,7 +26,7 @@ export default class MyComponents extends Component {
             ? this.props.markers.map((marker, index) => (
                 <Marker
                   key={`marker_${index}`}
-                  position={{ lat: marker.lat, lng: marker.lng }}
+                  position={{ lat: marker.Latitude, lng: marker.Longitude }}
                   onClick={() => this.props.onMarkerClicked(marker)}
                 />
               ))
