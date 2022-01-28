@@ -13,6 +13,19 @@ const center = { lat: 0.14, lng: -90.75 };
 const zoom = 7.6;
 
 export default class MyComponents extends Component {
+  constructor(props) {
+    super(props);
+    this.refNetworkComponent = React.createRef();
+    this.state = {
+      selectedMarker: undefined,
+    };
+  }
+
+  onMarkerClicked = (marker) => {
+    this.props.onMarkerClicked(marker);
+    this.setState({ selectedMarker: marker });
+  };
+
   render() {
     return (
       <LoadScript googleMapsApiKey={API_KEY}>
@@ -27,7 +40,7 @@ export default class MyComponents extends Component {
                 <Marker
                   key={`marker_${index}`}
                   position={{ lat: marker.Latitude, lng: marker.Longitude }}
-                  onClick={() => this.props.onMarkerClicked(marker)}
+                  onClick={() => this.onMarkerClicked(marker)}
                 />
               ))
             : null}
