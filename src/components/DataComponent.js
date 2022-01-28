@@ -71,6 +71,10 @@ class DataComponent extends Component {
   };
 
   onMarkerClicked = (marker) => {
+    const { selectedNode } = this.state;
+    if (selectedNode) {
+      return;
+    }
     const correspondingNode = data.nodes.filter(
       (node) => node.id === marker.Nickname
     )[0];
