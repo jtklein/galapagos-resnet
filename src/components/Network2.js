@@ -123,7 +123,7 @@ export default function Network(el, props) {
   const simulation = d3
     .forceSimulation()
     .nodes(data.nodes)
-    .force("charge", d3.forceManyBody().strength(-150))
+    .force("charge", d3.forceManyBody().strength(-100))
     .force("center", d3.forceCenter(width / 2, height / 2))
     .force("link", d3.forceLink(data.links).id(d => d.id))
     .on("tick", tick);
