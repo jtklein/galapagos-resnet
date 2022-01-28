@@ -27,48 +27,54 @@ class DataComponent extends Component {
     );
   }
 
-  onNetworkClickNode = (d, callback) => {
+  setNodeSelection = (d) => {
     const { selectedNode } = this.state;
-      // Map over all links to get lins of this node
-      const connectedIDs = new Set();
-      const connectedLinks = new Set();
-      data.links
-        .filter((link) => this.isLinkOfNodeByID(link, d.id))
-        .map((link) => {
-          connectedIDs.add(link.source.id);
-          connectedIDs.add(link.target.id);
-          connectedLinks.add(link);
-          return true;
-        });
-      // Map over all links again to get all ids of second degree connected nodes
-      data.links
-        .filter(
-          (link) =>
-            connectedIDs.has(link.source.id) || connectedIDs.has(link.target.id)
-        )
-        .map((link) => {
-          connectedIDs.add(link.source.id);
-          connectedIDs.add(link.target.id);
-          connectedLinks.add(link);
-          return true;
-        });
-      // Map over all nodes to get connected nodes by ID
-      const connectedNodes = data.nodes.filter((node) =>
-        connectedIDs.has(node.id)
-      );
+    // Map over all links to get lins of this node
+    const connectedIDs = new Set();
+    const connectedLinks = new Set();
+    data.links
+      .filter((link) => this.isLinkOfNodeByID(link, d.id))
+      .map((link) => {
+        connectedIDs.add(link.source.id);
+        connectedIDs.add(link.target.id);
+        connectedLinks.add(link);
+        return true;
+      });
+    // Map over all links again to get all ids of second degree connected nodes
+    data.links
+      .filter(
+        (link) =>
+          connectedIDs.has(link.source.id) || connectedIDs.has(link.target.id)
+      )
+      .map((link) => {
+        connectedIDs.add(link.source.id);
+        connectedIDs.add(link.target.id);
+        connectedLinks.add(link);
+        return true;
+      });
+    // Map over all nodes to get connected nodes by ID
+    const connectedNodes = data.nodes.filter((node) =>
+      connectedIDs.has(node.id)
+    );
 
-      this.setState(
-        {
-          connectedNodes: selectedNode?.id === d.id ? null : connectedNodes,
-          connectedLinks: selectedNode?.id === d.id ? null : connectedLinks.values(),
-          selectedNode: selectedNode?.id === d.id ? null : d,
-        },
-        () => callback()
-      );
+    this.setState({
+      connectedNodes: selectedNode?.id === d.id ? null : connectedNodes,
+      connectedLinks:
+        selectedNode?.id === d.id ? null : Array.from(connectedLinks.values()),
+      selectedNode: selectedNode?.id === d.id ? null : d,
+    });
   };
 
-  onMarkerClicked = (marker, callback) => {
-    console.log('marker :>> ', marker);
+  onNetworkClickNode = (d) => {
+    this.setNodeSelection(d);
+    return;
+  };
+
+  onMarkerClicked = (marker) => {
+    const correspondingNode = data.nodes.filter(
+      (node) => node.id === marker.Nickname
+    )[0];
+    this.setNodeSelection(correspondingNode);
   };
 
   filterMarkers = () => {
@@ -81,20 +87,14 @@ class DataComponent extends Component {
     }
     // TODO: put this hardcoded checks for "special" projects into the data pipeline
     if (selectedNode.id.includes("AT:")) {
-      return markers.filter(
-        (marker) => marker.Nickname === "Aves Terrestres"
-      );
+      return markers.filter((marker) => marker.Nickname === "Aves Terrestres");
     }
     // TODO: put this hardcoded checks for "special" projects into the data pipeline
     if (selectedNode.id.includes("GV:")) {
-      return markers.filter(
-        (marker) => marker.Nickname === "Galapagos Verde"
-      );
+      return markers.filter((marker) => marker.Nickname === "Galapagos Verde");
     }
-    return markers.filter(
-      (marker) => marker.Nickname === selectedNode.id
-    );;
-  }
+    return markers.filter((marker) => marker.Nickname === selectedNode.id);
+  };
 
   render() {
     const { shownData, selectedNode, connectedNodes, connectedLinks } =

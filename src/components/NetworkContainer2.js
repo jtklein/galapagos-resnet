@@ -16,6 +16,10 @@ class NetworkContainer extends Component {
     this.renderNetwork();
   }
 
+  componentDidUpdate() {
+    this.renderNetwork();
+  }
+
   onResize = () => {
     if (this.rqf) {
       return;
@@ -29,7 +33,7 @@ class NetworkContainer extends Component {
 
   onNetworkClickNode = (d) => {
     const { onNodeClicked } = this.props;
-    onNodeClicked(d, () => this.renderNetwork())
+    onNodeClicked(d)
   };
 
   renderNetwork() {
