@@ -27,10 +27,14 @@ export default function Network(el, props) {
 
   const { data } = props;
 
+  let linksOfSelectedNode = data.links;
+  if (props.selectedNode && props.connectedLinks) {
+    linksOfSelectedNode = props.connectedLinks;
+  }
   const link = g
     .append("g")
     .selectAll(".link")
-    .data(data.links)
+    .data(linksOfSelectedNode)
     .join("line")
     .classed("link", true)
     .attr("stroke", "lightgray")
