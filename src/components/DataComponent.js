@@ -4,98 +4,11 @@ import Grid from "@material-ui/core/Grid";
 
 import NetworkContainer from "./NetworkContainer2";
 import MapComponent from "./MapComponent";
+
 import { data } from "./RI";
+import { locations } from "./RI_locations";
 
 const initialData = Object.assign({}, data);
-
-const testCoordinates = {
-  0: {
-    title:
-      "Estudio del estado de las poblacion de pinguino, cormoran no volador y albatros de Galápagos",
-    "Lead researcher": "Gustavo Jimenez",
-    locations: [
-      {
-        Island: "Fernandina",
-        Site: "Punta Espinoza",
-        lat: -0.262757801,
-        lng: -91.44395571,
-      },
-      {
-        Island: "Isabela",
-        Site: "Marielas",
-        lat: -0.594764945,
-        lng: -91.09091762,
-      },
-      {
-        Island: "Isabela",
-        Site: "Punta Albemarle",
-        lat: 0.163234486,
-        lng: -91.34252459,
-      },
-      {
-        Island: "Española",
-        Site: "Punta Suarez",
-        lat: -1.368599847,
-        lng: -89.7455209,
-      },
-      {
-        Island: "Isabela",
-        Site: "Puerto Pajas",
-        lat: -0.755,
-        lng: -91.375,
-      },
-    ],
-  },
-  1: {
-    title:
-      "Estudio del estado de la poblacion del flamenco de Galapagos y aves de laguna.",
-    "Lead researcher": "Gustavo Jimenez",
-    locations: [
-      {
-        Island: "Floreana",
-        Site: "Montura",
-        lat: -1.315595325,
-        lng: -90.51053316,
-      },
-      {
-        Island: "Floreana",
-        Site: "Punta Cormorant",
-        lat: -1.221551065,
-        lng: -90.42814406,
-      },
-      {
-        Island: "Santiago",
-        Site: "Sartén",
-        lat: -0.35643209,
-        lng: -90.66205688,
-      },
-      {
-        Island: "Santa Cruz",
-        Site: "Garrapatero",
-        lat: -0.692977287,
-        lng: -90.2220813,
-      },
-      {
-        Island: "Santa Cruz",
-        Site: "Tortuga",
-        lat: -0.761056229,
-        lng: -90.34315443,
-      },
-      {
-        Island: "Isabela",
-        Site: "Barahona 1",
-        lat: -0.996809427,
-        lng: -91.05485548,
-      },
-      {
-        Island: "Santiago",
-        Site: "Bainbridge",
-        lat: -0.351995867,
-        lng: -90.56585229,
-      },
-    ],
-  },
-};
 
 class DataComponent extends Component {
   constructor(props) {
@@ -159,18 +72,35 @@ class DataComponent extends Component {
     console.log('marker :>> ', marker);
   };
 
+  filterMarkers = () => {
+    const { selectedNode } = this.state;
+    let markers = locations.filter(
+      (location) => location.Latitude && location.Longitude
+    );
+    if (!selectedNode) {
+      return markers;
+    }
+    // TODO: put this hardcoded checks for "special" projects into the data pipeline
+    if (selectedNode.id.includes("AT:")) {
+      return markers.filter(
+        (marker) => marker.Nickname === "Aves Terrestres"
+      );
+    }
+    // TODO: put this hardcoded checks for "special" projects into the data pipeline
+    if (selectedNode.id.includes("GV:")) {
+      return markers.filter(
+        (marker) => marker.Nickname === "Galapagos Verde"
+      );
+    }
+    return markers.filter(
+      (marker) => marker.Nickname === selectedNode.id
+    );;
+  }
+
   render() {
     const { shownData, selectedNode, connectedNodes, connectedLinks } =
       this.state;
-    let markers = [];
-    _.map(testCoordinates, (value) => {
-      markers = markers.concat(value.locations);
-    });
-    if (selectedNode) {
-      markers = testCoordinates.hasOwnProperty(selectedNode.id)
-        ? testCoordinates[selectedNode.id].locations
-        : [];
-    }
+    const markers = this.filterMarkers();
     return (
       <Grid container>
         <Grid item className="grid-item" xs={6}>
