@@ -6,7 +6,6 @@ const nodeRadius = 8;
 const linkWidth = 2;
 
 export default function Network(el, props) {
-
   const anchorElement = d3.select(el);
   let svg = anchorElement.select("svg");
 
@@ -43,7 +42,7 @@ export default function Network(el, props) {
     if (!props.selectedNode || !props.connectedNodes) {
       return false;
     }
-    const connectedIDs = props.connectedNodes.map(n => n.id);
+    const connectedIDs = props.connectedNodes.map((n) => n.id);
     return connectedIDs.includes(node.id);
   }
 
@@ -103,9 +102,7 @@ export default function Network(el, props) {
           if (!props.selectedNode) {
             return "#000";
           }
-          return isConnectedNode(d) || isSelectedNode(d)
-            ? "#000"
-            : "lightgray";
+          return isConnectedNode(d) || isSelectedNode(d) ? "#000" : "lightgray";
         })
         .attr("dx", nodeRadius)
         .attr("dy", nodeRadius)
@@ -130,8 +127,34 @@ export default function Network(el, props) {
         })
         .attr("stroke-width", 1.5)
     )
-    .call(d3.drag().on("drag", dragged));
-;
+    .call(
+      d3
+        .drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended)
+    );
+
+  function dragstarted(event, d) {
+    if (!event.active) simulation.alphaTarget(0.3).restart();
+    d.fx = d.x;
+    d.fy = d.y;
+  }
+
+  function dragged(event, d) {
+      d.fx = clamp(event.x, 0, width);
+      d.fy = clamp(event.y, 0, height);
+  }
+
+  function dragended(event, d) {
+    if (!event.active) simulation.alphaTarget(0.0001);
+    d.fx = null;
+    d.fy = null;
+  }
+
+  function clamp(x, lo, hi) {
+    return x < lo ? lo : x > hi ? hi : x;
+  }
 
   const simulation = d3
     .forceSimulation()
@@ -143,20 +166,11 @@ export default function Network(el, props) {
 
   function tick() {
     link
-      .attr("x1", d => d.source.x)
-      .attr("y1", d => d.source.y)
-      .attr("x2", d => d.target.x)
-      .attr("y2", d => d.target.y);
+      .attr("x1", (d) => d.source.x)
+      .attr("y1", (d) => d.source.y)
+      .attr("x2", (d) => d.target.x)
+      .attr("y2", (d) => d.target.y);
     node.attr("transform", (d) => `translate(${d.x}, ${d.y})`);
   }
 
-  function clamp(x, lo, hi) {
-    return x < lo ? lo : x > hi ? hi : x;
-  }
-
-  function dragged(event, d) {
-    d.fx = clamp(event.x, 0, width);
-    d.fy = clamp(event.y, 0, height);
-    simulation.alpha(1).restart();
-  }
 }
