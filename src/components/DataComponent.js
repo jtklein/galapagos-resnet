@@ -160,7 +160,8 @@ class DataComponent extends Component {
   };
 
   render() {
-    const { shownData, selectedNode } = this.state;
+    const { shownData, selectedNode, connectedNodes, connectedLinks } =
+      this.state;
     let markers = [];
     _.map(testCoordinates, (value) => {
       markers = markers.concat(value.locations);
@@ -176,6 +177,8 @@ class DataComponent extends Component {
           <NetworkContainer
             data={shownData}
             selectedNode={selectedNode}
+            connectedNodes={connectedNodes}
+            connectedLinks={connectedLinks}
             onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
           />
         </Grid>

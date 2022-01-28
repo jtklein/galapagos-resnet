@@ -33,13 +33,12 @@ class NetworkContainer extends Component {
   };
 
   renderNetwork() {
-    const {
-      data,
-      selectedNode,
-    } = this.props;
+    const { data, selectedNode, connectedNodes, connectedLinks } = this.props;
     Network(this.refNetworkComponent.current, {
       data,
       selectedNode,
+      connectedNodes,
+      connectedLinks,
       onClick: this.onNetworkClickNode,
     });
   }
