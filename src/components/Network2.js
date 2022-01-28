@@ -102,6 +102,14 @@ export default function Network(el, props) {
         .attr("fill", "#000")
         .attr("dx", nodeRadius)
         .attr("dy", nodeRadius)
+        .attr("text-decoration", function (d) {
+          if (!props.selectedNode) {
+            return "none";
+          }
+          return isSelectedNode(d)
+            ? "underline"
+            : "none";
+        })
         .text((d) => d.id)
     )
     .call((g) =>
