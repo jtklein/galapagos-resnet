@@ -31,6 +31,22 @@ export default function Network(el, props) {
   if (props.selectedNode && props.connectedLinks) {
     linksOfSelectedNode = props.connectedLinks;
   }
+
+  function isSelectedNode(node) {
+    if (!props.selectedNode) {
+      return false;
+    }
+    return node.id === props.selectedNode.id;
+  }
+
+  function isConnectedNode(node) {
+    if (!props.selectedNode || !props.connectedNodes) {
+      return false;
+    }
+    const connectedIDs = props.connectedNodes.map(n => n.id);
+    return connectedIDs.includes(node.id);
+  }
+
   const link = g
     .append("g")
     .selectAll(".link")
@@ -49,6 +65,12 @@ export default function Network(el, props) {
     .append("g")
     .attr("class", "node")
     .attr("cursor", "pointer")
+    .attr("opacity", function (d) {
+      if (!props.selectedNode) {
+        return 1;
+      }
+      return isConnectedNode(d) || isSelectedNode(d) ? 1 : 0.1;
+    })
     .on("click", function (event, d) {
       if (event.defaultPrevented) return; // dragged
       delete d.fx;
@@ -65,7 +87,12 @@ export default function Network(el, props) {
         .attr("stroke-width", 1.5)
         .attr("r", nodeRadius)
         .attr("fill", function (d) {
-          return d.color;
+          if (!props.selectedNode) {
+            return d.color;
+          }
+          return isConnectedNode(d) || isSelectedNode(d)
+            ? d.color
+            : "lightgray";
         })
     )
     // TODO: Place a call iterating over these after the first round of mapping, so that the labels are alwys above other nodes
