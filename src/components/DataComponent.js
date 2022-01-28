@@ -104,6 +104,7 @@ class DataComponent extends Component {
     this.state = {
       shownData: initialData,
       selectedNode: undefined,
+      connectedNodes: undefined,
     };
   }
 
@@ -116,7 +117,6 @@ class DataComponent extends Component {
 
   onNetworkClickNode = (d, callback) => {
     const { selectedNode } = this.state;
-    if (!selectedNode) {
       // Map over all links to get lins of this node
       const connectedIDs = new Set();
       const connectedLinks = new Set();
@@ -145,25 +145,14 @@ class DataComponent extends Component {
         connectedIDs.has(node.id)
       );
 
-      const newData = Object.assign({}, data);
-      newData.nodes = connectedNodes;
-      newData.links = connectedLinks.values();
       this.setState(
         {
-          shownData: newData,
+          connectedNodes: selectedNode?.id === d.id ? null : connectedNodes,
+          connectedLinks: selectedNode?.id === d.id ? null : connectedLinks.values(),
           selectedNode: selectedNode?.id === d.id ? null : d,
         },
         () => callback()
       );
-    } else {
-      this.setState(
-        {
-          shownData: initialData,
-          selectedNode: null,
-        },
-        () => callback()
-      );
-    }
   };
 
   onMarkerClicked = (marker, callback) => {
