@@ -161,7 +161,11 @@ export default function Network(el, props) {
     .nodes(data.nodes)
     .force("charge", d3.forceManyBody().strength(-100))
     .force("center", d3.forceCenter(width / 2, height / 2))
-    .force("link", d3.forceLink(data.links).id(d => d.id))
+    .force(
+      "link",
+      d3.forceLink(data.links).id((d) => d.id)
+    )
+    .force("collide", d3.forceCollide())
     .on("tick", tick);
 
   function tick() {
