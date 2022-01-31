@@ -104,9 +104,9 @@ export default function Network(el, props) {
           }
           return isConnectedNode(d) || isSelectedNode(d) ? "#000" : "lightgray";
         })
-        .attr("dx", nodeRadius)
+        .attr("dx", nodeRadius + 2)
         .attr("dy", nodeRadius / 2)
-        .attr("font-size", nodeRadius)
+        .attr("font-size", nodeRadius + (nodeRadius * 0.1))
         .attr("text-decoration", function (d) {
           if (!props.selectedNode) {
             return "none";
