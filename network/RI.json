@@ -1,5 +1,5 @@
 {
-    "directed": false,
+    "directed": true,
     "multigraph": false,
     "graph": {},
     "nodes": [
@@ -8,24 +8,108 @@
             "id": "AT: Golondrina"
         },
         {
+            "color": "#660000",
+            "id": "AT: Passerines"
+        },
+        {
+            "color": "#660000",
+            "id": "AT: Communidad"
+        },
+        {
+            "color": "#660000",
+            "id": "AT: Pajaro brujo"
+        },
+        {
+            "color": "#660000",
+            "id": "AT: Bird health"
+        },
+        {
+            "color": "#660000",
+            "id": "Philornis downsi"
+        },
+        {
+            "color": "#660000",
+            "id": "Polistes versicolor"
+        },
+        {
+            "color": "#660000",
+            "id": "Pinzon de manglar"
+        },
+        {
+            "color": "#660000",
+            "id": "Aves en la costera"
+        },
+        {
+            "color": "#660000",
+            "id": "Aves marinas"
+        },
+        {
+            "color": "#660000",
+            "id": "Aves en carretera"
+        },
+        {
+            "color": "#660000",
+            "id": "Flamencos"
+        },
+        {
+            "color": "#660000",
+            "id": "Scalesia restoration"
+        },
+        {
+            "color": "#660000",
+            "id": "Imagenes satelitales"
+        },
+        {
+            "color": "#660000",
+            "id": "Ranas introducidas"
+        },
+        {
+            "color": "#660000",
+            "id": "Cascarilla"
+        },
+        {
+            "color": "#660000",
+            "id": "Ecologico submareal"
+        },
+        {
+            "color": "#660000",
+            "id": "Especies invasoras marinas"
+        },
+        {
+            "color": "#660000",
+            "id": "Tortuga verde"
+        },
+        {
+            "color": "#660000",
+            "id": "Pesquerias"
+        },
+        {
+            "color": "#660000",
+            "id": "Montes submarinos"
+        },
+        {
+            "color": "#660000",
+            "id": "GV: Practicas agricolas"
+        },
+        {
+            "color": "#660000",
+            "id": "GV: Restauracion ecologica"
+        },
+        {
+            "color": "#660000",
+            "id": "Tiburones en la RMG"
+        },
+        {
+            "color": "#660000",
+            "id": "Tortugas terrestres"
+        },
+        {
             "color": "#cc0000",
             "id": "Isabela"
         },
         {
             "color": "#ea9999",
-            "id": "Philornis downsi"
-        },
-        {
-            "color": "#ea9999",
             "id": "Progne modesta"
-        },
-        {
-            "color": "#a4c2f4",
-            "id": "Ecology and conservation"
-        },
-        {
-            "color": "#a4c2f4",
-            "id": "Terrestrial fauna and flora"
         },
         {
             "color": "#1c4587",
@@ -52,8 +136,8 @@
             "id": "Insects"
         },
         {
-            "color": "#660000",
-            "id": "AT: Passerines"
+            "color": "#ED6D22",
+            "id": 2018
         },
         {
             "color": "#cc0000",
@@ -80,20 +164,8 @@
             "id": "Darwin's finches"
         },
         {
-            "color": "#660000",
-            "id": "AT: Communidad"
-        },
-        {
-            "color": "#a4c2f4",
-            "id": "Community"
-        },
-        {
             "color": "#00FFFF",
             "id": "Education"
-        },
-        {
-            "color": "#660000",
-            "id": "AT: Pajaro brujo"
         },
         {
             "color": "#ea9999",
@@ -118,10 +190,6 @@
         {
             "color": "#00FA9A",
             "id": "Terrestrial plants"
-        },
-        {
-            "color": "#660000",
-            "id": "AT: Bird health"
         },
         {
             "color": "#1c4587",
@@ -176,20 +244,8 @@
             "id": "Wolf"
         },
         {
-            "color": "#ea9999",
-            "id": "Polistes versicolor"
-        },
-        {
-            "color": "#a4c2f4",
-            "id": "Politics, economics and crime"
-        },
-        {
             "color": "#FFFF00",
             "id": "Tourism/ecotourism"
-        },
-        {
-            "color": "#660000",
-            "id": "Pinzon de manglar"
         },
         {
             "color": "#ea9999",
@@ -202,10 +258,6 @@
         {
             "color": "#1c4587",
             "id": "Extinction and extinction risk"
-        },
-        {
-            "color": "#660000",
-            "id": "Aves en la costera"
         },
         {
             "color": "#ea9999",
@@ -228,32 +280,12 @@
             "id": "Felis catus"
         },
         {
-            "color": "#ea9999",
-            "id": "Rattus spp."
-        },
-        {
-            "color": "#a4c2f4",
-            "id": "Marine/coastal fauna and flora"
-        },
-        {
             "color": "#1c4587",
             "id": "Direct human impacts"
         },
         {
-            "color": "#660000",
-            "id": "Aves marinas"
-        },
-        {
             "color": "#cc0000",
-            "id": "Marielas"
-        },
-        {
-            "color": "#a4c2f4",
-            "id": "Physical and chemical sciences"
-        },
-        {
-            "color": "#a4c2f4",
-            "id": "Climate change"
+            "id": "Islotes Marielas"
         },
         {
             "color": "#3c78d8",
@@ -276,20 +308,8 @@
             "id": "Climate change impacts"
         },
         {
-            "color": "#660000",
-            "id": "Aves en carretera"
-        },
-        {
-            "color": "#a4c2f4",
-            "id": "Infrastructure, energy and technology"
-        },
-        {
             "color": "#FF69B4",
             "id": "Transportation"
-        },
-        {
-            "color": "#660000",
-            "id": "Flamencos"
         },
         {
             "color": "#cc0000",
@@ -348,24 +368,12 @@
             "id": "Biogeography"
         },
         {
-            "color": "#660000",
-            "id": "Scalesia restoration"
-        },
-        {
             "color": "#ea9999",
             "id": "Scalesia pedunculata"
         },
         {
             "color": "#00FA9A",
             "id": "Scalesia"
-        },
-        {
-            "color": "#660000",
-            "id": "Imagenes satelitales"
-        },
-        {
-            "color": "#660000",
-            "id": "Ranas introducidas"
         },
         {
             "color": "#ea9999",
@@ -380,16 +388,8 @@
             "id": "Terrestrial amphibians"
         },
         {
-            "color": "#660000",
-            "id": "Cascarilla"
-        },
-        {
             "color": "#ea9999",
             "id": "Cinchona pubescens"
-        },
-        {
-            "color": "#660000",
-            "id": "Ecologico submareal"
         },
         {
             "color": "#8A2BE2",
@@ -420,10 +420,6 @@
             "id": "Climate change adaptation"
         },
         {
-            "color": "#660000",
-            "id": "Especies invasoras marinas"
-        },
-        {
             "color": "#ea9999",
             "id": "Caulerpa racemosa"
         },
@@ -440,10 +436,6 @@
             "id": "Behavioural ecology"
         },
         {
-            "color": "#660000",
-            "id": "Tortuga verde"
-        },
-        {
             "color": "#cc0000",
             "id": "Bartolome"
         },
@@ -454,10 +446,6 @@
         {
             "color": "#8A2BE2",
             "id": "Marine reptiles"
-        },
-        {
-            "color": "#660000",
-            "id": "Pesquerias"
         },
         {
             "color": "#ea9999",
@@ -496,10 +484,6 @@
             "id": "Caulolatilus princeps"
         },
         {
-            "color": "#a4c2f4",
-            "id": "Food security"
-        },
-        {
             "color": "#1c4587",
             "id": "Natural resource management"
         },
@@ -524,10 +508,6 @@
             "id": "Artisans"
         },
         {
-            "color": "#660000",
-            "id": "Montes submarinos"
-        },
-        {
             "color": "#3c78d8",
             "id": "Volcanoes/seamounts"
         },
@@ -540,20 +520,12 @@
             "id": "Climate change patterns"
         },
         {
-            "color": "#660000",
-            "id": "GV: Practicas agricolas"
-        },
-        {
             "color": "#FF69B4",
             "id": "Innovation"
         },
         {
             "color": "#008B8B",
             "id": "Agriculture"
-        },
-        {
-            "color": "#660000",
-            "id": "GV: Restauracion ecologica"
         },
         {
             "color": "#ea9999",
@@ -600,10 +572,6 @@
             "id": "Socio-ecological systems"
         },
         {
-            "color": "#660000",
-            "id": "Tiburones en la RMG"
-        },
-        {
             "color": "#ea9999",
             "id": "Galeocerdo cuvier"
         },
@@ -620,16 +588,15 @@
             "id": "Sharks and rays"
         },
         {
-            "color": "#660000",
-            "id": "Tortugas terrestres"
-        },
-        {
             "color": "#ea9999",
             "id": "Chelonoidis"
         },
         {
             "color": "#00FA9A",
             "id": "Terrestrial reptiles"
+        },
+        {
+            "id": "2018"
         }
     ],
     "links": [
@@ -647,16 +614,6 @@
             "weight": 1,
             "source": "AT: Golondrina",
             "target": "Progne modesta"
-        },
-        {
-            "weight": 1,
-            "source": "AT: Golondrina",
-            "target": "Ecology and conservation"
-        },
-        {
-            "weight": 1,
-            "source": "AT: Golondrina",
-            "target": "Terrestrial fauna and flora"
         },
         {
             "weight": 1,
@@ -690,78 +647,218 @@
         },
         {
             "weight": 1,
-            "source": "Isabela",
-            "target": "AT: Passerines"
+            "source": "AT: Golondrina",
+            "target": "2018"
         },
         {
             "weight": 1,
-            "source": "Isabela",
-            "target": "AT: Communidad"
+            "source": "AT: Passerines",
+            "target": "Isabela"
         },
         {
             "weight": 1,
-            "source": "Isabela",
-            "target": "AT: Pajaro brujo"
+            "source": "AT: Passerines",
+            "target": "San Cristobal"
         },
         {
             "weight": 1,
-            "source": "Isabela",
+            "source": "AT: Passerines",
+            "target": "Floreana"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Passerines",
+            "target": "Pinzon"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Passerines",
+            "target": "Rabida"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Passerines",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Passerines",
+            "target": "Biosecurity/invasive species"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Passerines",
+            "target": "Population ecology/monitoring"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Passerines",
+            "target": "Ecosystem restoration"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Passerines",
+            "target": "Terrestrial birds"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Passerines",
+            "target": "Darwin's finches"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Passerines",
+            "target": "2018"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Communidad",
+            "target": "Isabela"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Communidad",
+            "target": "San Cristobal"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Communidad",
+            "target": "Floreana"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Communidad",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Communidad",
+            "target": "Population ecology/monitoring"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Communidad",
+            "target": "Terrestrial birds"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Communidad",
+            "target": "Darwin's finches"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Communidad",
+            "target": "Education"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Communidad",
+            "target": "2018"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Pajaro brujo",
+            "target": "Isabela"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Pajaro brujo",
             "target": "Philornis downsi"
         },
         {
             "weight": 1,
-            "source": "Isabela",
-            "target": "Polistes versicolor"
+            "source": "AT: Pajaro brujo",
+            "target": "Pyrocephalus nanus"
         },
         {
             "weight": 1,
-            "source": "Isabela",
-            "target": "Pinzon de manglar"
+            "source": "AT: Pajaro brujo",
+            "target": "Rubus niveus"
         },
         {
             "weight": 1,
-            "source": "Isabela",
-            "target": "Aves en la costera"
+            "source": "AT: Pajaro brujo",
+            "target": "Sambucus nigra"
         },
         {
             "weight": 1,
-            "source": "Isabela",
-            "target": "Aves marinas"
+            "source": "AT: Pajaro brujo",
+            "target": "Biodiversity conservation"
         },
         {
             "weight": 1,
-            "source": "Isabela",
-            "target": "Flamencos"
+            "source": "AT: Pajaro brujo",
+            "target": "Biodiversity"
         },
         {
             "weight": 1,
-            "source": "Isabela",
-            "target": "Imagenes satelitales"
+            "source": "AT: Pajaro brujo",
+            "target": "Biosecurity/invasive species"
         },
         {
             "weight": 1,
-            "source": "Isabela",
-            "target": "Ranas introducidas"
+            "source": "AT: Pajaro brujo",
+            "target": "Feeding ecology/food supply"
         },
         {
             "weight": 1,
-            "source": "Isabela",
-            "target": "Especies invasoras marinas"
+            "source": "AT: Pajaro brujo",
+            "target": "Population ecology/monitoring"
         },
         {
             "weight": 1,
-            "source": "Isabela",
-            "target": "Tortuga verde"
+            "source": "AT: Pajaro brujo",
+            "target": "Habitat loss/degradation/land use"
         },
         {
             "weight": 1,
-            "source": "Isabela",
-            "target": "Tortugas terrestres"
+            "source": "AT: Pajaro brujo",
+            "target": "Ecosystem restoration"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Pajaro brujo",
+            "target": "Terrestrial birds"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Pajaro brujo",
+            "target": "Insects"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Pajaro brujo",
+            "target": "Terrestrial plants"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Pajaro brujo",
+            "target": "2018"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Bird health",
+            "target": "Wildlife health"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Bird health",
+            "target": "Terrestrial birds"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Bird health",
+            "target": "Darwin's finches"
+        },
+        {
+            "weight": 1,
+            "source": "AT: Bird health",
+            "target": "2018"
         },
         {
             "weight": 1,
             "source": "Philornis downsi",
-            "target": "AT: Pajaro brujo"
+            "target": "Isabela"
         },
         {
             "weight": 1,
@@ -851,16 +948,6 @@
         {
             "weight": 1,
             "source": "Philornis downsi",
-            "target": "Ecology and conservation"
-        },
-        {
-            "weight": 1,
-            "source": "Philornis downsi",
-            "target": "Terrestrial fauna and flora"
-        },
-        {
-            "weight": 1,
-            "source": "Philornis downsi",
             "target": "Biodiversity conservation"
         },
         {
@@ -896,1027 +983,52 @@
         {
             "weight": 1,
             "source": "Philornis downsi",
-            "target": "Pinzon de manglar"
+            "target": "2018"
         },
         {
             "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "AT: Passerines"
+            "source": "Polistes versicolor",
+            "target": "Isabela"
         },
         {
             "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "AT: Communidad"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "AT: Pajaro brujo"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "AT: Bird health"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Polistes versicolor"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Pinzon de manglar"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Aves en la costera"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Aves marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Aves en carretera"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Flamencos"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Scalesia restoration"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Imagenes satelitales"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Ranas introducidas"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Cascarilla"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Ecologico submareal"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Especies invasoras marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Tortuga verde"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Pesquerias"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Montes submarinos"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "GV: Practicas agricolas"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "GV: Restauracion ecologica"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Tiburones en la RMG"
-        },
-        {
-            "weight": 1,
-            "source": "Ecology and conservation",
-            "target": "Tortugas terrestres"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "AT: Passerines"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "AT: Communidad"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "AT: Pajaro brujo"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "AT: Bird health"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "Polistes versicolor"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "Pinzon de manglar"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "Aves en la costera"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "Aves marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "Aves en carretera"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "Flamencos"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "Scalesia restoration"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "Imagenes satelitales"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "Ranas introducidas"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "Cascarilla"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "GV: Practicas agricolas"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "GV: Restauracion ecologica"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial fauna and flora",
-            "target": "Tortugas terrestres"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "AT: Pajaro brujo"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Polistes versicolor"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Pinzon de manglar"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Aves en la costera"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Aves marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Aves en carretera"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Flamencos"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Scalesia restoration"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Imagenes satelitales"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Ranas introducidas"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Cascarilla"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Ecologico submareal"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Especies invasoras marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Tortuga verde"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Pesquerias"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Montes submarinos"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "GV: Practicas agricolas"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "GV: Restauracion ecologica"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Tiburones en la RMG"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity conservation",
-            "target": "Tortugas terrestres"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "AT: Passerines"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "AT: Communidad"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "AT: Pajaro brujo"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Polistes versicolor"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Pinzon de manglar"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Aves en la costera"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Aves marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Aves en carretera"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Flamencos"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Scalesia restoration"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Imagenes satelitales"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Ranas introducidas"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Cascarilla"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Ecologico submareal"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Especies invasoras marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Tortuga verde"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Pesquerias"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Montes submarinos"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "GV: Practicas agricolas"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "GV: Restauracion ecologica"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Tiburones en la RMG"
-        },
-        {
-            "weight": 1,
-            "source": "Biodiversity",
-            "target": "Tortugas terrestres"
-        },
-        {
-            "weight": 1,
-            "source": "Biosecurity/invasive species",
-            "target": "AT: Passerines"
-        },
-        {
-            "weight": 1,
-            "source": "Biosecurity/invasive species",
-            "target": "AT: Pajaro brujo"
-        },
-        {
-            "weight": 1,
-            "source": "Biosecurity/invasive species",
-            "target": "Polistes versicolor"
-        },
-        {
-            "weight": 1,
-            "source": "Biosecurity/invasive species",
-            "target": "Pinzon de manglar"
-        },
-        {
-            "weight": 1,
-            "source": "Biosecurity/invasive species",
-            "target": "Aves en la costera"
-        },
-        {
-            "weight": 1,
-            "source": "Biosecurity/invasive species",
-            "target": "Aves marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Biosecurity/invasive species",
-            "target": "Flamencos"
-        },
-        {
-            "weight": 1,
-            "source": "Biosecurity/invasive species",
-            "target": "Scalesia restoration"
-        },
-        {
-            "weight": 1,
-            "source": "Biosecurity/invasive species",
-            "target": "Imagenes satelitales"
-        },
-        {
-            "weight": 1,
-            "source": "Biosecurity/invasive species",
-            "target": "Ranas introducidas"
-        },
-        {
-            "weight": 1,
-            "source": "Biosecurity/invasive species",
-            "target": "Cascarilla"
-        },
-        {
-            "weight": 1,
-            "source": "Biosecurity/invasive species",
-            "target": "Especies invasoras marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Biosecurity/invasive species",
-            "target": "GV: Practicas agricolas"
-        },
-        {
-            "weight": 1,
-            "source": "Biosecurity/invasive species",
-            "target": "GV: Restauracion ecologica"
-        },
-        {
-            "weight": 1,
-            "source": "Population ecology/monitoring",
-            "target": "AT: Passerines"
-        },
-        {
-            "weight": 1,
-            "source": "Population ecology/monitoring",
-            "target": "AT: Communidad"
-        },
-        {
-            "weight": 1,
-            "source": "Population ecology/monitoring",
-            "target": "AT: Pajaro brujo"
-        },
-        {
-            "weight": 1,
-            "source": "Population ecology/monitoring",
-            "target": "Pinzon de manglar"
-        },
-        {
-            "weight": 1,
-            "source": "Population ecology/monitoring",
-            "target": "Aves en la costera"
-        },
-        {
-            "weight": 1,
-            "source": "Population ecology/monitoring",
-            "target": "Aves marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Population ecology/monitoring",
-            "target": "Flamencos"
-        },
-        {
-            "weight": 1,
-            "source": "Population ecology/monitoring",
-            "target": "Ranas introducidas"
-        },
-        {
-            "weight": 1,
-            "source": "Population ecology/monitoring",
-            "target": "Cascarilla"
-        },
-        {
-            "weight": 1,
-            "source": "Population ecology/monitoring",
-            "target": "Ecologico submareal"
-        },
-        {
-            "weight": 1,
-            "source": "Population ecology/monitoring",
-            "target": "Especies invasoras marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Population ecology/monitoring",
-            "target": "Pesquerias"
-        },
-        {
-            "weight": 1,
-            "source": "Population ecology/monitoring",
-            "target": "Tiburones en la RMG"
-        },
-        {
-            "weight": 1,
-            "source": "Population ecology/monitoring",
-            "target": "Tortugas terrestres"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial birds",
-            "target": "AT: Passerines"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial birds",
-            "target": "AT: Communidad"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial birds",
-            "target": "AT: Pajaro brujo"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial birds",
-            "target": "AT: Bird health"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial birds",
-            "target": "Pinzon de manglar"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial birds",
-            "target": "Aves en la costera"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial birds",
-            "target": "Aves marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial birds",
-            "target": "Aves en carretera"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial birds",
-            "target": "Flamencos"
-        },
-        {
-            "weight": 1,
-            "source": "Insects",
-            "target": "AT: Pajaro brujo"
-        },
-        {
-            "weight": 1,
-            "source": "Insects",
-            "target": "Polistes versicolor"
-        },
-        {
-            "weight": 1,
-            "source": "Insects",
-            "target": "Pinzon de manglar"
-        },
-        {
-            "weight": 1,
-            "source": "Insects",
-            "target": "Scalesia restoration"
-        },
-        {
-            "weight": 1,
-            "source": "AT: Passerines",
+            "source": "Polistes versicolor",
             "target": "San Cristobal"
         },
         {
             "weight": 1,
-            "source": "AT: Passerines",
+            "source": "Polistes versicolor",
             "target": "Floreana"
         },
         {
             "weight": 1,
-            "source": "AT: Passerines",
-            "target": "Pinzon"
+            "source": "Polistes versicolor",
+            "target": "Polistes versicolor"
         },
         {
             "weight": 1,
-            "source": "AT: Passerines",
-            "target": "Rabida"
+            "source": "Polistes versicolor",
+            "target": "Biodiversity conservation"
         },
         {
             "weight": 1,
-            "source": "AT: Passerines",
+            "source": "Polistes versicolor",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Polistes versicolor",
+            "target": "Biosecurity/invasive species"
+        },
+        {
+            "weight": 1,
+            "source": "Polistes versicolor",
             "target": "Ecosystem restoration"
         },
         {
             "weight": 1,
-            "source": "AT: Passerines",
-            "target": "Darwin's finches"
-        },
-        {
-            "weight": 1,
-            "source": "San Cristobal",
-            "target": "AT: Communidad"
-        },
-        {
-            "weight": 1,
-            "source": "San Cristobal",
-            "target": "Polistes versicolor"
-        },
-        {
-            "weight": 1,
-            "source": "San Cristobal",
-            "target": "Flamencos"
-        },
-        {
-            "weight": 1,
-            "source": "San Cristobal",
-            "target": "Imagenes satelitales"
-        },
-        {
-            "weight": 1,
-            "source": "San Cristobal",
-            "target": "Ranas introducidas"
-        },
-        {
-            "weight": 1,
-            "source": "San Cristobal",
-            "target": "Especies invasoras marinas"
-        },
-        {
-            "weight": 1,
-            "source": "San Cristobal",
-            "target": "GV: Restauracion ecologica"
-        },
-        {
-            "weight": 1,
-            "source": "Floreana",
-            "target": "AT: Communidad"
-        },
-        {
-            "weight": 1,
-            "source": "Floreana",
-            "target": "Polistes versicolor"
-        },
-        {
-            "weight": 1,
-            "source": "Floreana",
-            "target": "Flamencos"
-        },
-        {
-            "weight": 1,
-            "source": "Floreana",
-            "target": "Imagenes satelitales"
-        },
-        {
-            "weight": 1,
-            "source": "Floreana",
-            "target": "Especies invasoras marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Floreana",
-            "target": "Montes submarinos"
-        },
-        {
-            "weight": 1,
-            "source": "Floreana",
-            "target": "GV: Practicas agricolas"
-        },
-        {
-            "weight": 1,
-            "source": "Floreana",
-            "target": "GV: Restauracion ecologica"
-        },
-        {
-            "weight": 1,
-            "source": "Rabida",
-            "target": "Flamencos"
-        },
-        {
-            "weight": 1,
-            "source": "Ecosystem restoration",
-            "target": "AT: Pajaro brujo"
-        },
-        {
-            "weight": 1,
-            "source": "Ecosystem restoration",
-            "target": "Polistes versicolor"
-        },
-        {
-            "weight": 1,
-            "source": "Ecosystem restoration",
-            "target": "Pinzon de manglar"
-        },
-        {
-            "weight": 1,
-            "source": "Ecosystem restoration",
-            "target": "Scalesia restoration"
-        },
-        {
-            "weight": 1,
-            "source": "Ecosystem restoration",
-            "target": "Cascarilla"
-        },
-        {
-            "weight": 1,
-            "source": "Ecosystem restoration",
-            "target": "GV: Practicas agricolas"
-        },
-        {
-            "weight": 1,
-            "source": "Ecosystem restoration",
-            "target": "GV: Restauracion ecologica"
-        },
-        {
-            "weight": 1,
-            "source": "Darwin's finches",
-            "target": "AT: Communidad"
-        },
-        {
-            "weight": 1,
-            "source": "Darwin's finches",
-            "target": "AT: Bird health"
-        },
-        {
-            "weight": 1,
-            "source": "Darwin's finches",
-            "target": "Pinzon de manglar"
-        },
-        {
-            "weight": 1,
-            "source": "Darwin's finches",
-            "target": "Aves en carretera"
-        },
-        {
-            "weight": 1,
-            "source": "AT: Communidad",
-            "target": "Community"
-        },
-        {
-            "weight": 1,
-            "source": "AT: Communidad",
-            "target": "Education"
-        },
-        {
-            "weight": 1,
-            "source": "Community",
-            "target": "Pinzon de manglar"
-        },
-        {
-            "weight": 1,
-            "source": "Community",
-            "target": "Pesquerias"
-        },
-        {
-            "weight": 1,
-            "source": "Community",
-            "target": "Montes submarinos"
-        },
-        {
-            "weight": 1,
-            "source": "Community",
-            "target": "Tortugas terrestres"
-        },
-        {
-            "weight": 1,
-            "source": "Education",
-            "target": "Pinzon de manglar"
-        },
-        {
-            "weight": 1,
-            "source": "Education",
-            "target": "Pesquerias"
-        },
-        {
-            "weight": 1,
-            "source": "Education",
-            "target": "Montes submarinos"
-        },
-        {
-            "weight": 1,
-            "source": "Education",
-            "target": "Tortugas terrestres"
-        },
-        {
-            "weight": 1,
-            "source": "AT: Pajaro brujo",
-            "target": "Pyrocephalus nanus"
-        },
-        {
-            "weight": 1,
-            "source": "AT: Pajaro brujo",
-            "target": "Rubus niveus"
-        },
-        {
-            "weight": 1,
-            "source": "AT: Pajaro brujo",
-            "target": "Sambucus nigra"
-        },
-        {
-            "weight": 1,
-            "source": "AT: Pajaro brujo",
-            "target": "Feeding ecology/food supply"
-        },
-        {
-            "weight": 1,
-            "source": "AT: Pajaro brujo",
-            "target": "Habitat loss/degradation/land use"
-        },
-        {
-            "weight": 1,
-            "source": "AT: Pajaro brujo",
-            "target": "Terrestrial plants"
-        },
-        {
-            "weight": 1,
-            "source": "Rubus niveus",
-            "target": "Scalesia restoration"
-        },
-        {
-            "weight": 1,
-            "source": "Rubus niveus",
-            "target": "Cascarilla"
-        },
-        {
-            "weight": 1,
-            "source": "Feeding ecology/food supply",
-            "target": "Tiburones en la RMG"
-        },
-        {
-            "weight": 1,
-            "source": "Habitat loss/degradation/land use",
-            "target": "Scalesia restoration"
-        },
-        {
-            "weight": 1,
-            "source": "Habitat loss/degradation/land use",
-            "target": "GV: Practicas agricolas"
-        },
-        {
-            "weight": 1,
-            "source": "Habitat loss/degradation/land use",
-            "target": "GV: Restauracion ecologica"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial plants",
-            "target": "Scalesia restoration"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial plants",
-            "target": "Imagenes satelitales"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial plants",
-            "target": "Cascarilla"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial plants",
-            "target": "GV: Practicas agricolas"
-        },
-        {
-            "weight": 1,
-            "source": "Terrestrial plants",
-            "target": "GV: Restauracion ecologica"
-        },
-        {
-            "weight": 1,
-            "source": "AT: Bird health",
-            "target": "Wildlife health"
-        },
-        {
-            "weight": 1,
-            "source": "Wildlife health",
-            "target": "Aves en la costera"
-        },
-        {
-            "weight": 1,
-            "source": "Wildlife health",
-            "target": "Aves marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Wildlife health",
-            "target": "Flamencos"
-        },
-        {
-            "weight": 1,
-            "source": "Wildlife health",
-            "target": "Ranas introducidas"
-        },
-        {
-            "weight": 1,
-            "source": "Wildlife health",
-            "target": "Cascarilla"
-        },
-        {
-            "weight": 1,
-            "source": "Wildlife health",
-            "target": "Tortugas terrestres"
-        },
-        {
-            "weight": 1,
-            "source": "Espanola",
-            "target": "Aves marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Espanola",
-            "target": "GV: Restauracion ecologica"
-        },
-        {
-            "weight": 1,
-            "source": "Espanola",
-            "target": "Tortugas terrestres"
-        },
-        {
-            "weight": 1,
-            "source": "Santa Fe",
-            "target": "Montes submarinos"
-        },
-        {
-            "weight": 1,
-            "source": "Fernandina",
-            "target": "Aves en la costera"
-        },
-        {
-            "weight": 1,
-            "source": "Fernandina",
-            "target": "Aves marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Fernandina",
-            "target": "Tortuga verde"
-        },
-        {
-            "weight": 1,
-            "source": "Santiago",
-            "target": "Flamencos"
-        },
-        {
-            "weight": 1,
-            "source": "Santiago",
-            "target": "Imagenes satelitales"
-        },
-        {
-            "weight": 1,
-            "source": "Baltra",
-            "target": "Especies invasoras marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Baltra",
-            "target": "Tortuga verde"
-        },
-        {
-            "weight": 1,
-            "source": "Baltra",
-            "target": "GV: Restauracion ecologica"
-        },
-        {
-            "weight": 1,
             "source": "Polistes versicolor",
-            "target": "Polistes versicolor"
-        },
-        {
-            "weight": 1,
-            "source": "Polistes versicolor",
-            "target": "Politics, economics and crime"
+            "target": "Insects"
         },
         {
             "weight": 1,
@@ -1925,8 +1037,18 @@
         },
         {
             "weight": 1,
-            "source": "Politics, economics and crime",
-            "target": "Montes submarinos"
+            "source": "Polistes versicolor",
+            "target": "2018"
+        },
+        {
+            "weight": 1,
+            "source": "Pinzon de manglar",
+            "target": "Isabela"
+        },
+        {
+            "weight": 1,
+            "source": "Pinzon de manglar",
+            "target": "Philornis downsi"
         },
         {
             "weight": 1,
@@ -1941,12 +1063,67 @@
         {
             "weight": 1,
             "source": "Pinzon de manglar",
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "Pinzon de manglar",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Pinzon de manglar",
+            "target": "Biosecurity/invasive species"
+        },
+        {
+            "weight": 1,
+            "source": "Pinzon de manglar",
+            "target": "Population ecology/monitoring"
+        },
+        {
+            "weight": 1,
+            "source": "Pinzon de manglar",
             "target": "Extinction and extinction risk"
         },
         {
             "weight": 1,
-            "source": "Rattus spp",
-            "target": "Aves marinas"
+            "source": "Pinzon de manglar",
+            "target": "Ecosystem restoration"
+        },
+        {
+            "weight": 1,
+            "source": "Pinzon de manglar",
+            "target": "Terrestrial birds"
+        },
+        {
+            "weight": 1,
+            "source": "Pinzon de manglar",
+            "target": "Darwin's finches"
+        },
+        {
+            "weight": 1,
+            "source": "Pinzon de manglar",
+            "target": "Insects"
+        },
+        {
+            "weight": 1,
+            "source": "Pinzon de manglar",
+            "target": "Education"
+        },
+        {
+            "weight": 1,
+            "source": "Pinzon de manglar",
+            "target": "2018"
+        },
+        {
+            "weight": 1,
+            "source": "Aves en la costera",
+            "target": "Isabela"
+        },
+        {
+            "weight": 1,
+            "source": "Aves en la costera",
+            "target": "Fernandina"
         },
         {
             "weight": 1,
@@ -1957,6 +1134,11 @@
             "weight": 1,
             "source": "Aves en la costera",
             "target": "Spheniscus mendiculus"
+        },
+        {
+            "weight": 1,
+            "source": "Aves en la costera",
+            "target": "Rattus spp"
         },
         {
             "weight": 1,
@@ -1976,12 +1158,22 @@
         {
             "weight": 1,
             "source": "Aves en la costera",
-            "target": "Rattus spp."
+            "target": "Biodiversity conservation"
         },
         {
             "weight": 1,
             "source": "Aves en la costera",
-            "target": "Marine/coastal fauna and flora"
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Aves en la costera",
+            "target": "Biosecurity/invasive species"
+        },
+        {
+            "weight": 1,
+            "source": "Aves en la costera",
+            "target": "Population ecology/monitoring"
         },
         {
             "weight": 1,
@@ -1990,98 +1182,68 @@
         },
         {
             "weight": 1,
-            "source": "Crotophaga ani",
-            "target": "Aves marinas"
+            "source": "Aves en la costera",
+            "target": "Wildlife health"
         },
         {
             "weight": 1,
-            "source": "Spheniscus mendiculus",
-            "target": "Aves marinas"
+            "source": "Aves en la costera",
+            "target": "Terrestrial birds"
         },
         {
             "weight": 1,
-            "source": "Phalacrocorax harrisi",
-            "target": "Aves marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Phoebastria irrorata",
-            "target": "Aves marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Felis catus",
-            "target": "Aves marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Marine/coastal fauna and flora",
-            "target": "Aves marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Marine/coastal fauna and flora",
-            "target": "Ecologico submareal"
-        },
-        {
-            "weight": 1,
-            "source": "Marine/coastal fauna and flora",
-            "target": "Especies invasoras marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Marine/coastal fauna and flora",
-            "target": "Tortuga verde"
-        },
-        {
-            "weight": 1,
-            "source": "Marine/coastal fauna and flora",
-            "target": "Pesquerias"
-        },
-        {
-            "weight": 1,
-            "source": "Marine/coastal fauna and flora",
-            "target": "Montes submarinos"
-        },
-        {
-            "weight": 1,
-            "source": "Marine/coastal fauna and flora",
-            "target": "Tiburones en la RMG"
-        },
-        {
-            "weight": 1,
-            "source": "Direct human impacts",
-            "target": "Aves marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Direct human impacts",
-            "target": "Aves en carretera"
-        },
-        {
-            "weight": 1,
-            "source": "Direct human impacts",
-            "target": "Flamencos"
-        },
-        {
-            "weight": 1,
-            "source": "Direct human impacts",
-            "target": "Tortuga verde"
+            "source": "Aves en la costera",
+            "target": "2018"
         },
         {
             "weight": 1,
             "source": "Aves marinas",
-            "target": "Marielas"
+            "target": "Isabela"
         },
         {
             "weight": 1,
             "source": "Aves marinas",
-            "target": "Physical and chemical sciences"
+            "target": "Espanola"
         },
         {
             "weight": 1,
             "source": "Aves marinas",
-            "target": "Climate change"
+            "target": "Fernandina"
+        },
+        {
+            "weight": 1,
+            "source": "Aves marinas",
+            "target": "Islotes Marielas"
+        },
+        {
+            "weight": 1,
+            "source": "Aves marinas",
+            "target": "Crotophaga ani"
+        },
+        {
+            "weight": 1,
+            "source": "Aves marinas",
+            "target": "Spheniscus mendiculus"
+        },
+        {
+            "weight": 1,
+            "source": "Aves marinas",
+            "target": "Rattus spp"
+        },
+        {
+            "weight": 1,
+            "source": "Aves marinas",
+            "target": "Phalacrocorax harrisi"
+        },
+        {
+            "weight": 1,
+            "source": "Aves marinas",
+            "target": "Phoebastria irrorata"
+        },
+        {
+            "weight": 1,
+            "source": "Aves marinas",
+            "target": "Felis catus"
         },
         {
             "weight": 1,
@@ -2101,6 +1263,41 @@
         {
             "weight": 1,
             "source": "Aves marinas",
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "Aves marinas",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Aves marinas",
+            "target": "Biosecurity/invasive species"
+        },
+        {
+            "weight": 1,
+            "source": "Aves marinas",
+            "target": "Population ecology/monitoring"
+        },
+        {
+            "weight": 1,
+            "source": "Aves marinas",
+            "target": "Direct human impacts"
+        },
+        {
+            "weight": 1,
+            "source": "Aves marinas",
+            "target": "Wildlife health"
+        },
+        {
+            "weight": 1,
+            "source": "Aves marinas",
+            "target": "Terrestrial birds"
+        },
+        {
+            "weight": 1,
+            "source": "Aves marinas",
             "target": "Marine mammals"
         },
         {
@@ -2110,118 +1307,33 @@
         },
         {
             "weight": 1,
-            "source": "Physical and chemical sciences",
-            "target": "Flamencos"
-        },
-        {
-            "weight": 1,
-            "source": "Physical and chemical sciences",
-            "target": "Ecologico submareal"
-        },
-        {
-            "weight": 1,
-            "source": "Physical and chemical sciences",
-            "target": "Especies invasoras marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Physical and chemical sciences",
-            "target": "Pesquerias"
-        },
-        {
-            "weight": 1,
-            "source": "Physical and chemical sciences",
-            "target": "Montes submarinos"
-        },
-        {
-            "weight": 1,
-            "source": "Physical and chemical sciences",
-            "target": "Tiburones en la RMG"
-        },
-        {
-            "weight": 1,
-            "source": "Climate change",
-            "target": "Ecologico submareal"
-        },
-        {
-            "weight": 1,
-            "source": "Climate change",
-            "target": "Especies invasoras marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Climate change",
-            "target": "Pesquerias"
-        },
-        {
-            "weight": 1,
-            "source": "Climate change",
-            "target": "Montes submarinos"
-        },
-        {
-            "weight": 1,
-            "source": "El Niño/La Niña event",
-            "target": "Flamencos"
-        },
-        {
-            "weight": 1,
-            "source": "El Niño/La Niña event",
-            "target": "Ecologico submareal"
-        },
-        {
-            "weight": 1,
-            "source": "El Niño/La Niña event",
-            "target": "Especies invasoras marinas"
-        },
-        {
-            "weight": 1,
-            "source": "El Niño/La Niña event",
-            "target": "Tiburones en la RMG"
-        },
-        {
-            "weight": 1,
-            "source": "Oceanography",
-            "target": "Ecologico submareal"
-        },
-        {
-            "weight": 1,
-            "source": "Oceanography",
-            "target": "Especies invasoras marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Oceanography",
-            "target": "Pesquerias"
-        },
-        {
-            "weight": 1,
-            "source": "Oceanography",
-            "target": "Montes submarinos"
-        },
-        {
-            "weight": 1,
-            "source": "Oceanography",
-            "target": "Tiburones en la RMG"
-        },
-        {
-            "weight": 1,
-            "source": "Climate change impacts",
-            "target": "Ecologico submareal"
-        },
-        {
-            "weight": 1,
-            "source": "Climate change impacts",
-            "target": "Especies invasoras marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Climate change impacts",
-            "target": "Pesquerias"
+            "source": "Aves marinas",
+            "target": "2018"
         },
         {
             "weight": 1,
             "source": "Aves en carretera",
-            "target": "Infrastructure, energy and technology"
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "Aves en carretera",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Aves en carretera",
+            "target": "Direct human impacts"
+        },
+        {
+            "weight": 1,
+            "source": "Aves en carretera",
+            "target": "Terrestrial birds"
+        },
+        {
+            "weight": 1,
+            "source": "Aves en carretera",
+            "target": "Darwin's finches"
         },
         {
             "weight": 1,
@@ -2230,23 +1342,33 @@
         },
         {
             "weight": 1,
-            "source": "Infrastructure, energy and technology",
-            "target": "Tortuga verde"
+            "source": "Aves en carretera",
+            "target": "2018"
         },
         {
             "weight": 1,
-            "source": "Infrastructure, energy and technology",
-            "target": "GV: Practicas agricolas"
+            "source": "Flamencos",
+            "target": "Isabela"
         },
         {
             "weight": 1,
-            "source": "Infrastructure, energy and technology",
-            "target": "GV: Restauracion ecologica"
+            "source": "Flamencos",
+            "target": "San Cristobal"
         },
         {
             "weight": 1,
-            "source": "Transportation",
-            "target": "Tortuga verde"
+            "source": "Flamencos",
+            "target": "Floreana"
+        },
+        {
+            "weight": 1,
+            "source": "Flamencos",
+            "target": "Santiago"
+        },
+        {
+            "weight": 1,
+            "source": "Flamencos",
+            "target": "Rabida"
         },
         {
             "weight": 1,
@@ -2316,32 +1438,57 @@
         {
             "weight": 1,
             "source": "Flamencos",
+            "target": "El Niño/La Niña event"
+        },
+        {
+            "weight": 1,
+            "source": "Flamencos",
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "Flamencos",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Flamencos",
             "target": "Biogeography"
         },
         {
             "weight": 1,
-            "source": "Biogeography",
-            "target": "Imagenes satelitales"
+            "source": "Flamencos",
+            "target": "Biosecurity/invasive species"
         },
         {
             "weight": 1,
-            "source": "Biogeography",
-            "target": "Ranas introducidas"
+            "source": "Flamencos",
+            "target": "Population ecology/monitoring"
         },
         {
             "weight": 1,
-            "source": "Biogeography",
-            "target": "Ecologico submareal"
+            "source": "Flamencos",
+            "target": "Direct human impacts"
         },
         {
             "weight": 1,
-            "source": "Biogeography",
-            "target": "Montes submarinos"
+            "source": "Flamencos",
+            "target": "Wildlife health"
         },
         {
             "weight": 1,
-            "source": "Biogeography",
-            "target": "Tiburones en la RMG"
+            "source": "Flamencos",
+            "target": "Terrestrial birds"
+        },
+        {
+            "weight": 1,
+            "source": "Flamencos",
+            "target": "2018"
+        },
+        {
+            "weight": 1,
+            "source": "Scalesia restoration",
+            "target": "Rubus niveus"
         },
         {
             "weight": 1,
@@ -2351,12 +1498,107 @@
         {
             "weight": 1,
             "source": "Scalesia restoration",
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "Scalesia restoration",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Scalesia restoration",
+            "target": "Biosecurity/invasive species"
+        },
+        {
+            "weight": 1,
+            "source": "Scalesia restoration",
+            "target": "Habitat loss/degradation/land use"
+        },
+        {
+            "weight": 1,
+            "source": "Scalesia restoration",
+            "target": "Ecosystem restoration"
+        },
+        {
+            "weight": 1,
+            "source": "Scalesia restoration",
+            "target": "Insects"
+        },
+        {
+            "weight": 1,
+            "source": "Scalesia restoration",
+            "target": "Terrestrial plants"
+        },
+        {
+            "weight": 1,
+            "source": "Scalesia restoration",
             "target": "Scalesia"
         },
         {
             "weight": 1,
-            "source": "Scalesia pedunculata",
-            "target": "GV: Restauracion ecologica"
+            "source": "Scalesia restoration",
+            "target": "2018"
+        },
+        {
+            "weight": 1,
+            "source": "Imagenes satelitales",
+            "target": "Isabela"
+        },
+        {
+            "weight": 1,
+            "source": "Imagenes satelitales",
+            "target": "San Cristobal"
+        },
+        {
+            "weight": 1,
+            "source": "Imagenes satelitales",
+            "target": "Floreana"
+        },
+        {
+            "weight": 1,
+            "source": "Imagenes satelitales",
+            "target": "Santiago"
+        },
+        {
+            "weight": 1,
+            "source": "Imagenes satelitales",
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "Imagenes satelitales",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Imagenes satelitales",
+            "target": "Biogeography"
+        },
+        {
+            "weight": 1,
+            "source": "Imagenes satelitales",
+            "target": "Biosecurity/invasive species"
+        },
+        {
+            "weight": 1,
+            "source": "Imagenes satelitales",
+            "target": "Terrestrial plants"
+        },
+        {
+            "weight": 1,
+            "source": "Imagenes satelitales",
+            "target": "2018"
+        },
+        {
+            "weight": 1,
+            "source": "Ranas introducidas",
+            "target": "Isabela"
+        },
+        {
+            "weight": 1,
+            "source": "Ranas introducidas",
+            "target": "San Cristobal"
         },
         {
             "weight": 1,
@@ -2366,7 +1608,37 @@
         {
             "weight": 1,
             "source": "Ranas introducidas",
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "Ranas introducidas",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Ranas introducidas",
+            "target": "Biogeography"
+        },
+        {
+            "weight": 1,
+            "source": "Ranas introducidas",
+            "target": "Biosecurity/invasive species"
+        },
+        {
+            "weight": 1,
+            "source": "Ranas introducidas",
+            "target": "Population ecology/monitoring"
+        },
+        {
+            "weight": 1,
+            "source": "Ranas introducidas",
             "target": "Genetics"
+        },
+        {
+            "weight": 1,
+            "source": "Ranas introducidas",
+            "target": "Wildlife health"
         },
         {
             "weight": 1,
@@ -2375,23 +1647,93 @@
         },
         {
             "weight": 1,
-            "source": "Genetics",
-            "target": "Cascarilla"
+            "source": "Ranas introducidas",
+            "target": "2018"
         },
         {
             "weight": 1,
-            "source": "Genetics",
-            "target": "Montes submarinos"
-        },
-        {
-            "weight": 1,
-            "source": "Genetics",
-            "target": "Tiburones en la RMG"
+            "source": "Cascarilla",
+            "target": "Rubus niveus"
         },
         {
             "weight": 1,
             "source": "Cascarilla",
             "target": "Cinchona pubescens"
+        },
+        {
+            "weight": 1,
+            "source": "Cascarilla",
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "Cascarilla",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Cascarilla",
+            "target": "Biosecurity/invasive species"
+        },
+        {
+            "weight": 1,
+            "source": "Cascarilla",
+            "target": "Population ecology/monitoring"
+        },
+        {
+            "weight": 1,
+            "source": "Cascarilla",
+            "target": "Genetics"
+        },
+        {
+            "weight": 1,
+            "source": "Cascarilla",
+            "target": "Ecosystem restoration"
+        },
+        {
+            "weight": 1,
+            "source": "Cascarilla",
+            "target": "Wildlife health"
+        },
+        {
+            "weight": 1,
+            "source": "Cascarilla",
+            "target": "Terrestrial plants"
+        },
+        {
+            "weight": 1,
+            "source": "Cascarilla",
+            "target": "2018"
+        },
+        {
+            "weight": 1,
+            "source": "Ecologico submareal",
+            "target": "El Niño/La Niña event"
+        },
+        {
+            "weight": 1,
+            "source": "Ecologico submareal",
+            "target": "Oceanography"
+        },
+        {
+            "weight": 1,
+            "source": "Ecologico submareal",
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "Ecologico submareal",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Ecologico submareal",
+            "target": "Biogeography"
+        },
+        {
+            "weight": 1,
+            "source": "Ecologico submareal",
+            "target": "Population ecology/monitoring"
         },
         {
             "weight": 1,
@@ -2430,58 +1772,33 @@
         },
         {
             "weight": 1,
-            "source": "Seaweed/algae",
-            "target": "Especies invasoras marinas"
+            "source": "Ecologico submareal",
+            "target": "Climate change impacts"
         },
         {
             "weight": 1,
-            "source": "Seaweed/algae",
-            "target": "Montes submarinos"
+            "source": "Ecologico submareal",
+            "target": "2018"
         },
         {
             "weight": 1,
-            "source": "Corals",
-            "target": "Montes submarinos"
+            "source": "Especies invasoras marinas",
+            "target": "Isabela"
         },
         {
             "weight": 1,
-            "source": "Marine invertebrates",
-            "target": "Especies invasoras marinas"
+            "source": "Especies invasoras marinas",
+            "target": "San Cristobal"
         },
         {
             "weight": 1,
-            "source": "Marine invertebrates",
-            "target": "Montes submarinos"
+            "source": "Especies invasoras marinas",
+            "target": "Floreana"
         },
         {
             "weight": 1,
-            "source": "Marine microogarnisms",
-            "target": "Especies invasoras marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Marine microogarnisms",
-            "target": "Montes submarinos"
-        },
-        {
-            "weight": 1,
-            "source": "Fish",
-            "target": "Pesquerias"
-        },
-        {
-            "weight": 1,
-            "source": "Fish",
-            "target": "Montes submarinos"
-        },
-        {
-            "weight": 1,
-            "source": "Marine plants",
-            "target": "Especies invasoras marinas"
-        },
-        {
-            "weight": 1,
-            "source": "Marine plants",
-            "target": "Montes submarinos"
+            "source": "Especies invasoras marinas",
+            "target": "Baltra"
         },
         {
             "weight": 1,
@@ -2501,17 +1818,82 @@
         {
             "weight": 1,
             "source": "Especies invasoras marinas",
+            "target": "El Niño/La Niña event"
+        },
+        {
+            "weight": 1,
+            "source": "Especies invasoras marinas",
+            "target": "Oceanography"
+        },
+        {
+            "weight": 1,
+            "source": "Especies invasoras marinas",
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "Especies invasoras marinas",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Especies invasoras marinas",
+            "target": "Biosecurity/invasive species"
+        },
+        {
+            "weight": 1,
+            "source": "Especies invasoras marinas",
             "target": "Behavioural ecology"
         },
         {
             "weight": 1,
-            "source": "Behavioural ecology",
-            "target": "Tortuga verde"
+            "source": "Especies invasoras marinas",
+            "target": "Population ecology/monitoring"
         },
         {
             "weight": 1,
-            "source": "Behavioural ecology",
-            "target": "Tortugas terrestres"
+            "source": "Especies invasoras marinas",
+            "target": "Seaweed/algae"
+        },
+        {
+            "weight": 1,
+            "source": "Especies invasoras marinas",
+            "target": "Marine invertebrates"
+        },
+        {
+            "weight": 1,
+            "source": "Especies invasoras marinas",
+            "target": "Marine microogarnisms"
+        },
+        {
+            "weight": 1,
+            "source": "Especies invasoras marinas",
+            "target": "Marine plants"
+        },
+        {
+            "weight": 1,
+            "source": "Especies invasoras marinas",
+            "target": "Climate change impacts"
+        },
+        {
+            "weight": 1,
+            "source": "Especies invasoras marinas",
+            "target": "2018"
+        },
+        {
+            "weight": 1,
+            "source": "Tortuga verde",
+            "target": "Isabela"
+        },
+        {
+            "weight": 1,
+            "source": "Tortuga verde",
+            "target": "Fernandina"
+        },
+        {
+            "weight": 1,
+            "source": "Tortuga verde",
+            "target": "Baltra"
         },
         {
             "weight": 1,
@@ -2526,17 +1908,37 @@
         {
             "weight": 1,
             "source": "Tortuga verde",
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "Tortuga verde",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Tortuga verde",
+            "target": "Behavioural ecology"
+        },
+        {
+            "weight": 1,
+            "source": "Tortuga verde",
+            "target": "Direct human impacts"
+        },
+        {
+            "weight": 1,
+            "source": "Tortuga verde",
             "target": "Marine reptiles"
         },
         {
             "weight": 1,
-            "source": "Chelonia mydas",
-            "target": "Tiburones en la RMG"
+            "source": "Tortuga verde",
+            "target": "Transportation"
         },
         {
             "weight": 1,
-            "source": "Marine reptiles",
-            "target": "Tiburones en la RMG"
+            "source": "Tortuga verde",
+            "target": "2018"
         },
         {
             "weight": 1,
@@ -2586,7 +1988,22 @@
         {
             "weight": 1,
             "source": "Pesquerias",
-            "target": "Food security"
+            "target": "Oceanography"
+        },
+        {
+            "weight": 1,
+            "source": "Pesquerias",
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "Pesquerias",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Pesquerias",
+            "target": "Population ecology/monitoring"
         },
         {
             "weight": 1,
@@ -2606,6 +2023,16 @@
         {
             "weight": 1,
             "source": "Pesquerias",
+            "target": "Fish"
+        },
+        {
+            "weight": 1,
+            "source": "Pesquerias",
+            "target": "Climate change impacts"
+        },
+        {
+            "weight": 1,
+            "source": "Pesquerias",
             "target": "Fisheries/aquaculture"
         },
         {
@@ -2620,38 +2047,28 @@
         },
         {
             "weight": 1,
-            "source": "Food security",
-            "target": "GV: Practicas agricolas"
+            "source": "Pesquerias",
+            "target": "Education"
         },
         {
             "weight": 1,
-            "source": "Natural resource management",
-            "target": "Montes submarinos"
+            "source": "Pesquerias",
+            "target": "2018"
         },
         {
             "weight": 1,
-            "source": "Natural resource management",
-            "target": "GV: Practicas agricolas"
+            "source": "Montes submarinos",
+            "target": "Santa Fe"
         },
         {
             "weight": 1,
-            "source": "Natural resource management",
-            "target": "GV: Restauracion ecologica"
+            "source": "Montes submarinos",
+            "target": "Floreana"
         },
         {
             "weight": 1,
-            "source": "Ecosystem services",
-            "target": "GV: Practicas agricolas"
-        },
-        {
-            "weight": 1,
-            "source": "Ecosystem services",
-            "target": "Tortugas terrestres"
-        },
-        {
-            "weight": 1,
-            "source": "Local food production",
-            "target": "GV: Practicas agricolas"
+            "source": "Montes submarinos",
+            "target": "Oceanography"
         },
         {
             "weight": 1,
@@ -2661,12 +2078,122 @@
         {
             "weight": 1,
             "source": "Montes submarinos",
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "Montes submarinos",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Montes submarinos",
+            "target": "Biogeography"
+        },
+        {
+            "weight": 1,
+            "source": "Montes submarinos",
+            "target": "Genetics"
+        },
+        {
+            "weight": 1,
+            "source": "Montes submarinos",
+            "target": "Natural resource management"
+        },
+        {
+            "weight": 1,
+            "source": "Montes submarinos",
             "target": "Taxonomy"
         },
         {
             "weight": 1,
             "source": "Montes submarinos",
+            "target": "Seaweed/algae"
+        },
+        {
+            "weight": 1,
+            "source": "Montes submarinos",
+            "target": "Corals"
+        },
+        {
+            "weight": 1,
+            "source": "Montes submarinos",
+            "target": "Marine invertebrates"
+        },
+        {
+            "weight": 1,
+            "source": "Montes submarinos",
+            "target": "Marine microogarnisms"
+        },
+        {
+            "weight": 1,
+            "source": "Montes submarinos",
+            "target": "Fish"
+        },
+        {
+            "weight": 1,
+            "source": "Montes submarinos",
+            "target": "Marine plants"
+        },
+        {
+            "weight": 1,
+            "source": "Montes submarinos",
             "target": "Climate change patterns"
+        },
+        {
+            "weight": 1,
+            "source": "Montes submarinos",
+            "target": "Education"
+        },
+        {
+            "weight": 1,
+            "source": "Montes submarinos",
+            "target": "2018"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Practicas agricolas",
+            "target": "Floreana"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Practicas agricolas",
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Practicas agricolas",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Practicas agricolas",
+            "target": "Biosecurity/invasive species"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Practicas agricolas",
+            "target": "Natural resource management"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Practicas agricolas",
+            "target": "Habitat loss/degradation/land use"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Practicas agricolas",
+            "target": "Ecosystem restoration"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Practicas agricolas",
+            "target": "Ecosystem services"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Practicas agricolas",
+            "target": "Terrestrial plants"
         },
         {
             "weight": 1,
@@ -2680,13 +2207,43 @@
         },
         {
             "weight": 1,
-            "source": "Innovation",
-            "target": "GV: Restauracion ecologica"
+            "source": "GV: Practicas agricolas",
+            "target": "Local food production"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Practicas agricolas",
+            "target": "2018"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Restauracion ecologica",
+            "target": "San Cristobal"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Restauracion ecologica",
+            "target": "Espanola"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Restauracion ecologica",
+            "target": "Floreana"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Restauracion ecologica",
+            "target": "Baltra"
         },
         {
             "weight": 1,
             "source": "GV: Restauracion ecologica",
             "target": "Opuntia echios"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Restauracion ecologica",
+            "target": "Scalesia pedunculata"
         },
         {
             "weight": 1,
@@ -2736,12 +2293,57 @@
         {
             "weight": 1,
             "source": "GV: Restauracion ecologica",
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Restauracion ecologica",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Restauracion ecologica",
+            "target": "Biosecurity/invasive species"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Restauracion ecologica",
+            "target": "Natural resource management"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Restauracion ecologica",
+            "target": "Habitat loss/degradation/land use"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Restauracion ecologica",
+            "target": "Ecosystem restoration"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Restauracion ecologica",
             "target": "Socio-ecological systems"
         },
         {
             "weight": 1,
-            "source": "Socio-ecological systems",
-            "target": "Tortugas terrestres"
+            "source": "GV: Restauracion ecologica",
+            "target": "Terrestrial plants"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Restauracion ecologica",
+            "target": "Innovation"
+        },
+        {
+            "weight": 1,
+            "source": "GV: Restauracion ecologica",
+            "target": "2018"
+        },
+        {
+            "weight": 1,
+            "source": "Tiburones en la RMG",
+            "target": "Chelonia mydas"
         },
         {
             "weight": 1,
@@ -2761,7 +2363,67 @@
         {
             "weight": 1,
             "source": "Tiburones en la RMG",
+            "target": "El Niño/La Niña event"
+        },
+        {
+            "weight": 1,
+            "source": "Tiburones en la RMG",
+            "target": "Oceanography"
+        },
+        {
+            "weight": 1,
+            "source": "Tiburones en la RMG",
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "Tiburones en la RMG",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Tiburones en la RMG",
+            "target": "Biogeography"
+        },
+        {
+            "weight": 1,
+            "source": "Tiburones en la RMG",
+            "target": "Feeding ecology/food supply"
+        },
+        {
+            "weight": 1,
+            "source": "Tiburones en la RMG",
+            "target": "Population ecology/monitoring"
+        },
+        {
+            "weight": 1,
+            "source": "Tiburones en la RMG",
+            "target": "Genetics"
+        },
+        {
+            "weight": 1,
+            "source": "Tiburones en la RMG",
+            "target": "Marine reptiles"
+        },
+        {
+            "weight": 1,
+            "source": "Tiburones en la RMG",
             "target": "Sharks and rays"
+        },
+        {
+            "weight": 1,
+            "source": "Tiburones en la RMG",
+            "target": "2018"
+        },
+        {
+            "weight": 1,
+            "source": "Tortugas terrestres",
+            "target": "Isabela"
+        },
+        {
+            "weight": 1,
+            "source": "Tortugas terrestres",
+            "target": "Espanola"
         },
         {
             "weight": 1,
@@ -2771,7 +2433,52 @@
         {
             "weight": 1,
             "source": "Tortugas terrestres",
+            "target": "Biodiversity conservation"
+        },
+        {
+            "weight": 1,
+            "source": "Tortugas terrestres",
+            "target": "Biodiversity"
+        },
+        {
+            "weight": 1,
+            "source": "Tortugas terrestres",
+            "target": "Behavioural ecology"
+        },
+        {
+            "weight": 1,
+            "source": "Tortugas terrestres",
+            "target": "Population ecology/monitoring"
+        },
+        {
+            "weight": 1,
+            "source": "Tortugas terrestres",
+            "target": "Wildlife health"
+        },
+        {
+            "weight": 1,
+            "source": "Tortugas terrestres",
+            "target": "Ecosystem services"
+        },
+        {
+            "weight": 1,
+            "source": "Tortugas terrestres",
+            "target": "Socio-ecological systems"
+        },
+        {
+            "weight": 1,
+            "source": "Tortugas terrestres",
             "target": "Terrestrial reptiles"
+        },
+        {
+            "weight": 1,
+            "source": "Tortugas terrestres",
+            "target": "Education"
+        },
+        {
+            "weight": 1,
+            "source": "Tortugas terrestres",
+            "target": "2018"
         }
     ]
 }
