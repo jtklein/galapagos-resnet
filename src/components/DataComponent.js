@@ -82,22 +82,37 @@ class DataComponent extends Component {
   };
 
   filterMarkers = () => {
-    const { selectedNode } = this.state;
-    let markers = locations.filter(
+    const { selectedNode, connectedNodes } = this.state;
+    const allMarkers = locations.filter(
       (location) => location.Latitude && location.Longitude
     );
+    // If no node is selected show all markers
     if (!selectedNode) {
-      return markers;
+      return allMarkers;
     }
-    // TODO: put this hardcoded checks for "special" projects into the data pipeline
-    if (selectedNode.id.includes("AT:")) {
-      return markers.filter((marker) => marker.Nickname === "Aves Terrestres");
+    // Get all selected + connected nodes
+    const nodes = [selectedNode].concat(connectedNodes);
+    let markers = [];
+    // Map over this node set and collect all markers
+    for (let i = 0; i < nodes.length; i++) {
+      const node = nodes[i];
+      // TODO: put this hardcoded checks for "special" projects into the data pipeline
+      if (node.id.includes("AT:")) {
+        markers = markers.concat(allMarkers.filter(
+          (marker) => marker.Nickname === "Aves Terrestres"
+        ));
+        break;
+      }
+      // TODO: put this hardcoded checks for "special" projects into the data pipeline
+      if (node.id.includes("GV:")) {
+        markers = markers.concat(allMarkers.filter(
+          (marker) => marker.Nickname === "Galapagos Verde"
+        ));
+        break;
+      }
+      markers = markers.concat(allMarkers.filter((marker) => marker.Nickname === node.id));
     }
-    // TODO: put this hardcoded checks for "special" projects into the data pipeline
-    if (selectedNode.id.includes("GV:")) {
-      return markers.filter((marker) => marker.Nickname === "Galapagos Verde");
-    }
-    return markers.filter((marker) => marker.Nickname === selectedNode.id);
+    return markers;
   };
 
   render() {
