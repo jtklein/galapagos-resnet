@@ -52,7 +52,9 @@ export default function Network(el, props) {
     .data(linksOfSelectedNode)
     .join("line")
     .classed("link", true)
-    .attr("stroke", "lightgray")
+    .attr("stroke", function (d) {
+      return d.color;
+    })
     .attr("stroke-width", linkWidth);
 
   const node = g
