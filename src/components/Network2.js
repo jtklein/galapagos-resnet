@@ -129,35 +129,7 @@ export default function Network(el, props) {
           return isSelectedNode(d) ? d.color : null;
         })
         .attr("stroke-width", 1.5)
-    )
-    .call(
-      d3
-        .drag()
-        .on("start", dragstarted)
-        .on("drag", dragged)
-        .on("end", dragended)
     );
-
-  function dragstarted(event, d) {
-    if (!event.active) simulation.alphaTarget(0.3).restart();
-    d.fx = d.x;
-    d.fy = d.y;
-  }
-
-  function dragged(event, d) {
-      d.fx = clamp(event.x, 0, width);
-      d.fy = clamp(event.y, 0, height);
-  }
-
-  function dragended(event, d) {
-    if (!event.active) simulation.alphaTarget(0.0001);
-    d.fx = null;
-    d.fy = null;
-  }
-
-  function clamp(x, lo, hi) {
-    return x < lo ? lo : x > hi ? hi : x;
-  }
 
   const simulation = d3
     .forceSimulation()
