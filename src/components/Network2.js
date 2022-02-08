@@ -6,6 +6,9 @@ const nodeRadius = 8;
 const linkWidth = 2;
 
 export default function Network(el, props) {
+  const height = parseInt(d3.select("#network").style("height"));
+  const width = parseInt(d3.select("#network").style("width"));
+
   const anchorElement = d3.select(el);
   let svg = anchorElement.select("svg");
 
@@ -19,8 +22,19 @@ export default function Network(el, props) {
   const g = svg.select("g");
   g.selectAll("*").remove();
 
-  const height = parseInt(d3.select("#network").style("height"));
-  const width = parseInt(d3.select("#network").style("width"));
+  function zoomed({ transform }) {
+    g.attr("transform", transform);
+  }
+  svg.call(
+    d3
+      .zoom()
+      .extent([
+        [0, 0],
+        [width, height],
+      ])
+      .scaleExtent([1, 8])
+      .on("zoom", zoomed)
+  );
 
   svg.attr("width", width).attr("height", height);
 
