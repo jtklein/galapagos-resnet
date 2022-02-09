@@ -73,7 +73,7 @@ export default function Network(el, props) {
       return isConnectedNode(d) || isSelectedNode(d) ? 1 : 0.3;
     })
     .on("click", function (event, d) {
-      if (event.defaultPrevented) return; // dragged
+      if (event.defaultPrevented) return; // if panning or dragged
       delete d.fx;
       delete d.fy;
       simulation.alpha(1).restart();
@@ -129,6 +129,16 @@ export default function Network(el, props) {
           return isSelectedNode(d) ? d.color : null;
         })
         .attr("stroke-width", 1.5)
+    )
+    .call(
+      d3
+        .drag()
+        .on("drag", (event, d) => {
+          // Update node position
+          d.x = event.x;
+          d.y = event.y;
+        })
+        .on("start.update drag.update end.update", tick)
     );
 
   const simulation = d3
@@ -176,7 +186,6 @@ export default function Network(el, props) {
     const t = e.transform;
     const k = t.k / z.k;
     const point = center(e, this);
-
     if (k === 1) {
       // pure translation?
       g.call(zoomX.translateBy, (t.x - z.x) / tx().k, 0);
@@ -184,9 +193,7 @@ export default function Network(el, props) {
       // if not, we're zooming on a fixed point
       g.call(zoomX.scaleBy, k, point);
     }
-
     z = t;
-
     g.attr("transform", t);
   });
 
