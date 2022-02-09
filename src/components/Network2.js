@@ -22,20 +22,6 @@ export default function Network(el, props) {
   const g = svg.select("g");
   g.selectAll("*").remove();
 
-  function zoomed({ transform }) {
-    g.attr("transform", transform);
-  }
-  svg.call(
-    d3
-      .zoom()
-      .extent([
-        [0, 0],
-        [width, height],
-      ])
-      .scaleExtent([1, 8])
-      .on("zoom", zoomed)
-  );
-
   svg.attr("width", width).attr("height", height);
 
   const { data } = props;
@@ -122,7 +108,7 @@ export default function Network(el, props) {
         })
         .attr("dx", nodeRadius + 2)
         .attr("dy", nodeRadius / 2)
-        .attr("font-size", nodeRadius + (nodeRadius * 0.1))
+        .attr("font-size", nodeRadius + nodeRadius * 0.1)
         .attr("text-decoration", function (d) {
           if (!props.selectedNode) {
             return "none";
@@ -166,4 +152,44 @@ export default function Network(el, props) {
     node.attr("transform", (d) => `translate(${d.x}, ${d.y})`);
   }
 
+  // Zoom related
+  // center the action (handles multitouch)
+  function center(event, target) {
+    if (event.sourceEvent) {
+      const p = d3.pointers(event, target);
+      return [d3.mean(p, (d) => d[0]), d3.mean(p, (d) => d[1])];
+    }
+    return [width / 2, height / 2];
+  }
+
+  // z holds a copy of the previous transform, so we can track its changes
+  let z = d3.zoomIdentity;
+
+  // set up the ancillary zoom and an accessor for the transform
+  const zoomX = d3.zoom()
+    .extent([[0, 0],[width, height]])
+    .scaleExtent([1, 8]);
+  const tx = () => d3.zoomTransform(g.node());
+
+  // active zooming
+  const zoom = d3.zoom().on("zoom", function (e) {
+    const t = e.transform;
+    const k = t.k / z.k;
+    const point = center(e, this);
+
+    if (k === 1) {
+      // pure translation?
+      g.call(zoomX.translateBy, (t.x - z.x) / tx().k, 0);
+    } else {
+      // if not, we're zooming on a fixed point
+      g.call(zoomX.scaleBy, k, point);
+    }
+
+    z = t;
+
+    g.attr("transform", t);
+  });
+
+  svg.call(zoom).call(zoom.transform, d3.zoomIdentity.scale(1));
+  // End of zoom
 }
