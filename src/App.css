@@ -7,6 +7,51 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald';
 }
 
+.appbar-logo {
+  height: 56px;
+}
+
+.grid-item {
+  padding: 20px;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section-0 {
+  margin-top: 20px !important;
+  position: relative;
+}
+
+.section-0::after {
+  content: "";
+  background: center / contain no-repeat url(logo.png);
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.section-1 {
+}
+
+@media only screen and (max-width: 600px) {
+  .section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.section-2 {
+  padding: 0px;
+  background-color: #f6f6f6;
+}
+
 .network {
   position: relative;
 }
