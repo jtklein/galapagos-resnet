@@ -7,6 +7,8 @@ import { ThemeProvider } from "@material-ui/styles";
 import App from "./App";
 import theme from "./theme";
 
+import "./i18n";
+
 import "./index.css";
 
 
