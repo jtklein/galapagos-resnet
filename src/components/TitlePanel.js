@@ -24,7 +24,7 @@ const TitlePanel = () => {
                 i18n.changeLanguage("es");
               }}
             >
-              En español
+              Español
             </Button>
           ) : (
             <Button
@@ -33,7 +33,7 @@ const TitlePanel = () => {
                 i18n.changeLanguage("en");
               }}
             >
-              In English
+              English
             </Button>
           )}
           <div
