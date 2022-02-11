@@ -3,7 +3,7 @@ import * as d3 from "d3";
 import './Network.css';
 
 const nodeRadius = 8;
-const linkWidth = 2;
+const linkWidth = 1;
 
 export default function Network(el, props) {
   const themeSet = props.selectedThemes && props.selectedThemes.length !== 0;
