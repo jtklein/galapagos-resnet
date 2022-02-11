@@ -61,7 +61,7 @@ class NetworkContainer extends Component {
         <div
             id="network"
             ref={this.refNetworkComponent}
-            style={{ height, maxWidth: height, margin: "0 auto" }}
+            style={{height, maxWidth: "100%", margin: "0 auto" }}
         />
     );
   }
