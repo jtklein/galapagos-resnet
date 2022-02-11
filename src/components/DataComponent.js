@@ -10,6 +10,8 @@ import MapComponent from "./MapComponent";
 import { data } from "./RI";
 import { locations } from "./RI_locations";
 
+import "./DataComponent.css";
+
 const initialData = Object.assign({}, data);
 const legendOpacity = 0.4;
 
