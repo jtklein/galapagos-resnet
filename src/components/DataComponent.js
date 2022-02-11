@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import classNames from "classnames";
 
 import NetworkContainer from "./NetworkContainer2";
-import MapComponent from "./MapComponent";
+// import MapComponent from "./MapComponent";
 
 import { data } from "./RI";
 import { locations } from "./RI_locations";
@@ -117,6 +117,40 @@ const Legend = ({ selectedThemes, onThemeClicked, mobile }) => {
         </Grid>
       ))}
     </Grid>
+  );
+};
+
+const NodeInfo = ({ node }) => {
+  const { i18n } = useTranslation();
+  const theme = useTheme();
+
+  return (
+      <div
+        style={{
+          marginTop: 40,
+          padding: 5,
+          backgroundColor: theme.palette.primary.main,
+          color: theme.palette.primary.contrastText,
+          fontSize: theme.typography.pxToRem(12),
+          border: `1px solid ${theme.palette.primary.contrastText}`,
+        }}
+      >
+        {!node ? (
+          <div>
+            <strong>{i18n.t("selectANode")}</strong>
+            <br />
+            {i18n.t("toSeeMoreInformation")}
+          </div>
+        ) : (
+          <div>
+            <strong>
+              {node.id}
+            </strong>
+            <br />
+              {node.label}
+          </div>
+        )}
+      </div>
   );
 };
 
@@ -251,33 +285,36 @@ class DataComponent extends Component {
       connectedLinks,
       selectedThemes,
     } = this.state;
-    const markers = this.filterMarkers();
+    // const markers = this.filterMarkers();
     return (
-      <Grid container>
-        <Grid item className="grid-item" xs={2}>
-          <Legend
-            selectedThemes={selectedThemes}
-            onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
-          />
-        </Grid>
-
-        <Grid item className="grid-item" xs={5}>
-          <NetworkContainer
-            data={shownData}
-            selectedNode={selectedNode}
-            connectedNodes={connectedNodes}
-            connectedLinks={connectedLinks}
-            selectedThemes={selectedThemes}
-            onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
-          />
-        </Grid>
-        <Grid item className="grid-item" xs={5}>
+      <div>
+        <Grid container>
+          <Grid item className="grid-item" xs={2}>
+            <Legend
+              selectedThemes={selectedThemes}
+              onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
+            />
+          </Grid>
+          {/* xs is sum of 12 */}
+          <Grid item className="grid-item" xs={10}>
+            <NetworkContainer
+              data={shownData}
+              selectedNode={selectedNode}
+              connectedNodes={connectedNodes}
+              connectedLinks={connectedLinks}
+              selectedThemes={selectedThemes}
+              onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
+            />
+          </Grid>
+          {/* <Grid item className="grid-item" xs={5}>
           <MapComponent
             markers={markers}
             onMarkerClicked={(m, cb) => this.onMarkerClicked(m, cb)}
           />
+        </Grid> */}
         </Grid>
-      </Grid>
+        <NodeInfo node={selectedNode} />
+      </div>
     );
   }
 };
