@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import Grid from "@material-ui/core/Grid";
+import { useTheme } from "@material-ui/core/styles";
+import { useTranslation } from "react-i18next";
+import classNames from "classnames";
 
 import NetworkContainer from "./NetworkContainer2";
 import MapComponent from "./MapComponent";
@@ -8,6 +11,112 @@ import { data } from "./RI";
 import { locations } from "./RI_locations";
 
 const initialData = Object.assign({}, data);
+const legendOpacity = 0.4;
+
+const themes = {
+  1: {
+    labelEN: "Projects",
+    color: "#660000",
+  },
+  2: {
+    labelEN: "Years",
+    color: "#ED6D22",
+  },
+  3: {
+    labelEN: "Islands",
+    color: "#cc0000",
+  },
+  4: {
+    labelEN: "Species",
+    color: "#ea9999",
+  },
+  5: {
+    labelEN: "Ecology and conservation",
+    color: "#1c4587",
+  },
+  6: {
+    labelEN: "Terrestrial fauna and flora",
+    color: "#00FA9A",
+  },
+  7: {
+    labelEN: "Marine/coastal fauna and flora",
+    color: "#8A2BE2",
+  },
+  8: {
+    labelEN: "Climate change",
+    color: "#ADFF2F",
+  },
+  9: {
+    labelEN: "History",
+    color: "#FF8C00",
+  },
+  10: {
+    labelEN: "Infrastructure, energy and technology",
+    color: "#FF69B4",
+  },
+  11: {
+    labelEN: "Food security",
+    color: "#008B8B",
+  },
+  12: {
+    labelEN: "Community",
+    color: "#00FFFF",
+  },
+  13: {
+    labelEN: "Politics, economics and crime",
+    color: "#FFFF00",
+  },
+};
+
+const Legend = ({ selectedThemes, onThemeClicked, mobile }) => {
+  const colorTheme = useTheme();
+  const { i18n } = useTranslation();
+
+  return (
+    <Grid
+      container
+      direction={!mobile ? "column" : "row"}
+      justifyContent="center"
+      style={{
+        padding: 5,
+        backgroundColor: colorTheme.palette.primary.main,
+        color: colorTheme.palette.primary.contrastText,
+        fontSize: colorTheme.typography.pxToRem(12),
+        border: `1px solid ${colorTheme.palette.primary.contrastText}`,
+      }}
+    >
+      {Object.entries(themes).map(([key, theme]) => (
+        <Grid
+          item
+          key={theme.color}
+          className={classNames("link-item", "clickable")}
+          style={{
+            opacity:
+              !selectedThemes ||
+              selectedThemes.length === 0 ||
+              selectedThemes.indexOf(theme.color) !== -1
+                ? 1
+                : legendOpacity,
+            display: "flex",
+          }}
+          onClick={() => onThemeClicked(theme.color)}
+        >
+          <span
+            width={50}
+            style={{
+              border: `1px solid ${theme.color}`,
+              backgroundColor: theme.color,
+              marginRight: 4,
+            }}
+          >
+            &nbsp;&nbsp;&nbsp;
+          </span>
+          {i18n.language !== "es" ? theme.labelEN : theme.labelES}
+        </Grid>
+      ))}
+    </Grid>
+  );
+};
 
 class DataComponent extends Component {
   constructor(props) {
@@ -17,6 +126,7 @@ class DataComponent extends Component {
       shownData: initialData,
       selectedNode: undefined,
       connectedNodes: undefined,
+      selectedThemes: [],
     };
   }
 
@@ -101,39 +211,65 @@ class DataComponent extends Component {
       const node = nodes[i];
       // TODO: put this hardcoded checks for "special" projects into the data pipeline
       if (node.id.includes("AT:")) {
-        markers = markers.concat(allMarkers.filter(
-          (marker) => marker.Nickname === "Aves Terrestres"
-        ));
+        markers = markers.concat(
+          allMarkers.filter((marker) => marker.Nickname === "Aves Terrestres")
+        );
         break;
       }
       // TODO: put this hardcoded checks for "special" projects into the data pipeline
       if (node.id.includes("GV:")) {
-        markers = markers.concat(allMarkers.filter(
-          (marker) => marker.Nickname === "Galapagos Verde"
-        ));
+        markers = markers.concat(
+          allMarkers.filter((marker) => marker.Nickname === "Galapagos Verde")
+        );
         break;
       }
-      markers = markers.concat(allMarkers.filter((marker) => marker.Nickname === node.id));
+      markers = markers.concat(
+        allMarkers.filter((marker) => marker.Nickname === node.id)
+      );
     }
     return markers;
   };
 
+  onThemeClicked = (themeColor) => {
+    const { selectedThemes } = this.state;
+    const indexOfTheme = selectedThemes.indexOf(themeColor);
+    this.setState({
+      selectedThemes:
+        indexOfTheme !== -1
+          ? selectedThemes.filter((d, index) => index !== indexOfTheme)
+          : selectedThemes.concat(themeColor),
+    });
+  };
+
   render() {
-    const { shownData, selectedNode, connectedNodes, connectedLinks } =
-      this.state;
+    const {
+      shownData,
+      selectedNode,
+      connectedNodes,
+      connectedLinks,
+      selectedThemes,
+    } = this.state;
     const markers = this.filterMarkers();
     return (
       <Grid container>
-        <Grid item className="grid-item" xs={6}>
+        <Grid item className="grid-item" xs={2}>
+          <Legend
+            selectedThemes={selectedThemes}
+            onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
+          />
+        </Grid>
+
+        <Grid item className="grid-item" xs={5}>
           <NetworkContainer
             data={shownData}
             selectedNode={selectedNode}
             connectedNodes={connectedNodes}
             connectedLinks={connectedLinks}
+            selectedThemes={selectedThemes}
             onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
           />
         </Grid>
-        <Grid item className="grid-item" xs={6}>
+        <Grid item className="grid-item" xs={5}>
           <MapComponent
             markers={markers}
             onMarkerClicked={(m, cb) => this.onMarkerClicked(m, cb)}

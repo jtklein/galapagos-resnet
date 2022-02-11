@@ -6,6 +6,14 @@ const nodeRadius = 8;
 const linkWidth = 2;
 
 export default function Network(el, props) {
+  const themeSet = props.selectedThemes && props.selectedThemes.length !== 0;
+  function isSelectedTheme(node) {
+    if (!themeSet) {
+      return false;
+    }
+    return props.selectedThemes.indexOf(node.color) !== -1;
+  }
+
   const height = parseInt(d3.select("#network").style("height"));
   const width = parseInt(d3.select("#network").style("width"));
 
@@ -88,6 +96,9 @@ export default function Network(el, props) {
         .attr("stroke-width", 1.5)
         .attr("r", nodeRadius)
         .attr("fill", function (d) {
+          if (themeSet) {
+            return isSelectedTheme(d) ? d.color : "lightgray";
+          }
           if (!props.selectedNode) {
             return d.color;
           }
@@ -125,6 +136,9 @@ export default function Network(el, props) {
         .attr("class", "highlight-circle")
         .attr("r", (d) => nodeRadius + 3)
         .attr("fill", "none")
+        .attr("stroke", (d) => {
+          return isSelectedTheme(d) ? d.color : null;
+        })
         .attr("stroke", (d) => {
           return isSelectedNode(d) ? d.color : null;
         })

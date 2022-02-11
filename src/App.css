@@ -55,3 +55,14 @@ h1, h2, h3, h4, h5, h6 {
 .network {
   position: relative;
 }
+
+@media only screen and (min-width: 600px) {
+  .clickable {
+    cursor: pointer;
+  }
+
+  .clickable:hover {
+    transform: scale(1.1);
+  }
+}
+

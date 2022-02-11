@@ -20,7 +20,7 @@ class NetworkContainer extends Component {
     this.state = {
       data,
       selectedNode: undefined,
-      selectedGoals: [],
+      selectedThemes: [],
       selectedLinkWeights: [],
       selectedDirection: undefined,
       width: undefined,
