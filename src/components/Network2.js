@@ -60,6 +60,7 @@ export default function Network(el, props) {
     .data(linksOfSelectedNode)
     .join("line")
     .classed("link", true)
+    .attr("opacity", 0.6)
     .attr("stroke", function (d) {
       return d.color;
     })
