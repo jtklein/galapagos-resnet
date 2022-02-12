@@ -119,7 +119,7 @@ export default function Network(el, props) {
         })
         .attr("dx", nodeRadius + 2)
         .attr("dy", nodeRadius / 2)
-        .attr("font-size", nodeRadius + nodeRadius * 0.1)
+        .attr("font-size", nodeRadius * 1.5)
         .attr("text-decoration", function (d) {
           if (!props.selectedNode) {
             return "none";
@@ -158,7 +158,7 @@ export default function Network(el, props) {
   const simulation = d3
     .forceSimulation()
     .nodes(data.nodes)
-    .force("charge", d3.forceManyBody().strength(-200))
+    .force("charge", d3.forceManyBody().strength(-300))
     .force("center", d3.forceCenter(width / 2, height / 2))
     .force(
       "link",
