@@ -1,5 +1,6 @@
 .link-item {
   align-items: center;
+  text-align: left;
   padding: 5px;
   font-size: 1em;
 }
