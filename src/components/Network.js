@@ -2,16 +2,20 @@ import * as d3 from "d3";
 
 import './Network.css';
 
-const nodeRadius = 20;
-const linkWidth = 2;
+const nodeRadius = 8;
+const linkWidth = 1;
 
-export default function Network(el, properties) {
-  const props = Object.assign(
-    {
-      nodeColor: (d) => "lightgray",
-    },
-    properties
-  );
+export default function Network(el, props) {
+  const themeSet = props.selectedThemes && props.selectedThemes.length !== 0;
+  function isSelectedTheme(node) {
+    if (!themeSet) {
+      return false;
+    }
+    return props.selectedThemes.indexOf(node.color) !== -1;
+  }
+
+  const height = parseInt(d3.select("#network").style("height"));
+  const width = parseInt(d3.select("#network").style("width"));
 
   const anchorElement = d3.select(el);
   let svg = anchorElement.select("svg");
@@ -26,32 +30,13 @@ export default function Network(el, properties) {
   const g = svg.select("g");
   g.selectAll("*").remove();
 
-  const height = parseInt(d3.select("#network").style("height"));
-  const width = parseInt(d3.select("#network").style("width"));
-
   svg.attr("width", width).attr("height", height);
 
   const { data } = props;
 
   let linksOfSelectedNode = data.links;
-  if (props.selectedNode) {
-    linksOfSelectedNode = data.links.filter((link) =>
-      isLinkOfSelectedNode(link)
-    );
-  }
-
-  function isLinkOfNode(link, node) {
-    return (
-      ((link.source.id || link.source) === node.id) |
-      ((link.target.id || link.target) === node.id)
-    );
-  }
-
-  function isLinkOfSelectedNode(link) {
-    if (!props.selectedNode) {
-      return false;
-    }
-    return isLinkOfNode(link, props.selectedNode);
+  if (props.selectedNode && props.connectedLinks) {
+    linksOfSelectedNode = props.connectedLinks;
   }
 
   function isSelectedNode(node) {
@@ -61,58 +46,25 @@ export default function Network(el, properties) {
     return node.id === props.selectedNode.id;
   }
 
-  const nodeSize = (d) => {
-    d.radius = nodeRadius;
-    return nodeRadius;
-  };
+  function isConnectedNode(node) {
+    if (!props.selectedNode || !props.connectedNodes) {
+      return false;
+    }
+    const connectedIDs = props.connectedNodes.map((n) => n.id);
+    return connectedIDs.includes(node.id);
+  }
 
-  const draw = () => {
-    path.attr("d", function (d) {
-      const sourceNode = data.nodes.filter((node) => node.id === d.source)[0];
-      const targetNode = data.nodes.filter((node) => node.id === d.target)[0];
-      // Total difference in x and y from source to target
-      const dx = targetNode.x - sourceNode.x;
-      const dy = targetNode.y - sourceNode.y;
-      // Length of path from center of source node to center of target node
-      const dr = Math.sqrt(dx * dx + dy * dy);
-
-      // x and y distances from center to outside edge of target node
-      const offsetX = (dx * targetNode.radius) / dr;
-      const offsetY = (dy * targetNode.radius) / dr;
-
-      return `M${
-        sourceNode.x
-      },${sourceNode.y}A${dr * 1.5},${dr * 1.5} 0 0,1 ${targetNode.x - offsetX},${targetNode.y - offsetY}`;
-    });
-
-    node.attr("transform", (d) => `translate(${d.x}, ${d.y})`);
-  };
-
-  // The links between the nodes
-  const path = g
+  const link = g
     .append("g")
     .selectAll(".link")
     .data(linksOfSelectedNode)
-    .enter()
-    .append("path")
-    .attr("class", "link")
-    .attr("stroke", "lightgray")
-    .attr("stroke-width", linkWidth)
-    .style("fill", "none")
+    .join("line")
+    .classed("link", true)
+    .attr("opacity", 0.6)
     .attr("stroke", function (d) {
-      // If there is no node selected, all links are grey
-      if (!props.selectedNode) {
-        return "lightgray";
-      }
-      // Only color links that are connected to the highlighted node
-      return isLinkOfSelectedNode(d) ? props.linkColor(d) : "lightgray";
+      return d.color;
     })
-    .attr("opacity", function (d) {
-      if (!props.selectedNode) {
-        return 0.3;
-      }
-      return isLinkOfSelectedNode(d) ? 1 : 0.3;
-    });
+    .attr("stroke-width", linkWidth);
 
   const node = g
     .selectAll(".node")
@@ -123,8 +75,17 @@ export default function Network(el, properties) {
     .append("g")
     .attr("class", "node")
     .attr("cursor", "pointer")
-    .on("click", function (event) {
-      if (event.defaultPrevented) return; // dragged
+    .attr("opacity", function (d) {
+      if (!props.selectedNode) {
+        return 1;
+      }
+      return isConnectedNode(d) || isSelectedNode(d) ? 1 : 0.3;
+    })
+    .on("click", function (event, d) {
+      if (event.defaultPrevented) return; // if panning or dragged
+      delete d.fx;
+      delete d.fy;
+      simulation.alpha(1).restart();
       // Get this node's data
       const datum = d3.select(this).datum();
       props.onClick(datum);
@@ -134,45 +95,123 @@ export default function Network(el, properties) {
         .append("circle")
         .attr("stroke", "#fff")
         .attr("stroke-width", 1.5)
-        .attr("r", (d) => nodeSize(d))
+        .attr("r", nodeRadius)
         .attr("fill", function (d) {
+          if (themeSet) {
+            return isSelectedTheme(d) ? d.color : "lightgray";
+          }
           if (!props.selectedNode) {
             return d.color;
           }
-          return isSelectedNode(d) ? d.color : "lightgray";
+          return isConnectedNode(d) || isSelectedNode(d)
+            ? d.color
+            : "lightgray";
         })
     )
     // TODO: Place a call iterating over these after the first round of mapping, so that the labels are alwys above other nodes
     .call((g) =>
       g
         .append("text")
-        .attr("fill", "#000")
-        .attr("dx", 20)
-        .attr("dy", 20)
+        .attr("fill", function (d) {
+          if (!props.selectedNode) {
+            return "#000";
+          }
+          return isConnectedNode(d) || isSelectedNode(d) ? "#000" : "lightgray";
+        })
+        .attr("dx", nodeRadius + 2)
+        .attr("dy", nodeRadius / 2)
+        .attr("font-size", nodeRadius * 1.5)
+        .attr("text-decoration", function (d) {
+          if (!props.selectedNode) {
+            return "none";
+          }
+          return isSelectedNode(d) ? "underline" : "none";
+        })
         .text((d) => d.id)
+    )
+    .call((g) =>
+      g
+        // A circle to highlight the selected node
+        // TODO: this is pretty inefficient because it adds nodes' size worth of amount of extra invisible circles
+        .append("circle")
+        .attr("class", "highlight-circle")
+        .attr("r", (d) => nodeRadius + 3)
+        .attr("fill", "none")
+        .attr("stroke", (d) => {
+          return isSelectedTheme(d) ? d.color : null;
+        })
+        .attr("stroke", (d) => {
+          return isSelectedNode(d) ? d.color : null;
+        })
+        .attr("stroke-width", 1.5)
     )
     .call(
       d3
         .drag()
         .on("drag", (event, d) => {
-          // Restrict dragging to the svg rectangle
-          let x = event.x;
-          if (x + d.radius > width) {
-            x = width - d.radius;
-          } else if (event.x - d.radius < 0) {
-            x = 0 + d.radius;
-          }
-          let y = event.y;
-          if (y + d.radius > height) {
-            y = height - d.radius;
-          } else if (event.y - d.radius < 0) {
-            y = 0 + d.radius;
-          }
           // Update node position
-          d.x = x;
-          d.y = y;
+          d.x = event.x;
+          d.y = event.y;
         })
-        .on("start.update drag.update end.update", draw)
+        .on("start.update drag.update end.update", tick)
     );
-  draw();
+
+  const simulation = d3
+    .forceSimulation()
+    .nodes(data.nodes)
+    .force("charge", d3.forceManyBody().strength(-300))
+    .force("center", d3.forceCenter(width / 2, height / 2))
+    .force(
+      "link",
+      d3.forceLink(data.links).id((d) => d.id)
+    )
+    .force("collide", d3.forceCollide())
+    .on("tick", tick);
+
+  function tick() {
+    link
+      .attr("x1", (d) => d.source.x)
+      .attr("y1", (d) => d.source.y)
+      .attr("x2", (d) => d.target.x)
+      .attr("y2", (d) => d.target.y);
+    node.attr("transform", (d) => `translate(${d.x}, ${d.y})`);
+  }
+
+  // Zoom related
+  // center the action (handles multitouch)
+  function center(event, target) {
+    if (event.sourceEvent) {
+      const p = d3.pointers(event, target);
+      return [d3.mean(p, (d) => d[0]), d3.mean(p, (d) => d[1])];
+    }
+    return [width / 2, height / 2];
+  }
+
+  // z holds a copy of the previous transform, so we can track its changes
+  let z = d3.zoomIdentity;
+
+  // set up the ancillary zoom and an accessor for the transform
+  const zoomX = d3.zoom()
+    .extent([[0, 0],[width, height]])
+    .scaleExtent([1, 8]);
+  const tx = () => d3.zoomTransform(g.node());
+
+  // active zooming
+  const zoom = d3.zoom().on("zoom", function (e) {
+    const t = e.transform;
+    const k = t.k / z.k;
+    const point = center(e, this);
+    if (k === 1) {
+      // pure translation?
+      g.call(zoomX.translateBy, (t.x - z.x) / tx().k, 0);
+    } else {
+      // if not, we're zooming on a fixed point
+      g.call(zoomX.scaleBy, k, point);
+    }
+    z = t;
+    g.attr("transform", t);
+  });
+
+  svg.call(zoom).call(zoom.transform, d3.zoomIdentity.scale(1));
+  // End of zoom
 }
