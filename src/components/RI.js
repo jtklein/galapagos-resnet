@@ -137,7 +137,7 @@ export const data = {
     },
     {
       color: "#ED6D22",
-      id: 2018,
+      id: "2018",
     },
     {
       color: "#cc0000",
@@ -292,7 +292,7 @@ export const data = {
       id: "El Niño/La Niña event",
     },
     {
-      color: "#3c78d8",
+      color: "#cccccc",
       id: "Meterology",
     },
     {
@@ -404,7 +404,7 @@ export const data = {
       id: "Marine invertebrates",
     },
     {
-      color: "#8A2BE2",
+      color: "#cccccc",
       id: "Marine microogarnisms",
     },
     {
@@ -595,10 +595,6 @@ export const data = {
       color: "#00FA9A",
       id: "Terrestrial reptiles",
     },
-    {
-      color: "#cccccc",
-      id: "2018",
-    },
   ],
   links: [
     {
@@ -657,7 +653,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "AT: Golondrina",
       target: "2018",
     },
@@ -729,7 +725,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "AT: Passerines",
       target: "2018",
     },
@@ -783,7 +779,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "AT: Communidad",
       target: "2018",
     },
@@ -879,7 +875,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "AT: Pajaro brujo",
       target: "2018",
     },
@@ -903,7 +899,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "AT: Bird health",
       target: "2018",
     },
@@ -1059,7 +1055,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Philornis downsi",
       target: "2018",
     },
@@ -1125,7 +1121,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Polistes versicolor",
       target: "2018",
     },
@@ -1215,7 +1211,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Pinzon de manglar",
       target: "2018",
     },
@@ -1311,7 +1307,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Aves en la costera",
       target: "2018",
     },
@@ -1383,7 +1379,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#3c78d8",
+      color: "#cccccc",
       source: "Aves marinas",
       target: "Meterology",
     },
@@ -1449,7 +1445,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Aves marinas",
       target: "2018",
     },
@@ -1491,7 +1487,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Aves en carretera",
       target: "2018",
     },
@@ -1659,7 +1655,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Flamencos",
       target: "2018",
     },
@@ -1725,7 +1721,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Scalesia restoration",
       target: "2018",
     },
@@ -1785,7 +1781,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Imagenes satelitales",
       target: "2018",
     },
@@ -1857,7 +1853,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Ranas introducidas",
       target: "2018",
     },
@@ -1923,7 +1919,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Cascarilla",
       target: "2018",
     },
@@ -1983,7 +1979,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#8A2BE2",
+      color: "#cccccc",
       source: "Ecologico submareal",
       target: "Marine microogarnisms",
     },
@@ -2013,7 +2009,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Ecologico submareal",
       target: "2018",
     },
@@ -2115,7 +2111,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#8A2BE2",
+      color: "#cccccc",
       source: "Especies invasoras marinas",
       target: "Marine microogarnisms",
     },
@@ -2133,7 +2129,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Especies invasoras marinas",
       target: "2018",
     },
@@ -2205,7 +2201,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Tortuga verde",
       target: "2018",
     },
@@ -2343,7 +2339,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Pesquerias",
       target: "2018",
     },
@@ -2427,7 +2423,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#8A2BE2",
+      color: "#cccccc",
       source: "Montes submarinos",
       target: "Marine microogarnisms",
     },
@@ -2457,7 +2453,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Montes submarinos",
       target: "2018",
     },
@@ -2535,7 +2531,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "GV: Practicas agricolas",
       target: "2018",
     },
@@ -2685,7 +2681,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "GV: Restauracion ecologica",
       target: "2018",
     },
@@ -2775,7 +2771,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Tiburones en la RMG",
       target: "2018",
     },
@@ -2853,7 +2849,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#cccccc",
+      color: "#ED6D22",
       source: "Tortugas terrestres",
       target: "2018",
     },
