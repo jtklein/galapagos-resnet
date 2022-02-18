@@ -3,7 +3,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { isMobile } from "react-device-detect";
 
 import logo from "../logo.png";
@@ -45,11 +45,7 @@ const TitlePanel = () => {
             }}
           >
             <Typography variant="h5" gutterBottom style={{ flexGrow: 1 }}>
-              <Trans i18nKey="title">
-                An interactive tool to explore the
-                <strong>Sustainable Development Goals</strong> in{" "}
-                <strong>Galápagos</strong>
-              </Trans>
+              {t("title")}
             </Typography>
             {!isMobile ? (
               <Typography
