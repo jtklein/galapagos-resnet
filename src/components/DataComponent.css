@@ -9,3 +9,8 @@
     font-size: 0.8em;
   }
 }
+
+hr.solid {
+  border-top: 1px solid;
+  width: 90%;
+}

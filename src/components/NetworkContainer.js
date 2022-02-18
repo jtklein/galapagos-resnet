@@ -3,13 +3,6 @@ import React, { Component } from "react";
 import Network from "./Network";
 
 class NetworkContainer extends Component {
-  constructor(props) {
-    super(props);
-    this.refNetworkComponent = React.createRef();
-    this.state = {
-    };
-  }
-
   async componentDidMount() {
     // Add an event listener that fires when the window get's resized
     window.addEventListener("resize", this.onResize, false);
@@ -38,13 +31,14 @@ class NetworkContainer extends Component {
 
   renderNetwork() {
     const {
+      refNetworkComponent,
       data,
       selectedNode,
       connectedNodes,
       connectedLinks,
       selectedThemes,
     } = this.props;
-    Network(this.refNetworkComponent.current, {
+    Network(refNetworkComponent.current, {
       data,
       selectedNode,
       connectedNodes,
@@ -60,7 +54,7 @@ class NetworkContainer extends Component {
     return (
         <div
             id="network"
-            ref={this.refNetworkComponent}
+            ref={this.props.refNetworkComponent}
             style={{height, maxWidth: "100%", margin: "0 auto" }}
         />
     );

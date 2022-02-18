@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import Grid from "@material-ui/core/Grid";
-import { useTheme } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+import IconDownload from "@material-ui/icons/CloudDownload";
+import { withStyles, useTheme } from "@material-ui/core/styles";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { saveAs } from "file-saver";
+
 import { useTranslation } from "react-i18next";
 import classNames from "classnames";
 
@@ -70,8 +75,7 @@ const themes = {
   },
 };
 
-const Legend = ({ selectedThemes, onThemeClicked, mobile }) => {
-  const colorTheme = useTheme();
+const ThemeLegend = ({ selectedThemes, onThemeClicked, mobile }) => {
   const { i18n } = useTranslation();
 
   return (
@@ -81,10 +85,6 @@ const Legend = ({ selectedThemes, onThemeClicked, mobile }) => {
       justifyContent="center"
       style={{
         padding: 5,
-        backgroundColor: colorTheme.palette.primary.main,
-        color: colorTheme.palette.primary.contrastText,
-        fontSize: colorTheme.typography.pxToRem(12),
-        border: `1px solid ${colorTheme.palette.primary.contrastText}`,
       }}
     >
       {Object.entries(themes).map(([key, theme]) => (
@@ -116,6 +116,107 @@ const Legend = ({ selectedThemes, onThemeClicked, mobile }) => {
           {i18n.language !== "es" ? theme.labelEN : theme.labelES}
         </Grid>
       ))}
+    </Grid>
+  );
+};
+
+const DownloadButton = (props) => {
+  const { t } = useTranslation();
+  const matches = useMediaQuery("(max-width:1000px)");
+
+  const CustomButton = withStyles((theme) => ({
+    root: {
+      fontSize: "0.9em",
+      color: theme.palette.primary.contrastText,
+    },
+  }))(Button);
+
+  return (
+    <div
+      style={{
+        padding: 5,
+      }}
+    >
+      {matches && !props.mobile ? (
+        <CustomButton
+          variant="text"
+          size="small"
+          download="ods-galapagos.svg"
+          onClick={props.onClick}
+        >
+          <IconDownload fontSize="large" />
+        </CustomButton>
+      ) : (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: props.mobile ? "row" : "column",
+          }}
+        >
+          <IconDownload fontSize="medium" />
+          <CustomButton
+            variant="text"
+            size="small"
+            download="ods-galapagos.svg"
+            onClick={props.onClick}
+          >
+            {t("download")}
+          </CustomButton>
+        </div>
+      )}
+    </div>
+  );
+};
+
+const Legend = ({
+  selectedThemes,
+  onThemeClicked,
+  onClickSaveNetworkSVG,
+}) => {
+  const theme = useTheme();
+  return (
+    <Grid
+      container
+      direction="column"
+      justifyContent="space-evenly"
+      alignItems="stretch"
+      style={{
+        height: "100%",
+        padding: 5,
+        backgroundColor: theme.palette.primary.main,
+        color: theme.palette.primary.contrastText,
+        fontSize: theme.typography.pxToRem(12),
+        border: `1px solid ${theme.palette.primary.contrastText}`,
+      }}
+    >
+      <Grid item xs style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
+        <ThemeLegend
+          selectedThemes={selectedThemes}
+          onThemeClicked={(themeColor) => onThemeClicked(themeColor)}
+        />
+      </Grid>
+      <Grid
+        item
+        xs
+        style={{ display: "contents", flexBasis: "auto", padding: 5 }}
+      >
+        <hr class="solid"></hr>
+      </Grid>
+      <Grid
+        item
+        xs
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexBasis: "auto",
+          padding: 0,
+        }}
+      >
+        <DownloadButton onClick={onClickSaveNetworkSVG} />
+      </Grid>
     </Grid>
   );
 };
@@ -277,6 +378,29 @@ class DataComponent extends Component {
     });
   };
 
+  generateSVGContent = (parent) => {
+    let svgContent = parent.innerHTML;
+    svgContent = svgContent.replace(
+      /^<svg/,
+      [
+        "<svg",
+        'xmlns="http://www.w3.org/2000/svg"',
+        'xmlns:xlink="http://www.w3.org/1999/xlink"',
+        'version="1.1"',
+      ].join(" ")
+    );
+    svgContent = svgContent.replace(/<\/svg>[\s\S]*/, "</svg>");
+    // Safari inserts NS1/NS2 namespaces as xlink is not defined within the svg html
+    svgContent = svgContent.replace("NS1", "xlink");
+    svgContent = svgContent.replace("NS2", "xlink");
+    return new Blob([svgContent], { type: "image/svg+xml" });
+  };
+
+  onClickSaveNetworkSVG = () => {
+    const blob = this.generateSVGContent(this.refNetworkComponent.current);
+    saveAs(blob, "rp-galapagos.svg");
+  };
+
   render() {
     const {
       shownData,
@@ -293,11 +417,13 @@ class DataComponent extends Component {
             <Legend
               selectedThemes={selectedThemes}
               onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
+              onClickSaveNetworkSVG={this.onClickSaveNetworkSVG}
             />
           </Grid>
           {/* xs is sum of 12 */}
           <Grid item className="grid-item" xs={10}>
             <NetworkContainer
+              refNetworkComponent={this.refNetworkComponent}
               data={shownData}
               selectedNode={selectedNode}
               connectedNodes={connectedNodes}
