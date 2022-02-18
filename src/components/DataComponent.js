@@ -4,7 +4,7 @@ import { useTheme } from "@material-ui/core/styles";
 import { useTranslation } from "react-i18next";
 import classNames from "classnames";
 
-import NetworkContainer from "./NetworkContainer2";
+import NetworkContainer from "./NetworkContainer";
 // import MapComponent from "./MapComponent";
 
 import { data } from "./RI";
