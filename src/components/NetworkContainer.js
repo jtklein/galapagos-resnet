@@ -49,7 +49,7 @@ class NetworkContainer extends Component {
   }
 
   render() {
-    const height = window.innerHeight;
+    const height = window.innerHeight - 32;
 
     return (
         <div
