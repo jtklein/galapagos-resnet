@@ -202,7 +202,7 @@ const Legend = ({
         xs
         style={{ display: "contents", flexBasis: "auto", padding: 5 }}
       >
-        <hr class="solid"></hr>
+        <hr className="solid"></hr>
       </Grid>
       <Grid
         item
