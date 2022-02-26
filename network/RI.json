@@ -25,11 +25,11 @@
         },
         {
             "color": "#660000",
-            "id": "Philornis downsi"
+            "id": "Philornis"
         },
         {
             "color": "#660000",
-            "id": "Polistes versicolor"
+            "id": "Avispas"
         },
         {
             "color": "#660000",
@@ -106,6 +106,10 @@
         {
             "color": "#cc0000",
             "id": "Isabela"
+        },
+        {
+            "color": "#ea9999",
+            "id": "Philornis downsi"
         },
         {
             "color": "#ea9999",
@@ -244,6 +248,10 @@
             "id": "Wolf"
         },
         {
+            "color": "#ea9999",
+            "id": "Polistes versicolor"
+        },
+        {
             "color": "#FFFF00",
             "id": "Tourism/ecotourism"
         },
@@ -292,16 +300,20 @@
             "id": "El Niño/La Niña event"
         },
         {
-            "color": "#cccccc",
-            "id": "Meterology"
+            "color": "#3c78d8",
+            "id": "Meteorology"
         },
         {
             "color": "#3c78d8",
             "id": "Oceanography"
         },
         {
+            "color": "#00FA9A",
+            "id": "Terrestrial mammals"
+        },
+        {
             "color": "#8A2BE2",
-            "id": "Marine mammals"
+            "id": "Seabirds"
         },
         {
             "color": "#ADFF2F",
@@ -404,8 +416,8 @@
             "id": "Marine invertebrates"
         },
         {
-            "color": "#cccccc",
-            "id": "Marine microogarnisms"
+            "color": "#8A2BE2",
+            "id": "Marine microorganisms"
         },
         {
             "color": "#8A2BE2",
@@ -605,7 +617,7 @@
         },
         {
             "weight": 1,
-            "color": "#660000",
+            "color": "#ea9999",
             "source": "AT: Golondrina",
             "target": "Philornis downsi"
         },
@@ -791,7 +803,7 @@
         },
         {
             "weight": 1,
-            "color": "#660000",
+            "color": "#ea9999",
             "source": "AT: Pajaro brujo",
             "target": "Philornis downsi"
         },
@@ -906,223 +918,223 @@
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Isabela"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "San Cristobal"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Genovesa"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Espanola"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Santa Fe"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Floreana"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Fernandina"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Pinzon"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Santiago"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Pinta"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Baltra"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Daphne Mayor"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Marchena"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Rabida"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Seymour Norte"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Darwin"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Wolf"
         },
         {
             "weight": 1,
-            "color": "#660000",
-            "source": "Philornis downsi",
+            "color": "#ea9999",
+            "source": "Philornis",
             "target": "Philornis downsi"
         },
         {
             "weight": 1,
             "color": "#1c4587",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Biodiversity conservation"
         },
         {
             "weight": 1,
             "color": "#1c4587",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Biodiversity"
         },
         {
             "weight": 1,
             "color": "#1c4587",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Biosecurity/invasive species"
         },
         {
             "weight": 1,
             "color": "#1c4587",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Ecosystem restoration"
         },
         {
             "weight": 1,
             "color": "#00FA9A",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Terrestrial birds"
         },
         {
             "weight": 1,
             "color": "#00FA9A",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Darwin's finches"
         },
         {
             "weight": 1,
             "color": "#00FA9A",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "Insects"
         },
         {
             "weight": 1,
             "color": "#ED6D22",
-            "source": "Philornis downsi",
+            "source": "Philornis",
             "target": "2018"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Polistes versicolor",
+            "source": "Avispas",
             "target": "Isabela"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Polistes versicolor",
+            "source": "Avispas",
             "target": "San Cristobal"
         },
         {
             "weight": 1,
             "color": "#cc0000",
-            "source": "Polistes versicolor",
+            "source": "Avispas",
             "target": "Floreana"
         },
         {
             "weight": 1,
-            "color": "#660000",
-            "source": "Polistes versicolor",
+            "color": "#ea9999",
+            "source": "Avispas",
             "target": "Polistes versicolor"
         },
         {
             "weight": 1,
             "color": "#1c4587",
-            "source": "Polistes versicolor",
+            "source": "Avispas",
             "target": "Biodiversity conservation"
         },
         {
             "weight": 1,
             "color": "#1c4587",
-            "source": "Polistes versicolor",
+            "source": "Avispas",
             "target": "Biodiversity"
         },
         {
             "weight": 1,
             "color": "#1c4587",
-            "source": "Polistes versicolor",
+            "source": "Avispas",
             "target": "Biosecurity/invasive species"
         },
         {
             "weight": 1,
             "color": "#1c4587",
-            "source": "Polistes versicolor",
+            "source": "Avispas",
             "target": "Ecosystem restoration"
         },
         {
             "weight": 1,
             "color": "#00FA9A",
-            "source": "Polistes versicolor",
+            "source": "Avispas",
             "target": "Insects"
         },
         {
             "weight": 1,
             "color": "#FFFF00",
-            "source": "Polistes versicolor",
+            "source": "Avispas",
             "target": "Tourism/ecotourism"
         },
         {
             "weight": 1,
             "color": "#ED6D22",
-            "source": "Polistes versicolor",
+            "source": "Avispas",
             "target": "2018"
         },
         {
@@ -1133,7 +1145,7 @@
         },
         {
             "weight": 1,
-            "color": "#660000",
+            "color": "#ea9999",
             "source": "Pinzon de manglar",
             "target": "Philornis downsi"
         },
@@ -1379,9 +1391,9 @@
         },
         {
             "weight": 1,
-            "color": "#cccccc",
+            "color": "#3c78d8",
             "source": "Aves marinas",
-            "target": "Meterology"
+            "target": "Meteorology"
         },
         {
             "weight": 1,
@@ -1429,13 +1441,19 @@
             "weight": 1,
             "color": "#00FA9A",
             "source": "Aves marinas",
+            "target": "Terrestrial mammals"
+        },
+        {
+            "weight": 1,
+            "color": "#00FA9A",
+            "source": "Aves marinas",
             "target": "Terrestrial birds"
         },
         {
             "weight": 1,
             "color": "#8A2BE2",
             "source": "Aves marinas",
-            "target": "Marine mammals"
+            "target": "Seabirds"
         },
         {
             "weight": 1,
@@ -1979,9 +1997,9 @@
         },
         {
             "weight": 1,
-            "color": "#cccccc",
+            "color": "#8A2BE2",
             "source": "Ecologico submareal",
-            "target": "Marine microogarnisms"
+            "target": "Marine microorganisms"
         },
         {
             "weight": 1,
@@ -2111,9 +2129,9 @@
         },
         {
             "weight": 1,
-            "color": "#cccccc",
+            "color": "#8A2BE2",
             "source": "Especies invasoras marinas",
-            "target": "Marine microogarnisms"
+            "target": "Marine microorganisms"
         },
         {
             "weight": 1,
@@ -2423,9 +2441,9 @@
         },
         {
             "weight": 1,
-            "color": "#cccccc",
+            "color": "#8A2BE2",
             "source": "Montes submarinos",
-            "target": "Marine microogarnisms"
+            "target": "Marine microorganisms"
         },
         {
             "weight": 1,
