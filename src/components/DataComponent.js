@@ -75,7 +75,7 @@ const themes = {
   },
 };
 
-const ThemeLegend = ({ selectedThemes, onThemeClicked, mobile }) => {
+const ThemeLegend = ({ selectedThemes, onThemeClicked, mobile, lowerBound, upperBound }) => {
   const { i18n } = useTranslation();
 
   return (
@@ -87,35 +87,38 @@ const ThemeLegend = ({ selectedThemes, onThemeClicked, mobile }) => {
         padding: 5,
       }}
     >
-      {Object.entries(themes).map(([key, theme]) => (
-        <Grid
-          item
-          key={theme.color}
-          className={classNames("link-item", "clickable")}
-          style={{
-            opacity:
-              !selectedThemes ||
-              selectedThemes.length === 0 ||
-              selectedThemes.indexOf(theme.color) !== -1
-                ? 1
-                : legendOpacity,
-            display: "flex",
-          }}
-          onClick={() => onThemeClicked(theme.color)}
-        >
-          <span
-            width={50}
-            style={{
-              border: `1px solid ${theme.color}`,
-              backgroundColor: theme.color,
-              marginRight: 4,
-            }}
-          >
-            &nbsp;&nbsp;&nbsp;
-          </span>
-          {i18n.language !== "es" ? theme.labelEN : theme.labelES}
-        </Grid>
-      ))}
+      {Object.entries(themes).map(([key, theme]) => {
+        if(key >= lowerBound && key <= upperBound) {
+          return (
+            <Grid
+              item
+              key={theme.color}
+              className={classNames("link-item", "clickable")}
+              style={{
+                opacity:
+                  !selectedThemes ||
+                  selectedThemes.length === 0 ||
+                  selectedThemes.indexOf(theme.color) !== -1
+                    ? 1
+                    : legendOpacity,
+                display: "flex",
+              }}
+              onClick={() => onThemeClicked(theme.color)}
+            >
+              <span
+                width={50}
+                style={{
+                  border: `1px solid ${theme.color}`,
+                  backgroundColor: theme.color,
+                  marginRight: 4,
+                }}
+              >
+                &nbsp;&nbsp;&nbsp;
+              </span>
+              {i18n.language !== "es" ? theme.labelEN : theme.labelES}
+            </Grid>
+          )
+        }})}
     </Grid>
   );
 };
@@ -195,6 +198,23 @@ const Legend = ({
         <ThemeLegend
           selectedThemes={selectedThemes}
           onThemeClicked={(themeColor) => onThemeClicked(themeColor)}
+          lowerBound={0}
+          upperBound={4}
+        />
+      </Grid>
+      <Grid
+        item
+        xs
+        style={{ display: "contents", flexBasis: "auto", padding: 5 }}
+      >
+        <hr className="solid"></hr>
+      </Grid>
+      <Grid item xs style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
+        <ThemeLegend
+          selectedThemes={selectedThemes}
+          onThemeClicked={(themeColor) => onThemeClicked(themeColor)}
+          lowerBound={5}
+          upperBound={Infinity}
         />
       </Grid>
       <Grid
