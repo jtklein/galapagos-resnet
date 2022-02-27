@@ -153,7 +153,7 @@ export default function Network(el, props) {
           d.x = event.x;
           d.y = event.y;
         })
-        .on("start.update drag.update end.update", tick)
+        .on("start.update drag.update end.update", render)
     );
 
   simulation
@@ -161,6 +161,10 @@ export default function Network(el, props) {
     .on("tick", tick);
 
   function tick() {
+    render();
+  }
+
+  function render() {
     link
       .attr("x1", (d) => d.source.x)
       .attr("y1", (d) => d.source.y)
@@ -183,7 +187,7 @@ export default function Network(el, props) {
   let z = d3.zoomIdentity;
 
   // set up the ancillary zoom and an accessor for the transform
-  const zoomX = d3.zoom()
+  const ancZoom = d3.zoom()
     .extent([[0, 0],[width, height]])
     .scaleExtent([1, 8]);
   const tx = () => d3.zoomTransform(g.node());
@@ -195,10 +199,10 @@ export default function Network(el, props) {
     const point = center(e, this);
     if (k === 1) {
       // pure translation?
-      g.call(zoomX.translateBy, (t.x - z.x) / tx().k, 0);
+      g.call(ancZoom.translateBy, (t.x - z.x) / tx().k, 0);
     } else {
       // if not, we're zooming on a fixed point
-      g.call(zoomX.scaleBy, k, point);
+      g.call(ancZoom.scaleBy, k, point);
     }
     z = t;
     g.attr("transform", t);
@@ -206,4 +210,6 @@ export default function Network(el, props) {
 
   svg.call(zoom).call(zoom.transform, d3.zoomIdentity.scale(1));
   // End of zoom
+
+  render();
 }
