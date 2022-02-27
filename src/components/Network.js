@@ -86,9 +86,6 @@ export default function Network(el, props) {
     })
     .on("click", function (event, d) {
       if (event.defaultPrevented) return; // if panning or dragged
-      delete d.fx;
-      delete d.fy;
-      simulation.alpha(1).restart();
       // Get this node's data
       const datum = d3.select(this).datum();
       props.onClick(datum);
