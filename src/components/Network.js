@@ -62,6 +62,9 @@ export default function Network(el, props) {
     .classed("link", true)
     .attr("opacity", 0.6)
     .attr("stroke", function (d) {
+      if (themeSet) {
+        return isSelectedTheme(d) ? d.color : "lightgray";
+      }
       return d.color;
     })
     .attr("stroke-width", linkWidth);
