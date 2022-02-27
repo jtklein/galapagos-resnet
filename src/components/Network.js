@@ -141,10 +141,7 @@ export default function Network(el, props) {
         .attr("r", (d) => nodeRadius + 3)
         .attr("fill", "none")
         .attr("stroke", (d) => {
-          return isSelectedTheme(d) ? d.color : null;
-        })
-        .attr("stroke", (d) => {
-          return isSelectedNode(d) ? d.color : null;
+          return isSelectedNode(d) || isSelectedTheme(d) ? d.color : null;
         })
         .attr("stroke-width", 1.5)
     )
