@@ -32,7 +32,7 @@ export default function Network(el, props) {
 
   svg.attr("width", width).attr("height", height);
 
-  const { data } = props;
+  const { data, simulation } = props;
 
   let linksOfSelectedNode = data.links;
   if (props.selectedNode && props.connectedLinks) {
@@ -156,16 +156,8 @@ export default function Network(el, props) {
         .on("start.update drag.update end.update", tick)
     );
 
-  const simulation = d3
-    .forceSimulation()
-    .nodes(data.nodes)
-    .force("charge", d3.forceManyBody().strength(-300))
+  simulation
     .force("center", d3.forceCenter(width / 2, height / 2))
-    .force(
-      "link",
-      d3.forceLink(data.links).id((d) => d.id)
-    )
-    .force("collide", d3.forceCollide())
     .on("tick", tick);
 
   function tick() {
