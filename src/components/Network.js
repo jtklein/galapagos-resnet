@@ -187,7 +187,7 @@ export default function Network(el, props) {
   const ancZoom = d3.zoom()
     .extent([[0, 0],[width, height]])
     .scaleExtent([1, 8]);
-  const tx = () => d3.zoomTransform(g.node());
+  const ancT = () => d3.zoomTransform(g.node());
 
   // active zooming
   const zoom = d3.zoom().on("zoom", function (e) {
@@ -196,7 +196,7 @@ export default function Network(el, props) {
     const point = center(e, this);
     if (k === 1) {
       // pure translation?
-      g.call(ancZoom.translateBy, (t.x - z.x) / tx().k, 0);
+      g.call(ancZoom.translateBy, (t.x - z.x) / ancT().k, 0);
     } else {
       // if not, we're zooming on a fixed point
       g.call(ancZoom.scaleBy, k, point);
