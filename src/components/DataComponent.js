@@ -38,38 +38,46 @@ const themes = {
     color: "#ea9999",
   },
   5: {
+    labelEN: "People",
+    color: "#a4c2f4",
+  },
+  6: {
+    labelEN: "Institutions",
+    color: "#7023BD",
+  },
+  7: {
     labelEN: "Ecology and conservation",
     color: "#1c4587",
   },
-  6: {
+  8: {
     labelEN: "Terrestrial fauna and flora",
     color: "#00FA9A",
   },
-  7: {
+  9: {
     labelEN: "Marine/coastal fauna and flora",
     color: "#8A2BE2",
   },
-  8: {
+  10: {
     labelEN: "Climate change",
     color: "#ADFF2F",
   },
-  9: {
+  11: {
     labelEN: "History",
     color: "#FF8C00",
   },
-  10: {
+  12: {
     labelEN: "Infrastructure, energy and technology",
     color: "#FF69B4",
   },
-  11: {
+  13: {
     labelEN: "Food security",
     color: "#008B8B",
   },
-  12: {
+  14: {
     labelEN: "Community",
     color: "#00FFFF",
   },
-  13: {
+  15: {
     labelEN: "Politics, economics and crime",
     color: "#FFFF00",
   },
@@ -199,7 +207,7 @@ const Legend = ({
           selectedThemes={selectedThemes}
           onThemeClicked={(themeColor) => onThemeClicked(themeColor)}
           lowerBound={0}
-          upperBound={4}
+          upperBound={6}
         />
       </Grid>
       <Grid
@@ -213,7 +221,7 @@ const Legend = ({
         <ThemeLegend
           selectedThemes={selectedThemes}
           onThemeClicked={(themeColor) => onThemeClicked(themeColor)}
-          lowerBound={5}
+          lowerBound={7}
           upperBound={Infinity}
         />
       </Grid>
