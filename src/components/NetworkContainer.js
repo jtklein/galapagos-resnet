@@ -15,9 +15,12 @@ class NetworkContainer extends Component {
         d3.forceLink(props.data.links).id((d) => d.id)
       )
       .force("collide", d3.forceCollide());
-
+    const ancZoom = d3.zoom();
+    const zoom = d3.zoom();
     this.state = {
       simulation,
+      ancZoom,
+      zoom
     };
   }
 
@@ -56,10 +59,12 @@ class NetworkContainer extends Component {
       connectedLinks,
       selectedThemes,
     } = this.props;
-    const { simulation } = this.state;
+    const { simulation, ancZoom, zoom } = this.state;
     Network(refNetworkComponent.current, {
       data,
       simulation,
+      ancZoom,
+      zoom,
       selectedNode,
       connectedNodes,
       connectedLinks,

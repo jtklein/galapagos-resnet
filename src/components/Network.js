@@ -32,7 +32,7 @@ export default function Network(el, props) {
 
   svg.attr("width", width).attr("height", height);
 
-  const { data, simulation } = props;
+  const { data, simulation, ancZoom, zoom } = props;
 
   let linksOfSelectedNode = data.links;
   if (props.selectedNode && props.connectedLinks) {
@@ -188,13 +188,13 @@ export default function Network(el, props) {
   let z = d3.zoomIdentity;
 
   // set up the ancillary zoom and an accessor for the transform
-  const ancZoom = d3.zoom()
+  ancZoom
     .extent([[0, 0],[width, height]])
     .scaleExtent([1, 8]);
   const ancT = () => d3.zoomTransform(g.node());
 
   // active zooming
-  const zoom = d3.zoom().on("zoom", function (e) {
+  zoom.on("zoom", function (e) {
     const t = e.transform;
     const k = t.k / z.k;
     const point = center(e, this);
