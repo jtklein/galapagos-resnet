@@ -126,7 +126,9 @@ const ThemeLegend = ({ selectedThemes, onThemeClicked, mobile, lowerBound, upper
               {i18n.language !== "es" ? theme.labelEN : theme.labelES}
             </Grid>
           )
-        }})}
+        }
+        return null;
+      })}
     </Grid>
   );
 };
