@@ -62,6 +62,10 @@ export default function Network(el, props) {
     .classed("link", true)
     .attr("opacity", 0.6)
     .attr("stroke", function (d) {
+      // If there is no node selected, all links are grey
+      if (!props.selectedNode) {
+        return "lightgray";
+      }
       if (themeSet) {
         return isSelectedTheme(d) ? d.color : "lightgray";
       }
