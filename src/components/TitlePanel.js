@@ -38,6 +38,7 @@ const TitlePanel = () => {
           )}
           <div
             style={{
+              flexGrow: 1,
               paddingLeft: 24,
               paddingRight: 24,
               paddingTop: 10,
