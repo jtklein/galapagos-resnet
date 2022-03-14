@@ -1,19 +1,6 @@
 import { createTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
-// According to https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/01/SDG_Guidelines_AUG_2019_Final.pdf:
-// ROBOTO font is usually used for body copy and additional information.
-const bodyFonts = [
-  "Roboto",
-  '"Helvetica Neue"',
-  "Helvetica",
-  "Arial",
-  "sans-serif",
-].join(",");
-
-// According to https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/01/SDG_Guidelines_AUG_2019_Final.pdf:
-// OSWALD font is usually used for headline and titles.
-const hFonts = [
-  "Oswald",
+const fontsFallback = [
   "Roboto",
   '"Helvetica Neue"',
   "Helvetica",
@@ -24,24 +11,24 @@ const hFonts = [
 const themeConfig = {
   typography: {
     fontSize: 16,
-    fontFamily: bodyFonts,
+    fontFamily: fontsFallback,
     h1: {
-      fontFamily: hFonts,
+      fontFamily: fontsFallback,
     },
     h2: {
-      fontFamily: hFonts,
+      fontFamily: fontsFallback,
     },
     h3: {
-      fontFamily: hFonts,
+      fontFamily: fontsFallback,
     },
     h4: {
-      fontFamily: hFonts,
+      fontFamily: fontsFallback,
     },
     h5: {
-      fontFamily: hFonts,
+      fontFamily: fontsFallback,
     },
     h6: {
-      fontFamily: hFonts,
+      fontFamily: fontsFallback,
     },
   },
   palette: {
