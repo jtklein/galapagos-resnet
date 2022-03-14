@@ -180,7 +180,7 @@ export const data = {
       id: "Terrestrial mammals",
     },
     {
-      color: "#8A2BE2",
+      color: "#239ABD",
       id: "Seabirds",
     },
     {
@@ -268,27 +268,27 @@ export const data = {
       id: "Biogeography",
     },
     {
-      color: "#8A2BE2",
+      color: "#239ABD",
       id: "Seaweed/algae",
     },
     {
-      color: "#8A2BE2",
+      color: "#239ABD",
       id: "Corals",
     },
     {
-      color: "#8A2BE2",
+      color: "#239ABD",
       id: "Marine invertebrates",
     },
     {
-      color: "#8A2BE2",
+      color: "#239ABD",
       id: "Marine microorganisms",
     },
     {
-      color: "#8A2BE2",
+      color: "#239ABD",
       id: "Fish",
     },
     {
-      color: "#8A2BE2",
+      color: "#239ABD",
       id: "Marine plants",
     },
     {
@@ -568,11 +568,11 @@ export const data = {
       id: "Carcharhinus galapagensis",
     },
     {
-      color: "#8A2BE2",
+      color: "#239ABD",
       id: "Marine reptiles",
     },
     {
-      color: "#8A2BE2",
+      color: "#239ABD",
       id: "Sharks and rays",
     },
     {

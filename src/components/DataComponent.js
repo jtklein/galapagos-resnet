@@ -55,7 +55,7 @@ const themes = {
   },
   9: {
     labelEN: "Marine/coastal fauna and flora",
-    color: "#8A2BE2",
+    color: "#239ABD",
   },
   10: {
     labelEN: "Climate change",
