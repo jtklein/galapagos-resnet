@@ -3,7 +3,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import { withStyles } from "@material-ui/core/styles";
 import SwipeableViews from "react-swipeable-views";
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from "react-i18next";
 
 import Team from "./components/Team";
 import Data from "./components/Data";
@@ -51,7 +51,35 @@ function Explanation() {
       >
         {/* First tab */}
         <div className="tab-panel" value={value} index={0}>
-          The summary text goes here
+          <p>
+            <strong>{t("summaryHeading")}</strong>
+          </p>
+          <p>
+            <Trans i18nKey="summaryParagraph1">
+              SDG
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://unidosporgalapagos.files.wordpress.com/2021/05/galacc81pagos-2030-strategic-plan.pdf"
+              >
+                Galápagos 2030 Plan
+              </a>
+              .
+            </Trans>
+          </p>
+          <p>
+            <Trans i18nKey="summaryParagraph2">
+              Strong text
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="www.ods-galapagos.com/"
+              >
+                www.ods-galapagos.com/
+              </a>
+            </Trans>
+          </p>
+          <p>{t("summaryParagraph3")}</p>
         </div>
         {/* Second tab */}
         <div className="tab-panel" value={value} index={1}>
