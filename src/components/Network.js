@@ -92,10 +92,13 @@ export default function Network(el, props) {
     .attr("class", "node")
     .attr("cursor", "pointer")
     .attr("opacity", function (d) {
-      if (!props.selectedNode) {
-        return 1;
+      if (props.selectedNode) {
+        return isConnectedNode(d) || isSelectedNode(d) ? 1 : 0.3;
       }
-      return isConnectedNode(d) || isSelectedNode(d) ? 1 : 0.3;
+      if (isSearching) {
+        return isSearchedFor(d) ? 1 : 0.3;
+      }
+      return 1;
     })
     .on("click", function (event, d) {
       if (event.defaultPrevented) return; // if panning or dragged
@@ -113,12 +116,15 @@ export default function Network(el, props) {
           if (themeSet) {
             return isSelectedTheme(d) ? d.color : "lightgray";
           }
-          if (!props.selectedNode) {
-            return d.color;
+          if (props.selectedNode) {
+            return isConnectedNode(d) || isSelectedNode(d)
+              ? d.color
+              : "lightgray";
           }
-          return isConnectedNode(d) || isSelectedNode(d)
-            ? d.color
-            : "lightgray";
+          if (isSearching) {
+            return isSearchedFor(d) ? d.color : "lightgray";
+          }
+          return d.color;
         })
     )
     // TODO: Place a call iterating over these after the first round of mapping, so that the labels are alwys above other nodes
@@ -126,10 +132,15 @@ export default function Network(el, props) {
       g
         .append("text")
         .attr("fill", function (d) {
-          if (!props.selectedNode) {
-            return "#000";
+          if (props.selectedNode) {
+            return isConnectedNode(d) || isSelectedNode(d)
+              ? "#000"
+              : "lightgray";
           }
-          return isConnectedNode(d) || isSelectedNode(d) ? "#000" : "lightgray";
+          if (isSearching) {
+            return isSearchedFor(d) ? "#000" : "lightgray";
+          }
+          return "#000";
         })
         .attr("dx", nodeRadius + 2)
         .attr("dy", nodeRadius / 2)
