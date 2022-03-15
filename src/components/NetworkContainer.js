@@ -58,6 +58,7 @@ class NetworkContainer extends Component {
       connectedNodes,
       connectedLinks,
       selectedThemes,
+      searchText
     } = this.props;
     const { simulation, ancZoom, zoom } = this.state;
     Network(refNetworkComponent.current, {
@@ -69,6 +70,7 @@ class NetworkContainer extends Component {
       connectedNodes,
       connectedLinks,
       selectedThemes,
+      searchText,
       onClick: this.onNetworkClickNode,
     });
   }
