@@ -4,6 +4,7 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import IconDownload from "@material-ui/icons/CloudDownload";
+import Search from "@material-ui/icons/Search";
 import { withStyles, useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { saveAs } from "file-saver";
