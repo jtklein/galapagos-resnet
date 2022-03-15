@@ -55,6 +55,14 @@ export default function Network(el, props) {
   }
 
   const isSearching = !!props.searchText && props.searchText.length > 0;
+
+  function isSearchedFor(node) {
+    if (!props.searchText) {
+      return false;
+    }
+    return node.id.toLowerCase().includes(props.searchText.toLowerCase());
+  }
+
   const link = g
     .append("g")
     .selectAll(".link")
