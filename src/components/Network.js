@@ -54,6 +54,7 @@ export default function Network(el, props) {
     return connectedIDs.includes(node.id);
   }
 
+  const isSearching = !!props.searchText && props.searchText.length > 0;
   const link = g
     .append("g")
     .selectAll(".link")
