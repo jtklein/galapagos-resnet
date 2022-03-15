@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import TextField from "@material-ui/core/TextField";
+import InputAdornment from "@material-ui/core/InputAdornment";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import IconDownload from "@material-ui/icons/CloudDownload";
@@ -282,6 +284,29 @@ const NodeInfo = ({ node }) => {
           </div>
         )}
       </div>
+  );
+};
+
+const SearchBar = ({ value, onChange }) => {
+  const { i18n } = useTranslation();
+
+  return (
+    <TextField
+      fullWidth
+      id="searchbar"
+      placeholder={i18n.t("searchBar")}
+      variant="outlined"
+      size="small"
+      InputProps={{
+        startAdornment: (
+          <InputAdornment position="start">
+            <Search />
+          </InputAdornment>
+        ),
+      }}
+      value={value}
+      onChange={onChange}
+    />
   );
 };
 

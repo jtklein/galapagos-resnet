@@ -19,5 +19,6 @@
   "contactText": "The development of this tool is linked to the <1>Co-Galapagos</1> initiative which seeks to promote collaboration, cooperation & coordination to achieve the 2030 SDG Agenda in Galápagos.",
   "selectANode": "Select a node",
   "toSeeMoreInformation": "to see more information about it",
-  "download": "Download current network image"
+  "download": "Download current network image",
+  "searchBar": "Search for a particular project, species, person, institution, island or topic here"
 }
