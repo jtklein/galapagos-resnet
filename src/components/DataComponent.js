@@ -320,6 +320,7 @@ class DataComponent extends Component {
       selectedNode: undefined,
       connectedNodes: undefined,
       selectedThemes: [],
+      searchText: "",
     };
   }
 
@@ -464,10 +465,15 @@ class DataComponent extends Component {
       connectedNodes,
       connectedLinks,
       selectedThemes,
+      searchText,
     } = this.state;
     // const markers = this.filterMarkers();
     return (
       <div>
+        <SearchBar
+          value={searchText}
+          onChange={(e) => this.setState({ searchText: e.target.value })}
+        />
         <Grid container>
           <Grid item className="grid-item" xs={2}>
             <Legend
