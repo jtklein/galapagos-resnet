@@ -491,6 +491,7 @@ class DataComponent extends Component {
               connectedNodes={connectedNodes}
               connectedLinks={connectedLinks}
               selectedThemes={selectedThemes}
+              searchText={searchText}
               onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
             />
           </Grid>
