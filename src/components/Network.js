@@ -179,6 +179,7 @@ export default function Network(el, props) {
 
   simulation
     .force("center", d3.forceCenter(width / 2, height / 2))
+    .tick(25)
     .on("tick", tick);
 
   function tick() {
