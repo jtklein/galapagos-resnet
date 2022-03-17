@@ -1,7 +1,5 @@
 import * as d3 from "d3";
 
-import './Network.css';
-
 const nodeRadius = 8;
 const linkWidth = 1;
 
