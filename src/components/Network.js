@@ -32,7 +32,8 @@ export default function Network(el, props) {
 
   svg.attr("width", width).attr("height", height);
 
-  const { data, simulation, ancZoom, zoom } = props;
+  const { data, simulation, ancZoom, zoom, zoomTransform, setZoomTransform } =
+    props;
 
   let linksOfSelectedNode = data.links;
   if (props.selectedNode && props.connectedLinks) {
@@ -193,6 +194,7 @@ export default function Network(el, props) {
       .attr("x2", (d) => d.target.x)
       .attr("y2", (d) => d.target.y);
     node.attr("transform", (d) => `translate(${d.x}, ${d.y})`);
+    g.attr("transform", zoomTransform);
   }
 
   // Zoom related
@@ -205,9 +207,6 @@ export default function Network(el, props) {
     return [width / 2, height / 2];
   }
 
-  // z holds a copy of the previous transform, so we can track its changes
-  let z = d3.zoomIdentity;
-
   // set up the ancillary zoom and an accessor for the transform
   ancZoom
     .extent([[0, 0],[width, height]])
@@ -217,20 +216,19 @@ export default function Network(el, props) {
   // active zooming
   zoom.on("zoom", function (e) {
     const t = e.transform;
-    const k = t.k / z.k;
+    const k = t.k / zoomTransform.k;
     const point = center(e, this);
     if (k === 1) {
       // pure translation?
-      g.call(ancZoom.translateBy, (t.x - z.x) / ancT().k, 0);
+      g.call(ancZoom.translateBy, (t.x - zoomTransform.x) / ancT().k, 0);
     } else {
       // if not, we're zooming on a fixed point
       g.call(ancZoom.scaleBy, k, point);
     }
-    z = t;
-    g.attr("transform", t);
+    setZoomTransform(t);
   });
 
-  svg.call(zoom).call(zoom.transform, d3.zoomIdentity.scale(1));
+  svg.call(zoom);
   // End of zoom
 
   render();
