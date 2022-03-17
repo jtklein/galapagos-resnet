@@ -17,10 +17,14 @@ class NetworkContainer extends Component {
       .force("collide", d3.forceCollide());
     const ancZoom = d3.zoom();
     const zoom = d3.zoom();
+    // Holds a copy of the previous zoom transform, so we can track its changes
+    const zoomTransform = d3.zoomIdentity;
+
     this.state = {
       simulation,
       ancZoom,
-      zoom
+      zoom,
+      zoomTransform,
     };
   }
 
@@ -50,6 +54,10 @@ class NetworkContainer extends Component {
     onNodeClicked(d);
   };
 
+  setZoomTransform = (t) => {
+    this.setState({ zoomTransform: t });
+  };
+
   renderNetwork() {
     const {
       refNetworkComponent,
@@ -58,14 +66,16 @@ class NetworkContainer extends Component {
       connectedNodes,
       connectedLinks,
       selectedThemes,
-      searchText
+      searchText,
     } = this.props;
-    const { simulation, ancZoom, zoom } = this.state;
+    const { simulation, ancZoom, zoom, zoomTransform } = this.state;
     Network(refNetworkComponent.current, {
       data,
       simulation,
       ancZoom,
       zoom,
+      zoomTransform,
+      setZoomTransform: this.setZoomTransform,
       selectedNode,
       connectedNodes,
       connectedLinks,
