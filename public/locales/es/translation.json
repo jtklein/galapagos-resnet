@@ -20,5 +20,18 @@
   "selectANode": "Seleccione un nodo",
   "toSeeMoreInformation": "para ver más información sobre él",
   "download": "Descargar la imagen de red actual",
+  "tutorial": "Tutorial",
+  "tutorialProjectsTitle": "Proyectos",
+  "tutorialProjectsDescription": "Los proyectos se muestran como nodos individuales en la red.",
+  "tutorialInformationTitle": "Información",
+  "tutorialInformationDescription": "Cada proyecto está vinculado a una serie de otros nodos relacionados con los investigadores e instituciones involucrados, las especies e islas en las que se centra, y el año del estudio.",
+  "tutorialTopicsTitle": "Temas",
+  "tutorialTopicsDescription": "Los proyectos también están vinculados a nodos relacionados con una serie de palabras clave, que se engloban en diez temas, enumerados en la leyenda.",
+  "tutorialFilterTitle": "Filtro",
+  "tutorialFilterDescription": "Todos los nodos pueden ser filtrados según su tipo haciendo clic en la leyenda.",
+  "tutorialNodesTitle": "Nodos",
+  "tutorialNodesDescription": "Se puede hacer clic en cualquier nodo para resaltar sus vínculos y se pueden mover los nodos. La información sobre el nodo se muestra a continuación.",
+  "tutorialDownloadTitle": "Descarga",
+  "tutorialDownloadDescription": "La imagen de la red seleccionada puede descargarse en cualquier momento haciendo clic en este botón.",
   "searchBar": "Busque aquí un proyecto, una especie, una persona, una institución, una isla o un tema"
 }

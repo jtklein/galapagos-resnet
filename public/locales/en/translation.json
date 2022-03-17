@@ -20,5 +20,18 @@
   "selectANode": "Select a node",
   "toSeeMoreInformation": "to see more information about it",
   "download": "Download current network image",
+  "tutorial": "Tutorial",
+  "tutorialProjectsTitle": "Projects",
+  "tutorialProjectsDescription": "Projects are displayed as individual nodes in the network.",
+  "tutorialInformationTitle": "Information",
+  "tutorialInformationDescription": "Each project is linked to a series of other nodes relating to the researchers and institutions involved, the species and islands focused on, and the year of the study.",
+  "tutorialTopicsTitle": "Topics",
+  "tutorialTopicsDescription": "Projects are also linked to nodes relating to a series of keywords, which fall under ten themes, listed in the legend.",
+  "tutorialFilterTitle": "Filter",
+  "tutorialFilterDescription": "All nodes can be filtered according to their type by clicking on the legend.",
+  "tutorialNodesTitle": "Nodes",
+  "tutorialNodesDescription": "Any node can be clicked on to highlight its connections and dragged around. Information about the node is shown below.",
+  "tutorialDownloadTitle": "Download",
+  "tutorialDownloadDescription": "The selected network image can be downloaded at any time by clicking this button.",
   "searchBar": "Search for a particular project, species, person, institution, island or topic here"
 }
