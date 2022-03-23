@@ -1,13 +1,17 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
+import Tooltip from "@material-ui/core/Tooltip";
+import Typography from "@material-ui/core/Typography";
+import Alert from "@material-ui/lab/Alert";
 import IconDownload from "@material-ui/icons/CloudDownload";
 import Search from "@material-ui/icons/Search";
 import { withStyles, useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { saveAs } from "file-saver";
+import { isDesktop } from "react-device-detect";
 
 import { useTranslation } from "react-i18next";
 import classNames from "classnames";
@@ -19,6 +23,8 @@ import { data } from "./RI";
 import { locations } from "./RI_locations";
 
 import "./DataComponent.css";
+
+const onMobile = !isDesktop || window.innerWidth < 800;
 
 const initialData = Object.assign({}, data);
 const legendOpacity = 0.4;
@@ -86,53 +92,68 @@ const themes = {
   },
 };
 
-const ThemeLegend = ({ selectedThemes, onThemeClicked, mobile, lowerBound, upperBound }) => {
+const ThemeLegend = ({
+  selectedThemes,
+  onThemeClicked,
+  mobile,
+  lowerBound,
+  upperBound,
+  open,
+}) => {
   const { i18n } = useTranslation();
 
   return (
-    <Grid
-      container
-      direction={!mobile ? "column" : "row"}
-      justifyContent="center"
-      style={{
-        padding: 5,
-      }}
+    <TutorialTooltip
+      title="tutorialFilterTitle"
+      description="tutorialFilterDescription"
+      placement="right"
+      open={open}
+      index={3}
     >
-      {Object.entries(themes).map(([key, theme]) => {
-        if(key >= lowerBound && key <= upperBound) {
-          return (
-            <Grid
-              item
-              key={theme.color}
-              className={classNames("link-item", "clickable")}
-              style={{
-                opacity:
-                  !selectedThemes ||
-                  selectedThemes.length === 0 ||
-                  selectedThemes.indexOf(theme.color) !== -1
-                    ? 1
-                    : legendOpacity,
-                display: "flex",
-              }}
-              onClick={() => onThemeClicked(theme.color)}
-            >
-              <span
-                width={50}
+      <Grid
+        container
+        direction={!mobile ? "column" : "row"}
+        justifyContent="center"
+        style={{
+          padding: 5,
+        }}
+      >
+        {Object.entries(themes).map(([key, theme]) => {
+          if (key >= lowerBound && key <= upperBound) {
+            return (
+              <Grid
+                item
+                key={theme.color}
+                className={classNames("link-item", "clickable")}
                 style={{
-                  border: `1px solid ${theme.color}`,
-                  backgroundColor: theme.color,
-                  marginRight: 4,
+                  opacity:
+                    !selectedThemes ||
+                    selectedThemes.length === 0 ||
+                    selectedThemes.indexOf(theme.color) !== -1
+                      ? 1
+                      : legendOpacity,
+                  display: "flex",
                 }}
+                onClick={() => onThemeClicked(theme.color)}
               >
-                &nbsp;&nbsp;&nbsp;
-              </span>
-              {i18n.language !== "es" ? theme.labelEN : theme.labelES}
-            </Grid>
-          )
-        }
-        return null;
-      })}
-    </Grid>
+                <span
+                  width={50}
+                  style={{
+                    border: `1px solid ${theme.color}`,
+                    backgroundColor: theme.color,
+                    marginRight: 4,
+                  }}
+                >
+                  &nbsp;&nbsp;&nbsp;
+                </span>
+                {i18n.language !== "es" ? theme.labelEN : theme.labelES}
+              </Grid>
+            );
+          }
+          return null;
+        })}
+      </Grid>
+    </TutorialTooltip>
   );
 };
 
@@ -148,49 +169,53 @@ const DownloadButton = (props) => {
   }))(Button);
 
   return (
-    <div
-      style={{
-        padding: 5,
-      }}
+    <TutorialTooltip
+      title="tutorialDownloadTitle"
+      description="tutorialDownloadDescription"
+      placement="right"
+      open={props.open}
+      index={5}
     >
-      {matches && !props.mobile ? (
-        <CustomButton
-          variant="text"
-          size="small"
-          download="ods-galapagos.svg"
-          onClick={props.onClick}
-        >
-          <IconDownload fontSize="large" />
-        </CustomButton>
-      ) : (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: props.mobile ? "row" : "column",
-          }}
-        >
-          <IconDownload fontSize="medium" />
+      <div
+        style={{
+          padding: 5,
+        }}
+      >
+        {matches && !props.mobile ? (
           <CustomButton
             variant="text"
             size="small"
             download="ods-galapagos.svg"
             onClick={props.onClick}
           >
-            {t("download")}
+            <IconDownload fontSize="large" />
           </CustomButton>
-        </div>
-      )}
-    </div>
+        ) : (
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: props.mobile ? "row" : "column",
+            }}
+          >
+            <IconDownload fontSize="medium" />
+            <CustomButton
+              variant="text"
+              size="small"
+              download="ods-galapagos.svg"
+              onClick={props.onClick}
+            >
+              {t("download")}
+            </CustomButton>
+          </div>
+        )}
+      </div>
+    </TutorialTooltip>
   );
 };
 
-const Legend = ({
-  selectedThemes,
-  onThemeClicked,
-  onClickSaveNetworkSVG,
-}) => {
+const Legend = ({ selectedThemes, onThemeClicked, onClickSaveNetworkSVG, openTheme, openDownload }) => {
   const theme = useTheme();
   return (
     <Grid
@@ -213,6 +238,7 @@ const Legend = ({
           onThemeClicked={(themeColor) => onThemeClicked(themeColor)}
           lowerBound={0}
           upperBound={6}
+          open={openTheme}
         />
       </Grid>
       <Grid
@@ -248,7 +274,7 @@ const Legend = ({
           padding: 0,
         }}
       >
-        <DownloadButton onClick={onClickSaveNetworkSVG} />
+        <DownloadButton onClick={onClickSaveNetworkSVG} open={openDownload}/>
       </Grid>
     </Grid>
   );
@@ -259,32 +285,30 @@ const NodeInfo = ({ node }) => {
   const theme = useTheme();
 
   return (
-      <div
-        style={{
-          marginTop: 40,
-          padding: 5,
-          backgroundColor: theme.palette.primary.main,
-          color: theme.palette.primary.contrastText,
-          fontSize: theme.typography.pxToRem(12),
-          border: `1px solid ${theme.palette.primary.contrastText}`,
-        }}
-      >
-        {!node ? (
-          <div>
-            <strong>{i18n.t("selectANode")}</strong>
-            <br />
-            {i18n.t("toSeeMoreInformation")}
-          </div>
-        ) : (
-          <div>
-            <strong>
-              {node.id}
-            </strong>
-            <br />
-              {node.label}
-          </div>
-        )}
-      </div>
+    <div
+      style={{
+        marginTop: 40,
+        padding: 5,
+        backgroundColor: theme.palette.primary.main,
+        color: theme.palette.primary.contrastText,
+        fontSize: theme.typography.pxToRem(12),
+        border: `1px solid ${theme.palette.primary.contrastText}`,
+      }}
+    >
+      {!node ? (
+        <div>
+          <strong>{i18n.t("selectANode")}</strong>
+          <br />
+          {i18n.t("toSeeMoreInformation")}
+        </div>
+      ) : (
+        <div>
+          <strong>{node.id}</strong>
+          <br />
+          {node.label}
+        </div>
+      )}
+    </div>
   );
 };
 
@@ -311,6 +335,88 @@ const SearchBar = ({ value, onChange }) => {
   );
 };
 
+const StyledAlert = withStyles((theme) => ({
+  standardInfo: {
+    backgroundColor: theme.palette.primary.main,
+    color: "rgba(255, 255, 255, 0.87)",
+    maxWidth: 250,
+    fontSize: theme.typography.pxToRem(12),
+    border: "1px solid #000000",
+  },
+}))(Alert);
+
+
+const TutorialButton = ({ onClick }) => {
+  const [closed, setClosed] = useState(false);
+  const { i18n } = useTranslation();
+
+  if (closed) {
+    return null;
+  }
+
+  return (
+    <div className="tutorial-button-container">
+      <StyledAlert icon={false} severity="info" onClose={() => setClosed(true)}>
+        <Button
+          color="secondary"
+          variant="contained"
+          size="medium"
+          onClick={onClick}
+        >
+          {i18n.t("tutorial")}
+        </Button>
+      </StyledAlert>
+    </div>
+  );
+};
+
+const HtmlTooltip = withStyles((theme) => ({
+  tooltip: {
+    backgroundColor: theme.palette.secondary.main,
+    color: "rgba(255, 255, 255, 0.87)",
+    maxWidth: 250,
+    fontSize: theme.typography.pxToRem(12),
+    border: "1px solid #000000",
+  },
+}))(Tooltip);
+
+const TutorialTooltip = ({
+  children,
+  title,
+  description,
+  placement,
+  open,
+  index,
+}) => {
+  const { i18n } = useTranslation();
+
+  const titleElement = (
+    <React.Fragment>
+      <Typography color="inherit" align="center">
+        {i18n.t(title)}
+      </Typography>
+      <div>{i18n.t(description)}</div>
+      <br />
+      <div>{index + 1 + "/6"}</div>
+    </React.Fragment>
+  );
+
+  return (
+    <HtmlTooltip
+      title={titleElement}
+      placement={placement}
+      open={open}
+      arrow={!onMobile}
+      disableFocusListener
+      disableHoverListener
+      disableTouchListener
+    >
+      {children}
+    </HtmlTooltip>
+  );
+};
+
+
 class DataComponent extends Component {
   constructor(props) {
     super(props);
@@ -321,7 +427,16 @@ class DataComponent extends Component {
       connectedNodes: undefined,
       selectedThemes: [],
       searchText: "",
+      tutorialOpen: false,
+      // This is a hack because on pressing the tutorial button also fires
+      // the overall window click listener
+      tutorialIndex: -1,
     };
+  }
+
+  componentDidMount() {
+    // Add an event listener that fires when the window get's clicked
+    window.addEventListener("click", this.onClick);
   }
 
   isLinkOfNodeByID(link, nodeID) {
@@ -458,6 +573,66 @@ class DataComponent extends Component {
     saveAs(blob, "rp-galapagos.svg");
   };
 
+  onClick = () => {
+    const { tutorialOpen, tutorialIndex } = this.state;
+    if (!tutorialOpen) {
+      return;
+    }
+    // If there are no more tutorial slides to show
+    if (tutorialIndex === 5) {
+      this.setState({
+        tutorialOpen: false,
+        tutorialIndex: -1,
+        selectedNode: null,
+        selectedThemes: null,
+      });
+      return;
+    }
+
+    if (tutorialIndex === -1) {
+      this.setState({
+        selectedThemes: [themes[1].color],
+      });
+    }
+    if (tutorialIndex === 0) {
+      this.setState({
+        selectedThemes: [themes[1].color, themes[5].color],
+      });
+    }
+    if (tutorialIndex === 1) {
+      this.setState({
+        selectedThemes: [themes[1].color, themes[8].color],
+      });
+    }
+    if (tutorialIndex === 2) {
+      this.setState({
+        selectedThemes: [],
+      });
+    }
+    this.setState({
+      tutorialIndex: tutorialIndex + 1,
+      // selectedNode: tutorialIndex >= 1 ? { id: "5.2" } : null,
+    });
+    if (tutorialIndex === -1 || tutorialIndex === 0 || tutorialIndex === 1 || tutorialIndex === 3) {
+      window.scrollTo(0, 0);
+    } else {
+      const networkElement = document.getElementById("network");
+      networkElement.scrollIntoView({
+        inline: "center",
+        block: "center",
+        behavior: "smooth",
+      });
+    }
+  };
+
+  openOnDesktop = (index) => {
+    if (onMobile) {
+      return false;
+    }
+    const { tutorialOpen, tutorialIndex } = this.state;
+    return tutorialOpen && tutorialIndex === index;
+  };
+
   render() {
     const {
       shownData,
@@ -466,6 +641,7 @@ class DataComponent extends Component {
       connectedLinks,
       selectedThemes,
       searchText,
+      tutorialOpen,
     } = this.state;
     // const markers = this.filterMarkers();
     return (
@@ -480,10 +656,48 @@ class DataComponent extends Component {
               selectedThemes={selectedThemes}
               onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
               onClickSaveNetworkSVG={this.onClickSaveNetworkSVG}
+              openTheme={this.openOnDesktop(3)}
+              openDownload={this.openOnDesktop(5)}
             />
           </Grid>
           {/* xs is sum of 12 */}
           <Grid item className="grid-item" xs={10}>
+            <TutorialTooltip
+              title="tutorialProjectsTitle"
+              description="tutorialProjectsDescription"
+              open={this.openOnDesktop(0)}
+              placement="top"
+              index={0}
+            >
+              <div></div>
+            </TutorialTooltip>
+            <TutorialTooltip
+              title="tutorialInformationTitle"
+              description="tutorialInformationDescription"
+              open={this.openOnDesktop(1)}
+              placement={"top"}
+              index={1}
+            >
+              <div></div>
+            </TutorialTooltip>
+            <TutorialTooltip
+              title="tutorialTopicsTitle"
+              description="tutorialTopicsDescription"
+              open={this.openOnDesktop(2)}
+              placement={"top"}
+              index={2}
+            >
+              <div></div>
+            </TutorialTooltip>
+            <TutorialTooltip
+              title="tutorialNodesTitle"
+              description="tutorialNodesDescription"
+              open={this.openOnDesktop(4)}
+              placement="top"
+              index={4}
+            >
+              <div></div>
+            </TutorialTooltip>
             <NetworkContainer
               refNetworkComponent={this.refNetworkComponent}
               data={shownData}
@@ -503,9 +717,17 @@ class DataComponent extends Component {
         </Grid> */}
         </Grid>
         <NodeInfo node={selectedNode} />
+        <TutorialButton
+          tutorialOpen={tutorialOpen}
+          onClick={() => {
+            this.setState({
+              tutorialOpen: !tutorialOpen,
+            });
+          }}
+        />
       </div>
     );
   }
-};
+}
 
 export default DataComponent;
