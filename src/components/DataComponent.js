@@ -32,62 +32,82 @@ const legendOpacity = 0.4;
 const themes = {
   1: {
     labelEN: "Projects",
+    labelES: "Proyectos",
     color: "#660000",
   },
   2: {
     labelEN: "Years",
+    labelES: "Años",
     color: "#ED6D22",
   },
   3: {
     labelEN: "Islands",
+    labelES: "Islas",
     color: "#cc0000",
   },
   4: {
     labelEN: "Species",
+    labelES: "Especies",
     color: "#ea9999",
   },
   5: {
     labelEN: "People",
+    labelES: "Personas",
     color: "#a4c2f4",
   },
   6: {
     labelEN: "Institutions",
+    labelES: "Instituciones",
     color: "#7023BD",
   },
   7: {
-    labelEN: "Ecology and conservation",
-    color: "#1c4587",
+    labelEN: "Physical and chemical sciences",
+    labelES: "Ciencias físicas y químicas",
+    color: "#3c78d8",
   },
   8: {
-    labelEN: "Terrestrial fauna and flora",
-    color: "#00FA9A",
+    labelEN: "Ecology and conservation",
+    labelES: "Conservación y ecología",
+    color: "#1c4587",
   },
   9: {
-    labelEN: "Marine/coastal fauna and flora",
-    color: "#239ABD",
+    labelEN: "Terrestrial fauna and flora",
+    labelES: "Flora y fauna terrestre",
+    color: "#00FA9A",
   },
   10: {
-    labelEN: "Climate change",
-    color: "#ADFF2F",
+    labelEN: "Marine/coastal fauna and flora",
+    labelES: "Flora y fauna marina/costera",
+    color: "#239ABD",
   },
   11: {
-    labelEN: "History",
-    color: "#FF8C00",
+    labelEN: "Climate change",
+    labelES: "Cambio climático",
+    color: "#ADFF2F",
   },
   12: {
-    labelEN: "Infrastructure, energy and technology",
-    color: "#FF69B4",
+    labelEN: "History",
+    labelES: "Historia",
+    color: "#FF8C00",
   },
   13: {
-    labelEN: "Food security",
-    color: "#008B8B",
+    labelEN: "Infrastructure, energy and technology",
+    labelES: "Infraestructura, energía y tecnología",
+    color: "#FF69B4",
   },
   14: {
-    labelEN: "Community",
-    color: "#00FFFF",
+    labelEN: "Food security",
+    labelES: "Seguridad alimentaria",
+    color: "#008B8B",
   },
   15: {
+    labelEN: "Community",
+    labelES: "Comunidad",
+    color: "#00FFFF",
+  },
+  16: {
     labelEN: "Politics, economics and crime",
+    labelES: "Políticas, economía y delito",
     color: "#FFFF00",
   },
 };
