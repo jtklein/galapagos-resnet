@@ -26,3 +26,34 @@ hr.solid {
   margin: 0px;
   padding: 0px;
 }
+
+.sdg-icon {
+  height: 59px;
+  width: 59px;
+}
+
+.sdg-icon-mobile {
+  height: 55px;
+  width: 55px;
+}
+
+@media only screen and (max-width: 890px) {
+  .sdg-icon {
+    height: 45px;
+    width: 45px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .sdg-icon {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .sdg-icon {
+    height: 35px;
+    width: 35px;
+  }
+}

@@ -22,6 +22,36 @@ import NetworkContainer from "./NetworkContainer";
 import { data } from "./RI";
 import { locations } from "./RI_locations";
 
+import goal1EN from "../assets/icons/sdg/EN/E-WEB-Goal-01.png";
+import goal2EN from "../assets/icons/sdg/EN/E-WEB-Goal-02.png";
+import goal3EN from "../assets/icons/sdg/EN/E-WEB-Goal-03.png";
+import goal4EN from "../assets/icons/sdg/EN/E-WEB-Goal-04.png";
+import goal5EN from "../assets/icons/sdg/EN/E-WEB-Goal-05.png";
+import goal6EN from "../assets/icons/sdg/EN/E-WEB-Goal-06.png";
+import goal7EN from "../assets/icons/sdg/EN/E-WEB-Goal-07.png";
+import goal8EN from "../assets/icons/sdg/EN/E-WEB-Goal-08.png";
+import goal9EN from "../assets/icons/sdg/EN/E-WEB-Goal-09.png";
+import goal11EN from "../assets/icons/sdg/EN/E-WEB-Goal-11.png";
+import goal12EN from "../assets/icons/sdg/EN/E-WEB-Goal-12.png";
+import goal14EN from "../assets/icons/sdg/EN/E-WEB-Goal-14.png";
+import goal15EN from "../assets/icons/sdg/EN/E-WEB-Goal-15.png";
+import goal16EN from "../assets/icons/sdg/EN/E-WEB-Goal-16.png";
+
+import goal1ES from "../assets/icons/sdg/ES/S-WEB-Goal-01.png";
+import goal2ES from "../assets/icons/sdg/ES/S-WEB-Goal-02.png";
+import goal3ES from "../assets/icons/sdg/ES/S-WEB-Goal-03.png";
+import goal4ES from "../assets/icons/sdg/ES/S-WEB-Goal-04.png";
+import goal5ES from "../assets/icons/sdg/ES/S-WEB-Goal-05.png";
+import goal6ES from "../assets/icons/sdg/ES/S-WEB-Goal-06.png";
+import goal7ES from "../assets/icons/sdg/ES/S-WEB-Goal-07.png";
+import goal8ES from "../assets/icons/sdg/ES/S-WEB-Goal-08.png";
+import goal9ES from "../assets/icons/sdg/ES/S-WEB-Goal-09.png";
+import goal11ES from "../assets/icons/sdg/ES/S-WEB-Goal-11.png";
+import goal12ES from "../assets/icons/sdg/ES/S-WEB-Goal-12.png";
+import goal14ES from "../assets/icons/sdg/ES/S-WEB-Goal-14.png";
+import goal15ES from "../assets/icons/sdg/ES/S-WEB-Goal-15.png";
+import goal16ES from "../assets/icons/sdg/ES/S-WEB-Goal-16.png";
+
 import "./DataComponent.css";
 
 const onMobile = !isDesktop || window.innerWidth < 800;
@@ -109,6 +139,155 @@ const themes = {
     labelEN: "Politics, economics and crime",
     labelES: "Políticas, economía y delito",
     color: "#FFFF00",
+  },
+};
+
+const plans = {
+  1: {
+    labelEN: "Governance",
+    labelES: "",
+    color: "#2E65CD",
+  },
+  2: {
+    labelEN: "Community",
+    labelES: "",
+    color: "#F7974A",
+  },
+  3: {
+    labelEN: "Environment",
+    labelES: "",
+    color: "#54A87A",
+  },
+  4: {
+    labelEN: "Habitat",
+    labelES: "",
+    color: "#C7450F",
+  },
+  5: {
+    labelEN: "Economy",
+    labelES: "",
+    color: "#EEDA47",
+  },
+};
+
+const targets = {
+  1: {
+    sourceEN: goal1EN,
+    sourceES: goal1ES,
+    color: "#E5243B",
+  },
+  2: {
+    sourceEN: goal2EN,
+    sourceES: goal2ES,
+    color: "#DDA63A",
+  },
+  3: {
+    sourceEN: goal3EN,
+    sourceES: goal3ES,
+    color: "#4C9F38",
+  },
+  4: {
+    sourceEN: goal4EN,
+    sourceES: goal4ES,
+    color: "#C5192D",
+  },
+  5: {
+    sourceEN: goal5EN,
+    sourceES: goal5ES,
+    color: "#C5192D",
+  },
+  6: {
+    sourceEN: goal6EN,
+    sourceES: goal6ES,
+    color: "#26BDE2",
+  },
+  7: {
+    sourceEN: goal7EN,
+    sourceES: goal7ES,
+    color: "#FCC30B",
+  },
+  8: {
+    sourceEN: goal8EN,
+    sourceES: goal8ES,
+    color: "#A21942",
+  },
+  9: {
+    sourceEN: goal9EN,
+    sourceES: goal9ES,
+    color: "#FD6925",
+  },
+  11: {
+    sourceEN: goal11EN,
+    sourceES: goal11ES,
+    color: "#FD9D24",
+  },
+  12: {
+    sourceEN: goal12EN,
+    sourceES: goal12ES,
+    color: "#BF8B2E",
+  },
+  14: {
+    sourceEN: goal14EN,
+    sourceES: goal14ES,
+    color: "#0A97D9",
+  },
+  15: {
+    sourceEN: goal15EN,
+    sourceES: goal15ES,
+    color: "#56C02B",
+  },
+  16: {
+    sourceEN: goal16EN,
+    sourceES: goal16ES,
+    color: "#00689D",
+  },
+};
+
+const questions = {
+  1: {
+    labelEN: "Tourism",
+    labelES: "",
+    color: "#ED551E",
+  },
+  2: {
+    labelEN: "Development",
+    labelES: "",
+    color: "#A11EED",
+  },
+  3: {
+    labelEN: "Planning",
+    labelES: "",
+    color: "#86931C",
+  },
+  4: {
+    labelEN: "Education",
+    labelES: "",
+    color: "#ED26C2",
+  },
+  5: {
+    labelEN: "Agriculture",
+    labelES: "",
+    color: "#ECCE48",
+  },
+  6: {
+    labelEN: "Hydrology",
+    labelES: "",
+    color: "#264EED",
+  },
+  7: {
+    labelEN: "Invasive Species",
+    labelES: "",
+    color: "#AC0A28",
+  },
+  8: {
+    labelEN: "Marine",
+    labelES: "",
+    color: "#48C1EC",
+  },
+  9: {
+    labelEN: "Conservation",
+    labelES: "",
+    color: "#69EC48",
   },
 };
 
@@ -235,7 +414,7 @@ const DownloadButton = (props) => {
   );
 };
 
-const Legend = ({ selectedThemes, onThemeClicked, onClickSaveNetworkSVG, openTheme, openDownload }) => {
+const LeftLegend = ({ selectedThemes, onThemeClicked, onClickSaveNetworkSVG, openTheme, openDownload }) => {
   const theme = useTheme();
   return (
     <Grid
@@ -295,6 +474,236 @@ const Legend = ({ selectedThemes, onThemeClicked, onClickSaveNetworkSVG, openThe
         }}
       >
         <DownloadButton onClick={onClickSaveNetworkSVG} open={openDownload}/>
+      </Grid>
+    </Grid>
+  );
+};
+
+const PlanLegend = ({
+  mobile,
+}) => {
+  const { i18n } = useTranslation();
+
+  return (
+    <Grid
+      container
+      direction={!mobile ? "column" : "row"}
+      justifyContent="center"
+      style={{
+        padding: 5,
+      }}
+    >
+      <Grid
+        item
+        style={{
+          display: "flex",
+        }}
+      >
+        {i18n.t('galapagosPlan')}
+      </Grid>
+
+      {Object.entries(plans).map(([key, plan]) => (
+        <Grid
+          item
+          key={plan.color}
+          className={classNames("link-item", "clickable")}
+          style={{
+            display: "flex",
+          }}
+          onClick={() => console.log(plan.color)}
+        >
+          <span
+            width={50}
+            style={{
+              border: `1px solid ${plan.color}`,
+              backgroundColor: plan.color,
+              marginRight: 4,
+            }}
+          >
+            &nbsp;&nbsp;&nbsp;
+          </span>
+          {i18n.language !== "es" ? plan.labelEN : plan.labelES}
+        </Grid>
+      ))}
+    </Grid>
+  );
+};
+
+const SDGIcon = ({ src, className, alt }) => (
+  <img src={src} className={className} alt={alt} />
+);
+
+const TargetLegend = ({ mobile }) => {
+  const { i18n } = useTranslation();
+  const iconClassName = "sdg-icon";
+
+  return (
+    <Grid
+      container
+      direction={"column"}
+      justifyContent="center"
+      style={{
+        padding: 5,
+      }}
+    >
+      <Grid
+        item
+        style={{
+          display: "flex",
+        }}
+      >
+        {i18n.t("priorityTargets")}
+      </Grid>
+      <Grid
+        item
+        style={{
+          display: "flex",
+        }}
+      >
+        <Grid
+          container
+          direction={"row"}
+          style={{
+            padding: 0,
+          }}
+        >
+          <Grid item>
+            <Grid container direction={"column"}>
+              {Object.entries(targets)
+                .slice(0, 7)
+                .map(([key, target]) => (
+                  <Grid item key={key}>
+                    <SDGIcon
+                      src={
+                        i18n.language !== "es"
+                          ? target.sourceEN
+                          : target.sourceES
+                      }
+                      className={classNames(iconClassName, "clickable")}
+                      alt="sdg-icon"
+                    />
+                  </Grid>
+                ))}
+            </Grid>
+          </Grid>
+          <Grid item>
+            <Grid container direction={"column"}>
+              {Object.entries(targets)
+                .slice(-7)
+                .map(([key, target]) => (
+                  <Grid item key={key}>
+                    <SDGIcon
+                      src={
+                        i18n.language !== "es"
+                          ? target.sourceEN
+                          : target.sourceES
+                      }
+                      className={classNames(iconClassName, "clickable")}
+                      alt="sdg-icon"
+                    />
+                  </Grid>
+                ))}
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
+  );
+};
+
+const QuestionLegend = ({ mobile }) => {
+  const { i18n } = useTranslation();
+
+  return (
+    <Grid
+      container
+      direction={!mobile ? "column" : "row"}
+      justifyContent="center"
+      style={{
+        padding: 5,
+      }}
+    >
+      <Grid
+        item
+        style={{
+          display: "flex",
+        }}
+      >
+        {i18n.t("topQuestions")}
+      </Grid>
+
+      {Object.entries(questions).map(([key, question]) => (
+        <Grid
+          item
+          key={question.color}
+          className={classNames("link-item", "clickable")}
+          style={{
+            display: "flex",
+          }}
+          onClick={() => console.log(question.color)}
+        >
+          <span
+            width={50}
+            style={{
+              border: `1px solid ${question.color}`,
+              backgroundColor: question.color,
+              marginRight: 4,
+            }}
+          >
+            &nbsp;&nbsp;&nbsp;
+          </span>
+          {i18n.language !== "es" ? question.labelEN : question.labelES}
+        </Grid>
+      ))}
+    </Grid>
+  );
+};
+
+const RightLegend = ({
+  selectedThemes,
+  onThemeClicked,
+  onClickSaveNetworkSVG,
+  openTheme,
+  openDownload,
+}) => {
+  const theme = useTheme();
+  return (
+    <Grid
+      container
+      direction="column"
+      justifyContent="space-evenly"
+      alignItems="stretch"
+      style={{
+        height: "100%",
+        padding: 5,
+        backgroundColor: theme.palette.primary.main,
+        color: theme.palette.primary.contrastText,
+        fontSize: theme.typography.pxToRem(12),
+        border: `1px solid ${theme.palette.primary.contrastText}`,
+      }}
+    >
+      <Grid item xs style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
+        <PlanLegend />
+      </Grid>
+      <Grid
+        item
+        xs
+        style={{ display: "contents", flexBasis: "auto", padding: 5 }}
+      >
+        <hr className="solid"></hr>
+      </Grid>
+      <Grid item xs style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
+        <TargetLegend />
+      </Grid>
+      <Grid
+        item
+        xs
+        style={{ display: "contents", flexBasis: "auto", padding: 5 }}
+      >
+        <hr className="solid"></hr>
+      </Grid>
+      <Grid item xs style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
+        <QuestionLegend />
       </Grid>
     </Grid>
   );
@@ -666,13 +1075,15 @@ class DataComponent extends Component {
     // const markers = this.filterMarkers();
     return (
       <div>
-        <SearchBar
-          value={searchText}
-          onChange={(e) => this.setState({ searchText: e.target.value })}
-        />
+        <div style={{ marginBottom: 16 }}>
+          <SearchBar
+            value={searchText}
+            onChange={(e) => this.setState({ searchText: e.target.value })}
+          />
+        </div>
         <Grid container>
-          <Grid item className="grid-item" xs={2}>
-            <Legend
+          <Grid item className="grid-item" xs={2} style={{ padding: 0 }}>
+            <LeftLegend
               selectedThemes={selectedThemes}
               onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
               onClickSaveNetworkSVG={this.onClickSaveNetworkSVG}
@@ -681,7 +1092,7 @@ class DataComponent extends Component {
             />
           </Grid>
           {/* xs is sum of 12 */}
-          <Grid item className="grid-item" xs={10}>
+          <Grid item className="grid-item" xs={8} style={{ padding: 0 }}>
             <TutorialTooltip
               title="tutorialProjectsTitle"
               description="tutorialProjectsDescription"
@@ -729,6 +1140,11 @@ class DataComponent extends Component {
               onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
             />
           </Grid>
+          <Grid item className="grid-item" xs={2} style={{ padding: 0 }}>
+            <RightLegend
+            />
+          </Grid>
+
           {/* <Grid item className="grid-item" xs={5}>
           <MapComponent
             markers={markers}
