@@ -34,12 +34,12 @@ const themeConfig = {
   palette: {
     // Colors taken from https://co-galapagos.org/
     primary: {
-      main: "#39D039",
+      main: "#d1f9d6",
       contrastText: "#1b4332",
     },
     secondary: {
       main: "#1b4332",
-      contrastText: "#39D039",
+      contrastText: "#d1f9d6",
     },
   },
 };
