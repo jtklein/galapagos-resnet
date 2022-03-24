@@ -1,7 +1,23 @@
 import React, { Component } from "react";
 import * as d3 from "d3";
+import { useTheme } from "@material-ui/core/styles";
 
 import Network from "./Network";
+
+const StyledDiv = (props) => {
+  const theme = useTheme();
+  return (
+    <div
+      {...props}
+      style={{
+        ...props.style,
+        border: `1px solid ${theme.palette.primary.contrastText}`,
+      }}
+    >
+      {props.children}
+    </div>
+  );
+};
 
 class NetworkContainer extends Component {
   constructor(props) {
@@ -86,14 +102,24 @@ class NetworkContainer extends Component {
   }
 
   render() {
-    const height = window.innerHeight - 32;
-
     return (
-      <div
-        id="network"
-        ref={this.props.refNetworkComponent}
-        style={{ height, maxWidth: "100%", margin: "0 auto" }}
-      />
+      <StyledDiv
+        style={{
+          height: "100%",
+          maxWidth: "100%",
+          margin: "0 auto",
+        }}
+      >
+        <div
+          ref={this.props.refNetworkComponent}
+          id="network"
+          style={{
+            height: "100%",
+            maxWidth: "100%",
+            margin: "0 auto",
+          }}
+        />
+      </StyledDiv>
     );
   }
 };

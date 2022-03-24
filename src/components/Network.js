@@ -12,9 +12,9 @@ export default function Network(el, props) {
     return props.selectedThemes.indexOf(node.color) !== -1;
   }
 
-  const height = parseInt(d3.select("#network").style("height"));
-  const width = parseInt(d3.select("#network").style("width"));
-
+  const height = document.getElementById("network").clientHeight;
+  const width = document.getElementById("network").clientWidth;
+;
   const anchorElement = d3.select(el);
   let svg = anchorElement.select("svg");
 
