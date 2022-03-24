@@ -33,5 +33,8 @@
   "tutorialNodesDescription": "Se puede hacer clic en cualquier nodo para resaltar sus vínculos y se pueden mover los nodos. La información sobre el nodo se muestra a continuación.",
   "tutorialDownloadTitle": "Descarga",
   "tutorialDownloadDescription": "La imagen de la red seleccionada puede descargarse en cualquier momento haciendo clic en este botón.",
-  "searchBar": "Busque aquí un proyecto, una especie, una persona, una institución, una isla o un tema"
+  "searchBar": "Busque aquí un proyecto, una especie, una persona, una institución, una isla o un tema",
+  "galapagosPlan": "Galapagos 2030 Plan",
+  "priorityTargets": "Priority SDG Targets",
+  "topQuestions": "50 Top Questions"
 }
