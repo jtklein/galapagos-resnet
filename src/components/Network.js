@@ -12,8 +12,8 @@ export default function Network(el, props) {
     return props.selectedThemes.indexOf(node.color) !== -1;
   }
 
-  const height = document.getElementById("network").clientHeight;
-  const width = document.getElementById("network").clientWidth;
+  const height = document.getElementById("network").offsetHeight;
+  const width = document.getElementById("network").offsetWidth;
 ;
   const anchorElement = d3.select(el);
   let svg = anchorElement.select("svg");
@@ -28,7 +28,8 @@ export default function Network(el, props) {
   const g = svg.select("g");
   g.selectAll("*").remove();
 
-  svg.attr("width", width).attr("height", height);
+  // For some reason the svg height adds seven on each rerender (i.e. the value of height taken from getElementById is too big)
+  svg.attr("width", width).attr("height", height - 7);
 
   const { data, simulation, ancZoom, zoom, zoomTransform, setZoomTransform } =
     props;
