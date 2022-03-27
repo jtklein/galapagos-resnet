@@ -63,6 +63,20 @@ export default function Network(el, props) {
     return node.id.toLowerCase().includes(props.searchText.toLowerCase());
   }
 
+  function clicked(event, d) {
+    event.stopPropagation();
+    svg
+      .transition()
+      .duration(1)
+      .call(
+        zoom.transform,
+        d3.zoomIdentity
+          .translate(width / 2, height / 2)
+          .translate(-d.x, -d.y),
+        d3.pointer(event)
+      );
+  }
+
   const link = g
     .append("g")
     .selectAll(".link")
@@ -105,6 +119,8 @@ export default function Network(el, props) {
       // Get this node's data
       const datum = d3.select(this).datum();
       props.onClick(datum);
+
+      clicked(event, d);
     })
     .call((g) =>
       g
