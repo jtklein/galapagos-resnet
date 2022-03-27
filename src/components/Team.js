@@ -9,7 +9,7 @@ import gct from "../assets/icons/team/GCT.png";
 import sophia from "../assets/icons/team/Sophia.png";
 
 const Person = ({ noLink, name, affiliation, href, src }) => (
-  <Grid item xs={4} sm={2.4}>
+  <Grid item xs={4} sm={2}>
     <div>
       <section>
         <p>
