@@ -536,6 +536,22 @@ const SDGIcon = ({ src, className, alt }) => (
 const TargetLegend = ({ mobile }) => {
   const { i18n } = useTranslation();
   const iconClassName = "sdg-icon";
+  const TargetColumn = ({sliceBeginning, sliceEnd}) => (
+    <Grid container direction={"column"}>
+      {Object.entries(targets)
+        .slice(sliceBeginning, sliceEnd)
+        .map(([key, target]) => (
+          <Grid item key={key}>
+            <SDGIcon
+              src={i18n.language !== "es" ? target.sourceEN : target.sourceES}
+              className={classNames(iconClassName, "clickable")}
+              alt="sdg-icon"
+            />
+          </Grid>
+        ))}
+    </Grid>
+  );
+;
 
   return (
     <Grid
@@ -563,47 +579,19 @@ const TargetLegend = ({ mobile }) => {
         <Grid
           container
           direction={"row"}
+          spacing={1}
           style={{
             padding: 0,
           }}
         >
           <Grid item>
-            <Grid container direction={"column"}>
-              {Object.entries(targets)
-                .slice(0, 7)
-                .map(([key, target]) => (
-                  <Grid item key={key}>
-                    <SDGIcon
-                      src={
-                        i18n.language !== "es"
-                          ? target.sourceEN
-                          : target.sourceES
-                      }
-                      className={classNames(iconClassName, "clickable")}
-                      alt="sdg-icon"
-                    />
-                  </Grid>
-                ))}
-            </Grid>
+            <TargetColumn sliceBeginning={0} sliceEnd={5} />
           </Grid>
           <Grid item>
-            <Grid container direction={"column"}>
-              {Object.entries(targets)
-                .slice(-7)
-                .map(([key, target]) => (
-                  <Grid item key={key}>
-                    <SDGIcon
-                      src={
-                        i18n.language !== "es"
-                          ? target.sourceEN
-                          : target.sourceES
-                      }
-                      className={classNames(iconClassName, "clickable")}
-                      alt="sdg-icon"
-                    />
-                  </Grid>
-                ))}
-            </Grid>
+            <TargetColumn sliceBeginning={5} sliceEnd={10} />
+          </Grid>
+          <Grid item>
+            <TargetColumn sliceBeginning={10} sliceEnd={15} />
           </Grid>
         </Grid>
       </Grid>
