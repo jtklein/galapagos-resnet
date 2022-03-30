@@ -63,7 +63,7 @@ export default function Network(el, props) {
     return node.id.toLowerCase().includes(props.searchText.toLowerCase());
   }
 
-  function clicked(event, d) {
+  function zoomOnNode(event, d) {
     event.stopPropagation();
     svg
       .transition()
@@ -72,6 +72,7 @@ export default function Network(el, props) {
         zoom.transform,
         d3.zoomIdentity
           .translate(width / 2, height / 2)
+          .scale(zoomTransform.k)
           .translate(-d.x, -d.y),
         d3.pointer(event)
       );
@@ -120,7 +121,7 @@ export default function Network(el, props) {
       const datum = d3.select(this).datum();
       props.onClick(datum);
 
-      clicked(event, d);
+      zoomOnNode(event, d);
     })
     .call((g) =>
       g
