@@ -580,6 +580,7 @@ const TargetLegend = ({ mobile }) => {
           container
           direction={"row"}
           spacing={1}
+          justifyContent="space-evenly"
           style={{
             padding: 0,
           }}
