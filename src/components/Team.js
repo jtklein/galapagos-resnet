@@ -42,7 +42,7 @@ function Team() {
       <Grid
         container
         direction="row"
-        justifycontent="space-evenly"
+        justifyContent="space-evenly"
         alignItems="flex-end"
         spacing={2}
       >
