@@ -31,7 +31,7 @@ export default function Network(el, props) {
   // For some reason the svg height adds seven on each rerender (i.e. the value of height taken from getElementById is too big)
   svg.attr("width", width).attr("height", height - 7);
 
-  const { data, simulation, ancZoom, zoom, zoomTransform, setZoomTransform } =
+  const { data, simulation, zoom, zoomTransform, setZoomTransform } =
     props;
 
   let linksOfSelectedNode = data.links;
@@ -61,21 +61,6 @@ export default function Network(el, props) {
       return false;
     }
     return node.id.toLowerCase().includes(props.searchText.toLowerCase());
-  }
-
-  function zoomOnNode(event, d) {
-    event.stopPropagation();
-    svg
-      .transition()
-      .duration(1)
-      .call(
-        zoom.transform,
-        d3.zoomIdentity
-          .translate(width / 2, height / 2)
-          .scale(zoomTransform.k)
-          .translate(-d.x, -d.y),
-        d3.pointer(event)
-      );
   }
 
   const link = g
@@ -117,10 +102,9 @@ export default function Network(el, props) {
     })
     .on("click", function (event, d) {
       if (event.defaultPrevented) return; // if panning or dragged
-      // Get this node's data
+      // Get this node's datum
       const datum = d3.select(this).datum();
       props.onClick(datum);
-
       zoomOnNode(event, d);
     })
     .call((g) =>
@@ -214,36 +198,29 @@ export default function Network(el, props) {
   }
 
   // Zoom related
-  // center the action (handles multitouch)
-  function center(event, target) {
-    if (event.sourceEvent) {
-      const p = d3.pointers(event, target);
-      return [d3.mean(p, (d) => d[0]), d3.mean(p, (d) => d[1])];
-    }
-    return [width / 2, height / 2];
+  // Called when clicked on a node in the network, "zoom" to clicked node but keep current scale, i.e. pan only
+  function zoomOnNode(event, d) {
+    event.stopPropagation();
+    svg
+      .transition()
+      .duration(1)
+      .call(
+        zoom.transform,
+        d3.zoomIdentity
+          .translate(width / 2, height / 2)
+          .scale(zoomTransform.k)
+          .translate(-d.x, -d.y),
+        d3.pointer(event)
+      );
   }
 
-  // set up the ancillary zoom and an accessor for the transform
-  ancZoom
-    .extent([[0, 0],[width, height]])
-    .scaleExtent([1, 8]);
-  const ancT = () => d3.zoomTransform(g.node());
-
-  // active zooming
+  // When active zooming
   zoom.on("zoom", function (e) {
     const t = e.transform;
-    const k = t.k / zoomTransform.k;
-    const point = center(e, this);
-    if (k === 1) {
-      // pure translation?
-      g.call(ancZoom.translateBy, (t.x - zoomTransform.x) / ancT().k, 0);
-    } else {
-      // if not, we're zooming on a fixed point
-      g.call(ancZoom.scaleBy, k, point);
-    }
     setZoomTransform(t);
   });
 
+  // Attach zoom handler to svg
   svg.call(zoom);
   // End of zoom
 

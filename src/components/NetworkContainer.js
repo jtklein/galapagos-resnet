@@ -31,14 +31,12 @@ class NetworkContainer extends Component {
         d3.forceLink(props.data.links).id((d) => d.id)
       )
       .force("collide", d3.forceCollide());
-    const ancZoom = d3.zoom();
     const zoom = d3.zoom();
     // Holds a copy of the previous zoom transform, so we can track its changes
     const zoomTransform = d3.zoomIdentity;
 
     this.state = {
       simulation,
-      ancZoom,
       zoom,
       zoomTransform,
     };
@@ -84,11 +82,10 @@ class NetworkContainer extends Component {
       selectedThemes,
       searchText,
     } = this.props;
-    const { simulation, ancZoom, zoom, zoomTransform } = this.state;
+    const { simulation, zoom, zoomTransform } = this.state;
     Network(refNetworkComponent.current, {
       data,
       simulation,
-      ancZoom,
       zoom,
       zoomTransform,
       setZoomTransform: this.setZoomTransform,
