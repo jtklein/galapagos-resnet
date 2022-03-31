@@ -14,7 +14,7 @@ export default function Network(el, props) {
 
   const height = document.getElementById("network").offsetHeight;
   const width = document.getElementById("network").offsetWidth;
-;
+
   const anchorElement = d3.select(el);
   let svg = anchorElement.select("svg");
 
