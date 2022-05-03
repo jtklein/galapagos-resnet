@@ -145,27 +145,27 @@ const themes = {
 const plans = {
   1: {
     labelEN: "Governance",
-    labelES: "",
+    labelES: "Gobernanza",
     color: "#2E65CD",
   },
   2: {
     labelEN: "Community",
-    labelES: "",
+    labelES: "Comunidad",
     color: "#F7974A",
   },
   3: {
     labelEN: "Environment",
-    labelES: "",
+    labelES: "Entorno",
     color: "#54A87A",
   },
   4: {
     labelEN: "Habitat",
-    labelES: "",
+    labelES: "Hábitat",
     color: "#C7450F",
   },
   5: {
     labelEN: "Economy",
-    labelES: "",
+    labelES: "Economía",
     color: "#EEDA47",
   },
 };
@@ -246,47 +246,47 @@ const targets = {
 const questions = {
   1: {
     labelEN: "Tourism",
-    labelES: "",
+    labelES: "Turismo",
     color: "#ED551E",
   },
   2: {
     labelEN: "Development",
-    labelES: "",
+    labelES: "Desarrollo",
     color: "#A11EED",
   },
   3: {
     labelEN: "Planning",
-    labelES: "",
+    labelES: "Planificación",
     color: "#86931C",
   },
   4: {
     labelEN: "Education",
-    labelES: "",
+    labelES: "Educación",
     color: "#ED26C2",
   },
   5: {
     labelEN: "Agriculture",
-    labelES: "",
+    labelES: "Agricultura",
     color: "#ECCE48",
   },
   6: {
     labelEN: "Hydrology",
-    labelES: "",
+    labelES: "Hidrología",
     color: "#264EED",
   },
   7: {
     labelEN: "Invasive Species",
-    labelES: "",
+    labelES: "Especies invasoras",
     color: "#AC0A28",
   },
   8: {
     labelEN: "Marine",
-    labelES: "",
+    labelES: "Marina",
     color: "#48C1EC",
   },
   9: {
     labelEN: "Conservation",
-    labelES: "",
+    labelES: "Conservación",
     color: "#69EC48",
   },
 };
