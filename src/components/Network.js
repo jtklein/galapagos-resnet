@@ -105,7 +105,6 @@ export default function Network(el, props) {
       // Get this node's datum
       const datum = d3.select(this).datum();
       props.onClick(datum);
-      zoomOnNode(event, d);
     })
     .call((g) =>
       g
@@ -198,22 +197,6 @@ export default function Network(el, props) {
   }
 
   // Zoom related
-  // Called when clicked on a node in the network, "zoom" to clicked node but keep current scale, i.e. pan only
-  function zoomOnNode(event, d) {
-    event.stopPropagation();
-    svg
-      .transition()
-      .duration(1)
-      .call(
-        zoom.transform,
-        d3.zoomIdentity
-          .translate(width / 2, height / 2)
-          .scale(zoomTransform.k)
-          .translate(-d.x, -d.y),
-        d3.pointer(event)
-      );
-  }
-
   // When active zooming
   zoom.on("zoom", function (e) {
     const t = e.transform;
