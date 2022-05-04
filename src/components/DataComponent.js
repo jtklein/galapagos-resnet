@@ -128,7 +128,7 @@ const themes = {
   14: {
     labelEN: "Food security",
     labelES: "Seguridad alimentaria",
-    color: "#008B8B",
+    color: "#ccbf2d",
   },
   15: {
     labelEN: "Community",

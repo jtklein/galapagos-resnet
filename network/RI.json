@@ -432,11 +432,11 @@
             "id": "Innovation"
         },
         {
-            "color": "#008B8B",
+            "color": "#ccbf2d",
             "id": "Agriculture"
         },
         {
-            "color": "#008B8B",
+            "color": "#ccbf2d",
             "id": "Local food production"
         },
         {
@@ -496,7 +496,7 @@
             "id": "Illegal fishing/overfishing"
         },
         {
-            "color": "#008B8B",
+            "color": "#ccbf2d",
             "id": "Fisheries/aquaculture"
         },
         {
@@ -3971,13 +3971,13 @@
         },
         {
             "weight": 1,
-            "color": "#008B8B",
+            "color": "#ccbf2d",
             "source": "Galapagos Verde",
             "target": "Agriculture"
         },
         {
             "weight": 1,
-            "color": "#008B8B",
+            "color": "#ccbf2d",
             "source": "Galapagos Verde",
             "target": "Local food production"
         },
@@ -4565,13 +4565,13 @@
         },
         {
             "weight": 1,
-            "color": "#008B8B",
+            "color": "#ccbf2d",
             "source": "Pesquerias",
             "target": "Fisheries/aquaculture"
         },
         {
             "weight": 1,
-            "color": "#008B8B",
+            "color": "#ccbf2d",
             "source": "Pesquerias",
             "target": "Local food production"
         },
