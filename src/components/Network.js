@@ -153,19 +153,19 @@ export default function Network(el, props) {
         })
         .text((d) => d.id)
     )
-    .call((g) =>
-      g
-        // A circle to highlight the selected node
-        // TODO: this is pretty inefficient because it adds nodes' size worth of amount of extra invisible circles
-        .append("circle")
-        .attr("class", "highlight-circle")
-        .attr("r", (d) => nodeRadius + 3)
-        .attr("fill", "none")
-        .attr("stroke", (d) => {
-          return isSelectedNode(d) || isSelectedTheme(d) ? d.color : null;
-        })
-        .attr("stroke-width", 1.5)
-    )
+    // .call((g) =>
+    //   g
+    //     // A circle to highlight the selected node
+    //     // TODO: this is pretty inefficient because it adds nodes' size worth of amount of extra invisible circles
+    //     .append("circle")
+    //     .attr("class", "highlight-circle")
+    //     .attr("r", (d) => nodeRadius + 3)
+    //     .attr("fill", "none")
+    //     .attr("stroke", (d) => {
+    //       return isSelectedNode(d) || isSelectedTheme(d) ? d.color : null;
+    //     })
+    //     .attr("stroke-width", 1.5)
+    // )
     .call(
       d3
         .drag()
