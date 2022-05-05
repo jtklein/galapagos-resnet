@@ -834,6 +834,63 @@ const TutorialTooltip = ({
   );
 };
 
+const MobileTutorial = ({ index }) => {
+  return (
+    <div>
+      <TutorialTooltip
+        title="tutorialProjectsTitle"
+        description="tutorialProjectsDescription"
+        open={index === 0}
+        index={index}
+      >
+        <div />
+      </TutorialTooltip>
+      <TutorialTooltip
+        title="tutorialInformationTitle"
+        description="tutorialInformationDescription"
+        open={index === 1}
+        index={index}
+      >
+        <div />
+      </TutorialTooltip>
+      <TutorialTooltip
+        title="tutorialTopicsTitle"
+        description="tutorialTopicsDescription"
+        open={index === 2}
+        index={index}
+      >
+        <div />
+      </TutorialTooltip>
+      <TutorialTooltip
+        title="tutorialFilterTitle"
+        description="tutorialFilterDescription"
+        open={index === 3}
+        placement="top"
+        index={index}
+      >
+        <div />
+      </TutorialTooltip>
+      <TutorialTooltip
+        title="tutorialNodesTitle"
+        description="tutorialNodesDescription"
+        open={index === 4}
+        placement="top"
+        index={index}
+      >
+        <div />
+      </TutorialTooltip>
+      <TutorialTooltip
+        title="tutorialDownloadTitle"
+        description="tutorialDownloadDescription"
+        open={index === 5}
+        placement="top"
+        index={index}
+      >
+        <div />
+      </TutorialTooltip>
+    </div>
+  );
+};
 
 class DataComponent extends Component {
   constructor(props) {
@@ -1031,7 +1088,13 @@ class DataComponent extends Component {
       tutorialIndex: tutorialIndex + 1,
       // selectedNode: tutorialIndex >= 1 ? { id: "5.2" } : null,
     });
-    if (tutorialIndex === -1 || tutorialIndex === 0 || tutorialIndex === 1 || tutorialIndex === 3) {
+    if (
+      (tutorialIndex === -1 ||
+        tutorialIndex === 0 ||
+        tutorialIndex === 1 ||
+        tutorialIndex === 3) &&
+      !onMobile
+    ) {
       window.scrollTo(0, 0);
     } else {
       const networkElement = document.getElementById("network");
@@ -1051,7 +1114,92 @@ class DataComponent extends Component {
     return tutorialOpen && tutorialIndex === index;
   };
 
-  render() {
+  renderDesktop() {
+    const {
+      shownData,
+      selectedNode,
+      connectedNodes,
+      connectedLinks,
+      selectedThemes,
+      searchText,
+    } = this.state;
+    // const markers = this.filterMarkers();
+
+    return (
+      <Grid container>
+        <Grid item className="grid-item" xs={2} style={{ padding: 0 }}>
+          <LeftLegend
+            selectedThemes={selectedThemes}
+            onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
+            onClickSaveNetworkSVG={this.onClickSaveNetworkSVG}
+            openTheme={this.openOnDesktop(3)}
+            openDownload={this.openOnDesktop(5)}
+          />
+        </Grid>
+        {/* xs is sum of 12 */}
+        <Grid item className="grid-item" xs={8} style={{ padding: 0 }}>
+          <TutorialTooltip
+            title="tutorialProjectsTitle"
+            description="tutorialProjectsDescription"
+            open={this.openOnDesktop(0)}
+            placement="top"
+            index={0}
+          >
+            <div></div>
+          </TutorialTooltip>
+          <TutorialTooltip
+            title="tutorialInformationTitle"
+            description="tutorialInformationDescription"
+            open={this.openOnDesktop(1)}
+            placement={"top"}
+            index={1}
+          >
+            <div></div>
+          </TutorialTooltip>
+          <TutorialTooltip
+            title="tutorialTopicsTitle"
+            description="tutorialTopicsDescription"
+            open={this.openOnDesktop(2)}
+            placement={"top"}
+            index={2}
+          >
+            <div></div>
+          </TutorialTooltip>
+          <TutorialTooltip
+            title="tutorialNodesTitle"
+            description="tutorialNodesDescription"
+            open={this.openOnDesktop(4)}
+            placement="top"
+            index={4}
+          >
+            <div></div>
+          </TutorialTooltip>
+          <NetworkContainer
+            refNetworkComponent={this.refNetworkComponent}
+            data={shownData}
+            selectedNode={selectedNode}
+            connectedNodes={connectedNodes}
+            connectedLinks={connectedLinks}
+            selectedThemes={selectedThemes}
+            searchText={searchText}
+            onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
+          />
+        </Grid>
+        <Grid item className="grid-item" xs={2} style={{ padding: 0 }}>
+          <RightLegend />
+        </Grid>
+
+        {/* <Grid item className="grid-item" xs={5}>
+            <MapComponent
+              markers={markers}
+              onMarkerClicked={(m, cb) => this.onMarkerClicked(m, cb)}
+            />
+          </Grid> */}
+      </Grid>
+    );
+  }
+
+  renderMobile() {
     const {
       shownData,
       selectedNode,
@@ -1060,8 +1208,40 @@ class DataComponent extends Component {
       selectedThemes,
       searchText,
       tutorialOpen,
+      tutorialIndex,
     } = this.state;
-    // const markers = this.filterMarkers();
+    const height = window.innerHeight;
+    const minHeight = 520;
+
+    return (
+      <div style={{ width: "100%" }}>
+        <div style={{ height, minHeight }}>
+          <NetworkContainer
+            refNetworkComponent={this.refNetworkComponent}
+            data={shownData}
+            selectedNode={selectedNode}
+            connectedNodes={connectedNodes}
+            connectedLinks={connectedLinks}
+            selectedThemes={selectedThemes}
+            searchText={searchText}
+            onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
+          />
+        </div>
+        {tutorialOpen ? <MobileTutorial index={tutorialIndex} /> : null}
+        <LeftLegend
+          selectedThemes={selectedThemes}
+          onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
+          onClickSaveNetworkSVG={this.onClickSaveNetworkSVG}
+          openTheme={this.openOnDesktop(3)}
+          openDownload={this.openOnDesktop(5)}
+        />
+        <RightLegend />
+      </div>
+    );
+  }
+
+  render() {
+    const { selectedNode, searchText, tutorialOpen } = this.state;
     return (
       <div>
         <div style={{ marginBottom: 16 }}>
@@ -1070,77 +1250,7 @@ class DataComponent extends Component {
             onChange={(e) => this.setState({ searchText: e.target.value })}
           />
         </div>
-        <Grid container>
-          <Grid item className="grid-item" xs={2} style={{ padding: 0 }}>
-            <LeftLegend
-              selectedThemes={selectedThemes}
-              onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
-              onClickSaveNetworkSVG={this.onClickSaveNetworkSVG}
-              openTheme={this.openOnDesktop(3)}
-              openDownload={this.openOnDesktop(5)}
-            />
-          </Grid>
-          {/* xs is sum of 12 */}
-          <Grid item className="grid-item" xs={8} style={{ padding: 0 }}>
-            <TutorialTooltip
-              title="tutorialProjectsTitle"
-              description="tutorialProjectsDescription"
-              open={this.openOnDesktop(0)}
-              placement="top"
-              index={0}
-            >
-              <div></div>
-            </TutorialTooltip>
-            <TutorialTooltip
-              title="tutorialInformationTitle"
-              description="tutorialInformationDescription"
-              open={this.openOnDesktop(1)}
-              placement={"top"}
-              index={1}
-            >
-              <div></div>
-            </TutorialTooltip>
-            <TutorialTooltip
-              title="tutorialTopicsTitle"
-              description="tutorialTopicsDescription"
-              open={this.openOnDesktop(2)}
-              placement={"top"}
-              index={2}
-            >
-              <div></div>
-            </TutorialTooltip>
-            <TutorialTooltip
-              title="tutorialNodesTitle"
-              description="tutorialNodesDescription"
-              open={this.openOnDesktop(4)}
-              placement="top"
-              index={4}
-            >
-              <div></div>
-            </TutorialTooltip>
-            <NetworkContainer
-              refNetworkComponent={this.refNetworkComponent}
-              data={shownData}
-              selectedNode={selectedNode}
-              connectedNodes={connectedNodes}
-              connectedLinks={connectedLinks}
-              selectedThemes={selectedThemes}
-              searchText={searchText}
-              onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
-            />
-          </Grid>
-          <Grid item className="grid-item" xs={2} style={{ padding: 0 }}>
-            <RightLegend
-            />
-          </Grid>
-
-          {/* <Grid item className="grid-item" xs={5}>
-          <MapComponent
-            markers={markers}
-            onMarkerClicked={(m, cb) => this.onMarkerClicked(m, cb)}
-          />
-        </Grid> */}
-        </Grid>
+        {onMobile ? this.renderMobile() : this.renderDesktop()}
         <NodeInfo node={selectedNode} />
         <TutorialButton
           tutorialOpen={tutorialOpen}
