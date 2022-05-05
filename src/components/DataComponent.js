@@ -495,15 +495,6 @@ const PlanLegend = ({
         padding: 5,
       }}
     >
-      <Grid
-        item
-        style={{
-          display: "flex",
-        }}
-      >
-        {i18n.t('galapagosPlan')}
-      </Grid>
-
       {Object.entries(plans).map(([key, plan]) => (
         <Grid
           item
@@ -570,14 +561,6 @@ const TargetLegend = ({ mobile }) => {
           display: "flex",
         }}
       >
-        {i18n.t("priorityTargets")}
-      </Grid>
-      <Grid
-        item
-        style={{
-          display: "flex",
-        }}
-      >
         <Grid
           container
           direction={!mobile ? "row" : "column"}
@@ -614,15 +597,6 @@ const QuestionLegend = ({ mobile }) => {
         padding: 5,
       }}
     >
-      <Grid
-        item
-        style={{
-          display: "flex",
-        }}
-      >
-        {i18n.t("topQuestions")}
-      </Grid>
-
       {Object.entries(questions).map(([key, question]) => (
         <Grid
           item
@@ -660,6 +634,7 @@ const RightLegend = ({
   openDownload,
 }) => {
   const theme = useTheme();
+  const { i18n } = useTranslation();
   return (
     <Grid
       container
@@ -675,9 +650,13 @@ const RightLegend = ({
         border: `1px solid ${theme.palette.primary.contrastText}`,
       }}
     >
-      <Grid item xs style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
-        <PlanLegend mobile={mobile} />
+      <Grid item xs>
+        <div style={{ width: "100%" }}>{i18n.t("galapagosPlan")}</div>
+        <div style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
+          <PlanLegend mobile={mobile} />
+        </div>
       </Grid>
+
       <Grid
         item
         xs
@@ -685,9 +664,14 @@ const RightLegend = ({
       >
         <hr className="solid"></hr>
       </Grid>
-      <Grid item xs style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
-        <TargetLegend mobile={mobile} iconClassName={iconClassName} />
+
+      <Grid item xs>
+        <div style={{ width: "100%" }}>{i18n.t("priorityTargets")}</div>
+        <div style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
+          <TargetLegend mobile={mobile} iconClassName={iconClassName} />
+        </div>
       </Grid>
+
       <Grid
         item
         xs
@@ -695,8 +679,12 @@ const RightLegend = ({
       >
         <hr className="solid"></hr>
       </Grid>
-      <Grid item xs style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
-        <QuestionLegend mobile={mobile} />
+
+      <Grid item xs>
+        <div style={{ width: "100%" }}>{i18n.t("topQuestions")}</div>
+        <div style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
+          <QuestionLegend mobile={mobile} />
+        </div>
       </Grid>
     </Grid>
   );
