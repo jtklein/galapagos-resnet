@@ -538,8 +538,8 @@ const SDGIcon = ({ src, className, alt }) => (
 const TargetLegend = ({ mobile }) => {
   const { i18n } = useTranslation();
   const iconClassName = "sdg-icon";
-  const TargetColumn = ({sliceBeginning, sliceEnd}) => (
-    <Grid container direction={"column"}>
+  const TargetColumn = ({ sliceBeginning, sliceEnd }) => (
+    <Grid container direction={!mobile ? "column" : "row"}>
       {Object.entries(targets)
         .slice(sliceBeginning, sliceEnd)
         .map(([key, target]) => (
@@ -580,7 +580,7 @@ const TargetLegend = ({ mobile }) => {
       >
         <Grid
           container
-          direction={"row"}
+          direction={!mobile ? "row" : "column"}
           spacing={1}
           justifyContent="space-evenly"
           style={{
