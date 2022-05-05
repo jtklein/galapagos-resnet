@@ -546,43 +546,75 @@ const TargetLegend = ({ mobile }) => {
   );
 ;
 
-  return (
+  const DesktopLayout = <Grid
+        container
+        direction={!mobile ? "column" : "row"}
+        justifyContent="center"
+        style={{
+          padding: 5,
+        }}
+      >
+        <Grid
+          item
+          style={{
+            display: "flex",
+          }}
+        >
+          <Grid
+            container
+            direction={!mobile ? "row" : "column"}
+            spacing={1}
+            justifyContent="space-evenly"
+            style={{
+              padding: 0,
+            }}
+          >
+            <Grid item>
+              <TargetColumn sliceBeginning={0} sliceEnd={5} />
+            </Grid>
+            <Grid item>
+              <TargetColumn sliceBeginning={5} sliceEnd={10} />
+            </Grid>
+            <Grid item>
+              <TargetColumn sliceBeginning={10} sliceEnd={15} />
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>;
+
+  const MobileLayout = (
     <Grid
       container
       direction={!mobile ? "column" : "row"}
       justifyContent="center"
       style={{
-        padding: 5,
+        padding: 0,
+        height: "100%",
+        alignItems: "center",
       }}
     >
-      <Grid
-        item
-        style={{
-          display: "flex",
-        }}
-      >
+      {Object.entries(targets).map(([key, target]) => (
         <Grid
-          container
-          direction={!mobile ? "row" : "column"}
-          spacing={1}
-          justifyContent="space-evenly"
+          item
+          key={key}
           style={{
-            padding: 0,
+            flex: "1 0 calc(14.3% - 8px)",
+            padding: 4,
+            maxWidth: "68px",
+            cursor: "pointer",
           }}
         >
-          <Grid item>
-            <TargetColumn sliceBeginning={0} sliceEnd={5} />
-          </Grid>
-          <Grid item>
-            <TargetColumn sliceBeginning={5} sliceEnd={10} />
-          </Grid>
-          <Grid item>
-            <TargetColumn sliceBeginning={10} sliceEnd={15} />
-          </Grid>
+          <SDGIcon
+            src={i18n.language !== "es" ? target.sourceEN : target.sourceES}
+            className={classNames(iconClassName, "clickable")}
+            alt="sdg-icon"
+          />
         </Grid>
-      </Grid>
+      ))}
     </Grid>
   );
+
+  return mobile ? MobileLayout : DesktopLayout;
 };
 
 const QuestionLegend = ({ mobile }) => {
