@@ -414,7 +414,7 @@ const DownloadButton = (props) => {
   );
 };
 
-const LeftLegend = ({ selectedThemes, onThemeClicked, onClickSaveNetworkSVG, openTheme, openDownload }) => {
+const LeftLegend = ({ mobile, selectedThemes, onThemeClicked, onClickSaveNetworkSVG, openTheme, openDownload }) => {
   const theme = useTheme();
   return (
     <Grid
@@ -433,6 +433,7 @@ const LeftLegend = ({ selectedThemes, onThemeClicked, onClickSaveNetworkSVG, ope
     >
       <Grid item xs style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
         <ThemeLegend
+          mobile={mobile}
           selectedThemes={selectedThemes}
           onThemeClicked={(themeColor) => onThemeClicked(themeColor)}
           lowerBound={0}
@@ -449,6 +450,7 @@ const LeftLegend = ({ selectedThemes, onThemeClicked, onClickSaveNetworkSVG, ope
       </Grid>
       <Grid item xs style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
         <ThemeLegend
+          mobile={mobile}
           selectedThemes={selectedThemes}
           onThemeClicked={(themeColor) => onThemeClicked(themeColor)}
           lowerBound={7}
@@ -473,7 +475,7 @@ const LeftLegend = ({ selectedThemes, onThemeClicked, onClickSaveNetworkSVG, ope
           padding: 0,
         }}
       >
-        <DownloadButton onClick={onClickSaveNetworkSVG} open={openDownload}/>
+        <DownloadButton onClick={onClickSaveNetworkSVG} open={openDownload} />
       </Grid>
     </Grid>
   );
@@ -556,7 +558,7 @@ const TargetLegend = ({ mobile }) => {
   return (
     <Grid
       container
-      direction={"column"}
+      direction={!mobile ? "column" : "row"}
       justifyContent="center"
       style={{
         padding: 5,
@@ -649,6 +651,8 @@ const QuestionLegend = ({ mobile }) => {
 };
 
 const RightLegend = ({
+  mobile,
+  iconClassName,
   selectedThemes,
   onThemeClicked,
   onClickSaveNetworkSVG,
@@ -672,7 +676,7 @@ const RightLegend = ({
       }}
     >
       <Grid item xs style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
-        <PlanLegend />
+        <PlanLegend mobile={mobile} />
       </Grid>
       <Grid
         item
@@ -682,7 +686,7 @@ const RightLegend = ({
         <hr className="solid"></hr>
       </Grid>
       <Grid item xs style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
-        <TargetLegend />
+        <TargetLegend mobile={mobile} iconClassName={iconClassName} />
       </Grid>
       <Grid
         item
@@ -692,7 +696,7 @@ const RightLegend = ({
         <hr className="solid"></hr>
       </Grid>
       <Grid item xs style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
-        <QuestionLegend />
+        <QuestionLegend mobile={mobile} />
       </Grid>
     </Grid>
   );
@@ -1229,13 +1233,14 @@ class DataComponent extends Component {
         </div>
         {tutorialOpen ? <MobileTutorial index={tutorialIndex} /> : null}
         <LeftLegend
+          mobile
           selectedThemes={selectedThemes}
           onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
           onClickSaveNetworkSVG={this.onClickSaveNetworkSVG}
           openTheme={this.openOnDesktop(3)}
           openDownload={this.openOnDesktop(5)}
         />
-        <RightLegend />
+        <RightLegend mobile iconClassName="sdg-icon-mobile" />
       </div>
     );
   }
