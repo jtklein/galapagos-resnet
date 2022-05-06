@@ -475,7 +475,7 @@ const LeftLegend = ({ mobile, selectedThemes, onThemeClicked, onClickSaveNetwork
           padding: 0,
         }}
       >
-        <DownloadButton onClick={onClickSaveNetworkSVG} open={openDownload} />
+        <DownloadButton mobile={mobile} onClick={onClickSaveNetworkSVG} open={openDownload} />
       </Grid>
     </Grid>
   );
