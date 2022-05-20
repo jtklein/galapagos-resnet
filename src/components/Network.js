@@ -4,14 +4,6 @@ const nodeRadius = 8;
 const linkWidth = 1;
 
 export default function Network(el, props) {
-  const themeSet = props.selectedThemes && props.selectedThemes.length !== 0;
-  function isSelectedTheme(node) {
-    if (!themeSet) {
-      return false;
-    }
-    return props.selectedThemes.indexOf(node.color) !== -1;
-  }
-
   const height = document.getElementById("network").offsetHeight;
   const width = document.getElementById("network").offsetWidth;
 
@@ -31,8 +23,24 @@ export default function Network(el, props) {
   // For some reason the svg height adds seven on each rerender (i.e. the value of height taken from getElementById is too big)
   svg.attr("width", width).attr("height", height - 7);
 
-  const { data, simulation, zoom, zoomTransform, setZoomTransform } =
+  const { data, simulation, zoom, zoomTransform, setZoomTransform, selectedCategories, selectedThemes } =
     props;
+
+  const categorySet = selectedCategories && selectedCategories.length !== 0;
+  function isSelectedCategory(node) {
+    if (!categorySet) {
+      return false;
+    }
+    return selectedCategories.indexOf(node.color) !== -1;
+  }
+  
+  const themeSet = selectedThemes && selectedThemes.length !== 0;
+  function isSelectedTheme(node) {
+    if (!themeSet) {
+      return false;
+    }
+    return selectedThemes.indexOf(node.color) !== -1;
+  }
 
   let linksOfSelectedNode = data.links;
   if (props.selectedNode && props.connectedLinks) {
@@ -75,6 +83,9 @@ export default function Network(el, props) {
       if (!props.selectedNode) {
         return "lightgray";
       }
+      if (categorySet) {
+        return isSelectedCategory(d) ? d.color : "lightgray";
+      }
       if (themeSet) {
         return isSelectedTheme(d) ? d.color : "lightgray";
       }
@@ -113,6 +124,9 @@ export default function Network(el, props) {
         .attr("stroke-width", 1.5)
         .attr("r", nodeRadius)
         .attr("fill", function (d) {
+          if (categorySet) {
+            return isSelectedCategory(d) ? d.color : "lightgray";
+          }
           if (themeSet) {
             return isSelectedTheme(d) ? d.color : "lightgray";
           }

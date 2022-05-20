@@ -79,6 +79,7 @@ class NetworkContainer extends Component {
       selectedNode,
       connectedNodes,
       connectedLinks,
+      selectedCategories,
       selectedThemes,
       searchText,
     } = this.props;
@@ -92,6 +93,7 @@ class NetworkContainer extends Component {
       selectedNode,
       connectedNodes,
       connectedLinks,
+      selectedCategories,
       selectedThemes,
       searchText,
       onClick: this.onNetworkClickNode,

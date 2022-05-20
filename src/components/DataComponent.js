@@ -59,7 +59,7 @@ const onMobile = !isDesktop || window.innerWidth < 800;
 const initialData = Object.assign({}, data);
 const legendOpacity = 0.4;
 
-const themes = {
+const nodeCategories = {
   1: {
     labelEN: "Projects",
     labelES: "Proyectos",
@@ -94,7 +94,10 @@ const themes = {
     labelEN: "Institutions",
     labelES: "Instituciones",
     color: "#7023BD",
-  },
+  }
+};
+
+const themes = {
   8: {
     labelEN: "Physical and chemical sciences",
     labelES: "Ciencias físicas y químicas",
@@ -296,12 +299,70 @@ const questions = {
   },
 };
 
+const CategoriesLegend = ({
+  selectedCategories,
+  onCategoryClicked,
+  mobile,
+  open,
+}) => {
+  const { i18n } = useTranslation();
+
+  return (
+    <TutorialTooltip
+      title="tutorialFilterTitle"
+      description="tutorialFilterDescription"
+      placement="right"
+      open={open}
+      index={3}
+    >
+      <Grid
+        container
+        direction={!mobile ? "column" : "row"}
+        justifyContent="center"
+        style={{
+          padding: 5,
+        }}
+      >
+        {Object.entries(nodeCategories).map(([key, category]) => {
+          return (
+            <Grid
+              item
+              key={category.color}
+              className={classNames("link-item", "clickable")}
+              style={{
+                opacity:
+                  !selectedCategories ||
+                  selectedCategories.length === 0 ||
+                  selectedCategories.indexOf(category.color) !== -1
+                    ? 1
+                    : legendOpacity,
+                display: "flex",
+              }}
+              onClick={() => onCategoryClicked(category.color)}
+            >
+              <span
+                width={50}
+                style={{
+                  border: `1px solid ${category.color}`,
+                  backgroundColor: category.color,
+                  marginRight: 4,
+                }}
+              >
+                &nbsp;&nbsp;&nbsp;
+              </span>
+              {i18n.language !== "es" ? category.labelEN : category.labelES}
+            </Grid>
+          );
+        })}
+      </Grid>
+    </TutorialTooltip>
+  );
+};
+
 const ThemeLegend = ({
   selectedThemes,
   onThemeClicked,
   mobile,
-  lowerBound,
-  upperBound,
   open,
 }) => {
   const { i18n } = useTranslation();
@@ -323,38 +384,35 @@ const ThemeLegend = ({
         }}
       >
         {Object.entries(themes).map(([key, theme]) => {
-          if (key >= lowerBound && key <= upperBound) {
-            return (
-              <Grid
-                item
-                key={theme.color}
-                className={classNames("link-item", "clickable")}
+          return (
+            <Grid
+              item
+              key={theme.color}
+              className={classNames("link-item", "clickable")}
+              style={{
+                opacity:
+                  !selectedThemes ||
+                  selectedThemes.length === 0 ||
+                  selectedThemes.indexOf(theme.color) !== -1
+                    ? 1
+                    : legendOpacity,
+                display: "flex",
+              }}
+              onClick={() => onThemeClicked(theme.color)}
+            >
+              <span
+                width={50}
                 style={{
-                  opacity:
-                    !selectedThemes ||
-                    selectedThemes.length === 0 ||
-                    selectedThemes.indexOf(theme.color) !== -1
-                      ? 1
-                      : legendOpacity,
-                  display: "flex",
+                  border: `1px solid ${theme.color}`,
+                  backgroundColor: theme.color,
+                  marginRight: 4,
                 }}
-                onClick={() => onThemeClicked(theme.color)}
               >
-                <span
-                  width={50}
-                  style={{
-                    border: `1px solid ${theme.color}`,
-                    backgroundColor: theme.color,
-                    marginRight: 4,
-                  }}
-                >
-                  &nbsp;&nbsp;&nbsp;
-                </span>
-                {i18n.language !== "es" ? theme.labelEN : theme.labelES}
-              </Grid>
-            );
-          }
-          return null;
+                &nbsp;&nbsp;&nbsp;
+              </span>
+              {i18n.language !== "es" ? theme.labelEN : theme.labelES}
+            </Grid>
+          );
         })}
       </Grid>
     </TutorialTooltip>
@@ -419,7 +477,7 @@ const DownloadButton = (props) => {
   );
 };
 
-const LeftLegend = ({ mobile, selectedThemes, onThemeClicked, onClickSaveNetworkSVG, openTheme, openDownload }) => {
+const LeftLegend = ({ mobile, selectedThemes, selectedCategories, onThemeClicked, onCategoryClicked, onClickSaveNetworkSVG, openTheme, openDownload }) => {
   const theme = useTheme();
   return (
     <Grid
@@ -437,12 +495,10 @@ const LeftLegend = ({ mobile, selectedThemes, onThemeClicked, onClickSaveNetwork
       }}
     >
       <Grid item xs style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
-        <ThemeLegend
+        <CategoriesLegend
           mobile={mobile}
-          selectedThemes={selectedThemes}
-          onThemeClicked={(themeColor) => onThemeClicked(themeColor)}
-          lowerBound={0}
-          upperBound={7}
+          selectedCategories={selectedCategories}
+          onCategoryClicked={(categoryColor) => onCategoryClicked(categoryColor)}
           open={openTheme}
         />
       </Grid>
@@ -458,8 +514,6 @@ const LeftLegend = ({ mobile, selectedThemes, onThemeClicked, onClickSaveNetwork
           mobile={mobile}
           selectedThemes={selectedThemes}
           onThemeClicked={(themeColor) => onThemeClicked(themeColor)}
-          lowerBound={8}
-          upperBound={Infinity}
         />
       </Grid>
       <Grid
@@ -664,11 +718,6 @@ const QuestionLegend = ({ mobile }) => {
 const RightLegend = ({
   mobile,
   iconClassName,
-  selectedThemes,
-  onThemeClicked,
-  onClickSaveNetworkSVG,
-  openTheme,
-  openDownload,
 }) => {
   const theme = useTheme();
   const { i18n } = useTranslation();
@@ -929,6 +978,7 @@ class DataComponent extends Component {
       shownData: initialData,
       selectedNode: undefined,
       connectedNodes: undefined,
+      selectedCategories: [],
       selectedThemes: [],
       searchText: "",
       tutorialOpen: false,
@@ -1043,6 +1093,17 @@ class DataComponent extends Component {
     return markers;
   };
 
+  onCategoryClicked = (categoryColor) => {
+    const { selectedCategories } = this.state;
+    const indexOfCategory = selectedCategories.indexOf(categoryColor);
+    this.setState({
+      selectedCategories:
+        indexOfCategory !== -1
+          ? selectedCategories.filter((d, index) => index !== indexOfCategory)
+          : selectedCategories.concat(categoryColor),
+    });
+  };
+
   onThemeClicked = (themeColor) => {
     const { selectedThemes } = this.state;
     const indexOfTheme = selectedThemes.indexOf(themeColor);
@@ -1088,28 +1149,31 @@ class DataComponent extends Component {
         tutorialOpen: false,
         tutorialIndex: -1,
         selectedNode: null,
-        selectedThemes: null,
+        selectedThemes: [],
+        selectedCategories: [],
       });
       return;
     }
 
     if (tutorialIndex === -1) {
       this.setState({
-        selectedThemes: [themes[1].color],
+        selectedCategories: [nodeCategories[1].color],
       });
     }
     if (tutorialIndex === 0) {
       this.setState({
-        selectedThemes: [themes[1].color, themes[5].color],
+        selectedCategories: [nodeCategories[1].color, nodeCategories[5].color],
       });
     }
     if (tutorialIndex === 1) {
       this.setState({
-        selectedThemes: [themes[1].color, themes[8].color],
+        selectedCategories: [nodeCategories[1].color],
+        selectedThemes: [themes[8].color],
       });
     }
     if (tutorialIndex === 2) {
       this.setState({
+        selectedCategories: [],
         selectedThemes: [],
       });
     }
@@ -1150,6 +1214,7 @@ class DataComponent extends Component {
       connectedNodes,
       connectedLinks,
       selectedThemes,
+      selectedCategories,
       searchText,
     } = this.state;
     // const markers = this.filterMarkers();
@@ -1159,7 +1224,11 @@ class DataComponent extends Component {
         <Grid item className="grid-item" xs={2} style={{ padding: 0 }}>
           <LeftLegend
             selectedThemes={selectedThemes}
+            selectedCategories={selectedCategories}
             onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
+            onCategoryClicked={(categoryColor) =>
+              this.onCategoryClicked(categoryColor)
+            }
             onClickSaveNetworkSVG={this.onClickSaveNetworkSVG}
             openTheme={this.openOnDesktop(3)}
             openDownload={this.openOnDesktop(5)}
@@ -1210,6 +1279,7 @@ class DataComponent extends Component {
             connectedNodes={connectedNodes}
             connectedLinks={connectedLinks}
             selectedThemes={selectedThemes}
+            selectedCategories={selectedCategories}
             searchText={searchText}
             onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
           />
@@ -1235,6 +1305,7 @@ class DataComponent extends Component {
       connectedNodes,
       connectedLinks,
       selectedThemes,
+      selectedCategories,
       searchText,
       tutorialOpen,
       tutorialIndex,
@@ -1252,6 +1323,7 @@ class DataComponent extends Component {
             connectedNodes={connectedNodes}
             connectedLinks={connectedLinks}
             selectedThemes={selectedThemes}
+            selectedCategories={selectedCategories}
             searchText={searchText}
             onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
           />
@@ -1260,7 +1332,11 @@ class DataComponent extends Component {
         <LeftLegend
           mobile
           selectedThemes={selectedThemes}
+          selectedCategories={selectedCategories}
           onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
+          onCategoryClicked={(categoryColor) =>
+            this.onCategoryClicked(categoryColor)
+          }
           onClickSaveNetworkSVG={this.onClickSaveNetworkSVG}
           openTheme={this.openOnDesktop(3)}
           openDownload={this.openOnDesktop(5)}
