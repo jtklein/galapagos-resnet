@@ -244,7 +244,7 @@ export const data = {
       id: "San Cristobal",
     },
     {
-      color: "#ea9999",
+      color: "#cc0000",
       size: 3000,
       id: "Santa Cruz",
     },
@@ -349,7 +349,7 @@ export const data = {
       id: "Darwin",
     },
     {
-      color: "#ea9999",
+      color: "#cc0000",
       size: 3000,
       id: "Espanola",
     },
@@ -359,17 +359,17 @@ export const data = {
       id: "Fernandina",
     },
     {
-      color: "#ea9999",
+      color: "#cc0000",
       size: 3000,
       id: "Genovesa",
     },
     {
-      color: "#ea9999",
+      color: "#cc0000",
       size: 3000,
       id: "Marchena",
     },
     {
-      color: "#ea9999",
+      color: "#cc0000",
       size: 3000,
       id: "Pinta",
     },
@@ -379,7 +379,7 @@ export const data = {
       id: "Santa Fe",
     },
     {
-      color: "#ea9999",
+      color: "#cc0000",
       size: 3000,
       id: "Santiago",
     },
@@ -889,12 +889,12 @@ export const data = {
       id: "Natural resource management",
     },
     {
-      color: "#008B8B",
+      color: "#ccbf2d",
       size: 3000,
       id: "Fisheries/aquaculture",
     },
     {
-      color: "#008B8B",
+      color: "#ccbf2d",
       size: 3000,
       id: "Local food production",
     },
@@ -969,7 +969,7 @@ export const data = {
       id: "Innovation",
     },
     {
-      color: "#008B8B",
+      color: "#ccbf2d",
       size: 3000,
       id: "Agriculture",
     },
@@ -1209,17 +1209,17 @@ export const data = {
       id: "Technology",
     },
     {
-      color: "#008B8B",
+      color: "#ccbf2d",
       size: 3000,
       id: "Food importation",
     },
     {
-      color: "#008B8B",
+      color: "#ccbf2d",
       size: 3000,
       id: "Food quality",
     },
     {
-      color: "#008B8B",
+      color: "#ccbf2d",
       size: 3000,
       id: "Nutrition",
     },
@@ -2219,7 +2219,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Educacion comunitaria sobre aves terrestres",
       target: "Santa Cruz",
     },
@@ -2303,7 +2303,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Monitorizacion y conservacion del pajaro brujo",
       target: "Santa Cruz",
     },
@@ -2363,7 +2363,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Monitorizacion del estado de salud de las aves terrestres",
       target: "Santa Cruz",
     },
@@ -2423,7 +2423,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Ecologia de la golondrina",
       target: "Santa Cruz",
     },
@@ -2597,7 +2597,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impacto y control de la mosca vampiro aviar",
       target: "Espanola",
     },
@@ -2615,7 +2615,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impacto y control de la mosca vampiro aviar",
       target: "Genovesa",
     },
@@ -2627,13 +2627,13 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impacto y control de la mosca vampiro aviar",
       target: "Marchena",
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impacto y control de la mosca vampiro aviar",
       target: "Pinta",
     },
@@ -2657,7 +2657,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impacto y control de la mosca vampiro aviar",
       target: "Santa Cruz",
     },
@@ -2669,7 +2669,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impacto y control de la mosca vampiro aviar",
       target: "Santiago",
     },
@@ -2981,7 +2981,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impactos antropogenicos en la reproduccion del lobo marino",
       target: "Espanola",
     },
@@ -3005,7 +3005,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impactos antropogenicos en la reproduccion del lobo marino",
       target: "Santa Cruz",
     },
@@ -3017,7 +3017,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impactos antropogenicos en la reproduccion del lobo marino",
       target: "Santiago",
     },
@@ -3305,7 +3305,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impacto de las invasoras y cambio climaticos en la vegetacion",
       target: "Espanola",
     },
@@ -3347,7 +3347,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impacto de las invasoras y cambio climaticos en la vegetacion",
       target: "Santa Cruz",
     },
@@ -3359,7 +3359,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impacto de las invasoras y cambio climaticos en la vegetacion",
       target: "Santiago",
     },
@@ -3677,7 +3677,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Estados de los pinguinos, cormoranes y albatros",
       target: "Espanola",
     },
@@ -3785,7 +3785,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Mortalidad de aves en las carreteras",
       target: "Santa Cruz",
     },
@@ -3899,13 +3899,13 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Estado del flamencos y aves de laguna",
       target: "Santa Cruz",
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Estado del flamencos y aves de laguna",
       target: "Santiago",
     },
@@ -4055,7 +4055,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impacto y control de la cascarilla",
       target: "Santa Cruz",
     },
@@ -4157,7 +4157,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Estado de una rana introducida",
       target: "Santa Cruz",
     },
@@ -4257,14 +4257,14 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source:
         "Imagenes satelitales para mapear la distribucion de las especies",
       target: "Santa Cruz",
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source:
         "Imagenes satelitales para mapear la distribucion de las especies",
       target: "Santiago",
@@ -4340,7 +4340,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Restauracion de los bosques de Scalecia",
       target: "Santa Cruz",
     },
@@ -4586,7 +4586,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Especies invasoras marinas en la RMG",
       target: "Santa Cruz",
     },
@@ -4706,13 +4706,13 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impactos de la urbanizacion en los pinzones",
       target: "Espanola",
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impactos de la urbanizacion en los pinzones",
       target: "Genovesa",
     },
@@ -4724,7 +4724,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impactos de la urbanizacion en los pinzones",
       target: "Pinta",
     },
@@ -4736,13 +4736,13 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impactos de la urbanizacion en los pinzones",
       target: "Santa Cruz",
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impactos de la urbanizacion en los pinzones",
       target: "Santiago",
     },
@@ -5090,7 +5090,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Manejo de la comunidad submarina a largo plazo",
       target: "Espanola",
     },
@@ -5132,7 +5132,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Manejo de la comunidad submarina a largo plazo",
       target: "Santa Cruz",
     },
@@ -5588,7 +5588,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Impacto de las embarcaciones para la tortuga verde",
       target: "Santa Cruz",
     },
@@ -5870,7 +5870,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Montes submarinos de la RMG",
       target: "Santa Cruz",
     },
@@ -6194,7 +6194,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Galapagos Verde 2050",
       target: "Espanola",
     },
@@ -6212,7 +6212,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Galapagos Verde 2050",
       target: "Santa Cruz",
     },
@@ -6470,7 +6470,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Ecologia de movimiento de tortugas",
       target: "Espanola",
     },
@@ -6482,7 +6482,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "Ecologia de movimiento de tortugas",
       target: "Santa Cruz",
     },
@@ -6536,7 +6536,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "La corteza oceanica profunda por debajo del Galapagos",
       target: "Espanola",
     },
@@ -6548,7 +6548,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "La corteza oceanica profunda por debajo del Galapagos",
       target: "Genovesa",
     },
@@ -6578,7 +6578,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "La corteza oceanica profunda por debajo del Galapagos",
       target: "Santa Cruz",
     },
@@ -6590,7 +6590,7 @@ export const data = {
     },
     {
       weight: 1,
-      color: "#ea9999",
+      color: "#cc0000",
       source: "La corteza oceanica profunda por debajo del Galapagos",
       target: "Santiago",
     },
