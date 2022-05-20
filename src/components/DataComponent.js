@@ -442,7 +442,7 @@ const LeftLegend = ({ mobile, selectedThemes, onThemeClicked, onClickSaveNetwork
           selectedThemes={selectedThemes}
           onThemeClicked={(themeColor) => onThemeClicked(themeColor)}
           lowerBound={0}
-          upperBound={6}
+          upperBound={7}
           open={openTheme}
         />
       </Grid>
@@ -458,7 +458,7 @@ const LeftLegend = ({ mobile, selectedThemes, onThemeClicked, onClickSaveNetwork
           mobile={mobile}
           selectedThemes={selectedThemes}
           onThemeClicked={(themeColor) => onThemeClicked(themeColor)}
-          lowerBound={7}
+          lowerBound={8}
           upperBound={Infinity}
         />
       </Grid>
