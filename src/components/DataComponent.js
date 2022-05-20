@@ -76,66 +76,71 @@ const themes = {
     color: "#cc0000",
   },
   4: {
+    labelEN: "Countries",
+    labelES: "Paises",
+    color: "#1c8f14",
+  },
+  5: {
     labelEN: "Species",
     labelES: "Especies",
     color: "#ea9999",
   },
-  5: {
+  6: {
     labelEN: "People",
     labelES: "Personas",
     color: "#a4c2f4",
   },
-  6: {
+  7: {
     labelEN: "Institutions",
     labelES: "Instituciones",
     color: "#7023BD",
   },
-  7: {
+  8: {
     labelEN: "Physical and chemical sciences",
     labelES: "Ciencias físicas y químicas",
     color: "#3c78d8",
   },
-  8: {
+  9: {
     labelEN: "Ecology and conservation",
     labelES: "Conservación y ecología",
     color: "#1c4587",
   },
-  9: {
+  10: {
     labelEN: "Terrestrial fauna and flora",
     labelES: "Flora y fauna terrestre",
     color: "#00FA9A",
   },
-  10: {
+  11: {
     labelEN: "Marine/coastal fauna and flora",
     labelES: "Flora y fauna marina/costera",
     color: "#239ABD",
   },
-  11: {
+  12: {
     labelEN: "Climate change",
     labelES: "Cambio climático",
     color: "#ADFF2F",
   },
-  12: {
+  13: {
     labelEN: "History",
     labelES: "Historia",
     color: "#FF8C00",
   },
-  13: {
+  14: {
     labelEN: "Infrastructure, energy and technology",
     labelES: "Infraestructura, energía y tecnología",
     color: "#FF69B4",
   },
-  14: {
+  15: {
     labelEN: "Food security",
     labelES: "Seguridad alimentaria",
     color: "#ccbf2d",
   },
-  15: {
+  16: {
     labelEN: "Community",
     labelES: "Comunidad",
     color: "#00FFFF",
   },
-  16: {
+  17: {
     labelEN: "Politics, economics and crime",
     labelES: "Políticas, economía y delito",
     color: "#FFFF00",
