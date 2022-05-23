@@ -1,6 +1,5 @@
 import * as d3 from "d3";
 
-const nodeRadius = 8;
 const linkWidth = 1;
 
 export default function Network(el, props) {
@@ -71,6 +70,14 @@ export default function Network(el, props) {
     return node.id.toLowerCase().includes(props.searchText.toLowerCase());
   }
 
+  const nodeSize = (d) => {
+    const radius = d.size * 0.002;
+    d.radius = radius;
+    return d.radius;
+  };
+
+  const smallestRadius = () => d3.min(data.nodes, (d) => d.radius);
+
   const link = g
     .append("g")
     .selectAll(".link")
@@ -122,7 +129,7 @@ export default function Network(el, props) {
         .append("circle")
         .attr("stroke", "#fff")
         .attr("stroke-width", 1.5)
-        .attr("r", nodeRadius)
+        .attr("r", (d) => nodeSize(d))
         .attr("fill", function (d) {
           if (categorySet) {
             return isSelectedCategory(d) ? d.color : "lightgray";
@@ -156,9 +163,9 @@ export default function Network(el, props) {
           }
           return "#000";
         })
-        .attr("dx", nodeRadius + 2)
-        .attr("dy", nodeRadius / 2)
-        .attr("font-size", nodeRadius * 1.5)
+        .attr("dx", (d) => nodeSize(d) + 2)
+        .attr("dy", (d) => nodeSize(d) / 2)
+        .attr("font-size", (d) => smallestRadius() * 1.5)
         .attr("text-decoration", function (d) {
           if (!props.selectedNode) {
             return "none";
