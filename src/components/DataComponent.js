@@ -1015,18 +1015,17 @@ class DataComponent extends Component {
       });
 
     // Map over all links again to get all ids of second degree connected nodes
-    // Commented out to only show direct (first degree) connections
-    // data.links
-    //   .filter(
-    //     (link) =>
-    //       connectedIDs.has(link.source.id) || connectedIDs.has(link.target.id)
-    //   )
-    //   .map((link) => {
-    //     connectedIDs.add(link.source.id);
-    //     connectedIDs.add(link.target.id);
-    //     connectedLinks.add(link);
-    //     return true;
-    //   });
+    data.links
+      .filter(
+        (link) =>
+          connectedIDs.has(link.source.id) || connectedIDs.has(link.target.id)
+      )
+      .map((link) => {
+        connectedIDs.add(link.source.id);
+        connectedIDs.add(link.target.id);
+        connectedLinks.add(link);
+        return true;
+      });
 
     // Map over all nodes to get connected nodes by ID
     const connectedNodes = data.nodes.filter((node) =>
