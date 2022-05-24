@@ -41,9 +41,39 @@ export default function Network(el, props) {
     return selectedThemes.indexOf(node.color) !== -1;
   }
 
-  let linksOfSelectedNode = data.links;
+  let linksToShow = data.links;
+  // Filter links to show only links that are connected to selected themes
+  if (props.selectedThemes.length !== 0 && props.selectedThemeNodesConnectedLinks.length !== 0) {
+    // Get one array from the array of arrays
+    linksToShow = props.selectedThemeNodesConnectedLinks.reduce(
+      (acc, curr) => acc.concat(curr),
+      []
+    );
+  }
+  // Filter links to show only nodes that are connected to the selected node
   if (props.selectedNode && props.connectedLinks) {
-    linksOfSelectedNode = props.connectedLinks;
+    linksToShow = props.connectedLinks;
+  }
+
+  function isSelectedThemeNode(node) {
+    if (!props.selectedThemeNodes) {
+      return false;
+    }
+    const selectedThemeIDs = props.selectedThemeNodes.map((n) => n.id);
+    return selectedThemeIDs.includes(node.id);
+  }
+
+  function isConnectedToSelectedThemes(node) {
+    if (!props.selectedThemeNodes || !props.selectedThemeNodesConnectedNodes) {
+      return false;
+    }
+    // Get one array from the array of arrays
+    const ns = props.selectedThemeNodesConnectedNodes.reduce(
+      (acc, curr) => acc.concat(curr),
+      []
+    );
+    const connectedIDs = ns.map((n) => n.id);
+    return connectedIDs.includes(node.id);
   }
 
   function isSelectedNode(node) {
@@ -53,7 +83,7 @@ export default function Network(el, props) {
     return node.id === props.selectedNode.id;
   }
 
-  function isConnectedNode(node) {
+  function isConnectedToSelectedNode(node) {
     if (!props.selectedNode || !props.connectedNodes) {
       return false;
     }
@@ -81,20 +111,20 @@ export default function Network(el, props) {
   const link = g
     .append("g")
     .selectAll(".link")
-    .data(linksOfSelectedNode)
+    .data(linksToShow)
     .join("line")
     .classed("link", true)
     .attr("opacity", 0.6)
     .attr("stroke", function (d) {
+      if (themeSet) {
+        return isSelectedTheme(d) ? d.color : "lightgray";
+      }
       // If there is no node selected, all links are grey
       if (!props.selectedNode) {
         return "lightgray";
       }
       if (categorySet) {
         return isSelectedCategory(d) ? d.color : "lightgray";
-      }
-      if (themeSet) {
-        return isSelectedTheme(d) ? d.color : "lightgray";
       }
       return d.color;
     })
@@ -111,7 +141,7 @@ export default function Network(el, props) {
     .attr("cursor", "pointer")
     .attr("opacity", function (d) {
       if (props.selectedNode) {
-        return isConnectedNode(d) || isSelectedNode(d) ? 1 : 0.3;
+        return isConnectedToSelectedNode(d) || isSelectedNode(d) ? 1 : 0.3;
       }
       if (isSearching) {
         return isSearchedFor(d) ? 1 : 0.3;
@@ -135,10 +165,12 @@ export default function Network(el, props) {
             return isSelectedCategory(d) ? d.color : "lightgray";
           }
           if (themeSet) {
-            return isSelectedTheme(d) ? d.color : "lightgray";
+            return isConnectedToSelectedThemes(d) || isSelectedThemeNode(d)
+              ? d.color
+              : "lightgray";
           }
           if (props.selectedNode) {
-            return isConnectedNode(d) || isSelectedNode(d)
+            return isConnectedToSelectedNode(d) || isSelectedNode(d)
               ? d.color
               : "lightgray";
           }
@@ -154,7 +186,7 @@ export default function Network(el, props) {
         .append("text")
         .attr("fill", function (d) {
           if (props.selectedNode) {
-            return isConnectedNode(d) || isSelectedNode(d)
+            return isConnectedToSelectedNode(d) || isSelectedNode(d)
               ? "#000"
               : "lightgray";
           }
