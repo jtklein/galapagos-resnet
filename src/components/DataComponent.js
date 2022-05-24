@@ -1000,9 +1000,7 @@ class DataComponent extends Component {
     );
   }
 
-  setNodeSelection = (d) => {
-    const { selectedNode } = this.state;
-    // Map over all links to get lins of this node
+  getConnectedLinks = (d) => {
     const connectedIDs = new Set();
     const connectedLinks = new Set();
     data.links
@@ -1026,12 +1024,20 @@ class DataComponent extends Component {
         connectedLinks.add(link);
         return true;
       });
+    return [connectedIDs, connectedLinks];
+  };
 
+  getConnectedNodes = (connectedIDs) => {
+    return data.nodes.filter((node) => connectedIDs.has(node.id));
+  };
+
+  setNodeSelection = (d) => {
+    const { selectedNode } = this.state;
+    // Map over all links to get lins of this node
+    const [connectedIDs, connectedLinks] = this.getConnectedLinks(d);
     // Map over all nodes to get connected nodes by ID
-    const connectedNodes = data.nodes.filter((node) =>
-      connectedIDs.has(node.id)
-    );
-
+    const connectedNodes = this.getConnectedNodes(connectedIDs);
+    
     this.setState({
       connectedNodes: selectedNode?.id === d.id ? null : connectedNodes,
       connectedLinks:
