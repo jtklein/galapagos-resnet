@@ -980,6 +980,9 @@ class DataComponent extends Component {
       connectedNodes: undefined,
       selectedCategories: [],
       selectedThemes: [],
+      selectedThemeNodes: [],
+      selectedThemeNodesConnectedLinks: [],
+      selectedThemeNodesConnectedNodes: [],
       searchText: "",
       tutorialOpen: false,
       // This is a hack because on pressing the tutorial button also fires
@@ -1110,13 +1113,52 @@ class DataComponent extends Component {
   };
 
   onThemeClicked = (themeColor) => {
-    const { selectedThemes } = this.state;
+    const {
+      selectedThemes,
+      selectedThemeNodes,
+      selectedThemeNodesConnectedLinks,
+      selectedThemeNodesConnectedNodes,
+    } = this.state;
     const indexOfTheme = selectedThemes.indexOf(themeColor);
+    const theme = Object.entries(themes).filter(([key, theme]) => {
+      return theme.color === themeColor;
+    })[0][1];
+    // Map over all nodes to get the node with same name as theme labelEN
+    const themeNode = data.nodes.filter((node) => {
+      return node.id === theme.labelEN;
+    })[0];
+
+    // Map over all links to get lins of this node
+    const [connectedIDs, connectedLinks] = this.getConnectedLinks(themeNode);
+    const t = [].concat(selectedThemeNodesConnectedLinks);
+    t.push(Array.from(connectedLinks.values()));
+
+    // Map over all nodes to get connected nodes by ID
+    const connectedNodes = this.getConnectedNodes(connectedIDs);
+    const n = [].concat(selectedThemeNodesConnectedNodes);
+    n.push(connectedNodes);
+
     this.setState({
       selectedThemes:
         indexOfTheme !== -1
           ? selectedThemes.filter((d, index) => index !== indexOfTheme)
           : selectedThemes.concat(themeColor),
+      selectedThemeNodes:
+        indexOfTheme !== -1
+          ? selectedThemeNodes.filter((d, index) => index !== indexOfTheme)
+          : selectedThemeNodes.concat(themeNode),
+      selectedThemeNodesConnectedLinks:
+        indexOfTheme !== -1
+          ? selectedThemeNodesConnectedLinks.filter(
+              (d, index) => index !== indexOfTheme
+            )
+          : t,
+      selectedThemeNodesConnectedNodes:
+        indexOfTheme !== -1
+          ? selectedThemeNodesConnectedNodes.filter(
+              (d, index) => index !== indexOfTheme
+            )
+          : n,
     });
   };
 
@@ -1219,6 +1261,9 @@ class DataComponent extends Component {
       connectedNodes,
       connectedLinks,
       selectedThemes,
+      selectedThemeNodes,
+      selectedThemeNodesConnectedLinks,
+      selectedThemeNodesConnectedNodes,
       selectedCategories,
       searchText,
     } = this.state;
@@ -1284,6 +1329,9 @@ class DataComponent extends Component {
             connectedNodes={connectedNodes}
             connectedLinks={connectedLinks}
             selectedThemes={selectedThemes}
+            selectedThemeNodes={selectedThemeNodes}
+            selectedThemeNodesConnectedLinks={selectedThemeNodesConnectedLinks}
+            selectedThemeNodesConnectedNodes={selectedThemeNodesConnectedNodes}
             selectedCategories={selectedCategories}
             searchText={searchText}
             onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
@@ -1310,6 +1358,9 @@ class DataComponent extends Component {
       connectedNodes,
       connectedLinks,
       selectedThemes,
+      selectedThemeNodes,
+      selectedThemeNodesConnectedLinks,
+      selectedThemeNodesConnectedNodes,
       selectedCategories,
       searchText,
       tutorialOpen,
@@ -1328,6 +1379,9 @@ class DataComponent extends Component {
             connectedNodes={connectedNodes}
             connectedLinks={connectedLinks}
             selectedThemes={selectedThemes}
+            selectedThemeNodes={selectedThemeNodes}
+            selectedThemeNodesConnectedLinks={selectedThemeNodesConnectedLinks}
+            selectedThemeNodesConnectedNodes={selectedThemeNodesConnectedNodes}
             selectedCategories={selectedCategories}
             searchText={searchText}
             onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
