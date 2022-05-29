@@ -22,8 +22,24 @@ export default function Network(el, props) {
   // For some reason the svg height adds seven on each rerender (i.e. the value of height taken from getElementById is too big)
   svg.attr("width", width).attr("height", height - 7);
 
-  const { data, simulation, zoom, zoomTransform, setZoomTransform, selectedCategories, selectedThemes } =
-    props;
+  const {
+    data,
+    simulation,
+    zoom,
+    zoomTransform,
+    setZoomTransform,
+    selectedCategories,
+    selectedThemes,
+  } = props;
+
+  // Create a node radius range with linear scale from data min and max
+  const nodeRadiusScale = d3
+    .scaleLinear()
+    .domain([0, d3.max(data.nodes, (d) => d.size)])
+    .range([0, 12]);
+
+  const smallestRadius = () =>
+    d3.min(data.nodes, (d) => nodeRadiusScale(d.size));
 
   const categorySet = selectedCategories && selectedCategories.length !== 0;
   function isSelectedCategory(node) {
@@ -32,7 +48,7 @@ export default function Network(el, props) {
     }
     return selectedCategories.indexOf(node.color) !== -1;
   }
-  
+
   const themeSet = selectedThemes && selectedThemes.length !== 0;
   function isSelectedTheme(node) {
     if (!themeSet) {
@@ -43,7 +59,10 @@ export default function Network(el, props) {
 
   let linksToShow = data.links;
   // Filter links to show only links that are connected to selected themes
-  if (props.selectedThemes.length !== 0 && props.selectedThemeNodesConnectedLinks.length !== 0) {
+  if (
+    props.selectedThemes.length !== 0 &&
+    props.selectedThemeNodesConnectedLinks.length !== 0
+  ) {
     // Get one array from the array of arrays
     linksToShow = props.selectedThemeNodesConnectedLinks.reduce(
       (acc, curr) => acc.concat(curr),
@@ -100,14 +119,6 @@ export default function Network(el, props) {
     return node.id.toLowerCase().includes(props.searchText.toLowerCase());
   }
 
-  const nodeSize = (d) => {
-    const radius = d.size * 0.002;
-    d.radius = radius;
-    return d.radius;
-  };
-
-  const smallestRadius = () => d3.min(data.nodes, (d) => d.radius);
-
   const link = g
     .append("g")
     .selectAll(".link")
@@ -159,7 +170,7 @@ export default function Network(el, props) {
         .append("circle")
         .attr("stroke", "#fff")
         .attr("stroke-width", 1.5)
-        .attr("r", (d) => nodeSize(d))
+        .attr("r", (d) => nodeRadiusScale(d.size))
         .attr("fill", function (d) {
           if (categorySet) {
             return isSelectedCategory(d) ? d.color : "lightgray";
@@ -195,8 +206,8 @@ export default function Network(el, props) {
           }
           return "#000";
         })
-        .attr("dx", (d) => nodeSize(d) + 2)
-        .attr("dy", (d) => nodeSize(d) / 2)
+        .attr("dx", (d) => nodeRadiusScale(d.size) + 2)
+        .attr("dy", (d) => nodeRadiusScale(d.size) / 2)
         .attr("font-size", (d) => smallestRadius() * 1.5)
         .attr("text-decoration", function (d) {
           if (!props.selectedNode) {
