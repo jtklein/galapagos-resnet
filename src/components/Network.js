@@ -206,9 +206,10 @@ export default function Network(el, props) {
           }
           return "#000";
         })
-        .attr("dx", (d) => nodeRadiusScale(d.size) + 2)
-        .attr("dy", (d) => nodeRadiusScale(d.size) / 2)
         .attr("font-size", (d) => smallestRadius() * 1.5)
+        .attr("dx", (d) => nodeRadiusScale(d.size) + 2)
+        .attr("dy", 1)
+        .attr("dominant-baseline", "middle")
         .attr("text-decoration", function (d) {
           if (!props.selectedNode) {
             return "none";
