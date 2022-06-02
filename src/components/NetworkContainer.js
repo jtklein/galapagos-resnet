@@ -30,7 +30,13 @@ class NetworkContainer extends Component {
         "link",
         d3.forceLink(props.data.links).id((d) => d.id)
       )
-      .force("collide", d3.forceCollide());
+      .force(
+        "collide",
+        d3
+          .forceCollide()
+          .radius(20)
+          .iterations(3)
+      );
     const zoom = d3.zoom();
     // Holds a copy of the previous zoom transform, so we can track its changes
     const zoomTransform = d3.zoomIdentity;
