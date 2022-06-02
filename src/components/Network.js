@@ -110,6 +110,14 @@ export default function Network(el, props) {
     return connectedIDs.includes(node.id);
   }
 
+  const selectable = (node) => {
+    // if there is no node selected then all nodes are selectable
+    if (!props.selectedNode) {
+      return true;
+    }
+    return isSelectedNode(node) || isConnectedToSelectedNode(node);
+  };
+
   const isSearching = !!props.searchText && props.searchText.length > 0;
 
   function isSearchedFor(node) {
@@ -149,7 +157,7 @@ export default function Network(el, props) {
     .enter()
     .append("g")
     .attr("class", "node")
-    .attr("cursor", "pointer")
+    .attr("cursor", "default")
     .attr("opacity", function (d) {
       if (props.selectedNode) {
         return isConnectedToSelectedNode(d) || isSelectedNode(d) ? 1 : 0.3;
@@ -158,20 +166,6 @@ export default function Network(el, props) {
         return isSearchedFor(d) ? 1 : 0.3;
       }
       return 1;
-    })
-    .on("mousedown", function (event) {
-      const d = d3.select(this);
-      d.attr("cursor", "move");
-    })
-    .on("pointerup", function (event) {
-      const d = d3.select(this);
-      d.attr("cursor", "pointer");
-    })
-    .on("click", function (event, d) {
-      if (event.defaultPrevented) return; // if panning or dragged
-      // Get this node's datum
-      const datum = d3.select(this).datum();
-      props.onClick(datum);
     })
     .call((g) =>
       g
@@ -225,7 +219,7 @@ export default function Network(el, props) {
           return isSelectedNode(d) ? "underline" : "none";
         })
         .text((d) => d.id)
-    )
+    );
     // .call((g) =>
     //   g
     //     // A circle to highlight the selected node
@@ -239,6 +233,24 @@ export default function Network(el, props) {
     //     })
     //     .attr("stroke-width", 1.5)
     // )
+
+  node
+    .filter((d) => selectable(d))
+    .attr("cursor", "pointer")
+    .on("mousedown", function (event) {
+      const d = d3.select(this);
+      d.attr("cursor", "move");
+    })
+    .on("pointerup", function (event) {
+      const d = d3.select(this);
+      d.attr("cursor", "pointer");
+    })
+    .on("click", function (event, d) {
+      if (event.defaultPrevented) return; // if panning or dragged
+      // Get this node's datum
+      const datum = d3.select(this).datum();
+      props.onClick(datum);
+    })
     .call(
       d3
         .drag()
@@ -249,7 +261,7 @@ export default function Network(el, props) {
         })
         .on("start.update drag.update end.update", render)
     );
-
+    
   simulation
     .force("center", d3.forceCenter(width / 2, height / 2))
     .tick(25)
