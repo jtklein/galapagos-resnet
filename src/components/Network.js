@@ -197,6 +197,10 @@ export default function Network(el, props) {
     .call((g) =>
       g
         .append("text")
+        .style(
+          "text-shadow",
+          "-1px -1px white, -1px 1px white, 1px 1px white, 1px -1px white, -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white"
+        )
         .attr("fill", function (d) {
           if (props.selectedNode) {
             return isConnectedToSelectedNode(d) || isSelectedNode(d)
