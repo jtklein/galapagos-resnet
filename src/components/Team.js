@@ -83,10 +83,4 @@ function Team() {
   );
 }
 
-console.log('Team :>> ', Team);
-
-function Team2() {
-  return <div>Details about the team</div>;
-}
-
-export default Team2;
+export default Team;
