@@ -159,6 +159,14 @@ export default function Network(el, props) {
       }
       return 1;
     })
+    .on("mousedown", function (event) {
+      const d = d3.select(this);
+      d.attr("cursor", "move");
+    })
+    .on("pointerup", function (event) {
+      const d = d3.select(this);
+      d.attr("cursor", "pointer");
+    })
     .on("click", function (event, d) {
       if (event.defaultPrevented) return; // if panning or dragged
       // Get this node's datum
