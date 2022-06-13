@@ -224,19 +224,20 @@ export default function Network(el, props) {
         })
         .text((d) => d.id)
     );
-    // .call((g) =>
-    //   g
-    //     // A circle to highlight the selected node
-    //     // TODO: this is pretty inefficient because it adds nodes' size worth of amount of extra invisible circles
-    //     .append("circle")
-    //     .attr("class", "highlight-circle")
-    //     .attr("r", (d) => nodeRadius + 3)
-    //     .attr("fill", "none")
-    //     .attr("stroke", (d) => {
-    //       return isSelectedNode(d) || isSelectedTheme(d) ? d.color : null;
-    //     })
-    //     .attr("stroke-width", 1.5)
-    // )
+
+  // Add a circle to highlight nodes of the selected themes and the selected node
+  node
+    .filter((d) => isSelectedNode(d) || isSelectedTheme(d))
+    .call((g) =>
+      g
+        // A circle to highlight the selected node
+        .append("circle")
+        .attr("class", "highlight-circle")
+        .attr("r", (d) => nodeRadiusScale(d.size) + 3)
+        .attr("fill", "none")
+        .attr("stroke", (d) => d.color)
+        .attr("stroke-width", 1.5)
+    );
 
   node
     .filter((d) => selectable(d))
@@ -265,7 +266,7 @@ export default function Network(el, props) {
         })
         .on("start.update drag.update end.update", render)
     );
-    
+
   simulation
     .force("center", d3.forceCenter(width / 2, height / 2))
     .tick(25)
