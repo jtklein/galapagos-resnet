@@ -1016,19 +1016,18 @@ class DataComponent extends Component {
       });
 
     // Map over all links again to get all ids of second degree connected nodes
-    data.links
-      .filter(
-        (link) =>
-          connectedIDs.has(link.source.id) || connectedIDs.has(link.target.id)
-      )
-      .map((link) => {
-        connectedIDs.add(link.source.id);
-        connectedIDs.add(link.target.id);
-        connectedLinks.add(link);
-        return true;
-      });
-    return [connectedIDs, connectedLinks];
-  };
+    // Commented out to only show direct (first degree) connections
+    // data.links
+    //   .filter(
+    //     (link) =>
+    //       connectedIDs.has(link.source.id) || connectedIDs.has(link.target.id)
+    //   )
+    //   .map((link) => {
+    //     connectedIDs.add(link.source.id);
+    //     connectedIDs.add(link.target.id);
+    //     connectedLinks.add(link);
+    //     return true;
+    //   });
 
   getConnectedNodes = (connectedIDs) => {
     return data.nodes.filter((node) => connectedIDs.has(node.id));
