@@ -1028,7 +1028,7 @@ class DataComponent extends Component {
     //     connectedLinks.add(link);
     //     return true;
     //   });
-
+    return [connectedIDs, connectedLinks];
   };
 
   getConnectedNodes = (connectedIDs) => {
