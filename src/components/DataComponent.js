@@ -1029,6 +1029,8 @@ class DataComponent extends Component {
     //     return true;
     //   });
 
+  };
+
   getConnectedNodes = (connectedIDs) => {
     return data.nodes.filter((node) => connectedIDs.has(node.id));
   };
