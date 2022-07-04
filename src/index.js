@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { ThemeProvider } from "@material-ui/styles";
@@ -17,7 +17,8 @@ const Loading = () => (
   </div>
 );
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <Suspense fallback={<Loading />}>
     <React.StrictMode>
       <ThemeProvider theme={theme}>
@@ -25,8 +26,7 @@ ReactDOM.render(
         <App />
       </ThemeProvider>
     </React.StrictMode>
-  </Suspense>,
-  document.getElementById("root")
+  </Suspense>
 );
 
 // If you want to start measuring performance in your app, pass a function
