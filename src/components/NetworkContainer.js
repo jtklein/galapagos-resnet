@@ -25,10 +25,17 @@ class NetworkContainer extends Component {
     const simulation = d3
       .forceSimulation()
       .nodes(props.data.nodes)
-      .force("charge", d3.forceManyBody().strength(-300))
+      .force(
+        "charge",
+        d3
+          .forceManyBody()
+          .strength(-300)
+      )
       .force(
         "link",
-        d3.forceLink(props.data.links).id((d) => d.id)
+        d3
+          .forceLink(props.data.links)
+          .id((d) => d.id)
       )
       .force(
         "collide",
