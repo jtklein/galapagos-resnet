@@ -250,6 +250,9 @@ export default function Network(el, props) {
       if (event.defaultPrevented) return; // if panning or dragged
       // Get this node's datum
       const datum = d3.select(this).datum();
+      d.x = width/2;
+      d.y = height/2;
+      simulation.alpha(0.1).restart();
       props.onClick(datum);
     })
     .call(
