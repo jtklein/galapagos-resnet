@@ -291,20 +291,23 @@ export default function Network(el, props) {
 
   function render() {
     // Draw links on canvas
-    const context = d3.select("canvas").node().getContext("2d");
-    context.save();
-    context.clearRect(0, 0, width, height);
-    context.translate(zoomTransform.x, zoomTransform.y);
-    context.scale(zoomTransform.k, zoomTransform.k);
-    context.lineWidth = 1;
-    context.strokeStyle = "lightgray";
-    link.each((d, i, nodes) => {
-      context.beginPath();
-      context.moveTo(d.source.x, d.source.y);
-      context.lineTo(d.target.x, d.target.y);
-      context.stroke();
-    });
-    context.restore();
+    const canvas = d3.select("canvas").node();
+    if (canvas) {
+      const context = canvas.getContext("2d");
+      context.save();
+      context.clearRect(0, 0, width, height);
+      context.translate(zoomTransform.x, zoomTransform.y);
+      context.scale(zoomTransform.k, zoomTransform.k);
+      context.lineWidth = 1;
+      context.strokeStyle = "lightgray";
+      link.each((d, i, nodes) => {
+        context.beginPath();
+        context.moveTo(d.source.x, d.source.y);
+        context.lineTo(d.target.x, d.target.y);
+        context.stroke();
+      });
+      context.restore();
+    }
     node.attr("transform", (d) => `translate(${d.x}, ${d.y})`);
     g.attr("transform", zoomTransform);
   }
