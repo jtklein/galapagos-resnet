@@ -12,7 +12,6 @@ export default function Network(el, props) {
   // Create canvas if not already created
   if (canvas.empty()) {
     canvas = anchorElement.append("canvas");
-    canvas.append("g");
   }
   canvas
     .attr("width", width)
@@ -146,21 +145,6 @@ export default function Network(el, props) {
     .data(linksToShow)
     .join("line")
     .classed("link", true)
-    .attr("opacity", 0.6)
-    .attr("stroke", function (d) {
-      if (themeSet) {
-        return isSelectedTheme(d) ? d.color : "lightgray";
-      }
-      // If there is no node selected, all links are grey
-      if (!props.selectedNode) {
-        return "lightgray";
-      }
-      if (categorySet) {
-        return isSelectedCategory(d) ? d.color : "lightgray";
-      }
-      return d.color;
-    })
-    .attr("stroke-width", linkWidth);
 
   const node = g
     .selectAll(".node")
@@ -282,7 +266,7 @@ export default function Network(el, props) {
 
   simulation
     .force("center", d3.forceCenter(width / 2, height / 2).strength(1))
-    .tick(25)
+    .tick(5)
     .on("tick", tick);
 
   function tick() {
@@ -291,16 +275,27 @@ export default function Network(el, props) {
 
   function render() {
     // Draw links on canvas
-    const canvas = d3.select("canvas").node();
     if (canvas) {
-      const context = canvas.getContext("2d");
+      const context = canvas.node().getContext("2d");
       context.save();
       context.clearRect(0, 0, width, height);
       context.translate(zoomTransform.x, zoomTransform.y);
       context.scale(zoomTransform.k, zoomTransform.k);
-      context.lineWidth = 1;
-      context.strokeStyle = "lightgray";
+      context.lineWidth = linkWidth;
       link.each((d, i, nodes) => {
+        context.globalAlpha = 0.6;
+        if (themeSet) {
+          context.strokeStyle = isSelectedTheme(d) ? d.color : "lightgray";
+        } else
+        // If there is no node selected, all links are grey
+        if (!props.selectedNode) {
+          context.strokeStyle = "lightgray";
+        } else
+        if (categorySet) {
+          context.strokeStyle = isSelectedCategory(d) ? d.color : "lightgray";
+        } else {
+          context.strokeStyle = d.color;
+        }
         context.beginPath();
         context.moveTo(d.source.x, d.source.y);
         context.lineTo(d.target.x, d.target.y);
@@ -308,6 +303,7 @@ export default function Network(el, props) {
       });
       context.restore();
     }
+    // Draw nodes to svg
     node.attr("transform", (d) => `translate(${d.x}, ${d.y})`);
     g.attr("transform", zoomTransform);
   }
