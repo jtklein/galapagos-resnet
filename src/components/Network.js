@@ -271,6 +271,14 @@ export default function Network(el, props) {
     .tick(5)
     .on("tick", tick);
 
+  if (props.selectedNode) {
+    simulation.force(
+      "radial",
+      d3.forceRadial(20, props.selectedNode.x, props.selectedNode.y).strength((d) => isConnectedToSelectedNode(d) ? 1 : 0));
+  } else {
+    simulation.force("radial", null);
+  }
+
   function tick() {
     render();
   }
