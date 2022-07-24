@@ -21,7 +21,6 @@ export default function Network(el, props) {
   // Create svg if not already created
   let svg = anchorElement.select("svg");
   if (svg.empty()) {
-    anchorElement.selectAll("*").remove();
     svg = anchorElement.append("svg");
     svg.append("g");
   }
