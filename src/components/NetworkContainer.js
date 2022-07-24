@@ -135,6 +135,7 @@ class NetworkContainer extends Component {
             height: "100%",
             maxWidth: "100%",
             margin: "0 auto",
+            position: "relative"
           }}
         />
       </StyledDiv>

@@ -64,3 +64,16 @@ hr.solid {
     width: 30px;
   }
 }
+
+.network-canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.network-svg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}

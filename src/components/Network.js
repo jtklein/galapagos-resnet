@@ -7,20 +7,33 @@ export default function Network(el, props) {
   const width = document.getElementById("network").offsetWidth;
 
   const anchorElement = d3.select(el);
-  let svg = anchorElement.select("svg");
+
+  let canvas = anchorElement.select("canvas");
+  // Create canvas if not already created
+  if (canvas.empty()) {
+    canvas = anchorElement.append("canvas");
+    canvas.append("g");
+  }
+  canvas
+    .attr("width", width)
+    .attr("height", height)
+    .attr("class", "network-canvas");
 
   // Create svg if not already created
+  let svg = anchorElement.select("svg");
   if (svg.empty()) {
     anchorElement.selectAll("*").remove();
     svg = anchorElement.append("svg");
     svg.append("g");
   }
+  // For some reason the svg height adds seven on each rerender (i.e. the value of height taken from getElementById is too big)
+  svg
+    .attr("width", width)
+    .attr("height", height - 7)
+    .attr("class", "network-svg");
 
   const g = svg.select("g");
   g.selectAll("*").remove();
-
-  // For some reason the svg height adds seven on each rerender (i.e. the value of height taken from getElementById is too big)
-  svg.attr("width", width).attr("height", height - 7);
 
   const {
     data,
@@ -277,11 +290,24 @@ export default function Network(el, props) {
   }
 
   function render() {
-    link
-      .attr("x1", (d) => d.source.x)
-      .attr("y1", (d) => d.source.y)
-      .attr("x2", (d) => d.target.x)
-      .attr("y2", (d) => d.target.y);
+    // Draw links on canvas
+    const canvas = d3.select("canvas").node();
+    if (canvas) {
+      const context = canvas.getContext("2d");
+      context.save();
+      context.clearRect(0, 0, width, height);
+      context.translate(zoomTransform.x, zoomTransform.y);
+      context.scale(zoomTransform.k, zoomTransform.k);
+      context.lineWidth = 1;
+      context.strokeStyle = "lightgray";
+      link.each((d, i, nodes) => {
+        context.beginPath();
+        context.moveTo(d.source.x, d.source.y);
+        context.lineTo(d.target.x, d.target.y);
+        context.stroke();
+      });
+      context.restore();
+    }
     node.attr("transform", (d) => `translate(${d.x}, ${d.y})`);
     g.attr("transform", zoomTransform);
   }
@@ -295,6 +321,7 @@ export default function Network(el, props) {
 
   // Attach zoom handler to svg
   svg.call(zoom);
+  canvas.call(zoom);
   // End of zoom
 
   render();
