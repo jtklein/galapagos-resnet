@@ -138,6 +138,7 @@ export default function Network(el, props) {
     return node.id.toLowerCase().includes(props.searchText.toLowerCase());
   }
 
+  // Join data to group without rendering any svg elements
   const link = g
     .append("g")
     .selectAll(".link")
@@ -278,6 +279,44 @@ export default function Network(el, props) {
   } else {
     simulation.force("radial", null);
   }
+
+  function addCenterForce(selectionFct, counter) {
+    simulation
+      .force(
+        `y${counter}`,
+        d3.forceY(height / 2).strength((d) => (selectionFct(d) ? 1 : 0))
+      )
+      .force(
+        `x${counter}`,
+        d3.forceX(width / 2).strength((d) => (selectionFct(d) ? 1 : 0))
+      )
+      .alpha(0.1)
+      .restart();
+  }
+
+  function centerForce(addCondition, selectionFct, counter) {
+    if (addCondition) {
+      addCenterForce(selectionFct, counter);
+    } else {
+      simulation.force(`y${counter}`, null).force(`x${counter}`, null);
+    }
+  }
+
+  centerForce(
+    isSelectedTheme && selectedThemes.length >= 1,
+    isConnectedToSelectedThemes,
+    "themes"
+  );
+  centerForce(
+    selectedCategories && selectedCategories.length !== 0,
+    isSelectedCategory,
+    "categories"
+  );
+  centerForce(
+    isSearching,
+    isSearchedFor,
+    "search"
+  );
 
   function tick() {
     render();
