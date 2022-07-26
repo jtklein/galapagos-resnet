@@ -1004,7 +1004,7 @@ class DataComponent extends Component {
     );
   }
 
-  getConnectedLinks = (d) => {
+  getConnectedLinks = (d, secondDegree) => {
     const connectedIDs = new Set();
     const connectedLinks = new Set();
     data.links
@@ -1017,18 +1017,19 @@ class DataComponent extends Component {
       });
 
     // Map over all links again to get all ids of second degree connected nodes
-    // Commented out to only show direct (first degree) connections
-    // data.links
-    //   .filter(
-    //     (link) =>
-    //       connectedIDs.has(link.source.id) || connectedIDs.has(link.target.id)
-    //   )
-    //   .map((link) => {
-    //     connectedIDs.add(link.source.id);
-    //     connectedIDs.add(link.target.id);
-    //     connectedLinks.add(link);
-    //     return true;
-    //   });
+    if (secondDegree) {
+      data.links
+        .filter(
+          (link) =>
+            connectedIDs.has(link.source.id) || connectedIDs.has(link.target.id)
+        )
+        .map((link) => {
+          connectedIDs.add(link.source.id);
+          connectedIDs.add(link.target.id);
+          connectedLinks.add(link);
+          return true;
+        });
+    }
     return [connectedIDs, connectedLinks];
   };
 
@@ -1039,7 +1040,7 @@ class DataComponent extends Component {
   setNodeSelection = (d) => {
     const { selectedNode } = this.state;
     // Map over all links to get lins of this node
-    const [connectedIDs, connectedLinks] = this.getConnectedLinks(d);
+    const [connectedIDs, connectedLinks] = this.getConnectedLinks(d, false);
     // Map over all nodes to get connected nodes by ID
     const connectedNodes = this.getConnectedNodes(connectedIDs);
     
@@ -1131,7 +1132,7 @@ class DataComponent extends Component {
     })[0];
 
     // Map over all links to get lins of this node
-    const [connectedIDs, connectedLinks] = this.getConnectedLinks(themeNode);
+    const [connectedIDs, connectedLinks] = this.getConnectedLinks(themeNode, true);
     const t = [].concat(selectedThemeNodesConnectedLinks);
     t.push(Array.from(connectedLinks.values()));
 
