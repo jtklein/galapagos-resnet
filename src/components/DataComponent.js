@@ -477,7 +477,7 @@ const DownloadButton = (props) => {
   );
 };
 
-const LeftLegend = ({ mobile, selectedThemes, selectedCategories, onThemeClicked, onCategoryClicked, onClickSaveNetworkSVG, openTheme, openDownload }) => {
+const LeftLegend = ({ mobile, selectedThemes, selectedCategories, onThemeClicked, onCategoryClicked, onClickSaveNetwork, openTheme, openDownload }) => {
   const theme = useTheme();
   return (
     <Grid
@@ -534,7 +534,7 @@ const LeftLegend = ({ mobile, selectedThemes, selectedCategories, onThemeClicked
           padding: 0,
         }}
       >
-        <DownloadButton mobile={mobile} onClick={onClickSaveNetworkSVG} open={openDownload} />
+        <DownloadButton mobile={mobile} onClick={onClickSaveNetwork} open={openDownload} />
       </Grid>
     </Grid>
   );
@@ -1164,10 +1164,10 @@ class DataComponent extends Component {
     });
   };
 
-  generateSVGContent = (parent) => {
+  generateSVGBlob = (parent) => {
     let svgContent = parent.innerHTML;
     svgContent = svgContent.replace(
-      /^<svg/,
+      /^[\s\S]*<svg/,
       [
         "<svg",
         'xmlns="http://www.w3.org/2000/svg"',
@@ -1182,9 +1182,18 @@ class DataComponent extends Component {
     return new Blob([svgContent], { type: "image/svg+xml" });
   };
 
-  onClickSaveNetworkSVG = () => {
-    const blob = this.generateSVGContent(this.refNetworkComponent.current);
-    saveAs(blob, "rp-galapagos.svg");
+  onClickSaveNetwork = () => {
+    const svgBlob = this.generateSVGBlob(this.refNetworkComponent.current);
+    const url = window.URL.createObjectURL(svgBlob);
+    var img = new Image();
+    img.src = url;
+    img.onload = () => {
+      const canvas = document.getElementById("network-canvas");
+      var context = canvas.getContext("2d");
+      context.drawImage(img, 0, 0);
+      window.URL.revokeObjectURL(svgBlob);
+      canvas.toBlob((blob) => saveAs(blob, "rp-galapagos.png"), "image/png", 1);
+    };
   };
 
   onClick = () => {
@@ -1281,7 +1290,7 @@ class DataComponent extends Component {
             onCategoryClicked={(categoryColor) =>
               this.onCategoryClicked(categoryColor)
             }
-            onClickSaveNetworkSVG={this.onClickSaveNetworkSVG}
+            onClickSaveNetwork={this.onClickSaveNetwork}
             openTheme={this.openOnDesktop(3)}
             openDownload={this.openOnDesktop(5)}
           />
@@ -1398,7 +1407,7 @@ class DataComponent extends Component {
           onCategoryClicked={(categoryColor) =>
             this.onCategoryClicked(categoryColor)
           }
-          onClickSaveNetworkSVG={this.onClickSaveNetworkSVG}
+          onClickSaveNetwork={this.onClickSaveNetwork}
           openTheme={this.openOnDesktop(3)}
           openDownload={this.openOnDesktop(5)}
         />

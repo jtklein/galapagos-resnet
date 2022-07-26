@@ -16,7 +16,8 @@ export default function Network(el, props) {
   canvas
     .attr("width", width)
     .attr("height", height)
-    .attr("class", "network-canvas");
+    .attr("class", "network-canvas")
+    .attr("id", "network-canvas");
 
   // Create svg if not already created
   let svg = anchorElement.select("svg");
@@ -24,10 +25,9 @@ export default function Network(el, props) {
     svg = anchorElement.append("svg");
     svg.append("g");
   }
-  // For some reason the svg height adds seven on each rerender (i.e. the value of height taken from getElementById is too big)
   svg
     .attr("width", width)
-    .attr("height", height - 7)
+    .attr("height", height)
     .attr("class", "network-svg");
 
   const g = svg.select("g");
