@@ -442,6 +442,53 @@ const ThemeLegend = ({
   );
 };
 
+const PolicyPlansLegend = ({ selectedPolicyPlans, onPolicyPlanClicked, mobile, open }) => {
+  const { i18n } = useTranslation();
+
+  return (
+    <Grid
+      container
+      direction={!mobile ? "column" : "row"}
+      justifyContent="center"
+      style={{
+        padding: 5,
+      }}
+    >
+      {Object.entries(policyPlans).map(([key, policyPlan]) => {
+        return (
+          <Grid
+            item
+            key={policyPlan.color}
+            className={classNames("link-item", "clickable")}
+            style={{
+              opacity:
+                !selectedPolicyPlans ||
+                selectedPolicyPlans.length === 0 ||
+                selectedPolicyPlans.indexOf(policyPlan.color) !== -1
+                  ? 1
+                  : legendOpacity,
+              display: "flex",
+            }}
+            onClick={() => onPolicyPlanClicked(policyPlan.color)}
+          >
+            <span
+              width={50}
+              style={{
+                border: `1px solid ${policyPlan.color}`,
+                backgroundColor: policyPlan.color,
+                marginRight: 4,
+              }}
+            >
+              &nbsp;&nbsp;&nbsp;
+            </span>
+            {i18n.language !== "es" ? policyPlan.labelEN : policyPlan.labelES}
+          </Grid>
+        );
+      })}
+    </Grid>
+  );
+};
+
 const DownloadButton = (props) => {
   const { t } = useTranslation();
   const matches = useMediaQuery("(max-width:1000px)");
@@ -500,7 +547,7 @@ const DownloadButton = (props) => {
   );
 };
 
-const LeftLegend = ({ mobile, selectedThemes, selectedCategories, onThemeClicked, onCategoryClicked, onClickSaveNetwork, openTheme, openDownload }) => {
+const LeftLegend = ({ mobile, selectedThemes, selectedCategories, selectedPolicyPlans, onPolicyPlanClicked, onThemeClicked, onCategoryClicked, onClickSaveNetwork, openTheme, openDownload }) => {
   const theme = useTheme();
   return (
     <Grid
@@ -521,7 +568,9 @@ const LeftLegend = ({ mobile, selectedThemes, selectedCategories, onThemeClicked
         <CategoriesLegend
           mobile={mobile}
           selectedCategories={selectedCategories}
-          onCategoryClicked={(categoryColor) => onCategoryClicked(categoryColor)}
+          onCategoryClicked={(categoryColor) =>
+            onCategoryClicked(categoryColor)
+          }
           open={openTheme}
         />
       </Grid>
@@ -546,6 +595,18 @@ const LeftLegend = ({ mobile, selectedThemes, selectedCategories, onThemeClicked
       >
         <hr className="solid"></hr>
       </Grid>
+        <PolicyPlansLegend
+          mobile={mobile}
+          selectedPolicyPlans={selectedPolicyPlans}
+          onPolicyPlanClicked={(themeColor) => onPolicyPlanClicked(themeColor)}
+        />
+      <Grid
+        item
+        xs
+        style={{ display: "contents", flexBasis: "auto", padding: 5 }}
+      >
+        <hr className="solid"></hr>
+      </Grid>
       <Grid
         item
         xs
@@ -557,7 +618,11 @@ const LeftLegend = ({ mobile, selectedThemes, selectedCategories, onThemeClicked
           padding: 0,
         }}
       >
-        <DownloadButton mobile={mobile} onClick={onClickSaveNetwork} open={openDownload} />
+        <DownloadButton
+          mobile={mobile}
+          onClick={onClickSaveNetwork}
+          open={openDownload}
+        />
       </Grid>
     </Grid>
   );
@@ -1004,6 +1069,7 @@ class DataComponent extends Component {
       connectedNodes: undefined,
       selectedCategories: [],
       selectedThemes: [],
+      selectedPolicyPlans: [],
       selectedThemeNodes: [],
       selectedThemeNodesConnectedLinks: [],
       selectedThemeNodesConnectedNodes: [],
@@ -1066,7 +1132,7 @@ class DataComponent extends Component {
     const [connectedIDs, connectedLinks] = this.getConnectedLinks(d, false);
     // Map over all nodes to get connected nodes by ID
     const connectedNodes = this.getConnectedNodes(connectedIDs);
-    
+
     this.setState({
       connectedNodes: selectedNode?.id === d.id ? null : connectedNodes,
       connectedLinks:
@@ -1155,7 +1221,10 @@ class DataComponent extends Component {
     })[0];
 
     // Map over all links to get lins of this node
-    const [connectedIDs, connectedLinks] = this.getConnectedLinks(themeNode, true);
+    const [connectedIDs, connectedLinks] = this.getConnectedLinks(
+      themeNode,
+      true
+    );
     const t = [].concat(selectedThemeNodesConnectedLinks);
     t.push(Array.from(connectedLinks.values()));
 
@@ -1185,6 +1254,17 @@ class DataComponent extends Component {
               (d, index) => index !== indexOfTheme
             )
           : n,
+    });
+  };
+
+  onPolicyPlanClicked = (policyPlanColor) => {
+    const { selectedPolicyPlans } = this.state;
+    const indexOfPolicyPlan = selectedPolicyPlans.indexOf(policyPlanColor);
+    this.setState({
+      selectedPolicyPlans:
+        indexOfPolicyPlan !== -1
+          ? selectedPolicyPlans.filter((d, index) => index !== indexOfPolicyPlan)
+          : selectedPolicyPlans.concat(policyPlanColor),
     });
   };
 
@@ -1296,6 +1376,7 @@ class DataComponent extends Component {
       connectedNodes,
       connectedLinks,
       selectedThemes,
+      selectedPolicyPlans,
       selectedThemeNodes,
       selectedThemeNodesConnectedLinks,
       selectedThemeNodesConnectedNodes,
@@ -1310,9 +1391,13 @@ class DataComponent extends Component {
           <LeftLegend
             selectedThemes={selectedThemes}
             selectedCategories={selectedCategories}
+            selectedPolicyPlans={selectedPolicyPlans}
             onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
             onCategoryClicked={(categoryColor) =>
               this.onCategoryClicked(categoryColor)
+            }
+            onPolicyPlanClicked={(policyPlanColor) =>
+              this.onPolicyPlanClicked(policyPlanColor)
             }
             onClickSaveNetwork={this.onClickSaveNetwork}
             openTheme={this.openOnDesktop(3)}
@@ -1368,6 +1453,7 @@ class DataComponent extends Component {
             selectedThemeNodesConnectedLinks={selectedThemeNodesConnectedLinks}
             selectedThemeNodesConnectedNodes={selectedThemeNodesConnectedNodes}
             selectedCategories={selectedCategories}
+            selectedPolicyPlans={selectedPolicyPlans}
             searchText={searchText}
             onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
           />
@@ -1393,6 +1479,7 @@ class DataComponent extends Component {
       connectedNodes,
       connectedLinks,
       selectedThemes,
+      selectedPolicyPlans,
       selectedThemeNodes,
       selectedThemeNodesConnectedLinks,
       selectedThemeNodesConnectedNodes,
@@ -1414,6 +1501,7 @@ class DataComponent extends Component {
             connectedNodes={connectedNodes}
             connectedLinks={connectedLinks}
             selectedThemes={selectedThemes}
+            selectedPolicyPlans={selectedPolicyPlans}
             selectedThemeNodes={selectedThemeNodes}
             selectedThemeNodesConnectedLinks={selectedThemeNodesConnectedLinks}
             selectedThemeNodesConnectedNodes={selectedThemeNodesConnectedNodes}
@@ -1427,9 +1515,13 @@ class DataComponent extends Component {
           mobile
           selectedThemes={selectedThemes}
           selectedCategories={selectedCategories}
+          selectedPolicyPlans={selectedPolicyPlans}
           onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
           onCategoryClicked={(categoryColor) =>
             this.onCategoryClicked(categoryColor)
+          }
+          onPolicyPlanClicked={(policyPlanColor) =>
+            this.onPolicyPlanClicked(policyPlanColor)
           }
           onClickSaveNetwork={this.onClickSaveNetwork}
           openTheme={this.openOnDesktop(3)}

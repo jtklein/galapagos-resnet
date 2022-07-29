@@ -41,6 +41,7 @@ export default function Network(el, props) {
     setZoomTransform,
     selectedCategories,
     selectedThemes,
+    selectedPolicyPlans,
   } = props;
 
   // Create a node radius range with linear scale from data min and max
@@ -58,6 +59,14 @@ export default function Network(el, props) {
       return false;
     }
     return selectedCategories.indexOf(node.color) !== -1;
+  }
+
+  const policyPlanSet = selectedPolicyPlans && selectedPolicyPlans.length !== 0;
+  function isSelectedPolicyPlan(node) {
+    if (!policyPlanSet) {
+      return false;
+    }
+    return selectedPolicyPlans.indexOf(node.color) !== -1;
   }
 
   const themeSet = selectedThemes && selectedThemes.length !== 0;
@@ -173,6 +182,9 @@ export default function Network(el, props) {
         .attr("fill", function (d) {
           if (categorySet) {
             return isSelectedCategory(d) ? d.color : "lightgray";
+          }
+          if (policyPlanSet) {
+            return isSelectedPolicyPlan(d) ? d.color : "lightgray";
           }
           if (themeSet) {
             return isConnectedToSelectedThemes(d) || isSelectedThemeNode(d)
@@ -313,6 +325,11 @@ export default function Network(el, props) {
     "categories"
   );
   centerForce(
+    selectedPolicyPlans && selectedPolicyPlans.length !== 0,
+    isSelectedPolicyPlan,
+    "policy-plan"
+  );
+  centerForce(
     isSearching,
     isSearchedFor,
     "search"
@@ -335,13 +352,13 @@ export default function Network(el, props) {
         context.globalAlpha = 0.6;
         if (themeSet) {
           context.strokeStyle = isSelectedTheme(d) ? d.color : "lightgray";
-        } else
-        // If there is no node selected, all links are grey
-        if (!props.selectedNode) {
+        } else if (!props.selectedNode) {
           context.strokeStyle = "lightgray";
-        } else
-        if (categorySet) {
+        } else if (categorySet) {
           context.strokeStyle = isSelectedCategory(d) ? d.color : "lightgray";
+        } else if (policyPlanSet) {
+          // TODO: this does not look right
+          context.strokeStyle = isSelectedPolicyPlan(d) ? d.color : "lightgray";
         } else {
           context.strokeStyle = d.color;
         }
