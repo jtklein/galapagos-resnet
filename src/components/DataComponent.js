@@ -150,6 +150,29 @@ const themes = {
   },
 };
 
+const policyPlans = {
+  1: {
+    labelEN: "40 Priority SDG Targets",
+    labelES: "40 Metas Prioritarias de los ODS",
+    color: "#EF5350",
+  },
+  2: {
+    labelEN: "Objectives of the 2030 Plan",
+    labelES: "Objetivos del Plan 2030",
+    color: "#BA68C8",
+  },
+  3: {
+    labelEN: "50 Top Questions",
+    labelES: "50 Preguntas Principales",
+    color: "#4DB6AC",
+  },
+  4: {
+    labelEN: "Policy Recommendations for Galapagos",
+    labelES: "Recomendaciones de Políticas Públicas para Galápagos",
+    color: "#FF8A65",
+  },
+};
+
 const plans = {
   1: {
     labelEN: "Governance",
