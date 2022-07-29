@@ -1,7 +1,5 @@
 import * as d3 from "d3";
 
-const linkWidth = 1;
-
 export default function Network(el, props) {
   const height = document.getElementById("network").offsetHeight;
   const width = document.getElementById("network").offsetWidth;
@@ -339,8 +337,8 @@ export default function Network(el, props) {
       context.clearRect(0, 0, width, height);
       context.translate(zoomTransform.x, zoomTransform.y);
       context.scale(zoomTransform.k, zoomTransform.k);
-      context.lineWidth = linkWidth;
       link.each((d, i, nodes) => {
+        context.lineWidth = d.weight * 2;
         context.globalAlpha = 0.6;
         if (themeSet) {
           context.strokeStyle = isSelectedTheme(d) ? d.color : "lightgray";
@@ -353,6 +351,11 @@ export default function Network(el, props) {
           context.strokeStyle = isSelectedPolicyPlan(d) ? d.color : "lightgray";
         } else {
           context.strokeStyle = d.color;
+        }
+        if (d.weight === 0.5) {
+          context.setLineDash([5, 5]);
+        } else {
+          context.setLineDash([]);
         }
         context.beginPath();
         context.moveTo(d.source.x, d.source.y);
