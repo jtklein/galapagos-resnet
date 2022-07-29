@@ -19,8 +19,8 @@ import classNames from "classnames";
 import NetworkContainer from "./NetworkContainer";
 // import MapComponent from "./MapComponent";
 
-import { data } from "./RI";
-import { locations } from "./RI_locations";
+import { data } from "../data/RI";
+import { locations } from "../data/RI_locations";
 
 import goal1EN from "../assets/icons/sdg/EN/E-WEB-Goal-01.png";
 import goal2EN from "../assets/icons/sdg/EN/E-WEB-Goal-02.png";
