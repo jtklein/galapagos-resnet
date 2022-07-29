@@ -177,9 +177,7 @@ export default function Network(el, props) {
             return isSelectedPolicyPlan(d) ? d.color : "lightgray";
           }
           if (themeSet) {
-            return isConnectedToSelectedThemes(d)
-              ? d.color
-              : "lightgray";
+            return isConnectedToSelectedThemes(d) ? d.color : "lightgray";
           }
           if (props.selectedNode) {
             return isConnectedToSelectedNode(d) || isSelectedNode(d)
@@ -212,6 +210,8 @@ export default function Network(el, props) {
           return "#000";
         })
         .attr("font-size", (d) => smallestRadius() * 1.5)
+        // TODO: This checks whether the node is of type "species" by looking at the color. Should be better somehow different
+        .attr("font-style", (d) => (d.color === "#F57F17" ? "italic" : null))
         .attr("dx", (d) => nodeRadiusScale(d.size) + 2)
         .attr("dy", 1)
         .attr("dominant-baseline", "middle")
