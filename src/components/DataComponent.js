@@ -63,90 +63,90 @@ const nodeCategories = {
   1: {
     labelEN: "Projects",
     labelES: "Proyectos",
-    color: "#660000",
+    color: "#B71C1C",
   },
   2: {
     labelEN: "Years",
     labelES: "Años",
-    color: "#ED6D22",
+    color: "#FDD835",
   },
   3: {
     labelEN: "Islands",
     labelES: "Islas",
-    color: "#cc0000",
+    color: "#33691E",
   },
   4: {
     labelEN: "Countries",
     labelES: "Paises",
-    color: "#1c8f14",
+    color: "#5D4037",
   },
   5: {
     labelEN: "Species",
     labelES: "Especies",
-    color: "#ea9999",
+    color: "#F57F17",
   },
   6: {
     labelEN: "People",
     labelES: "Personas",
-    color: "#a4c2f4",
+    color: "#4A148C",
   },
   7: {
     labelEN: "Institutions",
     labelES: "Instituciones",
-    color: "#7023BD",
-  }
+    color: "#006064",
+  },
 };
 
 const themes = {
-  8: {
+  1: {
     labelEN: "Physical and chemical sciences",
     labelES: "Ciencias físicas y químicas",
-    color: "#3c78d8",
+    color: "#1A237E",
   },
-  9: {
+  2: {
     labelEN: "Ecology and conservation",
     labelES: "Conservación y ecología",
-    color: "#1c4587",
+    color: "#303F9F",
   },
-  10: {
+  3: {
     labelEN: "Terrestrial fauna and flora",
     labelES: "Flora y fauna terrestre",
-    color: "#00FA9A",
+    color: "#5C6BC0",
   },
-  11: {
+  4: {
     labelEN: "Marine/coastal fauna and flora",
     labelES: "Flora y fauna marina/costera",
-    color: "#239ABD",
+    color: "#0D47A1",
   },
-  12: {
+  5: {
     labelEN: "Climate change",
     labelES: "Cambio climático",
-    color: "#ADFF2F",
+    color: "#1976D2",
   },
-  13: {
-    labelEN: "History",
-    labelES: "Historia",
-    color: "#FF8C00",
-  },
-  14: {
+  // 6: {
+  //   labelEN: "History",
+  //   labelES: "Historia",
+  //   color: "#FF8C00",
+  // },
+  7: {
     labelEN: "Infrastructure, energy and technology",
     labelES: "Infraestructura, energía y tecnología",
-    color: "#FF69B4",
+    color: "#01579B",
   },
-  15: {
-    labelEN: "Food security",
-    labelES: "Seguridad alimentaria",
-    color: "#ccbf2d",
-  },
-  16: {
+  // 8: {
+  //   labelEN: "Food security",
+  //   labelES: "Seguridad alimentaria",
+  //   color: "#0288D1",
+  // },
+  9: {
     labelEN: "Community",
     labelES: "Comunidad",
-    color: "#00FFFF",
+    color: "#29B6F6",
   },
-  17: {
+  10: {
     labelEN: "Politics, economics and crime",
     labelES: "Políticas, economía y delito",
-    color: "#FFFF00",
+    color: "#81D4FA",
   },
 };
 
