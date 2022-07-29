@@ -95,9 +95,8 @@ class NetworkContainer extends Component {
       selectedCategories,
       selectedPolicyPlans,
       selectedThemes,
-      selectedThemeNodes,
-      selectedThemeNodesConnectedLinks,
-      selectedThemeNodesConnectedNodes,
+      selectedThemesConnectedLinks,
+      selectedThemesConnectedNodes,
       searchText,
     } = this.props;
     const { simulation, zoom, zoomTransform } = this.state;
@@ -113,9 +112,8 @@ class NetworkContainer extends Component {
       selectedCategories,
       selectedPolicyPlans,
       selectedThemes,
-      selectedThemeNodes,
-      selectedThemeNodesConnectedLinks,
-      selectedThemeNodesConnectedNodes,
+      selectedThemesConnectedLinks,
+      selectedThemesConnectedNodes,
       searchText,
       onClick: this.onNetworkClickNode,
     });

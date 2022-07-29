@@ -1070,9 +1070,8 @@ class DataComponent extends Component {
       selectedCategories: [],
       selectedThemes: [],
       selectedPolicyPlans: [],
-      selectedThemeNodes: [],
-      selectedThemeNodesConnectedLinks: [],
-      selectedThemeNodesConnectedNodes: [],
+      selectedThemesConnectedLinks: [],
+      selectedThemesConnectedNodes: [],
       searchText: "",
       tutorialOpen: false,
       // This is a hack because on pressing the tutorial button also fires
@@ -1207,30 +1206,34 @@ class DataComponent extends Component {
   onThemeClicked = (themeColor) => {
     const {
       selectedThemes,
-      selectedThemeNodes,
-      selectedThemeNodesConnectedLinks,
-      selectedThemeNodesConnectedNodes,
+      selectedThemesConnectedLinks,
+      selectedThemesConnectedNodes,
     } = this.state;
     const indexOfTheme = selectedThemes.indexOf(themeColor);
-    const theme = Object.entries(themes).filter(([key, theme]) => {
-      return theme.color === themeColor;
-    })[0][1];
-    // Map over all nodes to get the node with same name as theme labelEN
-    const themeNode = data.nodes.filter((node) => {
-      return node.id === theme.labelEN;
-    })[0];
 
-    // Map over all links to get lins of this node
-    const [connectedIDs, connectedLinks] = this.getConnectedLinks(
-      themeNode,
-      true
-    );
-    const t = [].concat(selectedThemeNodesConnectedLinks);
-    t.push(Array.from(connectedLinks.values()));
+    const themeNodes = data.nodes.filter((node) => {
+      return node.color === themeColor;
+    });
 
-    // Map over all nodes to get connected nodes by ID
-    const connectedNodes = this.getConnectedNodes(connectedIDs);
-    const n = [].concat(selectedThemeNodesConnectedNodes);
+    let connectedLinks = [];
+    let connectedNodes = [];
+
+    // Map over all theme nodes
+    themeNodes.map(themeNode => {
+      // Map over all links to get lins of this node
+      const [connectedIDs, cL] = this.getConnectedLinks(
+        themeNode,
+        false
+      );
+      connectedLinks = connectedLinks.concat(Array.from(cL));
+      // Map over all nodes to get connected nodes by ID
+      const cN = this.getConnectedNodes(connectedIDs);
+      connectedNodes = connectedNodes.concat(cN);
+      return true;
+    })
+    const t = [].concat(selectedThemesConnectedLinks);
+    const n = [].concat(selectedThemesConnectedNodes);
+    t.push(connectedLinks);
     n.push(connectedNodes);
 
     this.setState({
@@ -1238,19 +1241,15 @@ class DataComponent extends Component {
         indexOfTheme !== -1
           ? selectedThemes.filter((d, index) => index !== indexOfTheme)
           : selectedThemes.concat(themeColor),
-      selectedThemeNodes:
+      selectedThemesConnectedLinks:
         indexOfTheme !== -1
-          ? selectedThemeNodes.filter((d, index) => index !== indexOfTheme)
-          : selectedThemeNodes.concat(themeNode),
-      selectedThemeNodesConnectedLinks:
-        indexOfTheme !== -1
-          ? selectedThemeNodesConnectedLinks.filter(
+          ? selectedThemesConnectedLinks.filter(
               (d, index) => index !== indexOfTheme
             )
           : t,
-      selectedThemeNodesConnectedNodes:
+      selectedThemesConnectedNodes:
         indexOfTheme !== -1
-          ? selectedThemeNodesConnectedNodes.filter(
+          ? selectedThemesConnectedNodes.filter(
               (d, index) => index !== indexOfTheme
             )
           : n,
@@ -1263,7 +1262,9 @@ class DataComponent extends Component {
     this.setState({
       selectedPolicyPlans:
         indexOfPolicyPlan !== -1
-          ? selectedPolicyPlans.filter((d, index) => index !== indexOfPolicyPlan)
+          ? selectedPolicyPlans.filter(
+              (d, index) => index !== indexOfPolicyPlan
+            )
           : selectedPolicyPlans.concat(policyPlanColor),
     });
   };
@@ -1377,9 +1378,8 @@ class DataComponent extends Component {
       connectedLinks,
       selectedThemes,
       selectedPolicyPlans,
-      selectedThemeNodes,
-      selectedThemeNodesConnectedLinks,
-      selectedThemeNodesConnectedNodes,
+      selectedThemesConnectedLinks,
+      selectedThemesConnectedNodes,
       selectedCategories,
       searchText,
     } = this.state;
@@ -1449,9 +1449,8 @@ class DataComponent extends Component {
             connectedNodes={connectedNodes}
             connectedLinks={connectedLinks}
             selectedThemes={selectedThemes}
-            selectedThemeNodes={selectedThemeNodes}
-            selectedThemeNodesConnectedLinks={selectedThemeNodesConnectedLinks}
-            selectedThemeNodesConnectedNodes={selectedThemeNodesConnectedNodes}
+            selectedThemesConnectedLinks={selectedThemesConnectedLinks}
+            selectedThemesConnectedNodes={selectedThemesConnectedNodes}
             selectedCategories={selectedCategories}
             selectedPolicyPlans={selectedPolicyPlans}
             searchText={searchText}
@@ -1480,9 +1479,8 @@ class DataComponent extends Component {
       connectedLinks,
       selectedThemes,
       selectedPolicyPlans,
-      selectedThemeNodes,
-      selectedThemeNodesConnectedLinks,
-      selectedThemeNodesConnectedNodes,
+      selectedThemesConnectedLinks,
+      selectedThemesConnectedNodes,
       selectedCategories,
       searchText,
       tutorialOpen,
@@ -1502,9 +1500,8 @@ class DataComponent extends Component {
             connectedLinks={connectedLinks}
             selectedThemes={selectedThemes}
             selectedPolicyPlans={selectedPolicyPlans}
-            selectedThemeNodes={selectedThemeNodes}
-            selectedThemeNodesConnectedLinks={selectedThemeNodesConnectedLinks}
-            selectedThemeNodesConnectedNodes={selectedThemeNodesConnectedNodes}
+            selectedThemesConnectedLinks={selectedThemesConnectedLinks}
+            selectedThemesConnectedNodes={selectedThemesConnectedNodes}
             selectedCategories={selectedCategories}
             searchText={searchText}
             onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}

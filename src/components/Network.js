@@ -81,10 +81,10 @@ export default function Network(el, props) {
   // Filter links to show only links that are connected to selected themes
   if (
     props.selectedThemes.length !== 0 &&
-    props.selectedThemeNodesConnectedLinks.length !== 0
+    props.selectedThemesConnectedLinks.length !== 0
   ) {
     // Get one array from the array of arrays
-    linksToShow = props.selectedThemeNodesConnectedLinks.reduce(
+    linksToShow = props.selectedThemesConnectedLinks.reduce(
       (acc, curr) => acc.concat(curr),
       []
     );
@@ -94,20 +94,12 @@ export default function Network(el, props) {
     linksToShow = props.connectedLinks;
   }
 
-  function isSelectedThemeNode(node) {
-    if (!props.selectedThemeNodes) {
-      return false;
-    }
-    const selectedThemeIDs = props.selectedThemeNodes.map((n) => n.id);
-    return selectedThemeIDs.includes(node.id);
-  }
-
   function isConnectedToSelectedThemes(node) {
-    if (!props.selectedThemeNodes || !props.selectedThemeNodesConnectedNodes) {
+    if (!props.selectedThemesConnectedNodes) {
       return false;
     }
     // Get one array from the array of arrays
-    const ns = props.selectedThemeNodesConnectedNodes.reduce(
+    const ns = props.selectedThemesConnectedNodes.reduce(
       (acc, curr) => acc.concat(curr),
       []
     );
@@ -187,7 +179,7 @@ export default function Network(el, props) {
             return isSelectedPolicyPlan(d) ? d.color : "lightgray";
           }
           if (themeSet) {
-            return isConnectedToSelectedThemes(d) || isSelectedThemeNode(d)
+            return isConnectedToSelectedThemes(d)
               ? d.color
               : "lightgray";
           }
