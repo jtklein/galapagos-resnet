@@ -1126,6 +1126,14 @@ class DataComponent extends Component {
   };
 
   setNodeSelection = (d) => {
+    if (d === null) {
+      this.setState({
+        selectedNode: null,
+        connectedNodes: null,
+        connectedLinks: null,
+      })
+      return;
+    }
     const { selectedNode } = this.state;
     // Map over all links to get lins of this node
     const [connectedIDs, connectedLinks] = this.getConnectedLinks(d, false);

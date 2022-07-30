@@ -137,6 +137,19 @@ export default function Network(el, props) {
     return node.id.toLowerCase().includes(props.searchText.toLowerCase());
   }
 
+  function onOverlayClick(event) {
+    props.onClick(null);
+  }
+
+  // add an overlay on top of everything to take the mouse events
+  g.append("rect")
+    .attr("class", "overlay")
+    .attr("width", width)
+    .attr("height", height)
+    .style("fill", "#f00")
+    .style("opacity", 0)
+    .on("click", onOverlayClick);
+
   // Join data to group without rendering any svg elements
   const link = g
     .append("g")
