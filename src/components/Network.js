@@ -135,6 +135,9 @@ export default function Network(el, props) {
       return false;
     }
     for (const [key, value] of Object.entries(node)) {
+      if (key === "x" || key === "y") {
+        continue;
+      }
       if (typeof value === "string" && value.toLowerCase().includes(props.searchText.toLowerCase())) {
         return true;
       }
