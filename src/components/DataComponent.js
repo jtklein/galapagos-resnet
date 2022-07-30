@@ -21,6 +21,10 @@ import NetworkContainer from "./NetworkContainer";
 
 import { data } from "../data/RI";
 import { locations } from "../data/RI_locations";
+import projectsInfo from "../data/projects";
+import organizationsInfo from "../data/orgs_info";
+import speciesInfo from "../data/species_info";
+import plansInfo from "../data/plans_info";
 
 import goal1EN from "../assets/icons/sdg/EN/E-WEB-Goal-01.png";
 import goal2EN from "../assets/icons/sdg/EN/E-WEB-Goal-02.png";
@@ -56,7 +60,6 @@ import "./DataComponent.css";
 
 const onMobile = !isDesktop || window.innerWidth < 800;
 
-const initialData = Object.assign({}, data);
 const legendOpacity = 0.4;
 
 const nodeCategories = {
@@ -322,6 +325,12 @@ const questions = {
   },
 };
 
+// Get sets of the values used as node IDs
+const nicknamesESSet = new Set(projectsInfo.map((d) => d.Nickname_ES));
+const orgCodeSet = new Set(organizationsInfo.map((d) => d.Org));
+const scientificNameSet = new Set(speciesInfo.map((d) => d.Scientific_name));
+const aimSet = new Set(plansInfo.map((d) => d.Aim));
+const initialData = Object.assign({}, data);
 const CategoriesLegend = ({
   selectedCategories,
   onCategoryClicked,
@@ -868,9 +877,136 @@ console.log('RightLegend', RightLegend);
 const NodeInfo = ({ node }) => {
   const { i18n } = useTranslation();
   const theme = useTheme();
+  const ProjectNode = ({ info }) => { 
+    return (
+      <div>
+        <br />
+        <strong>
+          {i18n.language !== "es" ? info.Nickname_EN : info.Nickname_ES}
+        </strong>
+        <br />
+        {info.Permit && (
+          <>
+            {i18n.t("permitNumber")} {info.Permit}
+            <br />
+            <br />
+          </>
+        )}
+        {info.Title_EN && (
+          <>
+            {i18n.language !== "es" ? info.Title_EN : info.Title_ES}
+            <br />
+            <br />
+          </>
+        )}
+        {info.Summary_EN && (
+          <>
+            {i18n.language !== "es" ? info.Summary_EN : info.Summary_ES}
+            <br />
+            <br />
+          </>
+        )}
+        {info.Link && (
+          <>
+            <a href={info.Link} target="_blank" rel="noreferrer">
+              {i18n.t("relevantLinks")}
+            </a>
+            <br />
+            <br />
+          </>
+        )}
+      </div>
+    );};
+
+  const OrganizationNode = ({ info }) => {
+    return (
+      <div>
+        <br />
+        <strong>{info.Org}</strong>
+        <br />
+        {info["English name"] && (
+          <>
+            {i18n.language !== "es"
+              ? info["English name"]
+              : info["Spanish name"]}
+            <br />
+            <br />
+          </>
+        )}
+        {info["Country"] && (
+          <>
+            {i18n.language !== "es"
+              ? info["Country"]
+              : info["Pais"]}
+            <br />
+            <br />
+          </>
+        )}
+        {info.Website && (
+          <>
+            <a href={info.Website} target="_blank" rel="noreferrer">
+              {i18n.t("website")}
+            </a>
+            <br />
+            <br />
+          </>
+        )}
+      </div>
+    );
+  };
+
+  const SpeciesNode = ({ info }) => {
+    return (
+      <div>
+        <br />
+        <strong>
+          <>
+            <a href={info.Link} target="_blank" rel="noreferrer">
+              {info.Scientific_name}
+            </a>
+          </>
+        </strong>
+        <br />
+        {info.CommonName_EN && (
+          <>
+            {i18n.language !== "es" ? info.CommonName_EN : info.CommonName_ES}
+            <br />
+            <br />
+          </>
+        )}
+      </div>
+    );
+  };
+
+  const PlanNode = ({ info }) => {
+    return (
+      <div>
+        <br />
+        <strong>{info.Aim}</strong>
+        <br />
+        {info.Title_EN && (
+          <>
+            {i18n.language !== "es" ? info.Title_EN : info.Title_ES}
+            <br />
+            <br />
+          </>
+        )}
+        {info.Plan_EN && (
+          <>
+            <a href={info["Plan link"]} target="_blank" rel="noreferrer">
+              {i18n.language !== "es" ? info.Plan_EN : info.Plan_ES}
+            </a>
+            <br />
+            <br />
+          </>
+        )}
+      </div>
+    );
+  };
 
   return (
     <div
+      id="infobox"
       style={{
         marginTop: 40,
         padding: 5,
@@ -886,13 +1022,11 @@ const NodeInfo = ({ node }) => {
           <br />
           {i18n.t("toSeeMoreInformation")}
         </div>
-      ) : (
-        <div>
-          <strong>{node.id}</strong>
-          <br />
-          {node.label}
-        </div>
-      )}
+      ) : null}
+      {node && nicknamesESSet.has(node.id) ? <ProjectNode info={node} /> : null}
+      {node && orgCodeSet.has(node.id) ? <OrganizationNode info={node} /> : null}
+      {node && scientificNameSet.has(node.id) ? <SpeciesNode info={node} /> : null}
+      {node && aimSet.has(node.id) ? <PlanNode info={node} /> : null}
     </div>
   );
 };
