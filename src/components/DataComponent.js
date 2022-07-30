@@ -325,12 +325,39 @@ const questions = {
   },
 };
 
+/* Data preparation */
+
 // Get sets of the values used as node IDs
 const nicknamesESSet = new Set(projectsInfo.map((d) => d.Nickname_ES));
 const orgCodeSet = new Set(organizationsInfo.map((d) => d.Org));
 const scientificNameSet = new Set(speciesInfo.map((d) => d.Scientific_name));
 const aimSet = new Set(plansInfo.map((d) => d.Aim));
+
+// Map through the data to add the info to the node
+data.nodes = data.nodes.map(node => {
+  if (nicknamesESSet.has(node.id)) {
+    const nodeInfo = projectsInfo.find(d => d.Nickname_ES === node.id);
+    node = { ...node, ...nodeInfo };
+  }
+  if (orgCodeSet.has(node.id)) {
+    const nodeInfo = organizationsInfo.find(d => d.Org === node.id);
+    node = { ...node, ...nodeInfo };
+  }
+  if (scientificNameSet.has(node.id)) {
+    const nodeInfo = speciesInfo.find(d => d.Scientific_name === node.id);
+    node = { ...node, ...nodeInfo };
+  }
+  if (aimSet.has(node.id)) {
+    const nodeInfo = plansInfo.find(d => d.Aim === node.id);
+    node = { ...node, ...nodeInfo };
+  }
+  return node;
+})
+
 const initialData = Object.assign({}, data);
+
+/* Data preparation */
+
 const CategoriesLegend = ({
   selectedCategories,
   onCategoryClicked,
