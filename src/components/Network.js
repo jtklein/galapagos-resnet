@@ -141,6 +141,16 @@ export default function Network(el, props) {
     }
   }
 
+  function isLeadOfSelected(node) {
+    if (!props.selectedNode) {
+      return false;
+    }
+    return (
+      node.id === props.selectedNode.Lead_person ||
+      node.id === props.selectedNode.Lead_org
+    );
+  }
+
   function onOverlayClick(event) {
     props.onClick(null);
   }
@@ -229,6 +239,7 @@ export default function Network(el, props) {
         .attr("font-size", (d) => smallestRadius() * 1.5)
         // TODO: This checks whether the node is of type "species" by looking at the color. Should be better somehow different
         .attr("font-style", (d) => (d.color === "#F57F17" ? "italic" : null))
+        .attr("font-weight", (d) => (isLeadOfSelected(d) ? "bold" : "normal"))
         .attr("dx", (d) => nodeRadiusScale(d.size) + 2)
         .attr("dy", 1)
         .attr("dominant-baseline", "middle")
