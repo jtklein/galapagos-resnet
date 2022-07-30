@@ -322,9 +322,7 @@ export default function Network(el, props) {
       .force(
         `x${counter}`,
         d3.forceX(width / 2).strength((d) => (selectionFct(d) ? 1 : 0))
-      )
-      .alpha(0.1)
-      .restart();
+      );
   }
 
   function centerForce(addCondition, selectionFct, counter) {
@@ -356,6 +354,10 @@ export default function Network(el, props) {
     "search"
   );
 
+  if (props.resimulate) {
+    simulation.alpha(0.1).restart();
+  }
+    
   function tick() {
     render();
   }

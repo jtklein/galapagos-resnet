@@ -25,25 +25,12 @@ class NetworkContainer extends Component {
     const simulation = d3
       .forceSimulation()
       .nodes(props.data.nodes)
-      .force(
-        "charge",
-        d3
-          .forceManyBody()
-          .strength(-300)
-      )
+      .force("charge", d3.forceManyBody().strength(-300))
       .force(
         "link",
-        d3
-          .forceLink(props.data.links)
-          .id((d) => d.id)
+        d3.forceLink(props.data.links).id((d) => d.id)
       )
-      .force(
-        "collide",
-        d3
-          .forceCollide()
-          .radius(20)
-          .iterations(3)
-      );
+      .force("collide", d3.forceCollide().radius(20).iterations(3));
     const zoom = d3.zoom();
     // Holds a copy of the previous zoom transform, so we can track its changes
     const zoomTransform = d3.zoomIdentity;
@@ -61,8 +48,11 @@ class NetworkContainer extends Component {
     this.renderNetwork();
   }
 
-  componentDidUpdate() {
-    this.renderNetwork();
+  componentDidUpdate(prevProps) {
+    const themesChanged = this.props.selectedThemes.length !== prevProps.selectedThemes.length;
+    const policyPlansChanged = this.props.selectedPolicyPlans.length !== prevProps.selectedPolicyPlans.length;
+    const categoriesChanged = this.props.selectedCategories.length !== prevProps.selectedCategories.length;
+    this.renderNetwork(themesChanged || policyPlansChanged || categoriesChanged);
   }
 
   onResize = () => {
@@ -85,7 +75,7 @@ class NetworkContainer extends Component {
     this.setState({ zoomTransform: t });
   };
 
-  renderNetwork() {
+  renderNetwork(resimulate) {
     const {
       refNetworkComponent,
       data,
@@ -116,6 +106,7 @@ class NetworkContainer extends Component {
       selectedThemesConnectedNodes,
       searchText,
       onClick: this.onNetworkClickNode,
+      resimulate,
     });
   }
 
@@ -135,7 +126,7 @@ class NetworkContainer extends Component {
             height: "100%",
             maxWidth: "100%",
             margin: "0 auto",
-            position: "relative"
+            position: "relative",
           }}
         />
       </StyledDiv>
