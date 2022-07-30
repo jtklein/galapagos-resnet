@@ -134,7 +134,11 @@ export default function Network(el, props) {
     if (!props.searchText) {
       return false;
     }
-    return node.id.toLowerCase().includes(props.searchText.toLowerCase());
+    for (const [key, value] of Object.entries(node)) {
+      if (typeof value === "string" && value.toLowerCase().includes(props.searchText.toLowerCase())) {
+        return true;
+      }
+    }
   }
 
   function onOverlayClick(event) {
