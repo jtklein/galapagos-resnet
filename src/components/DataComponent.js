@@ -19,8 +19,8 @@ import classNames from "classnames";
 import NetworkContainer from "./NetworkContainer";
 // import MapComponent from "./MapComponent";
 
-import { locations } from "../data/RI_locations";
 import data from "../data/data";
+// import { locations } from "../data/RI_locations";
 
 import goal1EN from "../assets/icons/sdg/EN/E-WEB-Goal-01.png";
 import goal2EN from "../assets/icons/sdg/EN/E-WEB-Goal-02.png";
@@ -1284,41 +1284,41 @@ class DataComponent extends Component {
     this.setNodeSelection(correspondingNode);
   };
 
-  filterMarkers = () => {
-    const { selectedNode, connectedNodes } = this.state;
-    const allMarkers = locations.filter(
-      (location) => location.Latitude && location.Longitude
-    );
-    // If no node is selected show all markers
-    if (!selectedNode) {
-      return allMarkers;
-    }
-    // Get all selected + connected nodes
-    const nodes = [selectedNode].concat(connectedNodes);
-    let markers = [];
-    // Map over this node set and collect all markers
-    for (let i = 0; i < nodes.length; i++) {
-      const node = nodes[i];
-      // TODO: put this hardcoded checks for "special" projects into the data pipeline
-      if (node.id.includes("AT:")) {
-        markers = markers.concat(
-          allMarkers.filter((marker) => marker.Nickname === "Aves Terrestres")
-        );
-        break;
-      }
-      // TODO: put this hardcoded checks for "special" projects into the data pipeline
-      if (node.id.includes("GV:")) {
-        markers = markers.concat(
-          allMarkers.filter((marker) => marker.Nickname === "Galapagos Verde")
-        );
-        break;
-      }
-      markers = markers.concat(
-        allMarkers.filter((marker) => marker.Nickname === node.id)
-      );
-    }
-    return markers;
-  };
+  // filterMarkers = () => {
+  //   const { selectedNode, connectedNodes } = this.state;
+  //   const allMarkers = locations.filter(
+  //     (location) => location.Latitude && location.Longitude
+  //   );
+  //   // If no node is selected show all markers
+  //   if (!selectedNode) {
+  //     return allMarkers;
+  //   }
+  //   // Get all selected + connected nodes
+  //   const nodes = [selectedNode].concat(connectedNodes);
+  //   let markers = [];
+  //   // Map over this node set and collect all markers
+  //   for (let i = 0; i < nodes.length; i++) {
+  //     const node = nodes[i];
+  //     // TODO: put this hardcoded checks for "special" projects into the data pipeline
+  //     if (node.id.includes("AT:")) {
+  //       markers = markers.concat(
+  //         allMarkers.filter((marker) => marker.Nickname === "Aves Terrestres")
+  //       );
+  //       break;
+  //     }
+  //     // TODO: put this hardcoded checks for "special" projects into the data pipeline
+  //     if (node.id.includes("GV:")) {
+  //       markers = markers.concat(
+  //         allMarkers.filter((marker) => marker.Nickname === "Galapagos Verde")
+  //       );
+  //       break;
+  //     }
+  //     markers = markers.concat(
+  //       allMarkers.filter((marker) => marker.Nickname === node.id)
+  //     );
+  //   }
+  //   return markers;
+  // };
 
   onCategoryClicked = (categoryColor) => {
     const { selectedCategories } = this.state;
