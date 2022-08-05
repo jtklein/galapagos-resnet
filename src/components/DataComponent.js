@@ -1269,6 +1269,15 @@ class DataComponent extends Component {
 
   onNetworkClickNode = (d) => {
     this.setNodeSelection(d);
+    if (d === null) {
+      this.setState({
+        selectedCategories: [],
+        selectedThemes: [],
+        selectedPolicyPlans: [],
+        selectedThemesConnectedLinks: [],
+        selectedThemesConnectedNodes: [],
+      });
+    }
     return;
   };
 
