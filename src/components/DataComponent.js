@@ -777,6 +777,9 @@ const RightLegend = ({
   onPolicyPlanClicked,
   onClickSaveNetwork,
   openDownload,
+  isStatic,
+  onStaticClicked,
+  onCenterClicked,
 }) => {
   const theme = useTheme();
   const { i18n } = useTranslation();
@@ -795,16 +798,59 @@ const RightLegend = ({
         border: `1px solid ${theme.palette.primary.contrastText}`,
       }}
     >
-      <Grid item xs>
-        <div style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
-          <PolicyPlansLegend
-            mobile={mobile}
-            selectedPolicyPlans={selectedPolicyPlans}
-            onPolicyPlanClicked={(themeColor) =>
-              onPolicyPlanClicked(themeColor)
-            }
-          />
-        </div>
+      <Grid
+        item
+        xs
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexBasis: "auto",
+          padding: 0,
+        }}
+      >
+        <Button
+          color="secondary"
+          variant="contained"
+          size="medium"
+          onClick={() => onCenterClicked()}
+        >
+          {i18n.t("center")}
+        </Button>
+        <Button
+          color="secondary"
+          variant="contained"
+          size="medium"
+          onClick={() => onStaticClicked()}
+        >
+          {isStatic ? "Dynamic" : "Static"}
+        </Button>
+      </Grid>
+
+      <Grid
+        item
+        xs
+        style={{ display: "contents", flexBasis: "auto", padding: 5 }}
+      >
+        <hr className="solid"></hr>
+      </Grid>
+
+      <Grid
+        item
+        xs
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexBasis: "auto",
+          padding: 0,
+        }}
+      >
+        <PolicyPlansLegend
+          mobile={mobile}
+          selectedPolicyPlans={selectedPolicyPlans}
+          onPolicyPlanClicked={(themeColor) => onPolicyPlanClicked(themeColor)}
+        />
       </Grid>
 
       <Grid
@@ -1204,6 +1250,7 @@ class DataComponent extends Component {
       // This is a hack because on pressing the tutorial button also fires
       // the overall window click listener
       tutorialIndex: -1,
+      isStatic: false,
     };
   }
 
@@ -1258,7 +1305,7 @@ class DataComponent extends Component {
         selectedNode: null,
         connectedNodes: null,
         connectedLinks: null,
-      })
+      });
       return;
     }
     const { selectedNode } = this.state;
@@ -1363,18 +1410,15 @@ class DataComponent extends Component {
     let connectedNodes = [];
 
     // Map over all theme nodes
-    themeNodes.map(themeNode => {
+    themeNodes.map((themeNode) => {
       // Map over all links to get lins of this node
-      const [connectedIDs, cL] = this.getConnectedLinks(
-        themeNode,
-        false
-      );
+      const [connectedIDs, cL] = this.getConnectedLinks(themeNode, false);
       connectedLinks = connectedLinks.concat(Array.from(cL));
       // Map over all nodes to get connected nodes by ID
       const cN = this.getConnectedNodes(connectedIDs);
       connectedNodes = connectedNodes.concat(cN);
       return true;
-    })
+    });
     const t = [].concat(selectedThemesConnectedLinks);
     const n = [].concat(selectedThemesConnectedNodes);
     t.push(connectedLinks);
@@ -1411,6 +1455,12 @@ class DataComponent extends Component {
             )
           : selectedPolicyPlans.concat(policyPlanColor),
     });
+  };
+
+  onStaticClicked = () => this.setState({ isStatic: !this.state.isStatic });
+
+  onCenterClicked = () => {
+
   };
 
   generateSVGBlob = (parent) => {
@@ -1526,6 +1576,7 @@ class DataComponent extends Component {
       selectedThemesConnectedNodes,
       selectedCategories,
       searchText,
+      isStatic,
     } = this.state;
     // const markers = this.filterMarkers();
 
@@ -1535,17 +1586,11 @@ class DataComponent extends Component {
           <LeftLegend
             selectedThemes={selectedThemes}
             selectedCategories={selectedCategories}
-            selectedPolicyPlans={selectedPolicyPlans}
             onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
             onCategoryClicked={(categoryColor) =>
               this.onCategoryClicked(categoryColor)
             }
-            onPolicyPlanClicked={(policyPlanColor) =>
-              this.onPolicyPlanClicked(policyPlanColor)
-            }
-            onClickSaveNetwork={this.onClickSaveNetwork}
             openTheme={this.openOnDesktop(3)}
-            openDownload={this.openOnDesktop(5)}
           />
         </Grid>
         {/* xs is sum of 12 */}
@@ -1599,10 +1644,21 @@ class DataComponent extends Component {
             selectedPolicyPlans={selectedPolicyPlans}
             searchText={searchText}
             onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
+            isStatic={isStatic}
           />
         </Grid>
         <Grid item className="grid-item" xs={2} style={{ padding: 0 }}>
-          <RightLegend />
+          <RightLegend
+            selectedPolicyPlans={selectedPolicyPlans}
+            onPolicyPlanClicked={(policyPlanColor) =>
+              this.onPolicyPlanClicked(policyPlanColor)
+            }
+            openDownload={this.openOnDesktop(5)}
+            onClickSaveNetwork={this.onClickSaveNetwork}
+            isStatic={isStatic}
+            onStaticClicked={this.onStaticClicked}
+            onCenterClicked={this.onCenterClicked}
+          />
         </Grid>
 
         {/* <Grid item className="grid-item" xs={5}>
@@ -1629,6 +1685,7 @@ class DataComponent extends Component {
       searchText,
       tutorialOpen,
       tutorialIndex,
+      isStatic,
     } = this.state;
     const height = window.innerHeight;
     const minHeight = 520;
@@ -1668,7 +1725,17 @@ class DataComponent extends Component {
           openTheme={this.openOnDesktop(3)}
           openDownload={this.openOnDesktop(5)}
         />
-        <RightLegend mobile iconClassName="sdg-icon-mobile" />
+        <RightLegend
+          mobile
+          selectedPolicyPlans={selectedPolicyPlans}
+          onPolicyPlanClicked={(policyPlanColor) =>
+            this.onPolicyPlanClicked(policyPlanColor)
+          }
+          openDownload={this.openOnDesktop(5)}
+          onClickSaveNetwork={this.onClickSaveNetwork}
+          isStatic={isStatic}
+          // iconClassName="sdg-icon-mobile"
+        />
       </div>
     );
   }

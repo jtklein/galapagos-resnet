@@ -90,11 +90,14 @@ class NetworkContainer extends Component {
       selectedThemesConnectedNodes,
       searchText,
       i18n,
+      isStatic,
     } = this.props;
     const { simulation, zoom, zoomTransform } = this.state;
     Network(refNetworkComponent.current, {
       data,
+      isStatic,
       simulation,
+      resimulate,
       zoom,
       zoomTransform,
       setZoomTransform: this.setZoomTransform,
@@ -108,7 +111,6 @@ class NetworkContainer extends Component {
       selectedThemesConnectedNodes,
       searchText,
       onClick: this.onNetworkClickNode,
-      resimulate,
       language: i18n.language,
     });
   }

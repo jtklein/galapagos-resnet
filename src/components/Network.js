@@ -284,9 +284,11 @@ export default function Network(el, props) {
       if (event.defaultPrevented) return; // if panning or dragged
       // Get this node's datum
       const datum = d3.select(this).datum();
-      d.x = width/2;
-      d.y = height/2;
-      simulation.alpha(0.1).restart();
+      if (!props.isStatic) {
+        d.x = width/2;
+        d.y = height/2;
+        simulation?.alpha(0.1).restart();
+      }
       props.onClick(datum);
     })
     .call(
@@ -300,17 +302,9 @@ export default function Network(el, props) {
         .on("start.update drag.update end.update", render)
     );
 
-  simulation
-    .force("center", d3.forceCenter(width / 2, height / 2).strength(1))
-    .tick(5)
-    .on("tick", tick);
-
-  if (props.selectedNode) {
-    simulation.force(
-      "radial",
-      d3.forceRadial(20, props.selectedNode.x, props.selectedNode.y).strength((d) => isConnectedToSelectedNode(d) ? 1 : 0));
-  } else {
-    simulation.force("radial", null);
+  /* Simulation related functions */
+  function tick() {
+    render();
   }
 
   function addCenterForce(selectionFct, counter) {
@@ -333,35 +327,52 @@ export default function Network(el, props) {
     }
   }
 
-  centerForce(
-    isSelectedTheme && selectedThemes.length >= 1,
-    isConnectedToSelectedThemes,
-    "themes"
-  );
-  centerForce(
-    selectedCategories && selectedCategories.length !== 0,
-    isSelectedCategory,
-    "categories"
-  );
-  centerForce(
-    selectedPolicyPlans && selectedPolicyPlans.length !== 0,
-    isSelectedPolicyPlan,
-    "policy-plan"
-  );
-  centerForce(
-    isSearching,
-    isSearchedFor,
-    "search"
-  );
-
-  if (props.resimulate) {
-    simulation.alpha(0.1).restart();
-  }
+  // Only apply the simulation at all if the flag for it is set
+  if (props.isStatic) {
+    simulation.stop();
+  } else {
+    simulation
+      .force("center", d3.forceCenter(width / 2, height / 2).strength(1))
+      .tick(5)
+      .on("tick", tick);
     
-  function tick() {
-    render();
+    if (props.selectedNode) {
+      simulation.force(
+        "radial",
+        d3
+        .forceRadial(20, props.selectedNode.x, props.selectedNode.y)
+        .strength((d) => (isConnectedToSelectedNode(d) ? 1 : 0))
+      );
+    } else {
+      simulation.force("radial", null);
+    }
+  
+    centerForce(
+      isSelectedTheme && selectedThemes.length >= 1,
+      isConnectedToSelectedThemes,
+      "themes"
+    );
+    centerForce(
+      selectedCategories && selectedCategories.length !== 0,
+      isSelectedCategory,
+      "categories"
+    );
+    centerForce(
+      selectedPolicyPlans && selectedPolicyPlans.length !== 0,
+      isSelectedPolicyPlan,
+      "policy-plan"
+    );
+    centerForce(
+      isSearching,
+      isSearchedFor,
+      "search"
+    );
+          
+    if (props.resimulate) {
+      simulation.alpha(0.1).restart();
+    }
   }
-
+          
   function render() {
     // Draw links on canvas
     if (canvas) {
@@ -401,7 +412,7 @@ export default function Network(el, props) {
     node.attr("transform", (d) => `translate(${d.x}, ${d.y})`);
     g.attr("transform", zoomTransform);
   }
-
+  
   // Zoom related
   // When active zooming
   zoom.on("zoom", function (e) {
