@@ -815,9 +815,7 @@ const RightLegend = ({
       }}
     >
       <Grid item xs>
-        <div style={{ width: "100%" }}>{i18n.t("galapagosPlan")}</div>
         <div style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
-          <PlanLegend mobile={mobile} />
           <PolicyPlansLegend
             mobile={mobile}
             selectedPolicyPlans={selectedPolicyPlans}
@@ -825,6 +823,21 @@ const RightLegend = ({
               onPolicyPlanClicked(themeColor)
             }
           />
+        </div>
+      </Grid>
+
+      <Grid
+        item
+        xs
+        style={{ display: "contents", flexBasis: "auto", padding: 5 }}
+      >
+        <hr className="solid"></hr>
+      </Grid>
+      
+      {/* <Grid item xs>
+        <div style={{ width: "100%" }}>{i18n.t("galapagosPlan")}</div>
+        <div style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
+          <PlanLegend mobile={mobile} />
         </div>
       </Grid>
 
@@ -856,7 +869,7 @@ const RightLegend = ({
         <div style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
           <QuestionLegend mobile={mobile} />
         </div>
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 };
