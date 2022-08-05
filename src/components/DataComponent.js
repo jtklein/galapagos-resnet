@@ -905,11 +905,19 @@ const NodeInfo = ({ node }) => {
   const { i18n } = useTranslation();
   const theme = useTheme();
   const ProjectNode = ({ info }) => { 
+    const title = i18n.language !== "es" ? info.Nickname_EN : info.Nickname_ES;
     return (
       <div>
         <br />
         <strong>
-          {i18n.language !== "es" ? info.Nickname_EN : info.Nickname_ES}
+          {info.Link ? (
+            <>
+              <a href={info.Link} target="_blank" rel="noreferrer">
+                {title}
+              </a>
+              <br />
+            </>
+          ) : title}
         </strong>
         <br />
         {info.Permit && (
@@ -933,15 +941,6 @@ const NodeInfo = ({ node }) => {
             <br />
           </>
         )}
-        {info.Link && (
-          <>
-            <a href={info.Link} target="_blank" rel="noreferrer">
-              {i18n.t("relevantLinks")}
-            </a>
-            <br />
-            <br />
-          </>
-        )}
       </div>
     );};
 
@@ -949,32 +948,27 @@ const NodeInfo = ({ node }) => {
     return (
       <div>
         <br />
-        <strong>{info.Org}</strong>
-        <br />
+        <strong>
+          {info.Website ? (
+            <>
+              <a href={info.Website} target="_blank" rel="noreferrer">
+                {info.Org}
+              </a>
+              <br />
+            </>
+          ) : info.Org}
+        </strong>
         {info["English name"] && (
           <>
             {i18n.language !== "es"
               ? info["English name"]
               : info["Spanish name"]}
             <br />
-            <br />
           </>
         )}
         {info["Country"] && (
           <>
-            {i18n.language !== "es"
-              ? info["Country"]
-              : info["Pais"]}
-            <br />
-            <br />
-          </>
-        )}
-        {info.Website && (
-          <>
-            <a href={info.Website} target="_blank" rel="noreferrer">
-              {i18n.t("website")}
-            </a>
-            <br />
+            {i18n.language !== "es" ? info["Country"] : info["Pais"]}
             <br />
           </>
         )}
