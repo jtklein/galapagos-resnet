@@ -632,6 +632,7 @@ const PlanLegend = ({
     </Grid>
   );
 };
+console.log('PlanLegend :>> ', PlanLegend);
 
 const SDGIcon = ({ src, className, alt }) => (
   <img src={src} className={className} alt={alt} />
@@ -727,6 +728,7 @@ const TargetLegend = ({ mobile }) => {
 
   return mobile ? MobileLayout : DesktopLayout;
 };
+console.log('TargetLegend', TargetLegend);
 
 const QuestionLegend = ({ mobile }) => {
   const { i18n } = useTranslation();
@@ -766,6 +768,7 @@ const QuestionLegend = ({ mobile }) => {
     </Grid>
   );
 };
+console.log('QuestionLegend', QuestionLegend);
 
 const RightLegend = ({
   mobile,
