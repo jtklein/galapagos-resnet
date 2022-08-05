@@ -1,0 +1,5496 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "color": "#B71C1C",
+      "size": 6000,
+      "id": "Terremotos y disturbios del Sierra Negra",
+      "type": "project",
+      "Permit": "PC-30-18",
+      "Lead_person": "Mario Ruiz",
+      "Lead_org": "EPN",
+      "Title_ES": "Activación dinámica y criticidad: Interacciones entre los terremotos y disturbios del volcán Sierra Negra",
+      "Title_EN": "Dynamic activation and criticality: Interactions between earthquakes and disturbances of the Sierra Negra volcano",
+      "Nickname_ES": "Terremotos y disturbios del Sierra Negra",
+      "Nickname_EN": "Earthquakes and disturbances of Sierra Negra",
+      "Summary_ES": "Pregunta: ¿Cuándo, dónde y a qué profundidad se están produciendo movimientos sísmicos del volcán Sierra Negra?\r\nAntecedentes: El volcán Sierra Negra se encuentra ubicado en la parte sur de la isla Isabela, es uno de los cinco volcanes que se encuentran en la isla, el cual ha mostrado estar en actividad en los últimos años.\r\nAmbiciones: Obtener ubicaciones de alta precisión, magnitudes y mecanismos focales de zonas con movimientos sísmicos; identificar regiones particularmente críticas o la existencia de forzamiento magmático y mareomotriz. \r\nMetodología: Desplegar en el volcán Sierra Negra una red de diez sismómetros de banda ancha y dos medidores digitales de inclinación en un periodo de un año; con los datos obtenidos permitirán realizar un catálogo de alta resolución de la evolución sísmica.",
+      "Summary_EN": "Question: When, where and at what depth are seismic movements of the Sierra Negra volcano occurring?\r\nBackground: Sierra Negra is located in the southern part of Isabela Island. It is one of the five volcanoes found on the island, and it has been active in recent years.\r\nAims: Obtain high-precision measurements of locations, magnitudes and focal mechanisms for seismic movement zones; identify particularly critical regions and the existence of magmatic and tidal forcing. \r\nMethodology: Deploy a network of ten broadband seismometers and two digital tilt meters at Sierra Negra over a period of one year. The collected data will allow a high-resolution catalog of seismic evolution.",
+      "Link": "https://www.researchgate.net/publication/352970182_Uplift_and_Seismicity_Driven_by_Magmatic_Inflation_at_Sierra_Negra_Volcano_Galapagos_Islands "
+    },
+    {
+      "color": "#B71C1C",
+      "size": 6000,
+      "id": "Corales y bacterias en un océano ácido",
+      "type": "project",
+      "Permit": "PC-36-18",
+      "Lead_person": "Nataly Guevara",
+      "Lead_org": "USFQ",
+      "Title_ES": "La belleza de las micro-interacciones: documentación y análisis de corales y bacterias en un océano ácido",
+      "Title_EN": "The beauty of micro-interactions: documentation and analysis of corals and bacteria in an acid ocean",
+      "Nickname_ES": "Corales y bacterias en un océano ácido",
+      "Nickname_EN": "Corals and bacteria in an acidic ocean",
+      "Summary_ES": "Pregunta: ¿Cómo varían los microbiomas de los corales con los cambios de pH del océano?\r\nAntecedentes: El cambio climático está provocando que el océano aumente su acidez, lo que puede afectar a las especies y a sus interacciones de diferentes maneras. Necesitamos comprender estos impactos y aumentar la concientización, para ayudar a la mitigación y la adaptación.\r\nAmbiciones: Comprender la micro interacción de los corales y las bacterias, a través de caracterizar las comunidades y los microbiomas; Desarrollar una aplicación de realidad virtual que permita una exploración inmersiva basada en la experiencia de campo.\r\nMetodología: Colecta de muestras de agua e invertebrados; morfología de fitobentos asociados a los corales; imágenes de FISH; procesamiento y análisis de datos.",
+      "Summary_EN": "Question: How do coral microbiomes vary with changes in ocean pH?\r\nBackground: Climate change is causing the ocean to become more acidic, which can affect species and their interactions in different ways. We need to understand and raise awareness of these impacts in order to mitigate them and facilitate adaptation.\r\nAims: Understand the microinteractions of corals and bacteria by characterizing communities and microbiomes; develop an immersive virtual reality application based on fieldwork to allow users to explore coral microbiomes.\r\nMethodology: Collection of water and invertebrate samples; morphological analysis of coral-associated phytobenthos; FISH imaging; data processing and analysis.",
+      "Link": "https://www.researchgate.net/publication/329397369_Characterization_of_bacterioplankton_communities_and_quantification_of_organic_carbon_pools_off_the_Galapagos_Archipelago_under_contrasting_environmental_conditions "
+    },
+    {
+      "color": "#B71C1C",
+      "size": 6000,
+      "id": "Ecológia e hibridación de Solanum",
+      "type": "project",
+      "Permit": "PC-40-18",
+      "Lead_person": "María de Lourde Torres",
+      "Lead_org": "USFQ",
+      "Title_ES": "Análisis demográfico, ecológico y amenazas de hibridación de dos especies de Solanum",
+      "Title_EN": "Demographic, ecological and hybridization threat analysis of two Solanum species",
+      "Nickname_ES": "Ecológia e hibridación de Solanum",
+      "Nickname_EN": "Ecology and hybridization of Solanum",
+      "Summary_ES": "Pregunta:¿Cuáles son las amenazas específicas y potenciales de las dos especies endémicas  de Solanum?\r\nAntecedentes: Galápagos posee dos especies de tomates endémicos Solanum galapagense y Solanum cheesmaniae, se necesita evaluar cuales son las amenazas de estas especies de modo que podamos ayudar a la persistencia de las poblaciones de la misma.\r\nAmbiciones: Identificar las amenazas para estas dos especies analizando el estado de sus poblaciones; conocer las preferencias de hábitat de las especies, evaluar las principales interacciones ecológicas entre las dos especies y otras; estudiar la viabilidad de las poblaciones a largo plazo y el estado de hibridación con especies introducidas. \r\nMetodología: Muestreo de las dos especies endémicas de tomates en diferentes sitios, en diferentes islas; recoger mediciones de la morfología de las hojas y del color de los frutos; analizar estadísticamente las diferencias de rasgos entre especies y poblaciones; observar la interacción con los herbívoros y los polinizadores, y la proximidad de las plantas invasoras.",
+      "Summary_EN": "Question: What are the specific current and potential threats to the two endemic Solanum species?\r\nBackground: Galapagos has two endemic tomato species: Solanum galapagense and Solanum cheesmaniae. Threats to these species need to be understood to help maintain their populations.\r\nAims: To identify the threats to the two species by analyzing the status de sus poblaciones; to understand the habitat preferences of the species; to evaluate the tomato species' main ecological interactions with other species; to study the long-term viability of the populations and their hybridization status with introduced species. \r\nMethodology: Collecting samples of the two endemic tomato species in different sites on different islands; collecting measurements of leaf morphology and fruit color; statistically analyzing trait differences between species and populations; observing interaction with herbivores and pollinators; observing proximity to invasive plants.",
+      "Link": "https://www.biorxiv.org/content/10.1101/814160v1.full "
+    },
+    {
+      "color": "#B71C1C",
+      "size": 6000,
+      "id": "Impactos de turístas en piqueros patas rojas",
+      "type": "project",
+      "Permit": "PC-64-18",
+      "Lead_person": "Susana Cárdenas",
+      "Lead_org": "USFQ",
+      "Title_ES": "Análisis de los efectos de actividades turísticas en colonias de piqueros patas rojas",
+      "Title_EN": "Analysis of the effects of tourism activities on colonies of red-footed boobies",
+      "Nickname_ES": "Impactos de turístas en piqueros patas rojas",
+      "Nickname_EN": "Impacts of tourists on red-footed boobies",
+      "Summary_ES": "Pregunta:¿Cuál es el efecto de la presencia de los turistas en los puntos de anidación de los piqueros pata rojas, en San Cristóbal?\r\nAntecedentes: En San Cristóbal se encuentra una de las colonia de piqueros patas rojas Sula sula ubicada en Punta Pitt, este sitio es altamente visitado por turistas en los diferentes tours que se ofertan. \r\nAmbiciones: Cuantificar el estrés de las aves por medio de  glucocorticoides (hormonas del estrés); comparar los métodos de cuantificación del estrés a corto y largo plazo; recomendar el manejo del sitio de visita con los resultados previamente obtenidos. \r\nMetodología: Métodos de análisis del estrés; evaluación de la salud y monitoreo poblacional; probar los métodos para cambios en los niveles de estrés. ",
+      "Summary_EN": "Question: What is the effect of the presence of tourists at the nesting sites of red-footed boobies on San Cristóbal?\r\nBackground: In San Cristobal there is a red-footed booby Sula sula colony located at Punta Pitt which tourists frequently visit as a part of guided tours.\r\nAims: To use analysis of glucocorticoids (stress hormones) to quantify bird stress by glucocorticoids; to compare methods of quantifying short and long term stress; to use the results to recommend methods of managing visitation at the nesting site. \r\nMethodology: Stress analysis; monitoring health and population size; test methods for changes in stress levels."
+    },
+    {
+      "color": "#B71C1C",
+      "size": 6000,
+      "id": "Salud de las iguanas terrestres",
+      "type": "project",
+      "Permit": "PC-70-18",
+      "Lead_person": "Gregory Lewbart",
+      "Lead_org": "NCSU",
+      "Title_ES": "Estado de salud de las iguanas terrestres",
+      "Title_EN": "Health status of land iguanas",
+      "Nickname_ES": "Salud de las iguanas terrestres",
+      "Nickname_EN": "Health of land iguanas"
+    },
+    {
+      "color": "#B71C1C",
+      "size": 6000,
+      "id": "Fuentes de CO2 en Roca Redonda",
+      "type": "project",
+      "Permit": "PC-75-18",
+      "Lead_person": "Rafael Bermudez",
+      "Lead_org": "ESPOL",
+      "Title_ES": "Caracterización biogeoquímica de las fuentes de CO2 en Roca Redonda: validación de la química de carbono, fraccionamiento isotópico, cristalización de carbonato y perfiles bioquímicos de organismos bajo condiciones de acidificación oceánica",
+      "Title_EN": "Biogeochemical characterization of CO2 sources in Roca Redonda: validation of carbon chemistry, isotopic fractionation, carbonate crystallization, and biochemical profiles of organisms under ocean acidification conditions",
+      "Nickname_ES": "Fuentes de CO2 en Roca Redonda",
+      "Nickname_EN": "CO2 sources in Roca Redonda",
+      "Summary_ES": "Pregunta: ¿Cuáles son las características biogeoquímicas de las fuentes de CO2 de Roca Redonda?\r\nAntecedentes: El cambio climático aumenta el CO2 absorbido por el océano, lo que a su vez incrementa su acidez y puede tener graves repercusiones en los ecosistemas. Este proyecto examina la geoquímica de los alrededores de Roca Redonda, un pequeño islote rocoso (70 m de altura) y cumbre de un volcán submarino, para investigar estos impactos.\r\nAmbiciones: Determinar si las fuentes de carbono inorgánico disuelto contribuyen a la formación del carbonato cálcico en los organismos marinos; conocer si los organismos calcificadores cambian su composición isotópica debido a cambios en el carbón; determinar los efectos de la alta concentración de CO2-pH en las redes tróficas; realizar un curso de formación en la investigación de acidificación oceánica.  \r\nMetodología: Determinación de pH (por electrometría con tampón Tris estándar); titulación acidimetría en frascos abiertos, medición del carbono orgánico disuelto; conteo de abundancia de células bacterianas.",
+      "Summary_EN": "Question: What are the biogeochemical characteristics of the CO2 sources at Roca Redonda?\r\nBackground: Climate change increases the CO2 absorbed into the ocean, which in turn increases its acidity and can have serious impacts on ecosystems. This project examines the geochemistry of the area around Roca Redonda, a small rocky (70 m high) islet and summit of a submarine volcano, to investigate these impacts.\r\nAims: Determine whether sources of dissolved inorganic carbon contribute to calcium carbonate formation in marine organisms; learn whether calcifying organisms change their isotopic composition with changes in carbon; determine the effects of high CO2-pH concentration on food webs; create a training course for ocean acidification research. \r\nMethodology: Use of electrometry (with standard Tris buffer) to determine pH; acidimetric titration in open flasks; measurement of dissolved organic carbon; measurement of bacterial cell abundance."
+    },
+    {
+      "color": "#B71C1C",
+      "size": 6000,
+      "id": "Mapear terrenos volcánicos",
+      "type": "project",
+      "Permit": "PC-76-18",
+      "Lead_person": "Adam Soule",
+      "Lead_org": "WHOI",
+      "Title_ES": "Análisis de imágenes, satelitales y areas para mapear terrenos volcánicos",
+      "Title_EN": "Analysis of satellite and area imagery for mapping volcanic terrains",
+      "Nickname_ES": "Mapear terrenos volcánicos",
+      "Nickname_EN": "Mapping volcanic terrains",
+      "Summary_ES": "Pregunta: ¿Cuáles son los peligros volcánicos a los ecosistemas amenazados? \r\nAntecedentes: Galápagos es un archipiélago de origen volcánico por lo que en su territorio cuenta de volcanes activos e inactivos. El archipiélago se encuentra asentado sobre la placa tectónica de Nazca y en los últimos años los volcanes de Isabela y Fernandina se caracterizan por su estado activo. Por lo que conocer los emplazamientos de flujos de lava ayudará a prevenir los riesgos volcánicos. \r\nAmbiciones: Construir modelos digitales de elevación (MDE) y orto-fotografías de terrenos volcánicos; caracterización de paisajes por diferentes escalas espaciales; entender las amenazas al ecosistema causados por los flujos de lava. \r\nMetodología: Análisis de imágenes satelitales TanDEM-Xy de dron; mapeos de terrenos volcánicos; construcción de modelos probabilísticos de emplazamiento de flujos de lava por áreas potenciales de inundación.  ",
+      "Summary_EN": "Question: What are the volcanic hazards to threatened ecosystems? \r\nBackground: Galapagos is an archipelago of volcanic origin located on the Nazca tectonic plate. It includes active and inactive volcanoes. In recent years, volcanoes on Isabela and Fernandina islands have been active. Predicting the locations and direction of lava flows will help prevent volcanic hazards. \r\nAims: Construct digital elevation models (DEMs) and ortho-photographs of volcanic terrain; landscape characterization at different spatial scales; understand the threats to the ecosystem caused by lava flows.\r\nMethodology: Analysis of TanDEM-X and drone satellite images; mapping of volcanic terrain; construction of probability models of lava flow that show potential inundation areas.  ",
+      "Link": "https://ui.adsabs.harvard.edu/abs/2019AGUFM.V23C..02S/abstract "
+    },
+    {
+      "color": "#B71C1C",
+      "size": 6000,
+      "id": "Plancton en cuerpos de agua",
+      "type": "project",
+      "Permit": "PC-82-18",
+      "Lead_person": "Carlos Luis López",
+      "Lead_org": "ESPOL",
+      "Title_ES": "Análisis de la diversidad de fitoplancton y zooplancton en el Lago El Junco, represa de los americanos y cuerpos de agua adyacentes",
+      "Title_EN": "Analysis of phytoplankton and zooplankton diversity in Lake El Junco, Los Americanos dam and adjacent water bodies",
+      "Nickname_ES": "Plancton en cuerpos de agua",
+      "Nickname_EN": "Plankton in water bodies",
+      "Summary_ES": "Pregunta:¿Cuál es la composición y funcional de las comunidades planctónicas en la laguna El Junco, la represa de los americanos y otros cuerpos de agua adyacentes?\r\nAntecedentes: El fitoplancton, un tipo de alga, son productores primarios del medio marino fijan el CO2 atmosférico haciendo que el carbono entra a la cadena alimentaria, por medio de la fotosíntesis. El fitoplancton es consumido por el zooplancton que se encuentra dentro de grandes masas de agua, incluidos los océanos y los sistemas de agua dulce. El zooplancton es consumido a su vez por otros peces y son organismos ecológicamente importantes que son un componente integral de la cadena alimentaria.\r\nAmbiciones: Ubicar cuerpos de agua y análisis de su composición específica y funcional de las comunidades planctónicas (fitoplancton y zooplancton); aumentar el entendimiento de latencia en el zooplancton.\r\nMetodología: Recolección de muestras cualitativas de fitoplancton, zooplancton y microcrustáceos mediante el arrastre vertical y horizontal de una red; colección de muestras de sedimentos y excrementos de aves; analista de laboratorio de muestras.",
+      "Summary_EN": "Question: What is the composition and function of the planktonic communities in El Junco Lagoon, and other adjacent water bodies?\r\nBackground: Phytoplankton, a type of algae, are primary producers in the marine environment that fix atmospheric CO2, causing carbon to enter the food chain through photosynthesis. Phytoplankton are consumed by zooplankton found within large bodies of water, including oceans and freshwater systems. Zooplankton are in turn consumed by other fish and are ecologically important organisms that are an integral component of the food chain.\r\nAims: Locate bodies of water and analyze their specific and functional composition of planktonic communities (phytoplankton and zooplankton); increase understanding of dormancy in zooplankton.\r\nMethodology: Vertical and horizontal trawling of a net to collect qualitative samples of phytoplankton, zooplankton y microcrustaceans; collection of sediment and bird droppings; laboratory analysis of samples and collections.",
+      "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6700061/ "
+    },
+    {
+      "color": "#B71C1C",
+      "size": 6000,
+      "id": "Poblaciones y ecológica de los tiburones",
+      "type": "project",
+      "Permit": "PC-84-18",
+      "Lead_person": "Jenifer Suarez",
+      "Lead_org": "DPNG",
+      "Title_ES": "Estructura poblacional y caracterización ecológica de los tiburones presentes en los puertos y fondeaderos turísticos alrededor de la RMG",
+      "Title_EN": "Population structure and ecological characterization of sharks present in ports and tourist anchorages around the GMR",
+      "Nickname_ES": "Poblaciones y ecológica de los tiburones",
+      "Nickname_EN": "Populations and ecology of sharks"
+    },
+    {
+      "color": "#B71C1C",
+      "size": 6000,
+      "id": "Comportamiento de las lagartijas de lava",
+      "type": "project",
+      "Permit": "PC-89-18",
+      "Lead_person": "Juan Manuel Guayasamín",
+      "Lead_org": "USFQ",
+      "Title_ES": "Ecología del comportamiento de las lagartijas de lava del Ecuador y comparación entre comunidades continentales e insulares",
+      "Title_EN": "Behavioral ecology of the lava lizards of Ecuador and comparison between continental and insular communities",
+      "Nickname_ES": "Comportamiento de las lagartijas de lava",
+      "Nickname_EN": "Behavior of lava lizards",
+      "Summary_ES": "Pregunta: ¿Cuáles son los aspectos comportamentales y ecológicos que influyen en la selección del nicho de las comunidades de la lagartija de lava?\r\nAntecedentes: Hay diferentes especies de lagartijas (Microlophus spp.) en Galápagos y no hay mucha información sobre ellas. La comparación de las especies de galápagos y especies del continente pueden ayudarnos a entender su evolución, ecología y comportamiento. \r\nAmbiciones: Documentar múltiples especies de Microlophus spp. en Galápagos; estudiar sus nichos ecológicos y como la selección del microhábitat está relacionado a su comportamiento; comparar el comportamiento de las especies que ocurren en diferentes islas. \r\nMetodología: Determinación de individuos de estudio por especie a través de transectos; observación del comportamiento, por medio de métodos de observación focal; análisis de la dieta, mediante lavados estomacales y muestras fecales; filmaciones de señales comportamentales.",
+      "Summary_EN": "Question: What behavioral and ecological factors influence niche selection in lava lizard communities?\r\nBackground: There is limited information about different lava lizard species (Microlophus spp.) in Galapagos. Comparing Galapagos species with mainland species will potentially help us understand their evolution, behavior and ecology.\r\nAims: Document multiple species of Microlophus spp. in Galapagos; study their niches and how their selection of microhabitats relates to their behavior; compare the behaviors of the species that occur on different islands.\r\nMethodology: Determination of study individuals by species using transects; observation of behavior through focal observation methods; analysis of diet through stomach washings and fecal samples; filming of behavioral signals."
+    },
+    {
+      "color": "#B71C1C",
+      "size": 6000,
+      "id": "Translocación de la iguana terrestre",
+      "type": "project",
+      "Permit": "PC-96-18",
+      "Lead_person": "Danny Rueda",
+      "Lead_org": "DPNG",
+      "Title_ES": "Proyecto de translocación de la iguana terrestre de Galápagos a Santiago como estrategia para contribuir a la restauración ecológica de la especie y el ecosistema",
+      "Title_EN": "Translocation project of the Galapagos land iguana to Santiago as a strategy to contribute to the ecological restoration of the species and the ecosystem",
+      "Nickname_ES": "Translocación de la iguana terrestre",
+      "Nickname_EN": "Translocation of land iguanas",
+      "Summary_ES": "Pregunta: ¿Podemos recuperar las iguanas terrestres en la Isla Santiago?\r\nAntecedentes: La iguana terrestre Conolophus subcristatus fue reportada viva por última vez en la isla Santiago en 1835 durante la visita de Charles Darwin, la reinserción de estos individuos a uno de sus hábitats naturales ayudará a la restauración ecológica de esta isla.\r\nAmbiciones: Proporcionar asistencia técnica a la DPNG con la translocación de iguanas terrestre de Seymour Norte a la isla Santiago; incrementar la capacidad técnica en el personal del DPNG; reducir el impacto de la población de iguanas terrestres previamente introducidas en Seymour Norte; contribuir en la restauración ecológica de la isla Santiago; aumentar la erradicación de ratas en Seymour Norte; disminuir el riesgo potencial de mortalidad de iguanas terrestres de Seymour Norte por el programa de erradicación de roedores.\r\nMetodología: Prueba piloto de comprobación y calibración de los protocolos; captura de iguanas terrestres en Seymour Norte; clasificación de iguanas (solo individuos puros son translocados, individuos híbridos de la especie con iguanas marinas no serán capturados); transportación de iguanas terrestres a Santa Cruz (individuos permanecen en cautiverio hasta liberar semillas dentro de su sistema gastrointestinal); translocación de individuos en dos grupos a la isla Santiago.",
+      "Summary_EN": "Question: Can we restore land iguanas to Santiago Island?\r\nBackground: The land iguana Conolophus subcristatus was last reported alive in Santiago Island in 1835 during Charles Darwin's visit. Reintroducing these individuals to one of their natural habitats will aid in the ecological restoration of this island.\r\nAmbitions: Provide technical assistance to the GNPD with the translocation of land iguanas from North Seymour to Santiago; increase technical capacity in GNPD staff; reduce the impact of the previously introduced land iguana population on North Seymour; contribute to the ecological restoration of Santiago Island; increase rat eradication on North Seymour; decrease the potential risk of mortality of land iguanas on North Seymour from the rodent eradication program.\r\nMethodology: Pilot testing and calibration of protocols; capture of land iguanas in North Seymour; sorting of iguanas (only pure individuals are translocated, hybrid individuals of the species with marine iguanas will not be captured); transportation of land iguanas to Santa Cruz, (individuals remain in captivity until seeds are released into their gastrointestinal system); translocation of individuals in two groups to Santiago Island.",
+      "Link": "https://art.torvergata.it/bitstream/2108/262863/1/Kumar%20et%20al%202020_IUCN.UK.en.pdf "
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Alberto Proano"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Alejandro Rodríguez"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Alexey Alexeevich Kotov"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Alyssa Grube"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Andrea Loyola"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Andrea Narváez"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Andrew Bell"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Ane Garcia"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Anna Shvets"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Brett Carr"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Brittany Erickson"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Carlos Valle"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Carlos Vera"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Carolina Carrion"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Cheryl Logan"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Chris Bean"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Christian Sevilla"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Cristian Cáceres"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Cristian Sevilla"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Cristian Vargas"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Daniel Lara-Solis"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Daniela Alarcón"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Danny Rueda"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "David Ernst"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "David Steinberg"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Dehila Hannah"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Diana Pazmiño"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Diane Deresienski"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Diego Bermeo"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Diego Páez-Rosas"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Eduardo Espinoza"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Einat Lev"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Erika Montaya"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Estefany Guerra"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Estefanía Boada"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Evangelia Michaloudi"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Evelyn Vera"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Fernando Córdova"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Gabriela Pozo"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Gabriela Vivas"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Gabriele Gentile"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Galo Quezada"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Galo Rueda"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Gonzalo Sevilla"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Graham Kolodziej"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Gregory Lewbart"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Gunter Reck"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Gustavo Chiang"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Gustavo Jimenez"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Harry Reyes"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Heinke Jager"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Helena Soini"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Ingrid Jaramillo"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Isabel Timpe"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Jane Christman"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Jasón Castañeda"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Javier Chafla"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "John Roger Brothers"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "José Ramos"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Juan Pablo Muñoz"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Juan Sebastian Giraldo"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Jules Paredes"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Julian Charriere"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Julius von Bismark"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Karl Campbell"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Kent Passingham"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Keyko Cruz"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Kirtana Kumar"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Leandro Vaca"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Leif Karlstrom"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Leonardo Garcia"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Leonie Moyle"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Lorena Arias"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Lucia Epherra"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Lucrecia Cisneros"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Luis Burgos"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Luis Ortiz-Catedral (co-lead)"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Marcelo Tite"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Marco Cordova"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Margarita Brandt"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Maria Elena Tapia"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Maria Gabriela Vivas"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Maria Holynska"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Mario Hurtado"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Mario de Stefano"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Marleen de Troch"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Marylaura Sandoval"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Maryuri Yepez"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "María José Pozo"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Matthew Gibson"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Meghan Rose Jones"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Milos Novotny"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Nadim Samman"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Nataly Guevara"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Nelson Lagos"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Nelson dos-Santos"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Nicolas Moity"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Paul Calle"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Paul Rosero Contreras"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Pedro Medina"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Richard Peters"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Ruth Steinitz"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Salvatrice Vizzini"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Santiago Lombeyda"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Silvia Vallejo"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Simon Lobos"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Solange Andrade"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Stephen Hernández"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Tierry Medeiros"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Victor Carrion"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Viviana Carrera"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Wilson Cabrera"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "CIMAS",
+      "type": "organization",
+      "Org": "CIMAS",
+      "English name": "Cooperative Institute for Marine and Atmospheric Studies",
+      "Spanish name": "Instituto Cooperativo de Estudios Marinos y Atmosféricos",
+      "Country": "USA",
+      "Pais": "EEUU",
+      "Website": "https://ci.noaa.gov/Locations/CIMAS"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "CIT",
+      "type": "organization",
+      "Org": "CIT",
+      "English name": "California Institute of Technology",
+      "Spanish name": "Instituto de Tecnología de California",
+      "Country": "USA",
+      "Pais": "EEUU",
+      "Website": "https://www.caltech.edu/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "DIAS",
+      "type": "organization",
+      "Org": "DIAS",
+      "English name": "Dublin Institute for Advanced Studies",
+      "Spanish name": "Instituto de Estudios Avanzados de Dublín",
+      "Country": "Ireland",
+      "Pais": "Irlanda",
+      "Website": "https://www.dias.ie/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "DPNG",
+      "type": "organization",
+      "Org": "DPNG",
+      "English name": "Galapagos National Park Directorate",
+      "Spanish name": "Dirección del Parque Nacional Galápagos",
+      "Country": "Ecuador",
+      "Pais": "Ecuador",
+      "Website": "https://www.gobiernogalapagos.gob.ec/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "EPN",
+      "type": "organization",
+      "Org": "EPN",
+      "English name": "National Polytechnic School",
+      "Spanish name": "Escuela Politécnica Nacional",
+      "Country": "Ecuador",
+      "Pais": "Ecuador",
+      "Website": "https://www.epn.edu.ec/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "FCD",
+      "type": "organization",
+      "Org": "FCD",
+      "English name": "Charles Darwin Foundation",
+      "Spanish name": "Fundacion Charles Darwin",
+      "Country": "Ecuador",
+      "Pais": "Ecuador",
+      "Website": "https://www.darwinfoundation.org/en/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "IC",
+      "type": "organization",
+      "Org": "IC",
+      "English name": "Island Conservation",
+      "Spanish name": "Island Conservation",
+      "Country": "USA",
+      "Pais": "EEUU",
+      "Website": "https://www.islandconservation.org/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "IOA",
+      "type": "organization",
+      "Org": "IOA",
+      "English name": "Navy Institute of Oceanography",
+      "Spanish name": "Instituto Oceanografico de la Armada",
+      "Country": "USA",
+      "Pais": "EEUU",
+      "Website": "https://www.nps.edu/web/oceanography"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "MAATE",
+      "type": "organization",
+      "Org": "MAATE",
+      "English name": "Ministry of Environment, Water and Ecological Transition of Ecuador",
+      "Spanish name": "Ministerio del Ambiente, Agua y Transición Ecológica de Ecuador",
+      "Country": "Ecuador",
+      "Pais": "Ecuador",
+      "Website": "https://www.ambiente.gob.ec/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "MIO",
+      "type": "organization",
+      "Org": "MIO",
+      "English name": "Millennium Institute of Oceanography",
+      "Spanish name": "Instituto Milenio de Oceanografía",
+      "Country": "Chile",
+      "Pais": "Chile",
+      "Website": "https://investigacion.uc.cl/en/centros-de-excelencia/millennium-institute-of-oceanography-imo/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "NERC",
+      "type": "organization",
+      "Org": "NERC",
+      "English name": "UK Natural Enviromental Research Council",
+      "Spanish name": "Consejo de Investigación del Medio Ambiente Natural del Reino Unido",
+      "Country": "UK",
+      "Pais": "RU",
+      "Website": "https://www.gov.uk/government/organisations/natural-environment-research-council"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "NKU",
+      "type": "organization",
+      "Org": "NKU",
+      "English name": "Northern Kentucky University",
+      "Spanish name": "Universidad del Norte de Kentucky",
+      "Country": "USA",
+      "Pais": "EEUU",
+      "Website": "https://www.nku.edu/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "NOAA",
+      "type": "organization",
+      "Org": "NOAA",
+      "English name": "National Oceanic and Atmospheric Administration",
+      "Spanish name": "Administración Nacional Oceánica y Atmosférica",
+      "Country": "USA",
+      "Pais": "EEUU",
+      "Website": "https://www.noaa.gov/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "U. Concepción",
+      "type": "organization",
+      "Org": "U. Concepción",
+      "English name": "University of Concepción",
+      "Spanish name": "Universidad de Concepcion",
+      "Country": "Chile",
+      "Pais": "Chile",
+      "Website": "https://www.udec.cl/pexterno/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "U. Edinburgh",
+      "type": "organization",
+      "Org": "U. Edinburgh",
+      "English name": "University of Edinburgh",
+      "Spanish name": "Universidad de Edinburgh",
+      "Country": "UK",
+      "Pais": "RU",
+      "Website": "https://www.ed.ac.uk/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "U. Indiana",
+      "type": "organization",
+      "Org": "U. Indiana",
+      "English name": "Indiana University",
+      "Spanish name": "Universidad de Indiana",
+      "Country": "USA",
+      "Pais": "EEUU",
+      "Website": "https://www.indiana.edu/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "U. La Trobe",
+      "type": "organization",
+      "Org": "U. La Trobe",
+      "English name": "La Trobe University",
+      "Spanish name": "Universidad La Torbe",
+      "Country": "Australia",
+      "Pais": "Australia",
+      "Website": "https://www.latrobe.edu.au/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "U. Massey",
+      "type": "organization",
+      "Org": "U. Massey",
+      "English name": "Massey University",
+      "Spanish name": "Universidad de Massey",
+      "Country": "New Zealand",
+      "Pais": "Nueva Zelanda",
+      "Website": "https://www.massey.ac.nz/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "U. Miami",
+      "type": "organization",
+      "Org": "U. Miami",
+      "English name": "University of Miami",
+      "Spanish name": "Universidad de Miami",
+      "Country": "USA",
+      "Pais": "EEUU",
+      "Website": "https://welcome.miami.edu/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "U. Palermo",
+      "type": "organization",
+      "Org": "U. Palermo",
+      "English name": "University of Palermo",
+      "Spanish name": "Universidad de Palermo",
+      "Country": "Italy",
+      "Pais": "Italia",
+      "Website": "https://www.unipa.it/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "U. Santo Tomas",
+      "type": "organization",
+      "Org": "U. Santo Tomas",
+      "English name": "University of Santo Tomas",
+      "Spanish name": "Universidad Santo Tomas",
+      "Country": "Philippines",
+      "Pais": "Filipinas",
+      "Website": "https://www.ust.edu.ph/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "U. Tor Vergata",
+      "type": "organization",
+      "Org": "U. Tor Vergata",
+      "English name": "Tor Vergata University of Rome",
+      "Spanish name": "Universidad de Roma Tor Vergata",
+      "Country": "Italy",
+      "Pais": "Italia",
+      "Website": "https://en.uniroma2.it/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "UNC",
+      "type": "organization",
+      "Org": "UNC",
+      "English name": "University of North Carolina",
+      "Spanish name": "Universidad del Norte de Carolina",
+      "Country": "USA",
+      "Pais": "EEUU",
+      "Website": "https://www.unc.edu/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "USFQ",
+      "type": "organization",
+      "Org": "USFQ",
+      "English name": "University San Francisco de Quito",
+      "Spanish name": "Universidad San Francisco de Quito",
+      "Country": "Ecuador",
+      "Pais": "Ecuador",
+      "Website": "https://www.usfq.edu.ec/en"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "WCS",
+      "type": "organization",
+      "Org": "WCS",
+      "English name": "Wildlife Conservation Society",
+      "Spanish name": "Sociedad para la Conservación de la Vida Salvaje",
+      "Country": "USA",
+      "Pais": "EEUU",
+      "Website": "https://www.wcs.org/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "WHOI",
+      "type": "organization",
+      "Org": "WHOI",
+      "English name": "Woods Hole Oceanographic Institute",
+      "Spanish name": "Instituto Oceanográfico de Woods Hole",
+      "Country": "USA",
+      "Pais": "EEUU",
+      "Website": "https://www.whoi.edu/"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "Baltra"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "Darwin"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "Española"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "Isabela"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "Marchena"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "Pinta"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "Pinzón"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "Plaza Norte"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "Plaza Sur"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "Roca Redonda"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "Rábida"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "San Cristóbal"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "Santa Cruz"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "Santa Fe"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "Santiago"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "Seymour Norte"
+    },
+    {
+      "color": "#33691E",
+      "size": 3000,
+      "id": "Wolf"
+    },
+    {
+      "color": "#F57F17",
+      "size": 3000,
+      "id": "Carcharhinus falcilformis",
+      "type": "species",
+      "Scientific_name": "Carcharhinus falcilformis",
+      "CommonName_ES": "Tiburón piloto",
+      "CommonName_EN": "Silky shark",
+      "Link": "https://www.darwinfoundation.org/en/datazone/checklist?species=11607"
+    },
+    {
+      "color": "#F57F17",
+      "size": 3000,
+      "id": "Carcharhinus galapagensis",
+      "type": "species",
+      "Scientific_name": "Carcharhinus galapagensis",
+      "CommonName_ES": "Tiburon de Galapagos",
+      "CommonName_EN": "Galapagos shark",
+      "Link": "https://www.darwinfoundation.org/en/datazone/checklist?species=7844"
+    },
+    {
+      "color": "#F57F17",
+      "size": 3000,
+      "id": "Carcharhinus limbatus",
+      "type": "species",
+      "Scientific_name": "Carcharhinus limbatus",
+      "CommonName_ES": "Tiburon punta negra",
+      "CommonName_EN": "Blacktip shark",
+      "Link": "https://www.darwinfoundation.org/en/datazone/checklist?species=7845"
+    },
+    {
+      "color": "#F57F17",
+      "size": 3000,
+      "id": "Conolophus pallidus",
+      "type": "species",
+      "Scientific_name": "Conolophus pallidus",
+      "CommonName_ES": "Iguana de Santa Fe",
+      "CommonName_EN": "Santa Fe land iguana",
+      "Link": "https://www.darwinfoundation.org/en/datazone/checklist?species=5261"
+    },
+    {
+      "color": "#F57F17",
+      "size": 3000,
+      "id": "Conolophus subcristatus",
+      "type": "species",
+      "Scientific_name": "Conolophus subcristatus",
+      "CommonName_ES": "Iguana terrestre de Galapagos",
+      "CommonName_EN": "Galapagos land iguana",
+      "Link": "https://www.darwinfoundation.org/en/datazone/checklist?species=5262"
+    },
+    {
+      "color": "#F57F17",
+      "size": 3000,
+      "id": "Microlophus sp.",
+      "type": "species",
+      "Scientific_name": "Microlophus sp.",
+      "CommonName_ES": "Largatijas de lava",
+      "CommonName_EN": "Lava lizards",
+      "Link": "https://www.darwinfoundation.org/en/datazone/checklist?species=5285"
+    },
+    {
+      "color": "#F57F17",
+      "size": 3000,
+      "id": "Solanum cheesmaniae",
+      "type": "species",
+      "Scientific_name": "Solanum cheesmaniae",
+      "CommonName_ES": "Tomatillo de Galapagos",
+      "CommonName_EN": "Galapagos tomato",
+      "Link": "https://www.darwinfoundation.org/en/datazone/checklist?species=1116"
+    },
+    {
+      "color": "#F57F17",
+      "size": 3000,
+      "id": "Solanum galapagense",
+      "type": "species",
+      "Scientific_name": "Solanum galapagense",
+      "Link": "https://www.darwinfoundation.org/en/datazone/checklist?species=15203"
+    },
+    {
+      "color": "#F57F17",
+      "size": 3000,
+      "id": "Solanum lycopersicum",
+      "type": "species",
+      "Scientific_name": "Solanum lycopersicum",
+      "CommonName_ES": "Tomate silvestre",
+      "CommonName_EN": "Cherry tomato",
+      "Link": "https://www.darwinfoundation.org/en/datazone/checklist?species=1763"
+    },
+    {
+      "color": "#F57F17",
+      "size": 3000,
+      "id": "Solanum pimpinellifollium",
+      "type": "species",
+      "Scientific_name": "Solanum pimpinellifollium",
+      "CommonName_ES": "Tomate pasa",
+      "CommonName_EN": "Currant tomato",
+      "Link": "https://www.darwinfoundation.org/en/datazone/checklist?species=11331"
+    },
+    {
+      "color": "#F57F17",
+      "size": 3000,
+      "id": "Sphyrna lewini",
+      "type": "species",
+      "Scientific_name": "Sphyrna lewini",
+      "CommonName_ES": "Tiburon martillo",
+      "CommonName_EN": "Scalloped hammerhead",
+      "Link": "https://www.darwinfoundation.org/en/datazone/checklist?species=7847"
+    },
+    {
+      "color": "#F57F17",
+      "size": 3000,
+      "id": "Sula sula",
+      "type": "species",
+      "Scientific_name": "Sula sula",
+      "CommonName_ES": "Piquero patas rojas",
+      "CommonName_EN": "Red-footed booby",
+      "Link": "https://www.darwinfoundation.org/en/datazone/checklist?species=5186"
+    },
+    {
+      "color": "#F57F17",
+      "size": 3000,
+      "id": "Triaenodon obesus",
+      "type": "species",
+      "Scientific_name": "Triaenodon obesus",
+      "CommonName_ES": "Tintorera",
+      "CommonName_EN": "Whitetip reef shark",
+      "Link": "https://www.darwinfoundation.org/en/datazone/checklist?species=7846"
+    },
+    {
+      "color": "#1A237E",
+      "size": 3000,
+      "id": "Geología/petrología"
+    },
+    {
+      "color": "#1A237E",
+      "size": 3000,
+      "id": "Geoquímica"
+    },
+    {
+      "color": "#1A237E",
+      "size": 3000,
+      "id": "Oceanografía"
+    },
+    {
+      "color": "#1A237E",
+      "size": 3000,
+      "id": "Volcanes y montes submarinos"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Biodiversidad"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Biogeografía"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Biosecuridad/especies invasoras"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Calidad ambiental"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Conservación de la biodiversidad"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Ecología de la alimentación"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Ecología de las redes"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Ecología del comportamiento"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Ecología/monitorización de la población"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Evolución y colonización"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Fisiología"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Genética"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Impactos humanos directos"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Manejo de recursos naturales"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Polinización"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Reproducción/dispersión"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Restauración de ecosistemas"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Salud de la vida silvestre"
+    },
+    {
+      "color": "#303F9F",
+      "size": 3000,
+      "id": "Servicios ecosistémicos"
+    },
+    {
+      "color": "#5C6BC0",
+      "size": 3000,
+      "id": "Aves"
+    },
+    {
+      "color": "#5C6BC0",
+      "size": 3000,
+      "id": "Mamíferos"
+    },
+    {
+      "color": "#5C6BC0",
+      "size": 3000,
+      "id": "Microorganismos"
+    },
+    {
+      "color": "#5C6BC0",
+      "size": 3000,
+      "id": "Plantas"
+    },
+    {
+      "color": "#5C6BC0",
+      "size": 3000,
+      "id": "Reptiles"
+    },
+    {
+      "color": "#0D47A1",
+      "size": 3000,
+      "id": "Algas/algas marinas"
+    },
+    {
+      "color": "#0D47A1",
+      "size": 3000,
+      "id": "Corales"
+    },
+    {
+      "color": "#0D47A1",
+      "size": 3000,
+      "id": "Invertebrados marinos"
+    },
+    {
+      "color": "#0D47A1",
+      "size": 3000,
+      "id": "Microorganismos marinos"
+    },
+    {
+      "color": "#0D47A1",
+      "size": 3000,
+      "id": "Tiburones y rayas"
+    },
+    {
+      "color": "#1976D2",
+      "size": 3000,
+      "id": "Impactos del cambio climático"
+    },
+    {
+      "color": "#01579B",
+      "size": 3000,
+      "id": "Agua (otro)"
+    },
+    {
+      "color": "#29B6F6",
+      "size": 3000,
+      "id": "Educación"
+    },
+    {
+      "color": "#81D4FA",
+      "size": 3000,
+      "id": "Turismo/ecoturismo"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_1.4",
+      "type": "plan",
+      "Aim": "SDG_1.4",
+      "Title_EN": "Ensure that all men and women, particularly the poor and the vulnerable, have equal rights to economic resources and access to basic services, ownership and control over land and other property, inheritance, natural resources, appropriate technologies and financial services, including microfinance",
+      "Title_ES": "Garantizar que todos los hombres y todas las mujeres, en particular los pobres y los vulnerables, tengan los mismos derechos a los recursos económicos y acceso a los servicios básicos, la propiedad y el control de la tierra y otros bienes, la herencia, los recursos naturales, tecnologías apropiadas y los servicios financieros, incluida la microfinanciación",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_2.2",
+      "type": "plan",
+      "Aim": "SDG_2.2",
+      "Title_EN": "Eliminate all forms of malnutrition, including achieving the internationally agreed targets on stunting and undernutrition in children under 5 years of age, and address the nutritional needs of adolescents, pregnant and lactating women, older persons and those with disabilities",
+      "Title_ES": "Poner fin a todas las formas de malnutrición, incluso logrando, las metas convenidas internacionalmente sobre el retraso del crecimiento y la desnutrición de los niños/las niñas menores de 5 años, y abordar las necesidades de nutrición de las adolescentes, las mujeres embarazadas, lactantes, adultos mayores y personas con discapacidad",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_2.3",
+      "type": "plan",
+      "Aim": "SDG_2.3",
+      "Title_EN": "Sustainably boost agricultural and fishing productivity and incomes of small-scale food producers, in particular family farmers, pastoralists and fishers, including through secure and equal access to land, other productive resources and inputs, knowledge, financial services, markets and opportunities for value addition and non-farm employment",
+      "Title_ES": "Fomentar de manera sostenible la productividad agrícola y pesquera y los ingresos de los productores de alimentos a pequeña escala, en particular los agricultores familiares, los ganaderos y los pescadores, entre otras cosas mediante un acceso seguro y equitativo a las tierras, a otros recursos e insumos de producción y a los conocimientos, los servicios financieros, los mercados y las oportunidades para añadir valor y obtener empleos no agrícolas",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_2.4",
+      "type": "plan",
+      "Aim": "SDG_2.4",
+      "Title_EN": "Ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, contribute to the maintenance of ecosystems, strengthen resilience to climate change, extreme weather, drought, flooding and other disasters, and progressively improve the quality of land and soil",
+      "Title_ES": "Asegurar la sostenibilidad de los sistemas de producción de alimentos y aplicar prácticas agrícolas resilientes que aumenten la productividad y la producción, contribuyan al mantenimiento de los ecosistemas, fortalezcan la capacidad de adaptación al cambio climático, los fenómenos meteorológicos extremos, las sequías, las inundaciones y otros desastres, y mejoren progresivamente la calidad de la tierra y el suelo",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_2.a",
+      "type": "plan",
+      "Aim": "SDG_2.a",
+      "Title_EN": "Increase investment in rural infrastructure, agricultural research and extension services, technology development and plant and livestock gene banks in order to enhance agricultural productive capacity",
+      "Title_ES": "Aumentar, las inversiones en infraestructura rural, investigación y servicios de extensión agrícola, desarrollo tecnológico y bancos de genes de plantas y ganado a fin de mejorar la capacidad de producción agropecuaria",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_3.5",
+      "type": "plan",
+      "Aim": "SDG_3.5",
+      "Title_EN": "Strengthen the prevention and treatment of substance abuse, including drug abuse and harmful use of alcohol",
+      "Title_ES": "Fortalecer la prevención y el tratamiento del abuso de sustancias adictivas, incluido el uso indebido de estupefacientes y el consumo nocivo de alcohol",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_3.7",
+      "type": "plan",
+      "Aim": "SDG_3.7",
+      "Title_EN": "Ensure universal access to sexual and reproductive health services, including family planning, information and education, and the integration of reproductive health into national, and Galápagos contextualized, strategies and programmes",
+      "Title_ES": "Garantizar el acceso universal a los servicios de salud sexual y reproductiva, incluidos los de planificación familiar, información y educación, y la integración de la salud reproductiva en las estrategias y los programas nacionales y contextualizados a Galápagos",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_3.8",
+      "type": "plan",
+      "Aim": "SDG_3.8",
+      "Title_EN": "Achieve universal health coverage, including financial risk protection, access to quality essential health-care services and access to safe, effective, quality and affordable medicines and vaccines for all",
+      "Title_ES": "Lograr la cobertura sanitaria universal, incluida la protección contra los riesgos financieros, el acceso a servicios de salud esenciales de calidad y el acceso a medicamentos y vacunas inocuos, eficaces, asequibles y de calidad para todos/todas",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_3.c",
+      "type": "plan",
+      "Aim": "SDG_3.c",
+      "Title_EN": "Increase the allocation of resources for health infrastructure, and the recruitment, continuing development and training, and permanence of health personnel positions ",
+      "Title_ES": "Aumentar la asignación de recursos para infraestructura en salud, la contratación, perfeccionamiento y la capacitación continua y la permanencia de las plazas de personal de salud",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_4.1",
+      "type": "plan",
+      "Aim": "SDG_4.1",
+      "Title_EN": "Ensure that all girls and boys complete primary and secondary education, which is free and equitable, of quality and warmth, contextualized to Galápagos, and produces relevant and effective learning outcomes",
+      "Title_ES": "Asegurar que todas las niñas y todos los niños terminen la enseñanza primaria y secundaria, que sea gratuita, equitativa, de calidad, calidez, y contextualizada a Galápagos, y producir resultados de aprendizaje pertinentes y efectivos",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_4.2",
+      "type": "plan",
+      "Aim": "SDG_4.2",
+      "Title_EN": "Ensure that all girls and boys have access to early childhood development, care and pre-primary education, that is of quality and warmth, so that they are ready for primary education",
+      "Title_ES": "Asegurar que todas las niñas y todos los niños tengan acceso a servicios de atención y desarrollo en la primera infancia y educación preescolar de calidad y calidez, a fin de que estén preparados para la enseñanza primaria",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_4.3",
+      "type": "plan",
+      "Aim": "SDG_4.3",
+      "Title_EN": "Ensure equal access for all women and men to quality and affordable technical, vocational and higher education",
+      "Title_ES": "Asegurar el acceso igualitario de todos los hombres y todas las mujeres a una formación técnica, profesional y superior de calidad y asequible",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_4.4",
+      "type": "plan",
+      "Aim": "SDG_4.4",
+      "Title_EN": "Significantly increase the number of youth and resident adults who have relevant skills in all academic, technical, technological and vocational fields for employment, decent jobs and entrepreneurship",
+      "Title_ES": "Aumentar considerablemente el número de jóvenes y adultos residentes que tienen las competencias necesarias en todos los campos académicos, técnicos, tecnológicos y profesionales, para acceder al empleo, trabajo decente y emprendimiento",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_4.7",
+      "type": "plan",
+      "Aim": "SDG_4.7",
+      "Title_EN": "Ensure that all students acquire the knowledge and skills needed to promote sustainable development through education, contextualized to Galápagos, for sustainable development and lifestyles, human rights, gender equality, promotion of a culture of peace and non-violence, global citizenship, and appreciation of cultural diversity and the contribution of culture to sustainable development",
+      "Title_ES": "Asegurar que todos los estudiantes adquieran los conocimientos teóricos y prácticos necesarios para promover el desarrollo sostenible mediante la educación, contextualizada a Galápagos, para el desarrollo y los estilos de vida sostenible, los derechos humanos, la igualdad de género, la promoción de una cultura de paz y no violencia, la ciudadanía mundial y la valoración de la diversidad cultural y la contribución de la cultura al desarrollo sostenible",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_4.c",
+      "type": "plan",
+      "Aim": "SDG_4.c",
+      "Title_EN": "Significantly increase the supply of qualified teachers, including through international cooperation for the education and training of local teachers, and implement the Galápagos contextualized curriculum",
+      "Title_ES": "Aumentar considerablemente la oferta de docentes calificados, incluso mediante la cooperación internacional para la formación y capacitación a docentes locales e implementar el currículo contextualizado de Galápagos",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_5.2",
+      "type": "plan",
+      "Aim": "SDG_5.2",
+      "Title_EN": "Eliminate all forms of gender-based violence including trafficking and sexual and other types of exploitation",
+      "Title_ES": "Eliminar todas las formas de violencia de género incluidas la trata y la explotación sexual y otros tipos de explotación",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_6.1",
+      "type": "plan",
+      "Aim": "SDG_6.1",
+      "Title_EN": "Achieve universal and equitable access to safe and affordable drinking water for all",
+      "Title_ES": "Lograr el acceso universal y equitativo al agua potable a un precio asequible para todos/todas",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_6.2",
+      "type": "plan",
+      "Aim": "SDG_6.2",
+      "Title_EN": "Achieve access to adequate and equitable sanitation and hygiene services for all",
+      "Title_ES": "Lograr el acceso a servicios de saneamiento e higiene adecuados y equitativos para todos/todas",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_6.3",
+      "type": "plan",
+      "Aim": "SDG_6.3",
+      "Title_EN": "Improve water quality by reducing pollution, particularly that of raw sewage, minimizing the release of hazardous chemicals and materials, and substantially increasing recycling and safe reuse",
+      "Title_ES": "Mejorar la calidad del agua reduciendo la contaminación, enfatizando la reducción de aguas residuales sin tratar, minimizando la emisión de productos químicos y materiales peligrosos, y aumentando considerablemente el reciclado y la reutilización sin riesgos",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_6.4",
+      "type": "plan",
+      "Aim": "SDG_6.4",
+      "Title_EN": "Substantially increase the water-use efficiency across all sectors and ensure sustainable withdrawal and supply of drinking water",
+      "Title_ES": "Aumentar considerablemente el uso eficiente de los recursos hídricos en todos los sectores y asegurar la sostenibilidad de la extracción y el abastecimiento de agua potable",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_7.b",
+      "type": "plan",
+      "Aim": "SDG_7.b",
+      "Title_EN": "Expand infrastructure and upgrade technology for supplying modern and sustainable energy services",
+      "Title_ES": "Ampliar la infraestructura y mejorar la tecnología para prestar servicios energéticos modernos y sostenibles ",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_8.2",
+      "type": "plan",
+      "Aim": "SDG_8.2",
+      "Title_EN": "Sustainably achieve higher levels of economic productivity through diversification, technological upgrading, innovation and research, encouraging the preferential use of local labour",
+      "Title_ES": "Lograr de forma sostenible niveles más elevados de productividad económica mediante la diversificación, la modernización tecnológica, la innovación y la investigación, fomentando el uso preferente de la mano de obra local",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_8.6",
+      "type": "plan",
+      "Aim": "SDG_8.6",
+      "Title_EN": "Substantially reduce the proportion of youth not in employment, education or training, and encourage the creation of viable opportunities in the Galápagos environment",
+      "Title_ES": "Reducir considerablemente la proporción de jóvenes sin empleo y no cursan estudios ni reciben capacitación, y fomentar la creación de oportunidades viables y diversas en el entorno galapagueño",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_8.9",
+      "type": "plan",
+      "Aim": "SDG_8.9",
+      "Title_EN": "Develop and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products",
+      "Title_ES": "Elaborar y poner en práctica políticas encaminadas a promover un turismo sostenible que cree puestos de trabajo y promueva la cultura y los productos locales",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_9.5",
+      "type": "plan",
+      "Aim": "SDG_9.5",
+      "Title_EN": "Enhance scientific research and improve the technological capacities of different sectors, encouraging innovation and substantially increasing the number of research and development workers, and public and private sector investment in these areas.",
+      "Title_ES": "Aumentar la investigación científica y mejorar la capacidad tecnológica de los distintos sectores, fomentando la innovación y aumentando considerablemente el número de personas que trabajan en investigación y desarrollo, y la inversión de los sectores público y privado en estas áreas",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_9.c",
+      "type": "plan",
+      "Aim": "SDG_9.c",
+      "Title_EN": "Significantly increase access to information and communications technology and strive to provide universal and affordable access to the Internet",
+      "Title_ES": "Aumentar significativamente el acceso a la tecnología de la información y las comunicaciones y esforzarse por proporcionar acceso universal y asequible a Internet",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_11.2",
+      "type": "plan",
+      "Aim": "SDG_11.2",
+      "Title_EN": "Enhance, promote and ensure access to safe, affordable, accessible and sustainable transport systems for all and improve road safety, including through the expansion of public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities and older persons",
+      "Title_ES": "Potenciar, promover y garantizar el acceso a sistemas de transporte seguros, asequibles, accesibles y sostenibles para todos/todas y mejorar la seguridad vial, en particular mediante la ampliación del transporte público, prestando especial atención a las necesidades de las personas en situación de vulnerabilidad, las mujeres, los niños/las niñas, las personas con discapacidad y los adultos mayores",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_11.3",
+      "type": "plan",
+      "Aim": "SDG_11.3",
+      "Title_EN": "Ensure inclusive and sustainable urbanization and capacity for participatory, integrated and sustainable human settlement planning and management",
+      "Title_ES": "Garantizar la urbanización inclusiva y sostenible y la capacidad para la planificación y la gestión participativa, integrada y sostenible de los asentamientos humanos",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_11.4",
+      "type": "plan",
+      "Aim": "SDG_11.4",
+      "Title_EN": "Strengthen and promote efforts to protect and safeguard the cultural and natural heritage of Galápagos",
+      "Title_ES": "Redoblar y fomentar los esfuerzos para proteger y salvaguardar el patrimonio cultural y natural de Galápagos",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_11.b",
+      "type": "plan",
+      "Aim": "SDG_11.b",
+      "Title_EN": "Implement integrated policies and plans toward inclusion, resource efficiency, mitigation and adaptation to climate change, and resilience to disasters, and develop and implement, in line with international agreements, holistic disaster risk management at all levels",
+      "Title_ES": "Implementar políticas y planes integrados para promover la inclusión, el uso eficiente de los recursos, la mitigación del cambio climático y la adaptación a él y la resiliencia ante los desastres, y desarrollar y poner en práctica, en consonancia con los acuerdos internacionales, la gestión integral de los riesgos de desastre a todos los niveles",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_12.2",
+      "type": "plan",
+      "Aim": "SDG_12.2",
+      "Title_EN": "Achieve sustainable management and efficient use of natural resources",
+      "Title_ES": "Lograr la gestión sostenible y el uso eficiente de los recursos naturales",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_12.5",
+      "type": "plan",
+      "Aim": "SDG_12.5",
+      "Title_EN": "Reduce waste generation through prevention, reduction, recycling and reuse",
+      "Title_ES": "Reducir la generación de desechos mediante actividades de prevención, reducción, reciclado y reutilización",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_14.1",
+      "type": "plan",
+      "Aim": "SDG_14.1",
+      "Title_EN": "Prevent and significantly reduce marine pollution of all kinds, in particular from land-based activities, including marine debris and nutrient pollution",
+      "Title_ES": "Prevenir y reducir significativamente la contaminación marina de todo tipo, en particular la producida por actividades realizadas en tierra, incluidos los desechos marinos y la polución por nutrientes",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_14.2",
+      "type": "plan",
+      "Aim": "SDG_14.2",
+      "Title_EN": "Sustainably manage and protect marine and coastal ecosystems to avoid significant adverse impacts, including by strengthening their resilience, and take action for their restoration, in order to achieve healthy and productive oceans",
+      "Title_ES": "Gestionar y proteger sosteniblemente los ecosistemas marinos y costeros para evitar efectos adversos importantes, incluso fortaleciendo su resiliencia, y adoptar medidas para restaurarlos a fin de restablecer la salud y la productividad de los océanos",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_14.4",
+      "type": "plan",
+      "Aim": "SDG_14.4",
+      "Title_EN": "Effectively regulate harvesting and end overfishing, illegal, unreported and unregulated fishing and destructive fishing practices, including in the exclusive economic zone, and implement science-based management plans, in order to restore fish stocks in the shortest time feasible, at least to levels that can produce maximum sustainable yield as determined by their biological characteristics",
+      "Title_ES": "Reglamentar eficazmente la explotación pesquera y poner fin a la pesca excesiva, la pesca ilegal, no declarada y no reglamentada y las prácticas pesqueras destructivas, incluyendo en la zona económica exclusiva y aplicar planes de gestión con fundamento científico, a fin de restablecer las poblaciones de peces en el plazo más breve posible, al menos alcanzando niveles que puedan producir el máximo rendimiento sostenible de acuerdo con sus características biológicas",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_15.5",
+      "type": "plan",
+      "Aim": "SDG_15.5",
+      "Title_EN": "Take urgent and significant action to reduce the degradation of natural habitats, halt the loss of biodiversity and protect and prevent the extinction of threatened species",
+      "Title_ES": "Adoptar medidas urgentes y significativas para reducir la degradación de los hábitats naturales, detener la pérdida de biodiversidad y proteger las especies amenazadas y evitar su extinción",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_15.7",
+      "type": "plan",
+      "Aim": "SDG_15.7",
+      "Title_EN": "Take urgent action to end poaching and trafficking of protected species of wild flora and fauna",
+      "Title_ES": "Adoptar medidas urgentes para poner fin a la caza furtiva y el tráfico de especies protegidas de flora y fauna silvestres",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_15.8",
+      "type": "plan",
+      "Aim": "SDG_15.8",
+      "Title_EN": "Strengthen measures to prevent the introduction of invasive alien species, and significantly reduce their impact on terrestrial and marine ecosystems, and control or eradicate priority species",
+      "Title_ES": "Fortalecer medidas para prevenir la introducción de especies exóticas invasoras y reducir significativamente sus efectos en los ecosistemas terrestres y marinos y controlar o erradicar las especies prioritarias",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_16.2",
+      "type": "plan",
+      "Aim": "SDG_16.2",
+      "Title_EN": "End abuse, exploitation, trafficking and all forms of violence against, and torture of, children",
+      "Title_ES": "Poner fin al maltrato, la explotación, la trata y todas las formas de violencia contra y tortura de los niños/las niñas",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": "SDG_16.5",
+      "type": "plan",
+      "Aim": "SDG_16.5",
+      "Title_EN": "Eliminate corruption and bribery in all their forms",
+      "Title_ES": "Eliminar la corrupción y el soborno en todas sus formas",
+      "Plan_EN": "40 Priority SDG Targets",
+      "Plan_ES": "40 Metas Prioritarias de los ODS",
+      "Plan link": "www.ods-galapagos.org"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_G11",
+      "type": "plan",
+      "Aim": "Plan_G11",
+      "Title_EN": "Promote an efficient and decentralized public administration in accordance with the reality of the islands.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_G12",
+      "type": "plan",
+      "Aim": "Plan_G12",
+      "Title_EN": "Promote the reengineering of the main public institutions of the islands, in accordance with the Special Regime of the province.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_G13",
+      "type": "plan",
+      "Aim": "Plan_G13",
+      "Title_EN": "Improve the provision of public services, through automation, simplification of procedures and the strengthening of the capacities of public officials.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_G21",
+      "type": "plan",
+      "Aim": "Plan_G21",
+      "Title_EN": "Promote permanent opportunities for interinstitutional coordination, as a mechanism for dialogue and resolution of socioenvironmental conflicts.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_G22",
+      "type": "plan",
+      "Aim": "Plan_G22",
+      "Title_EN": "Strengthen supra-national coordination mechanisms linked to the status of the natural heritage of the Galápagos Islands.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_G23",
+      "type": "plan",
+      "Aim": "Plan_G23",
+      "Title_EN": "Promote the monitoring of planning and regulations in the islands.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_G31",
+      "type": "plan",
+      "Aim": "Plan_G31",
+      "Title_EN": "Promote transparency and citizen involvement in the fight against corruption.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_G32",
+      "type": "plan",
+      "Aim": "Plan_G32",
+      "Title_EN": "Involve the private sector in planning, decision-making and the execution of actions for provincial development.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_G33",
+      "type": "plan",
+      "Aim": "Plan_G33",
+      "Title_EN": "Develop a provincial information management platform for the community and decision makers.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_G41",
+      "type": "plan",
+      "Aim": "Plan_G41",
+      "Title_EN": "Diversify international cooperation funds to invest in social areas and applied research based on the needs of Galápagos.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_G42",
+      "type": "plan",
+      "Aim": "Plan_G42",
+      "Title_EN": "Establish an adequate mechanism to transfer the results of science and research to the community and/or decision makers on the islands.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_C11",
+      "type": "plan",
+      "Aim": "Plan_C11",
+      "Title_EN": "Monitor and further projects for the provision of drinking water and sewerage, environmental sanitation and comprehensive waste management, undertaken by the decentralized autonomous governments and executive institutions.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_C12",
+      "type": "plan",
+      "Aim": "Plan_C12",
+      "Title_EN": "Ensure universal access to health services with comprehensive quality care that protects and improves the physical and mental health of the inhabitants.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_C14",
+      "type": "plan",
+      "Aim": "Plan_C14",
+      "Title_EN": "Implement actions that promote equal rights, with special attention to vulnerable groups. ",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_C21",
+      "type": "plan",
+      "Aim": "Plan_C21",
+      "Title_EN": "Increase the quality of K-12 education in the province, and ensure a holistic and inclusive approach to education of boys, girls, adolescents and adults.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_C22",
+      "type": "plan",
+      "Aim": "Plan_C22",
+      "Title_EN": "Promote continuous formal, technical and non-formal training in the province.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_C31",
+      "type": "plan",
+      "Aim": "Plan_C31",
+      "Title_EN": "Develop training, experiential and recreational activities, so that the population of the islands knows and appreciates the natural environment of Galápagos.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_C32",
+      "type": "plan",
+      "Aim": "Plan_C32",
+      "Title_EN": "Promote a culture of responsible consumption.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_C33",
+      "type": "plan",
+      "Aim": "Plan_C33",
+      "Title_EN": "Promote knowledge and respect of the Special Regime of Galápagos for its proper application.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_C34",
+      "type": "plan",
+      "Aim": "Plan_C34",
+      "Title_EN": "Promote local talents and their products or activities in mainland Ecuador and abroad.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_C35",
+      "type": "plan",
+      "Aim": "Plan_C35",
+      "Title_EN": "Strengthen cultural services that promote the integral development of children, adolescents, adults, the elderly and the community in general.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_E11",
+      "type": "plan",
+      "Aim": "Plan_E11",
+      "Title_EN": "Consolidate, coordinate and integrate management actions to conserve and restore the ecological integrity of ecosystems and biodiversity.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_E12",
+      "type": "plan",
+      "Aim": "Plan_E12",
+      "Title_EN": "Strengthen the comprehensive biosecurity system for Galapágos. Improve the inspection and quarantine system, including optimization of the management model, procedures, automation, infrastructure and personnel, with emphasis on the loading dock in Guayaquil.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_E13",
+      "type": "plan",
+      "Aim": "Plan_E13",
+      "Title_EN": "Monitor the status and resilience of ecosystem services and the sustainability of their flows.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_E14",
+      "type": "plan",
+      "Aim": "Plan_E14",
+      "Title_EN": "Strengthen intergovernmental and interinstitutional capacity to implement strategic management and conservation actions.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_E21",
+      "type": "plan",
+      "Aim": "Plan_E21",
+      "Title_EN": "Reduce the internal and external pressure generated by the exploitation of resources and conserve the habitat for emblematic species.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_E31",
+      "type": "plan",
+      "Aim": "Plan_E31",
+      "Title_EN": "Promote decarbonization and reduction ecological footprint of settlements and human activities.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_H11",
+      "type": "plan",
+      "Aim": "Plan_H11",
+      "Title_EN": "With a focus on sustainability, promote the occupation of vacant lots and vertical residential growth in urban areas and protect productive rural character.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_H12",
+      "type": "plan",
+      "Aim": "Plan_H12",
+      "Title_EN": "Identify and address the limitations for the provision and access to decent, safe and affordable housing within the urban perimeter.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_H13",
+      "type": "plan",
+      "Aim": "Plan_H13",
+      "Title_EN": "Reduce the negative impacts and risks that extractive, industrial and artisanal activities present for the ecosystem and the quality of life of the inhabitants.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_H21",
+      "type": "plan",
+      "Aim": "Plan_H21",
+      "Title_EN": "Strengthen sustainable mobility and accessibility and reduce the use of, and dependence, on motorized vehicles.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_H22",
+      "type": "plan",
+      "Aim": "Plan_H22",
+      "Title_EN": "Consolidate a logistics system for comprehensive supply and passenger air transport, which is efficient in terms of costs and resource use.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_H31",
+      "type": "plan",
+      "Aim": "Plan_H31",
+      "Title_EN": "Promote responsible and efficient consumption, and discourage the indiscriminate consumption of electricity.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_H32",
+      "type": "plan",
+      "Aim": "Plan_H32",
+      "Title_EN": "Replace the use of fossil fuels with renewable energy.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_H41",
+      "type": "plan",
+      "Aim": "Plan_H41",
+      "Title_EN": "Improve connectivity and access to digital technologies and tools, taking advantage of them for the collection, handling and management of information, education, research and economic diversification.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_N11",
+      "type": "plan",
+      "Aim": "Plan_N11",
+      "Title_EN": "Diversify and improve the offer of local products and services, based on inter and intra-sector economic flows, which will allow a transition to a supply system based largely on these products and services.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_N21",
+      "type": "plan",
+      "Aim": "Plan_N21",
+      "Title_EN": "Create a legal framework that promotes sustainable investment in the islands.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_N22",
+      "type": "plan",
+      "Aim": "Plan_N22",
+      "Title_EN": "Promote the creation of social enterprises as sustainable business models to solve specific social and/or environmental problems.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_N23",
+      "type": "plan",
+      "Aim": "Plan_N23",
+      "Title_EN": "Strengthen local micro and small businesses that provide tourist services, depending on demand and in accordance with the requirements of the Special Regime, within the framework of the regulations issued by the competent entity.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_N24",
+      "type": "plan",
+      "Aim": "Plan_N24",
+      "Title_EN": "Create the Galápagos Innovation Hub to promote and support local entrepreneurship.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_N31",
+      "type": "plan",
+      "Aim": "Plan_N31",
+      "Title_EN": "Identify the knowledge that has been generated in Galápagos, to translate it into a tool that promotes innovation and development.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_N32",
+      "type": "plan",
+      "Aim": "Plan_N32",
+      "Title_EN": "Create knowledge networks between tourism companies, build more targeted markets and define new ways to obtain surpluses from innovation.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#BA68C8",
+      "size": 3000,
+      "id": "Plan_N33",
+      "type": "plan",
+      "Aim": "Plan_N33",
+      "Title_EN": "Create research networks with academia to develop innovative products and services and generate collaboration opportunities for internships and exchange.",
+      "Plan_EN": "Galapagos 2030 Plan",
+      "Plan_ES": "Plan Galápagos 2030",
+      "Plan link": "https://unidosporgalapagos.com/"
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q1",
+      "type": "plan",
+      "Aim": "Q1",
+      "Title_EN": "What is the multiplier effect of tourism?",
+      "Title_ES": "¿Cuál es el efecto multiplicador del turismo?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q2",
+      "type": "plan",
+      "Aim": "Q2",
+      "Title_EN": "What low-impact and small-scale alternatives are most effective in achieving a community tourism model?",
+      "Title_ES": "¿Qué alternativas de bajo impacto y a pequeña escala son más eficaces para conseguir un modelo de turismo comunitario?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q3",
+      "type": "plan",
+      "Aim": "Q3",
+      "Title_EN": "How can the uptake of environmental measures be encouraged to reduce the environmental impact of tourism?",
+      "Title_ES": "¿Cómo se puede fomentar la adopción de medidas medioambientales para reducir el impacto ambiental del turismo?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q4",
+      "type": "plan",
+      "Aim": "Q4",
+      "Title_EN": "How is the labour market likely to respond to different models of sustainable development?",
+      "Title_ES": "¿Cómo el mercado laboral probablemente respondería a los distintos modelos de desarrollo sostenible?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q5",
+      "type": "plan",
+      "Aim": "Q5",
+      "Title_EN": "What are the likely trajectories of future population growth in the archipelago and how could various actions modify these?",
+      "Title_ES": "¿Cuáles son las trayectorias probables del futuro crecimiento demográfico en el archipiélago y cómo las distintas acciones podrían modificarlas?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q6",
+      "type": "plan",
+      "Aim": "Q6",
+      "Title_EN": "What measures would be most effective in reducing urban sprawl?",
+      "Title_ES": "¿Qué medidas serían más eficaces para reducir la expansión urbana?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q7",
+      "type": "plan",
+      "Aim": "Q7",
+      "Title_EN": "What measures would most increase the sustainability of the transport system?",
+      "Title_ES": "¿Qué medidas aumentarían más la sostenibilidad del sistema de transporte?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q8",
+      "type": "plan",
+      "Aim": "Q8",
+      "Title_EN": "What methods would be most effective in reducing the impact of extracting or processing building materials?",
+      "Title_ES": "¿Qué métodos serían más eficaces para reducir el impacto de la extracción o el procesamiento de los materiales de construcción?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q9",
+      "type": "plan",
+      "Aim": "Q9",
+      "Title_EN": "What management systems and policies implemented in other protected areas could be adapted to Galápagos to improve local participation in its conservation?",
+      "Title_ES": "¿Qué sistemas y políticas de gestión aplicados en otras áreas protegidas podrían adaptarse a Galápagos para mejorar la participación local en su conservación?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q10",
+      "type": "plan",
+      "Aim": "Q10",
+      "Title_EN": "What is the effectiveness of different tools for monitoring and managing the various uses of protected areas?",
+      "Title_ES": "¿Cuál es la eficacia de las diferentes herramientas de seguimiento y gestión de los distintos usos de las áreas protegidas?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q11",
+      "type": "plan",
+      "Aim": "Q11",
+      "Title_EN": "What is the most effective governance model for protected areas to ensure long-term conservation?",
+      "Title_ES": "¿Cuál es el modelo de gobernanza de las áreas protegidas más eficaz para garantizar su conservación a largo plazo?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q12",
+      "type": "plan",
+      "Aim": "Q12",
+      "Title_EN": "What is the effectiveness of different instruments of adaptation and mitigation of the effects of climate change for the Galápagos ecosystems?",
+      "Title_ES": "¿Cuál es la eficacia de los diferentes instrumentos de adaptación y mitigación de los efectos del cambio climático para los ecosistemas de Galápagos?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q13",
+      "type": "plan",
+      "Aim": "Q13",
+      "Title_EN": "How do the health needs of the island’s inhabitants interact with sustainable use?",
+      "Title_ES": "¿Cómo interactúan las necesidades sanitarias de los habitantes de la isla con el uso sostenible?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q14",
+      "type": "plan",
+      "Aim": "Q14",
+      "Title_EN": "What are the consequences of the possible options and locations for expanding renewable energy?",
+      "Title_ES": "¿Cuáles son las consecuencias de las posibles opciones y ubicaciones de la expansión de las energías renovables?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q15",
+      "type": "plan",
+      "Aim": "Q15",
+      "Title_EN": "What are the various possible disaster risk scenarios?",
+      "Title_ES": "¿Cuáles son los posibles escenarios de riesgo de catástrofes?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q16",
+      "type": "plan",
+      "Aim": "Q16",
+      "Title_EN": "What are the priority areas for restoration of degraded ecosystems?",
+      "Title_ES": "¿Cuáles son las áreas prioritarias para la restauración de los ecosistemas degradados?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q17",
+      "type": "plan",
+      "Aim": "Q17",
+      "Title_EN": "What are the effective strategies to enhance native biodiversity in urban areas?",
+      "Title_ES": "¿Cuáles son las estrategias eficaces para mejorar la biodiversidad autóctona en las zonas urbanas?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q18",
+      "type": "plan",
+      "Aim": "Q18",
+      "Title_EN": "How can the ability to predict the impact of the El Niño Southern Oscillation and climate change on Galápagos be improved?",
+      "Title_ES": "¿Cómo se puede mejorar la capacidad de predicción del impacto de El Niño Oscilación del Sur y del cambio climático en Galápagos?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q19",
+      "type": "plan",
+      "Aim": "Q19",
+      "Title_EN": "How can school and college education be designed to increase environmental awareness and influence more sustainable behaviour?",
+      "Title_ES": "¿Cómo la educación escolar y universitaria debe estar diseñada para generar un aumentar en la conciencia medioambiental e influir en un comportamiento más sostenible?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q20",
+      "type": "plan",
+      "Aim": "Q20",
+      "Title_EN": "What are the professional and university training gaps most needed to achieve environmental sustainability?",
+      "Title_ES": "¿Cuáles son las carencias de formación profesional y universitaria más necesarias para lograr la sostenibilidad ambiental?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q21",
+      "type": "plan",
+      "Aim": "Q21",
+      "Title_EN": "What is the extent of agrochemical contamination in the environment and in people?",
+      "Title_ES": "¿Cuál es el grado de contaminación por agroquímicos en el medio ambiente y en las personas?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q22",
+      "type": "plan",
+      "Aim": "Q22",
+      "Title_EN": "What are the expected effects of climate change on the functioning and profitability of production processes?",
+      "Title_ES": "¿Cuáles son los efectos previstos del cambio climático en el funcionamiento y la rentabilidad de los procesos de producción?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q23",
+      "type": "plan",
+      "Aim": "Q23",
+      "Title_EN": "What is the current status of agricultural pests present in urban and rural areas?",
+      "Title_ES": "¿Cuál es la situación actual de las plagas agrícolas presentes en las zonas urbanas y rurales?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q24",
+      "type": "plan",
+      "Aim": "Q24",
+      "Title_EN": "How can local production activities (including agroforestry) be made more ecologically and economically sustainable while contributing to food and nutritional security?",
+      "Title_ES": "¿Cómo pueden hacerse más sostenibles desde el punto de vista ecológico y económico las actividades productivas locales (incluida la agrosilvicultura), contribuyendo al mismo tiempo a la seguridad alimentaria y nutricional?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q25",
+      "type": "plan",
+      "Aim": "Q25",
+      "Title_EN": "What socio-environmental strategies would help the main actors in the agricultural area to support the control of introduced species?",
+      "Title_ES": "¿Qué estrategias socioambientales ayudarían a los principales actores del área agrícola a apoyar el control de las especies introducidas?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q26",
+      "type": "plan",
+      "Aim": "Q26",
+      "Title_EN": "How can value chains in productive activities be made more sustainable?",
+      "Title_ES": "¿Cómo se pueden hacer más sostenibles las cadenas de valor de las actividades productivas?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q27",
+      "type": "plan",
+      "Aim": "Q27",
+      "Title_EN": "How could beneficial organisms, such as predators, parasitoids, pollinators, antagonists or mutualists, be enhanced in agricultural landscapes?",
+      "Title_ES": "¿Cómo los organismos beneficiosos, como depredadores, parasitoides, polinizadores, antagonistas o mutualistas, podrían ser potenciados en los terrenos agrícolas?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q28",
+      "type": "plan",
+      "Aim": "Q28",
+      "Title_EN": "Which new species in Galápagos are the most suitable for sustainable cultivation considering biosecurity processes?",
+      "Title_ES": "¿Qué nuevas especies en Galápagos son las más adecuadas para un cultivo sostenible teniendo en cuenta los procesos de bioseguridad?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q29",
+      "type": "plan",
+      "Aim": "Q29",
+      "Title_EN": "How does soil type vary across the islands and where are alternative practices, such as organic farming, most likely to be feasible?",
+      "Title_ES": "¿Cómo varía el tipo de suelo en las islas y dónde es más probable que sean viables las prácticas alternativas, como la agricultura ecológica?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q30",
+      "type": "plan",
+      "Aim": "Q30",
+      "Title_EN": "What is the hydrogeological potential of the highlands of the populated islands?",
+      "Title_ES": "¿Cuál es el potencial hidrogeológico de las tierras altas de las islas pobladas?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q31",
+      "type": "plan",
+      "Aim": "Q31",
+      "Title_EN": "What is the current and future demand for water for both the household and commercial sector?",
+      "Title_ES": "¿Cuál es la demanda actual y futura de agua para el sector doméstico y comercial?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q32",
+      "type": "plan",
+      "Aim": "Q32",
+      "Title_EN": "What extent may different ecosystem capacities (e.g. the availability of fresh water) constrain socioeconomic development?",
+      "Title_ES": "¿En qué medida las diferentes capacidades de los ecosistemas (por ejemplo, la disponibilidad de agua dulce) pueden limitar el desarrollo socioeconómico?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q33",
+      "type": "plan",
+      "Aim": "Q33",
+      "Title_EN": "What is the effectiveness of different means of implementing prevention and mitigation strategies for wastewater pollution of water bodies?",
+      "Title_ES": "¿Cuál es la eficacia de los diferentes medios en la aplicación de estrategias de prevención y mitigación de la contaminación de aguas residuales provenientes de masas de agua?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q34",
+      "type": "plan",
+      "Aim": "Q34",
+      "Title_EN": "What is the effectiveness of different strategies for the sustainable use of water in agricultural activities?",
+      "Title_ES": "¿Cuál es la eficacia de las diferentes estrategias para el uso sostenible del agua en las actividades agrícolas?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q35",
+      "type": "plan",
+      "Aim": "Q35",
+      "Title_EN": "Which, if any, biological control agents are most suitable for consideration for reducing the impact of the main invasive species?",
+      "Title_ES": "¿Qué agentes de control biológico, si es que hay alguno, son los más adecuados para considerar la reducción del impacto de las principales especies invasoras?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q36",
+      "type": "plan",
+      "Aim": "Q36",
+      "Title_EN": "What are the dispersal pathways of priority invasive species?",
+      "Title_ES": "¿Cuáles son las vías de dispersión de las especies invasoras prioritarias?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q37",
+      "type": "plan",
+      "Aim": "Q37",
+      "Title_EN": "How is climate change likely to affect the distribution and prevalence of introduced species and diseases?",
+      "Title_ES": "¿Cómo puede afectar el cambio climático a la distribución y prevalencia de las especies y enfermedades introducidas?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q38",
+      "type": "plan",
+      "Aim": "Q38",
+      "Title_EN": "What are the most suitable strategies for managing the introduced species that represent the greatest threat to agriculture?",
+      "Title_ES": "¿Cuáles son las estrategias más adecuadas para gestionar las especies introducidas que representan la mayor amenaza para la agricultura?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q39",
+      "type": "plan",
+      "Aim": "Q39",
+      "Title_EN": "What are the most effective prevention and biosafety systems to prevent the introduction of species to the archipelago and between the islands?",
+      "Title_ES": "¿Cuáles son los sistemas de prevención y bioseguridad más eficaces para evitar la introducción de especies en el archipiélago y entre las islas?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q40",
+      "type": "plan",
+      "Aim": "Q40",
+      "Title_EN": "What marine-coastal zoning system would be most effective for the Galápagos Marine Reserve?",
+      "Title_ES": "¿Qué sistema de zonificación marino-costera sería más eficaz para la Reserva Marina de Galápagos?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q41",
+      "type": "plan",
+      "Aim": "Q41",
+      "Title_EN": "How would changing the area for no-take zones affect the ecological sustainability of the Galápagos Marine Reserve?",
+      "Title_ES": "¿Cómo la modificación de las zonas de exclusión de pesca afectaría a la sostenibilidad ecológica de la Reserva Marina de Galápagos?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q42",
+      "type": "plan",
+      "Aim": "Q42",
+      "Title_EN": "What are the impacts and priorities for the management of existing marine invasive species?",
+      "Title_ES": "¿Cuáles son los impactos y las prioridades para la gestión de las especies marinas invasoras existentes?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q43",
+      "type": "plan",
+      "Aim": "Q43",
+      "Title_EN": "What is the likely effect of increasing ocean acidification on ecosystem processes?",
+      "Title_ES": "¿Cuál es el efecto probable de la creciente acidificación del océano en los procesos del ecosistema?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q44",
+      "type": "plan",
+      "Aim": "Q44",
+      "Title_EN": "What is the importance of the Galápagos Marine Reserve for highly migratory fish stocks?",
+      "Title_ES": "¿Cuál es la importancia de la Reserva Marina de Galápagos para las poblaciones de peces altamente migratorias?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q45",
+      "type": "plan",
+      "Aim": "Q45",
+      "Title_EN": "What are the social and economic consequences of different fisheries management strategies?",
+      "Title_ES": "¿Cuáles son las consecuencias sociales y económicas de las diferentes estrategias de gestión pesquera?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q46",
+      "type": "plan",
+      "Aim": "Q46",
+      "Title_EN": "How does the El Niño Southern Oscillation influence trophic chains in marine and terrestrial communities?",
+      "Title_ES": "¿Cómo influye la Oscilación del Sur de El Niño en las cadenas tróficas de las comunidades marinas y terrestres?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q47",
+      "type": "plan",
+      "Aim": "Q47",
+      "Title_EN": "What are the major threats faced by endemic species and what do we need to do to minimise these?",
+      "Title_ES": "¿Cuáles son las principales amenazas a las que se enfrentan las especies endémicas y qué debemos hacer para minimizarlas?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q48",
+      "type": "plan",
+      "Aim": "Q48",
+      "Title_EN": "What are the major factors influencing the change in status of the key and emblematic species?",
+      "Title_ES": "¿Cuáles son los principales factores que influyen en el cambio de estado de las especies clave y emblemáticas?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q49",
+      "type": "plan",
+      "Aim": "Q49",
+      "Title_EN": "How effective are current strategies for integrating scientific knowledge into policies and how can they be improved?",
+      "Title_ES": "¿En qué medida son eficaces las estrategias actuales para integrar los conocimientos científicos en las políticas y cómo pueden mejorarse?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#4DB6AC",
+      "size": 3000,
+      "id": "Q50",
+      "type": "plan",
+      "Aim": "Q50",
+      "Title_EN": "What are the levels of heavy metals, polychlorinated biphenyls (PCBs) and emerging pollutants in coastal and terrestrial ecosystems?",
+      "Title_ES": "¿Cuáles son los niveles de metales pesados, bifenilos policlorados (PCB) y contaminantes emergentes en los ecosistemas costeros y terrestres?",
+      "Plan_EN": "50 Top Research Questions for Galapagos",
+      "Plan_ES": "50 Preguntas Principales de Investigación para Galápagos",
+      "Plan link": "https://www.publish.csiro.au/PC/pdf/PC17053 "
+    },
+    {
+      "color": "#FF8A65",
+      "size": 3000,
+      "id": "PP_C",
+      "type": "plan",
+      "Aim": "PP_C",
+      "Title_EN": "The Conservation Economy: Scale up conservation as a core economic activity and diversify the economy into other areas which are regenerative as well as distributive, including regenerative agriculture and sustainable fishing",
+      "Title_ES": "La Economía de la Conservación: Aumentar la conservación como actividad económica fundamental y diversificar la economía en otros ámbitos que sean regenerativos y distributivos, como la agricultura regenerativa y la pesca sostenible",
+      "Plan_EN": "Policy Recommendations for Galapagos",
+      "Plan_ES": "Recomendaciones de Políticas Públicas para Galápagos"
+    },
+    {
+      "color": "#FF8A65",
+      "size": 3000,
+      "id": "PP_I",
+      "type": "plan",
+      "Aim": "PP_I",
+      "Title_EN": "Innovation and Adaptation: Position Galapagos as a leader in innovation for sustainability and climate change mitigation and adaptation",
+      "Title_ES": "Innovación y Adaptación: Posicionar a Galápagos como líder en innovación para la sostenibilidad y la mitigación y adaptación al cambio climático",
+      "Plan_EN": "Policy Recommendations for Galapagos",
+      "Plan_ES": "Recomendaciones de Políticas Públicas para Galápagos"
+    },
+    {
+      "color": "#FF8A65",
+      "size": 3000,
+      "id": "PP_T",
+      "type": "plan",
+      "Aim": "PP_T",
+      "Title_EN": "Tourism Connected to Nature and Society: Reorientate Galapagos tourism towards models that are better integrated into the local economy, are more equitable, have lower environmental impact, contribute actively to conservation and catalyse mainland tourism",
+      "Title_ES": "Turismo Conectado con la Naturaleza y la Sociedad: Reorientar el turismo de Galápagos hacia modelos que se integren mejor en la economía local, sean más equitativos, tengan un menor impacto ambiental, contribuyan activamente a la conservación y catalicen el turismo continental",
+      "Plan_EN": "Policy Recommendations for Galapagos",
+      "Plan_ES": "Recomendaciones de Políticas Públicas para Galápagos"
+    },
+    {
+      "color": "#FF8A65",
+      "size": 3000,
+      "id": "PP_M",
+      "type": "plan",
+      "Aim": "PP_M",
+      "Title_EN": "Resilience of the Marine Ecosystem: Build climate resilience of the marine ecosystem, thereby helping to secure the future of the tourism industry while enabling a thriving artisanal fishing and marine management sector to contribute to the archipelago’s food security, economic resilience, protection and monitoring",
+      "Title_ES": "Resiliencia del Ecosistema Marino: Aumentar la resiliencia climática del ecosistema marino, ayudando así a garantizar el futuro de la industria turística y permitiendo al mismo tiempo que un próspero sector de pesca artesanal y de gestión marina contribuya a la seguridad alimentaria, la resiliencia económica, la protección y la vigilancia del archipiélago",
+      "Plan_EN": "Policy Recommendations for Galapagos",
+      "Plan_ES": "Recomendaciones de Políticas Públicas para Galápagos"
+    },
+    {
+      "color": "#FF8A65",
+      "size": 3000,
+      "id": "PP_H",
+      "type": "plan",
+      "Aim": "PP_H",
+      "Title_EN": "Holistic Management of the Humid Highlands: Manage the humid highlands of the inhabited islands in a way that integrates goals of agricultural production for food security with restoration of the archipelago’s vanishing highland biodiversity",
+      "Title_ES": "Gestión Holística de las Tierras Altas Húmedas: Manejar las tierras altas húmedas de las islas habitadas de manera que integra los objetivos de producción agrícola para la seguridad alimentaria con la restauración de la biodiversidad de las zonas húmedas del archipiélago, que está desapareciendo",
+      "Plan_EN": "Policy Recommendations for Galapagos",
+      "Plan_ES": "Recomendaciones de Políticas Públicas para Galápagos"
+    },
+    {
+      "color": "#FDD835",
+      "size": 3000,
+      "id": 2018
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Mario Ruiz"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "María de Lourde Torres"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Susana Cárdenas"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Rafael Bermudez"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Adam Soule"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Carlos Luis López"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Jenifer Suarez"
+    },
+    {
+      "color": "#4A148C",
+      "size": 3000,
+      "id": "Juan Manuel Guayasamín"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "NCSU",
+      "type": "organization",
+      "Org": "NCSU",
+      "English name": "North Carolina State University",
+      "Spanish name": "Universidad Estatal de Carolina del Norte",
+      "Country": "USA",
+      "Pais": "EEUU",
+      "Website": "https://www.ncsu.edu/"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
+      "id": "ESPOL",
+      "type": "organization",
+      "Org": "ESPOL",
+      "English name": "Litoral Polytechnic School",
+      "Spanish name": "Escuela Superior Politécnica del Litoral",
+      "Country": "Ecuador",
+      "Pais": "Ecuador",
+      "Website": "https://www.espol.edu.ec/"
+    },
+    {
+      "color": "#5D4037",
+      "size": 3000,
+      "id": "USA"
+    },
+    {
+      "color": "#5D4037",
+      "size": 3000,
+      "id": "Ireland"
+    },
+    {
+      "color": "#5D4037",
+      "size": 3000,
+      "id": "Ecuador"
+    },
+    {
+      "color": "#5D4037",
+      "size": 3000,
+      "id": "Chile"
+    },
+    {
+      "color": "#5D4037",
+      "size": 3000,
+      "id": "UK"
+    },
+    {
+      "color": "#5D4037",
+      "size": 3000,
+      "id": "Australia"
+    },
+    {
+      "color": "#5D4037",
+      "size": 3000,
+      "id": "New Zealand"
+    },
+    {
+      "color": "#5D4037",
+      "size": 3000,
+      "id": "Italy"
+    },
+    {
+      "color": "#5D4037",
+      "size": 3000,
+      "id": "Philippines"
+    }
+  ],
+  "links": [
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": "Andrew Bell"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": "Chris Bean"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": "Gabriela Vivas"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": "Leonardo Garcia"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": "Stephen Hernández"
+    },
+    {
+      "weight": 1,
+      "color": "#999999",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": "DIAS"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": "DPNG"
+    },
+    {
+      "weight": 2,
+      "color": "#006064",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": "EPN"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": "NERC"
+    },
+    {
+      "weight": 1,
+      "color": "#999999",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": "U. Edinburgh"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": "Isabela"
+    },
+    {
+      "weight": 1,
+      "color": "#1A237E",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": "Geología/petrología"
+    },
+    {
+      "weight": 1,
+      "color": "#1A237E",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": "Volcanes y montes submarinos"
+    },
+    {
+      "weight": 0.5,
+      "color": "#EF5350",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": "SDG_11.b"
+    },
+    {
+      "weight": 0.5,
+      "color": "#4DB6AC",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": "Q15"
+    },
+    {
+      "weight": 1,
+      "color": "#FDD835",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": 2018
+    },
+    {
+      "weight": 2,
+      "color": "#4A148C",
+      "source": "Terremotos y disturbios del Sierra Negra",
+      "target": "Mario Ruiz"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Anna Shvets"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Cheryl Logan"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Dehila Hannah"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Julian Charriere"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Julius von Bismark"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Margarita Brandt"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Mario de Stefano"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Maryuri Yepez"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Nadim Samman"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Paul Rosero Contreras"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Santiago Lombeyda"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "CIT"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "DPNG"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Darwin"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Isabela"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Wolf"
+    },
+    {
+      "weight": 1,
+      "color": "#1A237E",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Oceanografía"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Biodiversidad"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Ecología de las redes"
+    },
+    {
+      "weight": 1,
+      "color": "#0D47A1",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Corales"
+    },
+    {
+      "weight": 1,
+      "color": "#0D47A1",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Invertebrados marinos"
+    },
+    {
+      "weight": 1,
+      "color": "#0D47A1",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Microorganismos marinos"
+    },
+    {
+      "weight": 1,
+      "color": "#1976D2",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Impactos del cambio climático"
+    },
+    {
+      "weight": 1,
+      "color": "#29B6F6",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Educación"
+    },
+    {
+      "weight": 0.5,
+      "color": "#EF5350",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "SDG_14.2"
+    },
+    {
+      "weight": 0.5,
+      "color": "#BA68C8",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Plan_E11"
+    },
+    {
+      "weight": 0.5,
+      "color": "#BA68C8",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Plan_E13"
+    },
+    {
+      "weight": 0.5,
+      "color": "#4DB6AC",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Q12"
+    },
+    {
+      "weight": 1,
+      "color": "#4DB6AC",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Q43"
+    },
+    {
+      "weight": 0.5,
+      "color": "#FF8A65",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "PP_I"
+    },
+    {
+      "weight": 0.5,
+      "color": "#FF8A65",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "PP_M"
+    },
+    {
+      "weight": 1,
+      "color": "#FDD835",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": 2018
+    },
+    {
+      "weight": 2,
+      "color": "#4A148C",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "Nataly Guevara"
+    },
+    {
+      "weight": 2,
+      "color": "#006064",
+      "source": "Corales y bacterias en un océano ácido",
+      "target": "USFQ"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Gabriela Pozo"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Leonie Moyle"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Maryuri Yepez"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "María José Pozo"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Matthew Gibson"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "DPNG"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "MAATE"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "U. Indiana"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "UNC"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Isabela"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Santa Cruz"
+    },
+    {
+      "weight": 1,
+      "color": "#F57F17",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Solanum cheesmaniae"
+    },
+    {
+      "weight": 1,
+      "color": "#F57F17",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Solanum galapagense"
+    },
+    {
+      "weight": 1,
+      "color": "#F57F17",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Solanum lycopersicum"
+    },
+    {
+      "weight": 1,
+      "color": "#F57F17",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Solanum pimpinellifollium"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Biodiversidad"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Biogeografía"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Biosecuridad/especies invasoras"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Conservación de la biodiversidad"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Ecología de las redes"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Ecología/monitorización de la población"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Evolución y colonización"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Fisiología"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Polinización"
+    },
+    {
+      "weight": 1,
+      "color": "#5C6BC0",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Plantas"
+    },
+    {
+      "weight": 0.5,
+      "color": "#EF5350",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "SDG_15.5"
+    },
+    {
+      "weight": 0.5,
+      "color": "#EF5350",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "SDG_15.8"
+    },
+    {
+      "weight": 0.5,
+      "color": "#BA68C8",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Plan_E11"
+    },
+    {
+      "weight": 1,
+      "color": "#4DB6AC",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "Q47"
+    },
+    {
+      "weight": 1,
+      "color": "#FDD835",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": 2018
+    },
+    {
+      "weight": 2,
+      "color": "#4A148C",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "María de Lourde Torres"
+    },
+    {
+      "weight": 2,
+      "color": "#006064",
+      "source": "Ecológia e hibridación de Solanum",
+      "target": "USFQ"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Carlos Valle"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Diane Deresienski"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Gregory Lewbart"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Gunter Reck"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Ingrid Jaramillo"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Jane Christman"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "DPNG"
+    },
+    {
+      "weight": 2,
+      "color": "#006064",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "USFQ"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "San Cristóbal"
+    },
+    {
+      "weight": 1,
+      "color": "#F57F17",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Sula sula"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Biodiversidad"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Calidad ambiental"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Conservación de la biodiversidad"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Ecología/monitorización de la población"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Genética"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Impactos humanos directos"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Salud de la vida silvestre"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Servicios ecosistémicos"
+    },
+    {
+      "weight": 1,
+      "color": "#5C6BC0",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Aves"
+    },
+    {
+      "weight": 1,
+      "color": "#81D4FA",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Turismo/ecoturismo"
+    },
+    {
+      "weight": 0.5,
+      "color": "#EF5350",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "SDG_8.9"
+    },
+    {
+      "weight": 0.5,
+      "color": "#EF5350",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "SDG_15.5"
+    },
+    {
+      "weight": 0.5,
+      "color": "#BA68C8",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Plan_E11"
+    },
+    {
+      "weight": 1,
+      "color": "#BA68C8",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Plan_E13"
+    },
+    {
+      "weight": 0.5,
+      "color": "#BA68C8",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Plan_E21"
+    },
+    {
+      "weight": 1,
+      "color": "#4DB6AC",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Q3"
+    },
+    {
+      "weight": 1,
+      "color": "#4DB6AC",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Q47"
+    },
+    {
+      "weight": 1,
+      "color": "#4DB6AC",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Q48"
+    },
+    {
+      "weight": 0.5,
+      "color": "#FF8A65",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "PP_T"
+    },
+    {
+      "weight": 1,
+      "color": "#FDD835",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": 2018
+    },
+    {
+      "weight": 2,
+      "color": "#4A148C",
+      "source": "Impactos de turístas en piqueros patas rojas",
+      "target": "Susana Cárdenas"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Alyssa Grube"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Andrea Loyola"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Carlos Valle"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Daniela Alarcón"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "David Ernst"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "David Steinberg"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Diane Deresienski"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Galo Quezada"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Gustavo Jimenez"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Helena Soini"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Jane Christman"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Jasón Castañeda"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "John Roger Brothers"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Juan Pablo Muñoz"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Kent Passingham"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Leandro Vaca"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Milos Novotny"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Nataly Guevara"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Paul Calle"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Salud de las iguanas terrestres",
+      "target": "DPNG"
+    },
+    {
+      "weight": 1,
+      "color": "#999999",
+      "source": "Salud de las iguanas terrestres",
+      "target": "FCD"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Salud de las iguanas terrestres",
+      "target": "UNC"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Salud de las iguanas terrestres",
+      "target": "USFQ"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Salud de las iguanas terrestres",
+      "target": "WCS"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Plaza Norte"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Plaza Sur"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Santa Fe"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Seymour Norte"
+    },
+    {
+      "weight": 1,
+      "color": "#F57F17",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Conolophus pallidus"
+    },
+    {
+      "weight": 1,
+      "color": "#F57F17",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Conolophus subcristatus"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Biodiversidad"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Calidad ambiental"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Ecología del comportamiento"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Salud de la vida silvestre"
+    },
+    {
+      "weight": 1,
+      "color": "#0D47A1",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Algas/algas marinas"
+    },
+    {
+      "weight": 1,
+      "color": "#FDD835",
+      "source": "Salud de las iguanas terrestres",
+      "target": 2018
+    },
+    {
+      "weight": 2,
+      "color": "#4A148C",
+      "source": "Salud de las iguanas terrestres",
+      "target": "Gregory Lewbart"
+    },
+    {
+      "weight": 2,
+      "color": "#006064",
+      "source": "Salud de las iguanas terrestres",
+      "target": "NCSU"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Alejandro Rodríguez"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Ane Garcia"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Cristian Vargas"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Daniel Lara-Solis"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Eduardo Espinoza"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Erika Montaya"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Graham Kolodziej"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Gustavo Chiang"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Isabel Timpe"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Juan Sebastian Giraldo"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Lorena Arias"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Lucia Epherra"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Lucrecia Cisneros"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Luis Burgos"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Maria Elena Tapia"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Mario Hurtado"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Marleen de Troch"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Marylaura Sandoval"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Nataly Guevara"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Nelson Lagos"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Nicolas Moity"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Pedro Medina"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Salvatrice Vizzini"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Solange Andrade"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Tierry Medeiros"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "CIMAS"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "DPNG"
+    },
+    {
+      "weight": 1,
+      "color": "#999999",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "FCD"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "IOA"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "MIO"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "NOAA"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "U. Concepción"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "U. Miami"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "U. Palermo"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "U. Santo Tomas"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "USFQ"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Darwin"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Roca Redonda"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Santa Fe"
+    },
+    {
+      "weight": 1,
+      "color": "#1A237E",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Geoquímica"
+    },
+    {
+      "weight": 1,
+      "color": "#1A237E",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Oceanografía"
+    },
+    {
+      "weight": 1,
+      "color": "#1A237E",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Volcanes y montes submarinos"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Biodiversidad"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Ecología de las redes"
+    },
+    {
+      "weight": 1,
+      "color": "#0D47A1",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Invertebrados marinos"
+    },
+    {
+      "weight": 1,
+      "color": "#1976D2",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Impactos del cambio climático"
+    },
+    {
+      "weight": 0.5,
+      "color": "#EF5350",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "SDG_11.b"
+    },
+    {
+      "weight": 0.5,
+      "color": "#4DB6AC",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Q12"
+    },
+    {
+      "weight": 1,
+      "color": "#FDD835",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": 2018
+    },
+    {
+      "weight": 2,
+      "color": "#4A148C",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "Rafael Bermudez"
+    },
+    {
+      "weight": 2,
+      "color": "#006064",
+      "source": "Fuentes de CO2 en Roca Redonda",
+      "target": "ESPOL"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Brett Carr"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Brittany Erickson"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Carolina Carrion"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Cristian Sevilla"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Danny Rueda"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Einat Lev"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Heinke Jager"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Ingrid Jaramillo"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Leif Karlstrom"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Marco Cordova"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Maria Gabriela Vivas"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Meghan Rose Jones"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Silvia Vallejo"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Mapear terrenos volcánicos",
+      "target": "DPNG"
+    },
+    {
+      "weight": 1,
+      "color": "#999999",
+      "source": "Mapear terrenos volcánicos",
+      "target": "FCD"
+    },
+    {
+      "weight": 2,
+      "color": "#006064",
+      "source": "Mapear terrenos volcánicos",
+      "target": "WHOI"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Isabela"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Mapear terrenos volcánicos",
+      "target": "San Cristóbal"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Santa Cruz"
+    },
+    {
+      "weight": 1,
+      "color": "#1A237E",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Geología/petrología"
+    },
+    {
+      "weight": 1,
+      "color": "#1A237E",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Volcanes y montes submarinos"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Conservación de la biodiversidad"
+    },
+    {
+      "weight": 0.5,
+      "color": "#EF5350",
+      "source": "Mapear terrenos volcánicos",
+      "target": "SDG_11.b"
+    },
+    {
+      "weight": 0.5,
+      "color": "#EF5350",
+      "source": "Mapear terrenos volcánicos",
+      "target": "SDG_15.5"
+    },
+    {
+      "weight": 0.5,
+      "color": "#BA68C8",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Plan_E11"
+    },
+    {
+      "weight": 1,
+      "color": "#4DB6AC",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Q15"
+    },
+    {
+      "weight": 1,
+      "color": "#4DB6AC",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Q47"
+    },
+    {
+      "weight": 1,
+      "color": "#FDD835",
+      "source": "Mapear terrenos volcánicos",
+      "target": 2018
+    },
+    {
+      "weight": 2,
+      "color": "#4A148C",
+      "source": "Mapear terrenos volcánicos",
+      "target": "Adam Soule"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Plancton en cuerpos de agua",
+      "target": "Alexey Alexeevich Kotov"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Plancton en cuerpos de agua",
+      "target": "Evangelia Michaloudi"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Plancton en cuerpos de agua",
+      "target": "Maria Holynska"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Plancton en cuerpos de agua",
+      "target": "Maryuri Yepez"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Plancton en cuerpos de agua",
+      "target": "Nelson dos-Santos"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Plancton en cuerpos de agua",
+      "target": "Ruth Steinitz"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Plancton en cuerpos de agua",
+      "target": "DPNG"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Plancton en cuerpos de agua",
+      "target": "NKU"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Plancton en cuerpos de agua",
+      "target": "San Cristóbal"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Plancton en cuerpos de agua",
+      "target": "Biodiversidad"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Plancton en cuerpos de agua",
+      "target": "Calidad ambiental"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Plancton en cuerpos de agua",
+      "target": "Manejo de recursos naturales"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Plancton en cuerpos de agua",
+      "target": "Servicios ecosistémicos"
+    },
+    {
+      "weight": 1,
+      "color": "#5C6BC0",
+      "source": "Plancton en cuerpos de agua",
+      "target": "Microorganismos"
+    },
+    {
+      "weight": 1,
+      "color": "#01579B",
+      "source": "Plancton en cuerpos de agua",
+      "target": "Agua (otro)"
+    },
+    {
+      "weight": 0.5,
+      "color": "#EF5350",
+      "source": "Plancton en cuerpos de agua",
+      "target": "SDG_6.3"
+    },
+    {
+      "weight": 0.5,
+      "color": "#EF5350",
+      "source": "Plancton en cuerpos de agua",
+      "target": "SDG_15.5"
+    },
+    {
+      "weight": 0.5,
+      "color": "#BA68C8",
+      "source": "Plancton en cuerpos de agua",
+      "target": "Plan_E11"
+    },
+    {
+      "weight": 0.5,
+      "color": "#BA68C8",
+      "source": "Plancton en cuerpos de agua",
+      "target": "Plan_E13"
+    },
+    {
+      "weight": 1,
+      "color": "#FDD835",
+      "source": "Plancton en cuerpos de agua",
+      "target": 2018
+    },
+    {
+      "weight": 2,
+      "color": "#4A148C",
+      "source": "Plancton en cuerpos de agua",
+      "target": "Carlos Luis López"
+    },
+    {
+      "weight": 2,
+      "color": "#006064",
+      "source": "Plancton en cuerpos de agua",
+      "target": "ESPOL"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Alberto Proano"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Carlos Vera"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Cristian Cáceres"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Diego Páez-Rosas"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Eduardo Espinoza"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Evelyn Vera"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Fernando Córdova"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Galo Quezada"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Galo Rueda"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Gonzalo Sevilla"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Harry Reyes"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Javier Chafla"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Jules Paredes"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Marcelo Tite"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Viviana Carrera"
+    },
+    {
+      "weight": 2,
+      "color": "#006064",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "DPNG"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "USFQ"
+    },
+    {
+      "weight": 1,
+      "color": "#F57F17",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Carcharhinus falcilformis"
+    },
+    {
+      "weight": 1,
+      "color": "#F57F17",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Carcharhinus galapagensis"
+    },
+    {
+      "weight": 1,
+      "color": "#F57F17",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Carcharhinus limbatus"
+    },
+    {
+      "weight": 1,
+      "color": "#F57F17",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Sphyrna lewini"
+    },
+    {
+      "weight": 1,
+      "color": "#F57F17",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Triaenodon obesus"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Biodiversidad"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Ecología de la alimentación"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Ecología del comportamiento"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Ecología/monitorización de la población"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Reproducción/dispersión"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Salud de la vida silvestre"
+    },
+    {
+      "weight": 1,
+      "color": "#0D47A1",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Tiburones y rayas"
+    },
+    {
+      "weight": 0.5,
+      "color": "#EF5350",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "SDG_8.9"
+    },
+    {
+      "weight": 0.5,
+      "color": "#EF5350",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "SDG_14.2"
+    },
+    {
+      "weight": 0.5,
+      "color": "#BA68C8",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Plan_E11"
+    },
+    {
+      "weight": 0.5,
+      "color": "#BA68C8",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Plan_E21"
+    },
+    {
+      "weight": 0.5,
+      "color": "#4DB6AC",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Q3"
+    },
+    {
+      "weight": 0.5,
+      "color": "#FF8A65",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "PP_M"
+    },
+    {
+      "weight": 1,
+      "color": "#FDD835",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": 2018
+    },
+    {
+      "weight": 2,
+      "color": "#4A148C",
+      "source": "Poblaciones y ecológica de los tiburones",
+      "target": "Jenifer Suarez"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Andrea Narváez"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Danny Rueda"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Diana Pazmiño"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Diego Bermeo"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Estefany Guerra"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Estefanía Boada"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "José Ramos"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Keyko Cruz"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Richard Peters"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Simon Lobos"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "DPNG"
+    },
+    {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "U. La Trobe"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Baltra"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Española"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Isabela"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Marchena"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Pinta"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Pinzón"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Rábida"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "San Cristóbal"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Santa Cruz"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Santa Fe"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Santiago"
+    },
+    {
+      "weight": 1,
+      "color": "#F57F17",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Microlophus sp."
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Biodiversidad"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Conservación de la biodiversidad"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Ecología de la alimentación"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Ecología del comportamiento"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Evolución y colonización"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Reproducción/dispersión"
+    },
+    {
+      "weight": 1,
+      "color": "#5C6BC0",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Reptiles"
+    },
+    {
+      "weight": 0.5,
+      "color": "#EF5350",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "SDG_15.5"
+    },
+    {
+      "weight": 0.5,
+      "color": "#4DB6AC",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Q47"
+    },
+    {
+      "weight": 1,
+      "color": "#FDD835",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": 2018
+    },
+    {
+      "weight": 2,
+      "color": "#4A148C",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "Juan Manuel Guayasamín"
+    },
+    {
+      "weight": 2,
+      "color": "#006064",
+      "source": "Comportamiento de las lagartijas de lava",
+      "target": "USFQ"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Andrea Loyola"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Christian Sevilla"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Gabriele Gentile"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Karl Campbell"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Kirtana Kumar"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Luis Ortiz-Catedral (co-lead)"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Victor Carrion"
+    },
+    {
+      "weight": 1,
+      "color": "#4A148C",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Wilson Cabrera"
+    },
+    {
+      "weight": 2,
+      "color": "#006064",
+      "source": "Translocación de la iguana terrestre",
+      "target": "DPNG"
+    },
+    {
+      "weight": 1,
+      "color": "#999999",
+      "source": "Translocación de la iguana terrestre",
+      "target": "IC"
+    },
+    {
+      "weight": 1,
+      "color": "#999999",
+      "source": "Translocación de la iguana terrestre",
+      "target": "U. Massey"
+    },
+    {
+      "weight": 1,
+      "color": "#999999",
+      "source": "Translocación de la iguana terrestre",
+      "target": "U. Tor Vergata"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Santa Cruz"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Santiago"
+    },
+    {
+      "weight": 1,
+      "color": "#33691E",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Seymour Norte"
+    },
+    {
+      "weight": 1,
+      "color": "#F57F17",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Conolophus subcristatus"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Biodiversidad"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Biosecuridad/especies invasoras"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Conservación de la biodiversidad"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Ecología/monitorización de la población"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Reproducción/dispersión"
+    },
+    {
+      "weight": 1,
+      "color": "#303F9F",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Restauración de ecosistemas"
+    },
+    {
+      "weight": 1,
+      "color": "#5C6BC0",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Mamíferos"
+    },
+    {
+      "weight": 1,
+      "color": "#5C6BC0",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Reptiles"
+    },
+    {
+      "weight": 1,
+      "color": "#29B6F6",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Educación"
+    },
+    {
+      "weight": 1,
+      "color": "#EF5350",
+      "source": "Translocación de la iguana terrestre",
+      "target": "SDG_15.5"
+    },
+    {
+      "weight": 1,
+      "color": "#EF5350",
+      "source": "Translocación de la iguana terrestre",
+      "target": "SDG_15.8"
+    },
+    {
+      "weight": 1,
+      "color": "#BA68C8",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Plan_E11"
+    },
+    {
+      "weight": 1,
+      "color": "#BA68C8",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Plan_E14"
+    },
+    {
+      "weight": 1,
+      "color": "#BA68C8",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Plan_E21"
+    },
+    {
+      "weight": 1,
+      "color": "#4DB6AC",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Q47"
+    },
+    {
+      "weight": 1,
+      "color": "#FDD835",
+      "source": "Translocación de la iguana terrestre",
+      "target": 2018
+    },
+    {
+      "weight": 2,
+      "color": "#4A148C",
+      "source": "Translocación de la iguana terrestre",
+      "target": "Danny Rueda"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "CIMAS",
+      "target": "USA"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "CIT",
+      "target": "USA"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "DIAS",
+      "target": "Ireland"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "DPNG",
+      "target": "Ecuador"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "EPN",
+      "target": "Ecuador"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "FCD",
+      "target": "Ecuador"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "IC",
+      "target": "USA"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "IOA",
+      "target": "USA"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "MAATE",
+      "target": "Ecuador"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "MIO",
+      "target": "Chile"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "NERC",
+      "target": "UK"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "NKU",
+      "target": "USA"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "NOAA",
+      "target": "USA"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "U. Concepción",
+      "target": "Chile"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "U. Edinburgh",
+      "target": "UK"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "U. Indiana",
+      "target": "USA"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "U. La Trobe",
+      "target": "Australia"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "U. Massey",
+      "target": "New Zealand"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "U. Miami",
+      "target": "USA"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "U. Palermo",
+      "target": "Italy"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "U. Santo Tomas",
+      "target": "Philippines"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "U. Tor Vergata",
+      "target": "Italy"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "UNC",
+      "target": "USA"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "USFQ",
+      "target": "Ecuador"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "WCS",
+      "target": "USA"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "WHOI",
+      "target": "USA"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "NCSU",
+      "target": "USA"
+    },
+    {
+      "weight": 1,
+      "color": "#5D4037",
+      "source": "ESPOL",
+      "target": "Ecuador"
+    }
+  ]
+}

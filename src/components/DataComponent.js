@@ -19,12 +19,8 @@ import classNames from "classnames";
 import NetworkContainer from "./NetworkContainer";
 // import MapComponent from "./MapComponent";
 
-import { data } from "../data/RI";
 import { locations } from "../data/RI_locations";
-import projectsInfo from "../data/projects";
-import organizationsInfo from "../data/orgs_info";
-import speciesInfo from "../data/species_info";
-import plansInfo from "../data/plans_info";
+import data from "../data/data";
 
 import goal1EN from "../assets/icons/sdg/EN/E-WEB-Goal-01.png";
 import goal2EN from "../assets/icons/sdg/EN/E-WEB-Goal-02.png";
@@ -325,38 +321,7 @@ const questions = {
   },
 };
 
-/* Data preparation */
-
-// Get sets of the values used as node IDs
-const nicknamesESSet = new Set(projectsInfo.map((d) => d.Nickname_ES));
-const orgCodeSet = new Set(organizationsInfo.map((d) => d.Org));
-const scientificNameSet = new Set(speciesInfo.map((d) => d.Scientific_name));
-const aimSet = new Set(plansInfo.map((d) => d.Aim));
-
-// Map through the data to add the info to the node
-data.nodes = data.nodes.map(node => {
-  if (nicknamesESSet.has(node.id)) {
-    const nodeInfo = projectsInfo.find(d => d.Nickname_ES === node.id);
-    node = { ...node, ...nodeInfo };
-  }
-  if (orgCodeSet.has(node.id)) {
-    const nodeInfo = organizationsInfo.find(d => d.Org === node.id);
-    node = { ...node, ...nodeInfo };
-  }
-  if (scientificNameSet.has(node.id)) {
-    const nodeInfo = speciesInfo.find(d => d.Scientific_name === node.id);
-    node = { ...node, ...nodeInfo };
-  }
-  if (aimSet.has(node.id)) {
-    const nodeInfo = plansInfo.find(d => d.Aim === node.id);
-    node = { ...node, ...nodeInfo };
-  }
-  return node;
-})
-
 const initialData = Object.assign({}, data);
-
-/* Data preparation */
 
 const CategoriesLegend = ({
   selectedCategories,
@@ -1044,10 +1009,10 @@ const NodeInfo = ({ node }) => {
           {i18n.t("toSeeMoreInformation")}
         </div>
       ) : null}
-      {node && nicknamesESSet.has(node.id) ? <ProjectNode info={node} /> : null}
-      {node && orgCodeSet.has(node.id) ? <OrganizationNode info={node} /> : null}
-      {node && scientificNameSet.has(node.id) ? <SpeciesNode info={node} /> : null}
-      {node && aimSet.has(node.id) ? <PlanNode info={node} /> : null}
+      {node?.type === "project" ? <ProjectNode info={node} /> : null}
+      {node?.type === "organization" ? <OrganizationNode info={node} /> : null}
+      {node?.type === "species" ? <SpeciesNode info={node} /> : null}
+      {node?.type === "plan" ? <PlanNode info={node} /> : null}
     </div>
   );
 };
