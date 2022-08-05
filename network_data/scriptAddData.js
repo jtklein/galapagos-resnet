@@ -23,8 +23,9 @@ data.nodes = data.nodes.map(node => {
       Lead_org: additionalInfo.Lead_org,
       Title_ES: additionalInfo.Title_ES,
       Title_EN: additionalInfo.Title_EN,
-      Nickname_ES: additionalInfo.Nickname_ES,
-      Nickname_EN: additionalInfo.Nickname_EN,
+      // Use nickname fields as node labels
+      labelES: additionalInfo.Nickname_ES,
+      labelEN: additionalInfo.Nickname_EN,
       Summary_ES: additionalInfo.Summary_ES,
       Summary_EN: additionalInfo.Summary_EN,
       Link: additionalInfo.Link,
@@ -35,8 +36,8 @@ data.nodes = data.nodes.map(node => {
     const additionalInfo = organizationsInfo.find((d) => d.Org === node.id);
     Object.assign(node, {
       Org: additionalInfo.Org,
-      "English name": additionalInfo["English name"],
       "Spanish name": additionalInfo["Spanish name"],
+      "English name": additionalInfo["English name"],
       Country: additionalInfo.Country,
       Pais: additionalInfo.Pais,
       Website: additionalInfo.Website,

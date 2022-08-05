@@ -252,7 +252,7 @@ export default function Network(el, props) {
           }
           return isSelectedNode(d) ? "underline" : "none";
         })
-        .text((d) => d.id)
+        .text((d) => (props.language !== "es" ? d.labelEN : d.labelES) || d.id)
     );
 
   // Add a circle to highlight nodes of the selected themes and the selected node

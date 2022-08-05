@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import * as d3 from "d3";
 import { useTheme } from "@material-ui/core/styles";
+import { withTranslation } from "react-i18next";
 
 import Network from "./Network";
 
@@ -88,6 +89,7 @@ class NetworkContainer extends Component {
       selectedThemesConnectedLinks,
       selectedThemesConnectedNodes,
       searchText,
+      i18n,
     } = this.props;
     const { simulation, zoom, zoomTransform } = this.state;
     Network(refNetworkComponent.current, {
@@ -107,6 +109,7 @@ class NetworkContainer extends Component {
       searchText,
       onClick: this.onNetworkClickNode,
       resimulate,
+      language: i18n.language,
     });
   }
 
@@ -134,4 +137,4 @@ class NetworkContainer extends Component {
   }
 };
 
-export default NetworkContainer;
+export default withTranslation()(NetworkContainer);

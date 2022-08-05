@@ -12,7 +12,6 @@ import { withStyles, useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { saveAs } from "file-saver";
 import { isDesktop } from "react-device-detect";
-
 import { useTranslation } from "react-i18next";
 import classNames from "classnames";
 
@@ -870,7 +869,7 @@ const NodeInfo = ({ node }) => {
   const { i18n } = useTranslation();
   const theme = useTheme();
   const ProjectNode = ({ info }) => { 
-    const title = i18n.language !== "es" ? info.Nickname_EN : info.Nickname_ES;
+    const title = i18n.language !== "es" ? info.labelEN : info.labelES;
     return (
       <div>
         <br />
