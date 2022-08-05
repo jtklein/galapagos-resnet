@@ -547,7 +547,7 @@ const DownloadButton = (props) => {
   );
 };
 
-const LeftLegend = ({ mobile, selectedThemes, selectedCategories, selectedPolicyPlans, onPolicyPlanClicked, onThemeClicked, onCategoryClicked, onClickSaveNetwork, openTheme, openDownload }) => {
+const LeftLegend = ({ mobile, selectedThemes, selectedCategories, onThemeClicked, onCategoryClicked, onClickSaveNetwork, openTheme, openDownload }) => {
   const theme = useTheme();
   return (
     <Grid
@@ -595,11 +595,6 @@ const LeftLegend = ({ mobile, selectedThemes, selectedCategories, selectedPolicy
       >
         <hr className="solid"></hr>
       </Grid>
-        <PolicyPlansLegend
-          mobile={mobile}
-          selectedPolicyPlans={selectedPolicyPlans}
-          onPolicyPlanClicked={(themeColor) => onPolicyPlanClicked(themeColor)}
-        />
       <Grid
         item
         xs
@@ -806,6 +801,8 @@ const QuestionLegend = ({ mobile }) => {
 const RightLegend = ({
   mobile,
   iconClassName,
+  selectedPolicyPlans,
+  onPolicyPlanClicked,
 }) => {
   const theme = useTheme();
   const { i18n } = useTranslation();
@@ -828,6 +825,13 @@ const RightLegend = ({
         <div style={{ width: "100%" }}>{i18n.t("galapagosPlan")}</div>
         <div style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
           <PlanLegend mobile={mobile} />
+          <PolicyPlansLegend
+            mobile={mobile}
+            selectedPolicyPlans={selectedPolicyPlans}
+            onPolicyPlanClicked={(themeColor) =>
+              onPolicyPlanClicked(themeColor)
+            }
+          />
         </div>
       </Grid>
 
@@ -863,7 +867,6 @@ const RightLegend = ({
     </Grid>
   );
 };
-console.log('RightLegend', RightLegend);
 
 const NodeInfo = ({ node }) => {
   const { i18n } = useTranslation();
@@ -1541,7 +1544,7 @@ class DataComponent extends Component {
           />
         </Grid>
         {/* xs is sum of 12 */}
-        <Grid item className="grid-item" xs={10} style={{ padding: 0 }}>
+        <Grid item className="grid-item" xs={8} style={{ padding: 0 }}>
           <TutorialTooltip
             title="tutorialProjectsTitle"
             description="tutorialProjectsDescription"
@@ -1593,9 +1596,9 @@ class DataComponent extends Component {
             onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
           />
         </Grid>
-        {/* <Grid item className="grid-item" xs={2} style={{ padding: 0 }}>
+        <Grid item className="grid-item" xs={2} style={{ padding: 0 }}>
           <RightLegend />
-        </Grid> */}
+        </Grid>
 
         {/* <Grid item className="grid-item" xs={5}>
             <MapComponent
@@ -1660,7 +1663,7 @@ class DataComponent extends Component {
           openTheme={this.openOnDesktop(3)}
           openDownload={this.openOnDesktop(5)}
         />
-        {/* <RightLegend mobile iconClassName="sdg-icon-mobile" /> */}
+        <RightLegend mobile iconClassName="sdg-icon-mobile" />
       </div>
     );
   }
