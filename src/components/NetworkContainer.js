@@ -53,7 +53,8 @@ class NetworkContainer extends Component {
     const themesChanged = this.props.selectedThemes.length !== prevProps.selectedThemes.length;
     const policyPlansChanged = this.props.selectedPolicyPlans.length !== prevProps.selectedPolicyPlans.length;
     const categoriesChanged = this.props.selectedCategories.length !== prevProps.selectedCategories.length;
-    this.renderNetwork(themesChanged || policyPlansChanged || categoriesChanged);
+    const searchTextChanged = this.props.searchText !== prevProps.searchText;
+    this.renderNetwork(themesChanged || policyPlansChanged || categoriesChanged || searchTextChanged);
   }
 
   onResize = () => {
