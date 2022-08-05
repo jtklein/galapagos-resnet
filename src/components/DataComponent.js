@@ -598,13 +598,6 @@ const LeftLegend = ({ mobile, selectedThemes, selectedCategories, onThemeClicked
       <Grid
         item
         xs
-        style={{ display: "contents", flexBasis: "auto", padding: 5 }}
-      >
-        <hr className="solid"></hr>
-      </Grid>
-      <Grid
-        item
-        xs
         style={{
           display: "flex",
           alignItems: "center",
