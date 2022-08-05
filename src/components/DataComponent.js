@@ -547,7 +547,7 @@ const DownloadButton = (props) => {
   );
 };
 
-const LeftLegend = ({ mobile, selectedThemes, selectedCategories, onThemeClicked, onCategoryClicked, onClickSaveNetwork, openTheme, openDownload }) => {
+const LeftLegend = ({ mobile, selectedThemes, selectedCategories, onThemeClicked, onCategoryClicked, openTheme }) => {
   const theme = useTheme();
   return (
     <Grid
@@ -586,30 +586,6 @@ const LeftLegend = ({ mobile, selectedThemes, selectedCategories, onThemeClicked
           mobile={mobile}
           selectedThemes={selectedThemes}
           onThemeClicked={(themeColor) => onThemeClicked(themeColor)}
-        />
-      </Grid>
-      <Grid
-        item
-        xs
-        style={{ display: "contents", flexBasis: "auto", padding: 5 }}
-      >
-        <hr className="solid"></hr>
-      </Grid>
-      <Grid
-        item
-        xs
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          flexBasis: "auto",
-          padding: 0,
-        }}
-      >
-        <DownloadButton
-          mobile={mobile}
-          onClick={onClickSaveNetwork}
-          open={openDownload}
         />
       </Grid>
     </Grid>
@@ -793,9 +769,11 @@ const QuestionLegend = ({ mobile }) => {
 
 const RightLegend = ({
   mobile,
-  iconClassName,
+  // iconClassName,
   selectedPolicyPlans,
   onPolicyPlanClicked,
+  onClickSaveNetwork,
+  openDownload,
 }) => {
   const theme = useTheme();
   const { i18n } = useTranslation();
@@ -833,7 +811,25 @@ const RightLegend = ({
       >
         <hr className="solid"></hr>
       </Grid>
-      
+
+      <Grid
+        item
+        xs
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexBasis: "auto",
+          padding: 0,
+        }}
+      >
+        <DownloadButton
+          mobile={mobile}
+          onClick={onClickSaveNetwork}
+          open={openDownload}
+        />
+      </Grid>
+
       {/* <Grid item xs>
         <div style={{ width: "100%" }}>{i18n.t("galapagosPlan")}</div>
         <div style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
