@@ -158,6 +158,27 @@ export default function Network(el, props) {
     );
   }
 
+  function showNodeColorAndCenter(node) {
+    const anyFilterSet = themeSet || policyPlanSet || categorySet;
+    const isFiltered =
+    isSelectedCategory(node) ||
+    isSelectedPolicyPlan(node) ||
+    isConnectedToSelectedThemes(node);
+    if (props.selectedNode) {
+      if (anyFilterSet) {
+        return (isFiltered && isConnectedToSelectedNode(node)) || isSelectedNode(node);
+      }
+      return isConnectedToSelectedNode(node) || isSelectedNode(node);
+    }
+    if (anyFilterSet) {
+      return isFiltered;
+    }
+    if (isSearching) {
+      return isSearchedFor(node);
+    }
+    return true;
+  }
+
   function onOverlayClick(event) {
     props.onClick(null);
   }
@@ -203,26 +224,7 @@ export default function Network(el, props) {
         .attr("stroke", "#fff")
         .attr("stroke-width", 1.5)
         .attr("r", (d) => nodeRadiusScale(d.size))
-        .attr("fill", function (d) {
-          if (categorySet) {
-            return isSelectedCategory(d) ? d.color : "lightgray";
-          }
-          if (policyPlanSet) {
-            return isSelectedPolicyPlan(d) ? d.color : "lightgray";
-          }
-          if (themeSet) {
-            return isConnectedToSelectedThemes(d) ? d.color : "lightgray";
-          }
-          if (props.selectedNode) {
-            return isConnectedToSelectedNode(d) || isSelectedNode(d)
-              ? d.color
-              : "lightgray";
-          }
-          if (isSearching) {
-            return isSearchedFor(d) ? d.color : "lightgray";
-          }
-          return d.color;
-        })
+        .attr("fill", function (d) {return showNodeColorAndCenter(d) ? d.color : "lightgray"})
     )
     // TODO: Place a call iterating over these after the first round of mapping, so that the labels are alwys above other nodes
     .call((g) =>
@@ -350,32 +352,15 @@ export default function Network(el, props) {
     } else {
       simulation.force("radial", null);
     }
-  
-    centerForce(
-      isSelectedTheme && selectedThemes.length >= 1,
-      isConnectedToSelectedThemes,
-      "themes"
-    );
-    centerForce(
-      selectedCategories && selectedCategories.length !== 0,
-      isSelectedCategory,
-      "categories"
-    );
-    centerForce(
-      selectedPolicyPlans && selectedPolicyPlans.length !== 0,
-      isSelectedPolicyPlan,
-      "policy-plan"
-    );
-    centerForce(
-      isSearching,
-      isSearchedFor,
-      "search"
-    );
-          
+
+    // If there are filters, or search, or a node sellected center the resulting node set
+    centerForce((props.selectedNode || themeSet || categorySet || policyPlanSet || isSearching), showNodeColorAndCenter, "highlight");
+            
     if (props.resimulate) {
       simulation.alpha(0.1).restart();
     }
   }
+  /* End of simulation related functions */
           
   function render() {
     // Draw links on canvas
@@ -417,7 +402,7 @@ export default function Network(el, props) {
     g.attr("transform", zoomTransform);
   }
   
-  // Zoom related
+  /* Zoom related functions */
   // When active zooming
   zoom.on("zoom", function (e) {
     const t = e.transform;
@@ -427,7 +412,7 @@ export default function Network(el, props) {
   // Attach zoom handler to svg
   svg.call(zoom);
   canvas.call(zoom);
-  // End of zoom
+  /* End of zoom related functions */
 
   render();
 }
