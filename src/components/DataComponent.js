@@ -1582,7 +1582,7 @@ class DataComponent extends Component {
     this.setState({ zoomTransform: t });
   };
 
-  renderDesktop() {
+  renderNetworkContainer = () => {
     const {
       shownData,
       selectedNode,
@@ -1597,6 +1597,35 @@ class DataComponent extends Component {
       isStatic,
       zoom,
       zoomTransform,
+    } = this.state;
+    return (
+      <NetworkContainer
+        refNetworkComponent={this.refNetworkComponent}
+        data={shownData}
+        selectedNode={selectedNode}
+        connectedNodes={connectedNodes}
+        connectedLinks={connectedLinks}
+        selectedThemes={selectedThemes}
+        selectedThemesConnectedLinks={selectedThemesConnectedLinks}
+        selectedThemesConnectedNodes={selectedThemesConnectedNodes}
+        selectedCategories={selectedCategories}
+        selectedPolicyPlans={selectedPolicyPlans}
+        searchText={searchText}
+        onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
+        isStatic={isStatic}
+        setZoomTransform={(t) => this.setZoomTransform(t)}
+        zoom={zoom}
+        zoomTransform={zoomTransform}
+      />
+    );
+  }
+
+  renderDesktop() {
+    const {
+      selectedThemes,
+      selectedPolicyPlans,
+      selectedCategories,
+      isStatic,
     } = this.state;
     // const markers = this.filterMarkers();
 
@@ -1651,24 +1680,7 @@ class DataComponent extends Component {
           >
             <div></div>
           </TutorialTooltip>
-          <NetworkContainer
-            refNetworkComponent={this.refNetworkComponent}
-            data={shownData}
-            selectedNode={selectedNode}
-            connectedNodes={connectedNodes}
-            connectedLinks={connectedLinks}
-            selectedThemes={selectedThemes}
-            selectedThemesConnectedLinks={selectedThemesConnectedLinks}
-            selectedThemesConnectedNodes={selectedThemesConnectedNodes}
-            selectedCategories={selectedCategories}
-            selectedPolicyPlans={selectedPolicyPlans}
-            searchText={searchText}
-            onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
-            isStatic={isStatic}
-            setZoomTransform={(t) => this.setZoomTransform(t)}
-            zoom={zoom}
-            zoomTransform={zoomTransform}
-          />
+          {this.renderNetworkContainer()}
         </Grid>
         <Grid item className="grid-item" xs={2} style={{ padding: 0 }}>
           <RightLegend
@@ -1696,16 +1708,9 @@ class DataComponent extends Component {
 
   renderMobile() {
     const {
-      shownData,
-      selectedNode,
-      connectedNodes,
-      connectedLinks,
       selectedThemes,
       selectedPolicyPlans,
-      selectedThemesConnectedLinks,
-      selectedThemesConnectedNodes,
       selectedCategories,
-      searchText,
       tutorialOpen,
       tutorialIndex,
       isStatic,
@@ -1716,20 +1721,7 @@ class DataComponent extends Component {
     return (
       <div style={{ width: "100%" }}>
         <div style={{ height, minHeight }}>
-          <NetworkContainer
-            refNetworkComponent={this.refNetworkComponent}
-            data={shownData}
-            selectedNode={selectedNode}
-            connectedNodes={connectedNodes}
-            connectedLinks={connectedLinks}
-            selectedThemes={selectedThemes}
-            selectedPolicyPlans={selectedPolicyPlans}
-            selectedThemesConnectedLinks={selectedThemesConnectedLinks}
-            selectedThemesConnectedNodes={selectedThemesConnectedNodes}
-            selectedCategories={selectedCategories}
-            searchText={searchText}
-            onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
-          />
+          {this.renderNetworkContainer()}
         </div>
         {tutorialOpen ? <MobileTutorial index={tutorialIndex} /> : null}
         <LeftLegend
