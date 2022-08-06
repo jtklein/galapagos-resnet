@@ -78,18 +78,41 @@ export default function Network(el, props) {
   let linksToShow = data.links;
   // Filter links to show only links that are connected to selected themes
   if (
-    props.selectedThemes.length !== 0 &&
-    props.selectedThemesConnectedLinks.length !== 0
+    props.selectedCategoriesConnectedLinks.length !== 0 ||
+    props.selectedThemesConnectedLinks.length !== 0 ||
+    props.selectedPolicyPlansConnectedLinks.length !== 0
   ) {
     // Get one array from the array of arrays
-    linksToShow = props.selectedThemesConnectedLinks.reduce(
+    const cL = props.selectedCategoriesConnectedLinks.reduce(
       (acc, curr) => acc.concat(curr),
       []
     );
+    const tL = props.selectedThemesConnectedLinks.reduce(
+      (acc, curr) => acc.concat(curr),
+      []
+    );
+    const pL = props.selectedPolicyPlansConnectedLinks.reduce(
+      (acc, curr) => acc.concat(curr),
+      []
+    );
+    linksToShow = cL.concat(tL, pL);
   }
   // Filter links to show only nodes that are connected to the selected node
   if (props.selectedNode && props.connectedLinks) {
     linksToShow = props.connectedLinks;
+  }
+
+  function isConnectedToSelectedCategories(node) {
+    if (!props.selectedCategoriesConnectedNodes) {
+      return false;
+    }
+    // Get one array from the array of arrays
+    const ns = props.selectedCategoriesConnectedNodes.reduce(
+      (acc, curr) => acc.concat(curr),
+      []
+    );
+    const connectedIDs = ns.map((n) => n.id);
+    return connectedIDs.includes(node.id);
   }
 
   function isConnectedToSelectedThemes(node) {
@@ -98,6 +121,19 @@ export default function Network(el, props) {
     }
     // Get one array from the array of arrays
     const ns = props.selectedThemesConnectedNodes.reduce(
+      (acc, curr) => acc.concat(curr),
+      []
+    );
+    const connectedIDs = ns.map((n) => n.id);
+    return connectedIDs.includes(node.id);
+  }
+  
+  function isConnectedToSelectedPolicyPlans(node) {
+    if (!props.selectedPolicyPlansConnectedNodes) {
+      return false;
+    }
+    // Get one array from the array of arrays
+    const ns = props.selectedPolicyPlansConnectedNodes.reduce(
       (acc, curr) => acc.concat(curr),
       []
     );
@@ -160,10 +196,12 @@ export default function Network(el, props) {
 
   function showNodeColorAndCenter(node) {
     const anyFilterSet = themeSet || policyPlanSet || categorySet;
-    const isFiltered =
-    isSelectedCategory(node) ||
-    isSelectedPolicyPlan(node) ||
-    isConnectedToSelectedThemes(node);
+    const isFiltered = isSelectedCategory(node) ||
+      isConnectedToSelectedCategories(node) ||
+      isSelectedPolicyPlan(node) ||
+      isConnectedToSelectedPolicyPlans(node) ||
+      isSelectedTheme(node) ||
+      isConnectedToSelectedThemes(node);
     if (props.selectedNode) {
       if (anyFilterSet) {
         return (isFiltered && isConnectedToSelectedNode(node)) || isSelectedNode(node);
@@ -375,13 +413,12 @@ export default function Network(el, props) {
         context.globalAlpha = 0.6;
         if (themeSet) {
           context.strokeStyle = isSelectedTheme(d) ? d.color : "lightgray";
-        } else if (!props.selectedNode) {
-          context.strokeStyle = "lightgray";
         } else if (categorySet) {
           context.strokeStyle = isSelectedCategory(d) ? d.color : "lightgray";
         } else if (policyPlanSet) {
-          // TODO: this does not look right
           context.strokeStyle = isSelectedPolicyPlan(d) ? d.color : "lightgray";
+        } else if (!props.selectedNode) {
+          context.strokeStyle = "lightgray";
         } else {
           context.strokeStyle = d.color;
         }
