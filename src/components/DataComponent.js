@@ -1,4 +1,5 @@
 import React, { Component, useState } from "react";
+import * as d3 from "d3";
 import TextField from "@material-ui/core/TextField";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Grid from "@material-ui/core/Grid";
@@ -1236,6 +1237,9 @@ class DataComponent extends Component {
   constructor(props) {
     super(props);
     this.refNetworkComponent = React.createRef();
+    const zoom = d3.zoom();
+    // Holds a copy of the previous zoom transform, so we can track its changes
+    const zoomTransform = d3.zoomIdentity;
     this.state = {
       shownData: initialData,
       selectedNode: undefined,
@@ -1251,6 +1255,8 @@ class DataComponent extends Component {
       // the overall window click listener
       tutorialIndex: -1,
       isStatic: false,
+      zoom,
+      zoomTransform,
     };
   }
 
@@ -1459,9 +1465,7 @@ class DataComponent extends Component {
 
   onStaticClicked = () => this.setState({ isStatic: !this.state.isStatic });
 
-  onCenterClicked = () => {
-
-  };
+  onCenterClicked = () => {};
 
   generateSVGBlob = (parent) => {
     let svgContent = parent.innerHTML;
@@ -1564,6 +1568,10 @@ class DataComponent extends Component {
     return tutorialOpen && tutorialIndex === index;
   };
 
+  setZoomTransform = (t) => {
+    this.setState({ zoomTransform: t });
+  };
+
   renderDesktop() {
     const {
       shownData,
@@ -1577,6 +1585,8 @@ class DataComponent extends Component {
       selectedCategories,
       searchText,
       isStatic,
+      zoom,
+      zoomTransform,
     } = this.state;
     // const markers = this.filterMarkers();
 
@@ -1645,6 +1655,9 @@ class DataComponent extends Component {
             searchText={searchText}
             onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
             isStatic={isStatic}
+            setZoomTransform={(t) => this.setZoomTransform(t)}
+            zoom={zoom}
+            zoomTransform={zoomTransform}
           />
         </Grid>
         <Grid item className="grid-item" xs={2} style={{ padding: 0 }}>
