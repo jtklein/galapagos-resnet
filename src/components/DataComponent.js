@@ -1465,7 +1465,7 @@ class DataComponent extends Component {
 
   onStaticClicked = () => this.setState({ isStatic: !this.state.isStatic });
 
-  onCenterClicked = () => {};
+  onCenterClicked = () => this.setState({ zoomTransform: Object.assign(this.state.zoomTransform, { k: 1, x: 0, y: 0 }) });
 
   generateSVGBlob = (parent) => {
     let svgContent = parent.innerHTML;
