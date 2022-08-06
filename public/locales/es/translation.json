@@ -37,5 +37,10 @@
   "galapagosPlan": "Plan Galápagos 2030",
   "priorityTargets": "Metas Prioritarias de los ODS",
   "topQuestions": "50 Preguntas Principales",
-  "permitNumber": "Número de permiso de la Dirección del Parque Nacional Galápagos:"
+  "permitNumber": "Número de permiso de la Dirección del Parque Nacional Galápagos:",
+  "planLinkTypes": "Types of policy links:",
+  "planLinkContributes": "contribuye directamente al progreso",
+  "planLinkSupportive": "proporciona información de apoyo",
+  "solid": "solid",
+  "dashed": "dashed"
 }

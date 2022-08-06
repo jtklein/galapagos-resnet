@@ -816,7 +816,7 @@ const RightLegend = ({
           size="medium"
           onClick={() => onCenterClicked()}
         >
-          {i18n.t("center")}
+          {"Center"}
         </Button>
         <Button
           color="secondary"
@@ -852,6 +852,16 @@ const RightLegend = ({
           selectedPolicyPlans={selectedPolicyPlans}
           onPolicyPlanClicked={(themeColor) => onPolicyPlanClicked(themeColor)}
         />
+      </Grid>
+
+      <Grid item xs>
+        <div style={{ width: "100%" }}>{i18n.t("planLinkTypes")}</div>
+        <div style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
+          {i18n.t("solid")}{" = "}{i18n.t("planLinkContributes")}
+          <br />
+          {i18n.t("dashed")}{" = "}{i18n.t("planLinkSupportive")}
+          <br />
+        </div>
       </Grid>
 
       <Grid
