@@ -1582,6 +1582,44 @@ class DataComponent extends Component {
     this.setState({ zoomTransform: t });
   };
 
+  renderLeftLegend = (mobile) => {
+    const {
+      selectedThemes,
+      selectedCategories,
+    } = this.state;
+    return (
+      <LeftLegend
+        mobile={mobile}
+        selectedThemes={selectedThemes}
+        selectedCategories={selectedCategories}
+        onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
+        onCategoryClicked={(categoryColor) =>
+          this.onCategoryClicked(categoryColor)
+        }
+        openTheme={this.openOnDesktop(3)}
+      />
+    )
+  }
+
+  renderRightLegend = (mobile) => {
+    const { selectedPolicyPlans, isStatic } = this.state;
+    return (
+      <RightLegend
+        mobile={mobile}
+        selectedPolicyPlans={selectedPolicyPlans}
+        onPolicyPlanClicked={(policyPlanColor) =>
+          this.onPolicyPlanClicked(policyPlanColor)
+        }
+        openDownload={this.openOnDesktop(5)}
+        onClickSaveNetwork={this.onClickSaveNetwork}
+        isStatic={isStatic}
+        onStaticClicked={this.onStaticClicked}
+        onCenterClicked={this.onCenterClicked}
+      />
+    );
+  }
+
+
   renderNetworkContainer = () => {
     const {
       shownData,
@@ -1621,26 +1659,12 @@ class DataComponent extends Component {
   }
 
   renderDesktop() {
-    const {
-      selectedThemes,
-      selectedPolicyPlans,
-      selectedCategories,
-      isStatic,
-    } = this.state;
     // const markers = this.filterMarkers();
 
     return (
       <Grid container>
         <Grid item className="grid-item" xs={2} style={{ padding: 0 }}>
-          <LeftLegend
-            selectedThemes={selectedThemes}
-            selectedCategories={selectedCategories}
-            onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
-            onCategoryClicked={(categoryColor) =>
-              this.onCategoryClicked(categoryColor)
-            }
-            openTheme={this.openOnDesktop(3)}
-          />
+          {this.renderLeftLegend()}
         </Grid>
         {/* xs is sum of 12 */}
         <Grid item className="grid-item" xs={8} style={{ padding: 0 }}>
@@ -1683,19 +1707,8 @@ class DataComponent extends Component {
           {this.renderNetworkContainer()}
         </Grid>
         <Grid item className="grid-item" xs={2} style={{ padding: 0 }}>
-          <RightLegend
-            selectedPolicyPlans={selectedPolicyPlans}
-            onPolicyPlanClicked={(policyPlanColor) =>
-              this.onPolicyPlanClicked(policyPlanColor)
-            }
-            openDownload={this.openOnDesktop(5)}
-            onClickSaveNetwork={this.onClickSaveNetwork}
-            isStatic={isStatic}
-            onStaticClicked={this.onStaticClicked}
-            onCenterClicked={this.onCenterClicked}
-          />
+          {this.renderRightLegend()}
         </Grid>
-
         {/* <Grid item className="grid-item" xs={5}>
             <MapComponent
               markers={markers}
@@ -1708,12 +1721,8 @@ class DataComponent extends Component {
 
   renderMobile() {
     const {
-      selectedThemes,
-      selectedPolicyPlans,
-      selectedCategories,
       tutorialOpen,
       tutorialIndex,
-      isStatic,
     } = this.state;
     const height = window.innerHeight;
     const minHeight = 520;
@@ -1724,33 +1733,8 @@ class DataComponent extends Component {
           {this.renderNetworkContainer()}
         </div>
         {tutorialOpen ? <MobileTutorial index={tutorialIndex} /> : null}
-        <LeftLegend
-          mobile
-          selectedThemes={selectedThemes}
-          selectedCategories={selectedCategories}
-          selectedPolicyPlans={selectedPolicyPlans}
-          onThemeClicked={(themeColor) => this.onThemeClicked(themeColor)}
-          onCategoryClicked={(categoryColor) =>
-            this.onCategoryClicked(categoryColor)
-          }
-          onPolicyPlanClicked={(policyPlanColor) =>
-            this.onPolicyPlanClicked(policyPlanColor)
-          }
-          onClickSaveNetwork={this.onClickSaveNetwork}
-          openTheme={this.openOnDesktop(3)}
-          openDownload={this.openOnDesktop(5)}
-        />
-        <RightLegend
-          mobile
-          selectedPolicyPlans={selectedPolicyPlans}
-          onPolicyPlanClicked={(policyPlanColor) =>
-            this.onPolicyPlanClicked(policyPlanColor)
-          }
-          openDownload={this.openOnDesktop(5)}
-          onClickSaveNetwork={this.onClickSaveNetwork}
-          isStatic={isStatic}
-          // iconClassName="sdg-icon-mobile"
-        />
+        {this.renderLeftLegend(true)}
+        {this.renderRightLegend(true)}
       </div>
     );
   }
