@@ -1347,10 +1347,14 @@ class DataComponent extends Component {
     if (d === null) {
       this.setState({
         selectedCategories: [],
+        selectedCategoriesConnectedLinks: [],
+        selectedCategoriesConnectedNodes: [],
         selectedThemes: [],
-        selectedPolicyPlans: [],
         selectedThemesConnectedLinks: [],
         selectedThemesConnectedNodes: [],
+        selectedPolicyPlans: [],
+        selectedPolicyPlansConnectedLinks: [],
+        selectedPolicyPlansConnectedNodes: [],
       });
     }
     return;
