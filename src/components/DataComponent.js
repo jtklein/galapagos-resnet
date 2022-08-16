@@ -855,13 +855,25 @@ const RightLegend = ({
       </Grid>
 
       <Grid item xs>
-        <div style={{ width: "100%" }}>{i18n.t("planLinkTypes")}</div>
-        <div style={{ display: "flex", flexBasis: "auto", padding: 0 }}>
-          {i18n.t("solid")}{" = "}{i18n.t("planLinkContributes")}
-          <br />
-          {i18n.t("dashed")}{" = "}{i18n.t("planLinkSupportive")}
-          <br />
+        <div style={{ display: "flex", alignItems: "center", width: "100%" }}>
+          <div
+            className="line"
+            style={{
+              background: `repeating-linear-gradient(to right,${theme.palette.primary.contrastText} 0,${theme.palette.primary.contrastText} 3px) center`,
+            }}
+          ></div>
+          {i18n.t("planLinkContributes")}
         </div>
+        <div style={{ display: "flex", alignItems: "center", width: "100%" }}>
+          <div
+            className="line"
+            style={{
+              background: `repeating-linear-gradient(to right,${theme.palette.primary.contrastText} 0,${theme.palette.primary.contrastText} 3px,transparent 3px,transparent 7px) center`,
+            }}
+          ></div>
+          {i18n.t("planLinkSupportive")}
+        </div>
+        <br />
       </Grid>
 
       <Grid

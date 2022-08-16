@@ -77,3 +77,11 @@ hr.solid {
   top: 0px;
   left: 0px;
 }
+
+.line {
+  margin: 0 4px;
+  height: 2px;
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  width: 20%;
+}

@@ -38,9 +38,6 @@
   "priorityTargets": "Priority SDG Targets",
   "topQuestions": "50 Top Questions",
   "permitNumber": "Galapagos National Park Directorate permit number:",
-  "planLinkTypes": "Types of policy links:",
   "planLinkContributes": "directly contributes to progress",
-  "planLinkSupportive": "provides supportive information",
-  "solid": "solid",
-  "dashed": "dashed"
+  "planLinkSupportive": "provides supportive information"
 }
