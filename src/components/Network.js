@@ -238,9 +238,9 @@ export default function Network(el, props) {
     .join("line")
     .classed("link", true)
 
-  data.nodes.sort((a, b) => {
-    return a.size < b.size ? -1 : 1;
-  });
+  data.nodes
+    .sort((a, b) => (withNodeColorAndCenter(a) && !withNodeColorAndCenter(b)) ? 1 : -1)
+    .sort((a, b) => a.size < b.size ? -1 : 1);
 
   const node = g
     .selectAll(".node")
