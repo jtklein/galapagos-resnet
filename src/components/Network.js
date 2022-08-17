@@ -194,7 +194,7 @@ export default function Network(el, props) {
     );
   }
 
-  function showNodeColorAndCenter(node) {
+  function withNodeColorAndCenter(node) {
     const anyFilterSet = themeSet || policyPlanSet || categorySet;
     const isFiltered = isSelectedCategory(node) ||
       isConnectedToSelectedCategories(node) ||
@@ -247,22 +247,14 @@ export default function Network(el, props) {
     .append("g")
     .attr("class", "node")
     .attr("cursor", "default")
-    .attr("opacity", function (d) {
-      if (props.selectedNode) {
-        return isConnectedToSelectedNode(d) || isSelectedNode(d) ? 1 : 0.3;
-      }
-      if (isSearching) {
-        return isSearchedFor(d) ? 1 : 0.3;
-      }
-      return 1;
-    })
+    .attr("opacity", function (d) {return withNodeColorAndCenter(d) ? 1 : 0.3})
     .call((g) =>
       g
         .append("circle")
         .attr("stroke", "#fff")
         .attr("stroke-width", 1.5)
         .attr("r", (d) => nodeRadiusScale(d.size))
-        .attr("fill", function (d) {return showNodeColorAndCenter(d) ? d.color : "lightgray"})
+        .attr("fill", function (d) {return withNodeColorAndCenter(d) ? d.color : "lightgray"})
     )
     // TODO: Place a call iterating over these after the first round of mapping, so that the labels are alwys above other nodes
     .call((g) =>
@@ -272,17 +264,7 @@ export default function Network(el, props) {
           "text-shadow",
           "-1px -1px white, -1px 1px white, 1px 1px white, 1px -1px white, -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white"
         )
-        .attr("fill", function (d) {
-          if (props.selectedNode) {
-            return isConnectedToSelectedNode(d) || isSelectedNode(d)
-              ? "#000"
-              : "lightgray";
-          }
-          if (isSearching) {
-            return isSearchedFor(d) ? "#000" : "lightgray";
-          }
-          return "#000";
-        })
+        .attr("fill", function (d) {return withNodeColorAndCenter(d) ? "#000" : "lightgray"})
         .attr("font-size", (d) => smallestRadius() * 1.5)
         // TODO: This checks whether the node is of type "species" by looking at the color. Should be better somehow different
         .attr("font-style", (d) => (d.color === "#F57F17" ? "italic" : null))
@@ -392,7 +374,7 @@ export default function Network(el, props) {
     }
 
     // If there are filters, or search, or a node sellected center the resulting node set
-    centerForce((props.selectedNode || themeSet || categorySet || policyPlanSet || isSearching), showNodeColorAndCenter, "highlight");
+    centerForce((props.selectedNode || themeSet || categorySet || policyPlanSet || isSearching), withNodeColorAndCenter, "highlight");
             
     if (props.resimulate) {
       simulation.alpha(0.1).restart();
