@@ -58,8 +58,20 @@ function Team() {
           href={"http://www.funcavid.org"}
           src={daniel}
         />
-        <Person name={t("gnpd")} affiliation={t("gnpdAff")} noLink src={gndp} />
-        <Person name={t("gct")} affiliation={t("gctAff")} noLink src={gct} />
+        <Person
+          name={t("gnpd")}
+          affiliation={t("gnpdAff")}
+          href={
+            "http://areasprotegidas.ambiente.gob.ec/en/areas-protegidas/galapagos-national-park"
+          }
+          src={gndp}
+        />
+        <Person
+          name={t("gct")}
+          affiliation={t("gctAff")}
+          href={"https://galapagosconservation.org.uk/"}
+          src={gct}
+        />
         <Person
           name="Dr. Johannes Klein"
           affiliation={t("johannesAff")}
