@@ -854,26 +854,47 @@ const RightLegend = ({
         />
       </Grid>
 
-      <Grid item xs>
-        <div style={{ display: "flex", alignItems: "center", width: "100%" }}>
+      <Grid
+        item
+        xs
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexBasis: "auto",
+          padding: 0,
+        }}
+      >
+        <Grid
+          container
+          direction={!mobile ? "column" : "row"}
+          justifyContent="center"
+          style={{
+            padding: 5,
+          }}
+        >
           <div
-            className="line"
-            style={{
-              background: `repeating-linear-gradient(to right,${theme.palette.primary.contrastText} 0,${theme.palette.primary.contrastText} 3px) center`,
-            }}
-          ></div>
-          {i18n.t("planLinkContributes")}
-        </div>
-        <div style={{ display: "flex", alignItems: "center", width: "100%" }}>
-          <div
-            className="line"
-            style={{
-              background: `repeating-linear-gradient(to right,${theme.palette.primary.contrastText} 0,${theme.palette.primary.contrastText} 3px,transparent 3px,transparent 7px) center`,
-            }}
-          ></div>
-          {i18n.t("planLinkSupportive")}
-        </div>
-        <br />
+            style={{ display: "flex", alignItems: "center", width: "100%" }}
+          >
+            <div
+              className="line"
+              style={{
+                background: `repeating-linear-gradient(to right,${theme.palette.primary.contrastText} 0,${theme.palette.primary.contrastText} 3px) center`,
+              }}
+            ></div>
+            {i18n.t("planLinkContributes")}
+          </div>
+
+          <div style={{ display: "flex", alignItems: "center", width: "100%" }}>
+            <div
+              className="line"
+              style={{
+                background: `repeating-linear-gradient(to right,${theme.palette.primary.contrastText} 0,${theme.palette.primary.contrastText} 3px,transparent 3px,transparent 7px) center`,
+              }}
+            ></div>
+            {i18n.t("planLinkSupportive")}
+          </div>
+        </Grid>
       </Grid>
 
       <Grid
