@@ -874,7 +874,7 @@ const RightLegend = ({
           }}
         >
           <div
-            style={{ display: "flex", alignItems: "center", width: "100%" }}
+            style={{ padding: 5, display: "flex", alignItems: "center", width: "100%" }}
           >
             <div
               className="line"
@@ -885,7 +885,7 @@ const RightLegend = ({
             {i18n.t("planLinkContributes")}
           </div>
 
-          <div style={{ display: "flex", alignItems: "center", width: "100%" }}>
+          <div style={{ padding: 5, display: "flex", alignItems: "center", width: "100%" }}>
             <div
               className="line"
               style={{
