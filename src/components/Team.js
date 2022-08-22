@@ -8,11 +8,12 @@ import gndp from "../assets/icons/team/GNDP.png";
 import gct from "../assets/icons/team/GCT.png";
 import sophia from "../assets/icons/team/Sophia.png";
 
-import alejandra from "../assets/icons/team/interns/Alejandra.jpg";
-import mateo from "../assets/icons/team/interns/Mateo.jpg";
-import pablo from "../assets/icons/team/interns/Pablo.jpg";
-import rebeca from "../assets/icons/team/interns/Rebeca.jpg";
-import zuley from "../assets/icons/team/interns/Zuley.jpg";
+import alejandra from "../assets/icons/team/interns/Alejandra.png";
+import mateo from "../assets/icons/team/interns/Mateo.png";
+import pablo from "../assets/icons/team/interns/Pablo.png";
+import rebeca from "../assets/icons/team/interns/Rebeca.png";
+import zuley from "../assets/icons/team/interns/Zuley.png";
+import olivia from "../assets/icons/team/interns/Olivia.png";
 
 
 const Person = ({ noLink, name, affiliation, href, src, xs, sm }) => (
@@ -21,7 +22,9 @@ const Person = ({ noLink, name, affiliation, href, src, xs, sm }) => (
       <section>
         <p>
           {name}
-          <br />({affiliation})
+          {affiliation ? <>
+            <br />({affiliation})
+          </> : null}
         </p>
       </section>
       <div>
@@ -96,18 +99,6 @@ function Team() {
           sm={2}
         />
       </Grid>
-      <p>
-        <Trans i18nKey="contactChannels">
-          Contact us on
-          <a href="mailto:info@co-galapagos.org">info@co-galapagos.org</a>.
-        </Trans>
-      </p>
-      <p>
-        <Trans i18nKey="contactText">
-          Contact us on
-          <a href="https://www.co-galapagos.org">info@co-galapagos.org</a>.
-        </Trans>
-      </p>
       <p>{t("thanksToTeam")}</p>
       <Grid
         container
@@ -117,11 +108,24 @@ function Team() {
         spacing={2}
       >
         <Person name="Alejandra Ayala" noLink src={alejandra} xs={6} sm={2} />
-        <Person name="Mateo Zaldumbide" noLink src={mateo} xs={6} sm={2} />
-        <Person name="Pablo Llerena" noLink src={pablo} xs={6} sm={2} />
-        <Person name="Rebeca Zúñiga" src={rebeca} noLink xs={6} sm={2} />
+        <Person name="Olivia Estes" noLink src={olivia} xs={6} sm={2} />
         <Person name="Zuley Leon" noLink src={zuley} xs={6} sm={2} />
+        <Person name="Pablo Llerena" noLink src={pablo} xs={6} sm={2} />
+        <Person name="Mateo Zaldumbide" noLink src={mateo} xs={6} sm={2} />
+        <Person name="Rebeca Zúñiga" src={rebeca} noLink xs={6} sm={2} />
       </Grid>
+      <p>
+        <Trans i18nKey="contactText">
+          Contact us on
+          <a href="https://www.co-galapagos.org">info@co-galapagos.org</a>.
+        </Trans>
+      </p>
+      <p>
+        <Trans i18nKey="contactChannels">
+          Contact us on
+          <a href="mailto:info@co-galapagos.org">info@co-galapagos.org</a>.
+        </Trans>
+      </p>
     </div>
   );
 }
