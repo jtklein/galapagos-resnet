@@ -116,8 +116,10 @@ function Team() {
       </Grid>
       <p>
         <Trans i18nKey="contactText">
-          Contact us on
-          <a href="https://www.co-galapagos.org">info@co-galapagos.org</a>.
+          The development of this tool is linked to the
+          <a href="https://www.co-galapagos.org">Co-Galapagos</a> initiative
+          which seeks to promote collaboration, cooperation & coordination to
+          achieve the 2030 SDG Agenda in Galápagos
         </Trans>
       </p>
       <p>
@@ -126,6 +128,7 @@ function Team() {
           <a href="mailto:info@co-galapagos.org">info@co-galapagos.org</a>.
         </Trans>
       </p>
+      <p>{t("contactAdditions")}</p>
     </div>
   );
 }
