@@ -40,7 +40,7 @@ function Explanation() {
         centered
       >
         <Tab label={<h3 id="Summary">{t("Summary")}</h3>} />
-        <Tab label={<h3 id="Data">{t("Data")}</h3>} />
+        <Tab label={<h3 id="Data">{t("using")}</h3>} />
         <Tab label={<h3 id="Team">{t("Team")}</h3>} />
       </TheTabs>
       <SwipeableViews
