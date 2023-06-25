@@ -810,22 +810,26 @@ const RightLegend = ({
           padding: 0,
         }}
       >
-        <Button
-          color="secondary"
-          variant="contained"
-          size="medium"
-          onClick={() => onCenterClicked()}
-        >
-          {"Center"}
-        </Button>
-        <Button
-          color="secondary"
-          variant="contained"
-          size="medium"
-          onClick={() => onStaticClicked()}
-        >
-          {isStatic ? "Dynamic" : "Static"}
-        </Button>
+        <Grid container direction="row">
+          <Button
+            color="secondary"
+            variant="contained"
+            size="medium"
+            onClick={() => onCenterClicked()}
+            style={{ flex: 1, margin: 5 }}
+          >
+            {"Centre"}
+          </Button>
+          <Button
+            color="secondary"
+            variant="contained"
+            size="medium"
+            onClick={() => onStaticClicked()}
+            style={{ flex: 1, margin: 5 }}
+          >
+            {isStatic ? "Dynamic" : "Static"}
+          </Button>
+        </Grid>
       </Grid>
 
       <Grid
@@ -874,7 +878,12 @@ const RightLegend = ({
           }}
         >
           <div
-            style={{ padding: 5, display: "flex", alignItems: "center", width: "100%" }}
+            style={{
+              padding: 5,
+              display: "flex",
+              alignItems: "center",
+              width: "100%",
+            }}
           >
             <div
               className="line"
@@ -885,7 +894,14 @@ const RightLegend = ({
             {i18n.t("planLinkContributes")}
           </div>
 
-          <div style={{ padding: 5, display: "flex", alignItems: "center", width: "100%" }}>
+          <div
+            style={{
+              padding: 5,
+              display: "flex",
+              alignItems: "center",
+              width: "100%",
+            }}
+          >
             <div
               className="line"
               style={{
