@@ -1,14 +1,14 @@
 let data = require('./RI.json');
-const projectsInfo = require("./additional/projects");
-const organizationsInfo = require("./additional/orgs_info");
-const speciesInfo = require("./additional/species_info");
+const projectsInfo = require("./additional/MAIN");
+const organizationsInfo = require("./additional/ORGS FULL");
+const speciesInfo = require("./additional/SPECIES FULL");
 const plansInfo = require("./additional/plans_info");
 const fs = require("fs");
 
 // Get sets of the values used as node IDs
 const nicknamesESSet = new Set(projectsInfo.map((d) => d.Nickname_ES));
 const orgCodeSet = new Set(organizationsInfo.map((d) => d.Org));
-const scientificNameSet = new Set(speciesInfo.map((d) => d.Scientific_name));
+const scientificNameSet = new Set(speciesInfo.map((d) => d["Scientific name"]));
 const aimSet = new Set(plansInfo.map((d) => d.Aim));
 
 // Map through the data to add the additional info to the node
@@ -18,8 +18,8 @@ data.nodes = data.nodes.map(node => {
     const additionalInfo = projectsInfo.find(d => d.Nickname_ES === node.id);
     // Only take what we actually need to display
     Object.assign(node, {
-      Permit: additionalInfo.Permit,
-      Lead_person: additionalInfo.Lead_person,
+      Permits: additionalInfo.Permits,
+      Leader: additionalInfo.Leader,
       Lead_org: additionalInfo.Lead_org,
       Title_ES: additionalInfo.Title_ES,
       Title_EN: additionalInfo.Title_EN,
@@ -45,9 +45,9 @@ data.nodes = data.nodes.map(node => {
   }
   if (scientificNameSet.has(node.id)) {
     node.type = "species";
-    const additionalInfo = speciesInfo.find(d => d.Scientific_name === node.id);
+    const additionalInfo = speciesInfo.find(d => d["Scientific name"] === node.id);
     Object.assign(node, {
-      Scientific_name: additionalInfo.Scientific_name,
+      Scientific_name: additionalInfo["Scientific name"],
       CommonName_ES: additionalInfo.CommonName_ES,
       CommonName_EN: additionalInfo.CommonName_EN,
       Link: additionalInfo.Link,

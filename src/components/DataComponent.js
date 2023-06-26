@@ -998,9 +998,9 @@ const NodeInfo = ({ node }) => {
           ) : title}
         </strong>
         <br />
-        {info.Permit && (
+        {info.Permits && (
           <>
-            {i18n.t("permitNumber")} {info.Permit}
+            {i18n.t("permitNumber")} {info.Permits}
             <br />
             <br />
           </>

@@ -1,9 +1,9 @@
 const XLSX = require("xlsx");
 const fs = require("fs");
 
-const inputFilename = "./network_data/additional/NETWORK_DATA.xlsx";
+const inputFilename = "./network_data/PROJECT_NETWORK.xlsx";
 
-const exportSheets = ['projects', 'orgs_info', 'species_info', 'plans_info'];
+const exportSheets = ['MAIN', 'ORGS FULL', 'SPECIES FULL'];
 
 const workBook = XLSX.readFile(inputFilename);
 exportSheets.forEach(sheet => {

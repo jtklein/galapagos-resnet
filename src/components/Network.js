@@ -186,10 +186,10 @@ export default function Network(el, props) {
     }
     return (
       // If the node is a person or organization
-      node.id === props.selectedNode.Lead_person ||
+      node.id === props.selectedNode.Leader ||
       node.id === props.selectedNode.Lead_org ||
       // If the node is a project
-      node?.Lead_person === props.selectedNode.id ||
+      node?.Leader === props.selectedNode.id ||
       node?.Lead_org === props.selectedNode.id
     );
   }
