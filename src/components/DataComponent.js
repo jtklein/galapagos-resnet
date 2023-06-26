@@ -132,11 +132,11 @@ const themes = {
     labelES: "Infraestructura, energía y tecnología",
     color: "#01579B",
   },
-  // 8: {
-  //   labelEN: "Food security",
-  //   labelES: "Seguridad alimentaria",
-  //   color: "#0288D1",
-  // },
+  8: {
+    labelEN: "Food and agriculture",
+    labelES: "Alimentación y agricultura",
+    color: "#0288D1",
+  },
   9: {
     labelEN: "Community",
     labelES: "Comunidad",
