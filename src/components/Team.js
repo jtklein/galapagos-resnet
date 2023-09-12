@@ -128,7 +128,15 @@ function Team() {
           <a href="mailto:info@co-galapagos.org">info@co-galapagos.org</a>.
         </Trans>
       </p>
-      <p>{t("contactAdditions")}</p>
+      <p>
+        <Trans i18nKey="contactAdditions">
+          Translated text
+          <a href="https://www.cognitoforms.com/CoGalapagos/RedDeProyectosDeGalapagos">
+            here
+          </a>
+          .
+        </Trans>
+      </p>
     </div>
   );
 }
