@@ -1137,6 +1137,7 @@ const SearchBar = ({ value, onChange }) => {
     <TextField
       fullWidth
       id="searchbar"
+      type="search"
       placeholder={i18n.t("searchBar")}
       variant="outlined"
       size="small"
