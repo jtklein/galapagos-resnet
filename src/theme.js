@@ -1,34 +1,40 @@
 import { createTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
-const fontsFallback = [
-  "Roboto",
-  '"Helvetica Neue"',
-  "Helvetica",
-  "Arial",
-  "sans-serif",
-].join(",");
+// Following the styling of https://co-galapagos.org/ the font for the headers is Mada
+// As first fallback:
+// According to https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/01/SDG_Guidelines_AUG_2019_Final.pdf:
+// ROBOTO font is usually used for body copy and additional information.
+const bodyFonts = ["Mada", "Roboto", '"Helvetica Neue"', "Helvetica", "Arial", "sans-serif"].join(",");
+
+// Following the styling of https://co-galapagos.org/ the font for the headers is Marmelad
+// As first fallback:
+// According to https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/01/SDG_Guidelines_AUG_2019_Final.pdf:
+// OSWALD font is usually used for headline and titles.
+const hFonts = ["Marmelad", "Oswald", "Roboto", '"Helvetica Neue"', "Helvetica", "Arial", "sans-serif"].join(
+  ","
+);
 
 const themeConfig = {
   typography: {
     fontSize: 16,
-    fontFamily: fontsFallback,
+    fontFamily: bodyFonts,
     h1: {
-      fontFamily: fontsFallback,
+      fontFamily: hFonts,
     },
     h2: {
-      fontFamily: fontsFallback,
+      fontFamily: hFonts,
     },
     h3: {
-      fontFamily: fontsFallback,
+      fontFamily: hFonts,
     },
     h4: {
-      fontFamily: fontsFallback,
+      fontFamily: hFonts,
     },
     h5: {
-      fontFamily: fontsFallback,
+      fontFamily: hFonts,
     },
     h6: {
-      fontFamily: fontsFallback,
+      fontFamily: hFonts,
     },
   },
   palette: {
