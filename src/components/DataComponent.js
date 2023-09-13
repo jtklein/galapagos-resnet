@@ -1714,10 +1714,7 @@ class DataComponent extends Component {
   };
 
   renderLeftLegend = (mobile) => {
-    const {
-      selectedThemes,
-      selectedCategories,
-    } = this.state;
+    const { selectedThemes, selectedCategories } = this.state;
     return (
       <LeftLegend
         mobile={mobile}
@@ -1729,8 +1726,8 @@ class DataComponent extends Component {
         }
         openTheme={this.openOnDesktop(3)}
       />
-    )
-  }
+    );
+  };
 
   renderRightLegend = (mobile) => {
     const { selectedPolicyPlans, isStatic } = this.state;
@@ -1748,8 +1745,7 @@ class DataComponent extends Component {
         onCenterClicked={this.onCenterClicked}
       />
     );
-  }
-
+  };
 
   renderNetworkContainer = () => {
     const {
@@ -1795,7 +1791,7 @@ class DataComponent extends Component {
         zoomTransform={zoomTransform}
       />
     );
-  }
+  };
 
   renderDesktop() {
     // const markers = this.filterMarkers();
@@ -1859,18 +1855,13 @@ class DataComponent extends Component {
   }
 
   renderMobile() {
-    const {
-      tutorialOpen,
-      tutorialIndex,
-    } = this.state;
+    const { tutorialOpen, tutorialIndex } = this.state;
     const height = window.innerHeight;
     const minHeight = 520;
 
     return (
       <div style={{ width: "100%" }}>
-        <div style={{ height, minHeight }}>
-          {this.renderNetworkContainer()}
-        </div>
+        <div style={{ height, minHeight }}>{this.renderNetworkContainer()}</div>
         {tutorialOpen ? <MobileTutorial index={tutorialIndex} /> : null}
         {this.renderLeftLegend(true)}
         {this.renderRightLegend(true)}
