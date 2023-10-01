@@ -10,11 +10,10 @@ import Alert from "@material-ui/lab/Alert";
 import IconDownload from "@material-ui/icons/CloudDownload";
 import Search from "@material-ui/icons/Search";
 import { withStyles, useTheme } from "@material-ui/core/styles";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { saveAs } from "file-saver";
 import { isDesktop } from "react-device-detect";
 import { useTranslation } from "react-i18next";
 import classNames from "classnames";
+import html2canvas from "html2canvas";
 
 import NetworkContainer from "./NetworkContainer";
 // import MapComponent from "./MapComponent";
@@ -1613,18 +1612,20 @@ class DataComponent extends Component {
     return new Blob([svgContent], { type: "image/svg+xml" });
   };
 
-  onClickSaveNetwork = () => {
-    const svgBlob = this.generateSVGBlob(this.refNetworkComponent.current);
-    const url = window.URL.createObjectURL(svgBlob);
-    var img = new Image();
-    img.src = url;
-    img.onload = () => {
-      const canvas = document.getElementById("network-canvas");
-      var context = canvas.getContext("2d");
-      context.drawImage(img, 0, 0);
-      window.URL.revokeObjectURL(svgBlob);
-      canvas.toBlob((blob) => saveAs(blob, "rp-galapagos.png"), "image/png", 1);
-    };
+  onClickSaveNetwork = async (fileType) => {
+    const element = this.refNetworkComponent.current;
+    const canvas = await html2canvas(element);
+    const data = canvas.toDataURL(`image/${fileType}`);
+    const link = document.createElement("a");
+    if (typeof link.download === "string") {
+      link.href = data;
+      link.download = `ods-galapagos.${fileType}`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else {
+      window.open(data);
+    }
   };
 
   onClick = () => {
