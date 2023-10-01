@@ -18,6 +18,7 @@ import classNames from "classnames";
 
 import NetworkContainer from "./NetworkContainer";
 // import MapComponent from "./MapComponent";
+import { CustomButtonGreen } from "./CustomButtons";
 
 import data from "../data/data";
 // import { locations } from "../data/RI_locations";
@@ -492,14 +493,6 @@ const PolicyPlansLegend = ({ selectedPolicyPlans, onPolicyPlanClicked, mobile, o
 
 const DownloadButton = (props) => {
   const { t } = useTranslation();
-  const matches = useMediaQuery("(max-width:1000px)");
-
-  const CustomButton = withStyles((theme) => ({
-    root: {
-      fontSize: "0.9em",
-      color: theme.palette.primary.contrastText,
-    },
-  }))(Button);
 
   return (
     <TutorialTooltip
@@ -511,38 +504,31 @@ const DownloadButton = (props) => {
     >
       <div
         style={{
-          padding: 5,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
         }}
       >
-        {matches && !props.mobile ? (
-          <CustomButton
+        {t("downloadImage")}
+        <div>
+          <CustomButtonGreen
             variant="text"
             size="small"
-            download="ods-galapagos.svg"
-            onClick={props.onClick}
+            onClick={() => props.onClick("jpg")}
           >
-            <IconDownload fontSize="large" />
-          </CustomButton>
-        ) : (
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: props.mobile ? "row" : "column",
-            }}
+            <IconDownload fontSize="medium" style={{ marginRight: 4 }} />
+            {"JPG"}
+          </CustomButtonGreen>
+          <CustomButtonGreen
+            variant="text"
+            size="small"
+            onClick={() => props.onClick("png")}
           >
-            <IconDownload fontSize="medium" />
-            <CustomButton
-              variant="text"
-              size="small"
-              download="ods-galapagos.svg"
-              onClick={props.onClick}
-            >
-              {t("download")}
-            </CustomButton>
-          </div>
-        )}
+            <IconDownload fontSize="medium" style={{ marginRight: 4 }} />
+            {"PNG"}
+          </CustomButtonGreen>
+        </div>
       </div>
     </TutorialTooltip>
   );
