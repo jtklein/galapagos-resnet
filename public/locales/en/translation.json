@@ -20,7 +20,7 @@
   "contactAdditions": "If you would like any data to be removed or altered on this tool, please don't hesitate to contact us. If you would like your project to be added, please fill in the questionnaire <1>here</1>.",
   "selectANode": "Select a node",
   "toSeeMoreInformation": "to see more information about it",
-  "download": "Download current network image",
+  "downloadImage": "Download current network image",
   "tutorial": "Tutorial",
   "tutorialProjectsTitle": "Projects",
   "tutorialProjectsDescription": "Projects are displayed as individual nodes in the network.",

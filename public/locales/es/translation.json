@@ -20,7 +20,7 @@
   "contactAdditions": "Si desea que se elimine o modifique algún dato de esta herramienta, no dude en ponerse en contacto con nosotros. Si desea que se añada su proyecto, rellene el cuestionario<1>aquí</1>.",
   "selectANode": "Seleccione un nodo",
   "toSeeMoreInformation": "para ver más información sobre él",
-  "download": "Descargar la imagen de red actual",
+  "downloadImage": "Descargar la imagen de red actual",
   "tutorial": "Tutorial",
   "tutorialProjectsTitle": "Proyectos",
   "tutorialProjectsDescription": "Los proyectos se muestran como nodos individuales en la red.",
