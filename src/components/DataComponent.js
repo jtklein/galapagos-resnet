@@ -1263,6 +1263,26 @@ class DataComponent extends Component {
   }
 
   componentDidMount() {
+    // Add an event listener that fires when the user presses the arrow right key
+    window.addEventListener("keydown", (event) => {
+      switch (event.key) {
+        case "ArrowLeft":
+          // Left pressed
+          this.onSlideChange(true);
+          break;
+        case "ArrowRight":
+          // Right pressed
+          this.onSlideChange();
+          break;
+        // Escape pressed
+        case "Escape":
+          this.onSlideChange(false, true);
+          break;
+        default:
+          break;
+      }
+      return;
+    });
   }
 
   isLinkOfNodeByID(link, nodeID) {
@@ -1524,7 +1544,9 @@ class DataComponent extends Component {
     this.setState({
       selectedPolicyPlans:
         indexOfPolicyPlan !== -1
-          ? selectedPolicyPlans.filter((d, index) => index !== indexOfPolicyPlan)
+          ? selectedPolicyPlans.filter(
+              (d, index) => index !== indexOfPolicyPlan
+            )
           : selectedPolicyPlans.concat(policyPlanColor),
       selectedPolicyPlansConnectedLinks:
         indexOfPolicyPlan !== -1
@@ -1543,7 +1565,14 @@ class DataComponent extends Component {
 
   onStaticClicked = () => this.setState({ isStatic: !this.state.isStatic });
 
-  onCenterClicked = () => this.setState({ zoomTransform: Object.assign(this.state.zoomTransform, { k: 1, x: 0, y: 0 }) });
+  onCenterClicked = () =>
+    this.setState({
+      zoomTransform: Object.assign(this.state.zoomTransform, {
+        k: 1,
+        x: 0,
+        y: 0,
+      }),
+    });
 
   generateSVGBlob = (parent) => {
     let svgContent = parent.innerHTML;
