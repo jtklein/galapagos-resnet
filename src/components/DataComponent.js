@@ -1263,8 +1263,6 @@ class DataComponent extends Component {
   }
 
   componentDidMount() {
-    // Add an event listener that fires when the window get's clicked
-    window.addEventListener("click", this.onClick);
   }
 
   isLinkOfNodeByID(link, nodeID) {
