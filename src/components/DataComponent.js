@@ -327,6 +327,7 @@ const CategoriesLegend = ({
   onCategoryClicked,
   mobile,
   open,
+  onSlideChange,
 }) => {
   const { i18n } = useTranslation();
 
@@ -337,6 +338,7 @@ const CategoriesLegend = ({
       placement="right"
       open={open}
       index={3}
+      onSlideChange={onSlideChange}
     >
       <Grid
         container
@@ -387,6 +389,7 @@ const ThemeLegend = ({
   onThemeClicked,
   mobile,
   open,
+  onSlideChange,
 }) => {
   const { i18n } = useTranslation();
 
@@ -397,6 +400,7 @@ const ThemeLegend = ({
       placement="right"
       open={open}
       index={5}
+      onSlideChange={onSlideChange}
     >
       <Grid
         container
@@ -442,50 +446,59 @@ const ThemeLegend = ({
   );
 };
 
-const PolicyPlansLegend = ({ selectedPolicyPlans, onPolicyPlanClicked, mobile, open }) => {
+const PolicyPlansLegend = ({ selectedPolicyPlans, onPolicyPlanClicked, mobile, open, onSlideChange }) => {
   const { i18n } = useTranslation();
 
   return (
-    <Grid
-      container
-      direction={!mobile ? "column" : "row"}
-      justifyContent="center"
-      style={{
-        padding: 5,
-      }}
+    <TutorialTooltip
+      title="tutorialConservation2Title"
+      description="tutorialConservation2Description"
+      placement="left"
+      open={open}
+      index={7}
+      onSlideChange={onSlideChange}
     >
-      {Object.entries(policyPlans).map(([key, policyPlan]) => {
-        return (
-          <Grid
-            item
-            key={policyPlan.color}
-            className={classNames("link-item", "clickable")}
-            style={{
-              opacity:
-                !selectedPolicyPlans ||
-                selectedPolicyPlans.length === 0 ||
-                selectedPolicyPlans.indexOf(policyPlan.color) !== -1
-                  ? 1
-                  : legendOpacity,
-              display: "flex",
-            }}
-            onClick={() => onPolicyPlanClicked(policyPlan.color)}
-          >
-            <span
-              width={50}
+      <Grid
+        container
+        direction={!mobile ? "column" : "row"}
+        justifyContent="center"
+        style={{
+          padding: 5,
+        }}
+      >
+        {Object.entries(policyPlans).map(([key, policyPlan]) => {
+          return (
+            <Grid
+              item
+              key={policyPlan.color}
+              className={classNames("link-item", "clickable")}
               style={{
-                border: `1px solid ${policyPlan.color}`,
-                backgroundColor: policyPlan.color,
-                marginRight: 4,
+                opacity:
+                  !selectedPolicyPlans ||
+                  selectedPolicyPlans.length === 0 ||
+                  selectedPolicyPlans.indexOf(policyPlan.color) !== -1
+                    ? 1
+                    : legendOpacity,
+                display: "flex",
               }}
+              onClick={() => onPolicyPlanClicked(policyPlan.color)}
             >
-              &nbsp;&nbsp;&nbsp;
-            </span>
-            {i18n.language !== "es" ? policyPlan.labelEN : policyPlan.labelES}
-          </Grid>
-        );
-      })}
-    </Grid>
+              <span
+                width={50}
+                style={{
+                  border: `1px solid ${policyPlan.color}`,
+                  backgroundColor: policyPlan.color,
+                  marginRight: 4,
+                }}
+              >
+                &nbsp;&nbsp;&nbsp;
+              </span>
+              {i18n.language !== "es" ? policyPlan.labelEN : policyPlan.labelES}
+            </Grid>
+          );
+        })}
+      </Grid>
+    </TutorialTooltip>
   );
 };
 
@@ -498,7 +511,8 @@ const DownloadButton = (props) => {
       description="tutorialDownloadDescription"
       placement="right"
       open={props.open}
-      index={5}
+      index={10}
+      onSlideChange={props.onSlideChange}
     >
       <div
         style={{
@@ -532,7 +546,16 @@ const DownloadButton = (props) => {
   );
 };
 
-const LeftLegend = ({ mobile, selectedThemes, selectedCategories, onThemeClicked, onCategoryClicked, openTheme }) => {
+const LeftLegend = ({
+  mobile,
+  selectedThemes,
+  selectedCategories,
+  onThemeClicked,
+  onCategoryClicked,
+  openCategories,
+  openTheme,
+  onSlideChange,
+}) => {
   const theme = useTheme();
   return (
     <Grid
@@ -556,7 +579,8 @@ const LeftLegend = ({ mobile, selectedThemes, selectedCategories, onThemeClicked
           onCategoryClicked={(categoryColor) =>
             onCategoryClicked(categoryColor)
           }
-          open={openTheme}
+          open={openCategories}
+          onSlideChange={onSlideChange}
         />
       </Grid>
       <Grid
@@ -571,6 +595,8 @@ const LeftLegend = ({ mobile, selectedThemes, selectedCategories, onThemeClicked
           mobile={mobile}
           selectedThemes={selectedThemes}
           onThemeClicked={(themeColor) => onThemeClicked(themeColor)}
+          open={openTheme}
+          onSlideChange={onSlideChange}
         />
       </Grid>
     </Grid>
@@ -762,9 +788,12 @@ const RightLegend = ({
   onPolicyPlanClicked,
   onClickSaveNetwork,
   openDownload,
+  openPolicy,
+  openFocus,
   isStatic,
   onStaticClicked,
   onCenterClicked,
+  onSlideChange,
 }) => {
   const theme = useTheme();
   const { i18n } = useTranslation();
@@ -783,38 +812,47 @@ const RightLegend = ({
         border: `1px solid ${theme.palette.primary.contrastText}`,
       }}
     >
-      <Grid
-        item
-        xs
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          flexBasis: "auto",
-          padding: 0,
-        }}
+      <TutorialTooltip
+        title="tutorialFocusTitle"
+        description="tutorialFocusDescription"
+        placement="left"
+        open={openFocus}
+        index={9}
+        onSlideChange={onSlideChange}
       >
-        <Grid container direction="row">
-          <Button
-            color="secondary"
-            variant="contained"
-            size="medium"
-            onClick={() => onCenterClicked()}
-            style={{ flex: 1, margin: 5 }}
-          >
-            {"Centre"}
-          </Button>
-          <Button
-            color="secondary"
-            variant="contained"
-            size="medium"
-            onClick={() => onStaticClicked()}
-            style={{ flex: 1, margin: 5 }}
-          >
-            {isStatic ? "Dynamic" : "Static"}
-          </Button>
+        <Grid
+          item
+          xs
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexBasis: "auto",
+            padding: 0,
+          }}
+        >
+          <Grid container direction="row">
+            <Button
+              color="secondary"
+              variant="contained"
+              size="medium"
+              onClick={() => onCenterClicked()}
+              style={{ flex: 1, margin: 5 }}
+            >
+              {"Centre"}
+            </Button>
+            <Button
+              color="secondary"
+              variant="contained"
+              size="medium"
+              onClick={() => onStaticClicked()}
+              style={{ flex: 1, margin: 5 }}
+            >
+              {isStatic ? "Dynamic" : "Static"}
+            </Button>
+          </Grid>
         </Grid>
-      </Grid>
+      </TutorialTooltip>
 
       <Grid
         item
@@ -839,6 +877,8 @@ const RightLegend = ({
           mobile={mobile}
           selectedPolicyPlans={selectedPolicyPlans}
           onPolicyPlanClicked={(themeColor) => onPolicyPlanClicked(themeColor)}
+          open={openPolicy}
+          onSlideChange={onSlideChange}
         />
       </Grid>
 
@@ -920,6 +960,7 @@ const RightLegend = ({
           mobile={mobile}
           onClick={onClickSaveNetwork}
           open={openDownload}
+          onSlideChange={onSlideChange}
         />
       </Grid>
 
@@ -963,7 +1004,7 @@ const RightLegend = ({
   );
 };
 
-const NodeInfo = ({ node }) => {
+const NodeInfo = ({ node, open, onSlideChange }) => {
   const { i18n } = useTranslation();
   const theme = useTheme();
   const ProjectNode = ({ info }) => { 
@@ -1088,53 +1129,73 @@ const NodeInfo = ({ node }) => {
   };
 
   return (
-    <div
-      id="infobox"
-      style={{
-        marginTop: 40,
-        padding: 5,
-        backgroundColor: theme.palette.primary.main,
-        color: theme.palette.primary.contrastText,
-        fontSize: theme.typography.pxToRem(12),
-        border: `1px solid ${theme.palette.primary.contrastText}`,
-      }}
+    <TutorialTooltip
+      title="tutorialInformationTitle"
+      description="tutorialInformationDescription"
+      open={open}
+      placement="top"
+      index={2}
+      onSlideChange={onSlideChange}
     >
-      {!node ? (
-        <div>
-          <strong>{i18n.t("selectANode")}</strong>
-          <br />
-          {i18n.t("toSeeMoreInformation")}
-        </div>
-      ) : null}
-      {node?.type === "project" ? <ProjectNode info={node} /> : null}
-      {node?.type === "organization" ? <OrganizationNode info={node} /> : null}
-      {node?.type === "species" ? <SpeciesNode info={node} /> : null}
-      {node?.type === "plan" ? <PlanNode info={node} /> : null}
-    </div>
+      <div
+        id="infobox"
+        style={{
+          marginTop: 40,
+          padding: 5,
+          backgroundColor: theme.palette.primary.main,
+          color: theme.palette.primary.contrastText,
+          fontSize: theme.typography.pxToRem(12),
+          border: `1px solid ${theme.palette.primary.contrastText}`,
+        }}
+      >
+        {!node ? (
+          <div>
+            <strong>{i18n.t("selectANode")}</strong>
+            <br />
+            {i18n.t("toSeeMoreInformation")}
+          </div>
+        ) : null}
+        {node?.type === "project" ? <ProjectNode info={node} /> : null}
+        {node?.type === "organization" ? (
+          <OrganizationNode info={node} />
+        ) : null}
+        {node?.type === "species" ? <SpeciesNode info={node} /> : null}
+        {node?.type === "plan" ? <PlanNode info={node} /> : null}
+      </div>
+    </TutorialTooltip>
   );
 };
 
-const SearchBar = ({ value, onChange }) => {
+const SearchBar = ({ value, onChange, open, onSlideChange }) => {
   const { i18n } = useTranslation();
 
   return (
-    <TextField
-      fullWidth
-      id="searchbar"
-      type="search"
-      placeholder={i18n.t("searchBar")}
-      variant="outlined"
-      size="small"
-      InputProps={{
-        startAdornment: (
-          <InputAdornment position="start">
-            <Search />
-          </InputAdornment>
-        ),
-      }}
-      value={value}
-      onChange={onChange}
-    />
+    <TutorialTooltip
+      title="tutorialSearchTitle"
+      description="tutorialSearchDescription"
+      open={open}
+      placement="top"
+      index={8}
+      onSlideChange={onSlideChange}
+    >
+      <TextField
+        fullWidth
+        id="searchbar"
+        type="search"
+        placeholder={i18n.t("searchBar")}
+        variant="outlined"
+        size="small"
+        InputProps={{
+          startAdornment: (
+            <InputAdornment position="start">
+              <Search />
+            </InputAdornment>
+          ),
+        }}
+        value={value}
+        onChange={onChange}
+      />
+    </TutorialTooltip>
   );
 };
 
@@ -1173,7 +1234,7 @@ const TutorialButton = ({ onClick }) => {
   );
 };
 
-const MobileTutorial = ({ index }) => {
+const MobileTutorial = ({ index, onSlideChange }) => {
   return (
     <div>
       <TutorialTooltip
@@ -1181,6 +1242,7 @@ const MobileTutorial = ({ index }) => {
         description="tutorialProjectsDescription"
         open={index === 0}
         index={index}
+        onSlideChange={onSlideChange}
       >
         <div />
       </TutorialTooltip>
@@ -1189,6 +1251,7 @@ const MobileTutorial = ({ index }) => {
         description="tutorialConnectionsDescription"
         open={index === 1}
         index={index}
+        onSlideChange={onSlideChange}
       >
         <div />
       </TutorialTooltip>
@@ -1197,6 +1260,7 @@ const MobileTutorial = ({ index }) => {
         description="tutorialInformationDescription"
         open={index === 2}
         index={index}
+        onSlideChange={onSlideChange}
       >
         <div />
       </TutorialTooltip>
@@ -1206,6 +1270,7 @@ const MobileTutorial = ({ index }) => {
         open={index === 3}
         placement="top"
         index={index}
+        onSlideChange={onSlideChange}
       >
         <div />
       </TutorialTooltip>
@@ -1213,17 +1278,74 @@ const MobileTutorial = ({ index }) => {
         title="tutorialThemesTitle"
         description="tutorialThemesDescription"
         open={index === 4}
+        index={index}
+        onSlideChange={onSlideChange}
+      >
+        <div />
+      </TutorialTooltip>
+      <TutorialTooltip
+        title="tutorialThemes2Title"
+        description="tutorialThemes2Description"
+        open={index === 5}
+        index={index}
+        onSlideChange={onSlideChange}
+      >
+        <div />
+      </TutorialTooltip>
+      <TutorialTooltip
+        title="tutorialConservationTitle"
+        description="tutorialConservationDescription"
+        open={index === 6}
+        index={index}
+        onSlideChange={onSlideChange}
+      >
+        <div />
+      </TutorialTooltip>
+      <TutorialTooltip
+        title="tutorialConservation2Title"
+        description="tutorialConservation2Description"
+        open={index === 7}
+        index={index}
+        onSlideChange={onSlideChange}
+      >
+        <div />
+      </TutorialTooltip>
+      <TutorialTooltip
+        title="tutorialSearchTitle"
+        description="tutorialSearchDescription"
+        open={index === 8}
+        index={index}
+        onSlideChange={onSlideChange}
+      >
+        <div />
+      </TutorialTooltip>
+      <TutorialTooltip
+        title="tutorialFocusTitle"
+        description="tutorialFocusDescription"
+        open={index === 9}
         placement="top"
         index={index}
+        onSlideChange={onSlideChange}
       >
         <div />
       </TutorialTooltip>
       <TutorialTooltip
         title="tutorialDownloadTitle"
         description="tutorialDownloadDescription"
-        open={index === 5}
+        open={index === 10}
         placement="top"
         index={index}
+        onSlideChange={onSlideChange}
+      >
+        <div />
+      </TutorialTooltip>
+      <TutorialTooltip
+        title="tutorialSummaryTitle"
+        description="tutorialSummaryDescription"
+        open={index === 11}
+        placement="top"
+        index={index}
+        onSlideChange={onSlideChange}
       >
         <div />
       </TutorialTooltip>
@@ -1756,7 +1878,9 @@ class DataComponent extends Component {
         onCategoryClicked={(categoryColor) =>
           this.onCategoryClicked(categoryColor)
         }
-        openTheme={this.openOnDesktop(3)}
+        openCategories={this.openOnDesktop(3)}
+        openTheme={this.openOnDesktop(5)}
+        onSlideChange={this.onSlideChange}
       />
     );
   };
@@ -1770,11 +1894,14 @@ class DataComponent extends Component {
         onPolicyPlanClicked={(policyPlanColor) =>
           this.onPolicyPlanClicked(policyPlanColor)
         }
-        openDownload={this.openOnDesktop(5)}
+        openPolicy={this.openOnDesktop(7)}
+        openFocus={this.openOnDesktop(9)}
+        openDownload={this.openOnDesktop(10)}
         onClickSaveNetwork={this.onClickSaveNetwork}
         isStatic={isStatic}
         onStaticClicked={this.onStaticClicked}
         onCenterClicked={this.onCenterClicked}
+        onSlideChange={this.onSlideChange}
       />
     );
   };
@@ -1841,6 +1968,7 @@ class DataComponent extends Component {
             open={this.openOnDesktop(0)}
             placement="top"
             index={0}
+            onSlideChange={this.onSlideChange}
           >
             <div></div>
           </TutorialTooltip>
@@ -1848,8 +1976,9 @@ class DataComponent extends Component {
             title="tutorialConnectionsTitle"
             description="tutorialConnectionsDescription"
             open={this.openOnDesktop(1)}
-            placement={"top"}
+            placement="top"
             index={1}
+            onSlideChange={this.onSlideChange}
           >
             <div></div>
           </TutorialTooltip>
@@ -1859,6 +1988,7 @@ class DataComponent extends Component {
             open={this.openOnDesktop(4)}
             placement={"top"}
             index={4}
+            onSlideChange={this.onSlideChange}
           >
             <div></div>
           </TutorialTooltip>
@@ -1868,6 +1998,7 @@ class DataComponent extends Component {
             open={this.openOnDesktop(6)}
             placement="top"
             index={6}
+            onSlideChange={this.onSlideChange}
           >
             <div></div>
           </TutorialTooltip>
@@ -1894,7 +2025,9 @@ class DataComponent extends Component {
     return (
       <div style={{ width: "100%" }}>
         <div style={{ height, minHeight }}>{this.renderNetworkContainer()}</div>
-        {tutorialOpen ? <MobileTutorial index={tutorialIndex} /> : null}
+        {tutorialOpen ? (
+          <MobileTutorial index={tutorialIndex} onSlideChange={this.onSlideChange} />
+        ) : null}
         {this.renderLeftLegend(true)}
         {this.renderRightLegend(true)}
       </div>
@@ -1909,6 +2042,8 @@ class DataComponent extends Component {
           <SearchBar
             value={searchText}
             onChange={(e) => this.setState({ searchText: e.target.value })}
+            open={this.openOnDesktop(8)}
+            onSlideChange={this.onSlideChange}
           />
         </div>
         {onMobile ? this.renderMobile() : this.renderDesktop()}
@@ -1919,6 +2054,7 @@ class DataComponent extends Component {
             this.setState({
               tutorialOpen: !tutorialOpen,
             });
+            this.onSlideChange(false);
           }}
         />
       </div>
