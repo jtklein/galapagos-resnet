@@ -6,7 +6,6 @@ import SwipeableViews from "react-swipeable-views";
 import { useTranslation, Trans } from "react-i18next";
 
 import Team from "./components/Team";
-import Data from "./components/Data";
 
 import "./Explanation.css";
 
@@ -83,7 +82,18 @@ function Explanation() {
         </div>
         {/* Second tab */}
         <div className="tab-panel" value={value} index={1}>
-          <Data />
+          <p>
+            <strong>{t("usageHeading1")}</strong>
+          </p>
+          <p>{t("usageParagraph1")}</p>
+          <p>
+            <strong>{t("usageHeading2")}</strong>
+          </p>
+          <p>{t("usageParagraph2")}</p>
+          <p>
+            <strong>{t("usageHeading3")}</strong>
+          </p>
+          <p>{t("usageParagraph3")}</p>
         </div>
         {/* Third tab */}
         <div className="tab-panel" value={value} index={2}>
