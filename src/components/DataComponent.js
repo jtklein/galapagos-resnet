@@ -332,8 +332,8 @@ const CategoriesLegend = ({
 
   return (
     <TutorialTooltip
-      title="tutorialFilterTitle"
-      description="tutorialFilterDescription"
+      title="tutorialCategoriesTitle"
+      description="tutorialCategoriesDescription"
       placement="right"
       open={open}
       index={3}
@@ -392,11 +392,11 @@ const ThemeLegend = ({
 
   return (
     <TutorialTooltip
-      title="tutorialFilterTitle"
-      description="tutorialFilterDescription"
+      title="tutorialThemes2Title"
+      description="tutorialThemes2Description"
       placement="right"
       open={open}
-      index={3}
+      index={5}
     >
       <Grid
         container
@@ -1231,24 +1231,24 @@ const MobileTutorial = ({ index }) => {
         <div />
       </TutorialTooltip>
       <TutorialTooltip
-        title="tutorialInformationTitle"
-        description="tutorialInformationDescription"
+        title="tutorialConnectionsTitle"
+        description="tutorialConnectionsDescription"
         open={index === 1}
         index={index}
       >
         <div />
       </TutorialTooltip>
       <TutorialTooltip
-        title="tutorialTopicsTitle"
-        description="tutorialTopicsDescription"
+        title="tutorialInformationTitle"
+        description="tutorialInformationDescription"
         open={index === 2}
         index={index}
       >
         <div />
       </TutorialTooltip>
       <TutorialTooltip
-        title="tutorialFilterTitle"
-        description="tutorialFilterDescription"
+        title="tutorialCategoriesTitle"
+        description="tutorialCategoriesDescription"
         open={index === 3}
         placement="top"
         index={index}
@@ -1256,8 +1256,8 @@ const MobileTutorial = ({ index }) => {
         <div />
       </TutorialTooltip>
       <TutorialTooltip
-        title="tutorialNodesTitle"
-        description="tutorialNodesDescription"
+        title="tutorialThemesTitle"
+        description="tutorialThemesDescription"
         open={index === 4}
         placement="top"
         index={index}
@@ -1800,8 +1800,8 @@ class DataComponent extends Component {
             <div></div>
           </TutorialTooltip>
           <TutorialTooltip
-            title="tutorialInformationTitle"
-            description="tutorialInformationDescription"
+            title="tutorialConnectionsTitle"
+            description="tutorialConnectionsDescription"
             open={this.openOnDesktop(1)}
             placement={"top"}
             index={1}
@@ -1809,20 +1809,20 @@ class DataComponent extends Component {
             <div></div>
           </TutorialTooltip>
           <TutorialTooltip
-            title="tutorialTopicsTitle"
-            description="tutorialTopicsDescription"
-            open={this.openOnDesktop(2)}
+            title="tutorialThemesTitle"
+            description="tutorialThemesDescription"
+            open={this.openOnDesktop(4)}
             placement={"top"}
-            index={2}
+            index={4}
           >
             <div></div>
           </TutorialTooltip>
           <TutorialTooltip
-            title="tutorialNodesTitle"
-            description="tutorialNodesDescription"
-            open={this.openOnDesktop(4)}
+            title="tutorialConservationTitle"
+            description="tutorialConservationDescription"
+            open={this.openOnDesktop(6)}
             placement="top"
-            index={4}
+            index={6}
           >
             <div></div>
           </TutorialTooltip>
