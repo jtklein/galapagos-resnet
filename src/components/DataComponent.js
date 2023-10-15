@@ -4,8 +4,6 @@ import TextField from "@material-ui/core/TextField";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
-import Tooltip from "@material-ui/core/Tooltip";
-import Typography from "@material-ui/core/Typography";
 import Alert from "@material-ui/lab/Alert";
 import IconDownload from "@material-ui/icons/CloudDownload";
 import Search from "@material-ui/icons/Search";
@@ -18,6 +16,7 @@ import html2canvas from "html2canvas";
 import NetworkContainer from "./NetworkContainer";
 // import MapComponent from "./MapComponent";
 import { CustomButtonGreen } from "./CustomButtons";
+import TutorialTooltip from "./TutorialTooltip";
 
 import data from "../data/data";
 // import { locations } from "../data/RI_locations";
