@@ -2047,7 +2047,22 @@ class DataComponent extends Component {
           />
         </div>
         {onMobile ? this.renderMobile() : this.renderDesktop()}
-        <NodeInfo node={selectedNode} />
+        <NodeInfo
+          node={selectedNode}
+          open={this.openOnDesktop(2)}
+          onSlideChange={this.onSlideChange}
+        />
+        <TutorialTooltip
+          title="tutorialSummaryTitle"
+          description="tutorialSummaryDescription"
+          open={this.openOnDesktop(11)}
+          placement="top"
+          index={11}
+          onSlideChange={this.onSlideChange}
+        >
+          <div></div>
+        </TutorialTooltip>
+
         <TutorialButton
           tutorialOpen={tutorialOpen}
           onClick={() => {
