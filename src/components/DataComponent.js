@@ -1173,52 +1173,6 @@ const TutorialButton = ({ onClick }) => {
   );
 };
 
-const HtmlTooltip = withStyles((theme) => ({
-  tooltip: {
-    backgroundColor: theme.palette.secondary.main,
-    color: "rgba(255, 255, 255, 0.87)",
-    maxWidth: 250,
-    fontSize: theme.typography.pxToRem(12),
-    border: "1px solid #000000",
-  },
-}))(Tooltip);
-
-const TutorialTooltip = ({
-  children,
-  title,
-  description,
-  placement,
-  open,
-  index,
-}) => {
-  const { i18n } = useTranslation();
-
-  const titleElement = (
-    <React.Fragment>
-      <Typography color="inherit" align="center">
-        {i18n.t(title)}
-      </Typography>
-      <div>{i18n.t(description)}</div>
-      <br />
-      <div>{index + 1 + "/6"}</div>
-    </React.Fragment>
-  );
-
-  return (
-    <HtmlTooltip
-      title={titleElement}
-      placement={placement}
-      open={open}
-      arrow={!onMobile}
-      disableFocusListener
-      disableHoverListener
-      disableTouchListener
-    >
-      {children}
-    </HtmlTooltip>
-  );
-};
-
 const MobileTutorial = ({ index }) => {
   return (
     <div>
