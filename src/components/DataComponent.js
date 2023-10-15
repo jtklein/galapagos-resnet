@@ -1253,8 +1253,6 @@ class DataComponent extends Component {
       selectedPolicyPlansConnectedNodes: [],
       searchText: "",
       tutorialOpen: false,
-      // This is a hack because on pressing the tutorial button also fires
-      // the overall window click listener
       tutorialIndex: -1,
       isStatic: false,
       zoom,
@@ -1608,57 +1606,123 @@ class DataComponent extends Component {
     }
   };
 
-  onClick = () => {
-    const { tutorialOpen, tutorialIndex } = this.state;
+  onTutorialClick = (index, open) => {
+    this.setState({
+      tutorialIndex: index,
+    });
+    if (open === undefined) {
+      return;
+    }
+    this.setState({
+      tutorialOpen: open
+    });
+  };
+
+  onSlideChange = (backwards, closeTutorial) => {
+    const { tutorialOpen, tutorialIndex, shownData } = this.state;
     if (!tutorialOpen) {
       return;
     }
-    // If there are no more tutorial slides to show
-    if (tutorialIndex === 5) {
+
+    // Set the new state depending on the new index
+    const baseState = {
+      selectedNode: null,
+      selectedThemes: [],
+      selectedCategories: [],
+      selectedPolicyPlans: [],
+      searchText: ""
+    };
+    // Reset the state on every slide change, backwards or forwards
+    // then further down we can only set relevant state
+    this.setState(baseState);
+
+    if (closeTutorial) {
+      // Reset the tutorial index and close the tutorial
+      this.onTutorialClick(0, false);
+      return;
+    }
+
+    const newIndex = backwards ? tutorialIndex - 1 : tutorialIndex + 1;
+    this.onTutorialClick(newIndex, tutorialIndex !== 12);
+
+    // TODO: do i still need this
+    // if (newIndex === -1) {
+    //   this.setState({
+    //     selectedCategories: [nodeCategories[1].color],
+    //   });
+    // }
+    // TODO: do i still need this
+    if (newIndex === 0) {
       this.setState({
-        tutorialOpen: false,
-        tutorialIndex: -1,
-        selectedNode: null,
-        selectedThemes: [],
+        selectedCategories: [nodeCategories[1].color],
+      });
+    }
+    if (newIndex >= 1) {
+      this.setState({
         selectedCategories: [],
+      });
+    }
+
+    if (newIndex >= 3) {
+      this.setState({
+        selectedNode: null,
+        selectedCategories: [nodeCategories[5].color],
+      });
+    }
+
+    if (newIndex >= 4) {
+      this.setState({
+        selectedCategories: [],
+        selectedThemes: [themes[5].color],
+      });
+    }
+
+    if (newIndex >= 6) {
+      this.setState({
+        selectedThemes: [],
+      });
+    }
+
+    if (newIndex >= 7) {
+      this.setState({
+        selectedNode: null,
+        selectedPolicyPlans: [policyPlans[1].color]
+      });
+    }
+
+    if (newIndex >= 8) {
+      this.setState({
+        selectedPolicyPlans: [],
+        // Set to search example in English or Spanish
+        searchText: "finch"
+      });
+    }
+
+    if (newIndex >= 9) {
+      this.setState({
+        searchText: ""
+      });
+    }
+
+    // If there are no more tutorial slides to show
+    if (newIndex === 12) {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
       });
       return;
     }
 
-    if (tutorialIndex === -1) {
-      this.setState({
-        selectedCategories: [nodeCategories[1].color],
-      });
-    }
-    if (tutorialIndex === 0) {
-      this.setState({
-        selectedCategories: [nodeCategories[1].color, nodeCategories[5].color],
-      });
-    }
-    if (tutorialIndex === 1) {
-      this.setState({
-        selectedCategories: [nodeCategories[1].color],
-        selectedThemes: [themes[8].color],
-      });
-    }
-    if (tutorialIndex === 2) {
-      this.setState({
-        selectedCategories: [],
-        selectedThemes: [],
-      });
-    }
-    this.setState({
-      tutorialIndex: tutorialIndex + 1,
-      // selectedNode: tutorialIndex >= 1 ? { id: "5.2" } : null,
-    });
     if (
-      (tutorialIndex === -1 ||
-        tutorialIndex === 0 ||
-        tutorialIndex === 1 ||
-        tutorialIndex === 3) &&
+      (newIndex === 0 || newIndex === 1 || newIndex === 3) &&
       !onMobile
     ) {
-      window.scrollTo(0, 0);
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
     } else {
       const networkElement = document.getElementById("network");
       networkElement.scrollIntoView({
