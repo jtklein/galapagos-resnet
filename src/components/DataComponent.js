@@ -1741,7 +1741,7 @@ class DataComponent extends Component {
   };
 
   onSlideChange = (backwards, closeTutorial) => {
-    const { tutorialOpen, tutorialIndex, shownData } = this.state;
+    const { tutorialOpen, tutorialIndex } = this.state;
     if (!tutorialOpen) {
       return;
     }
