@@ -1375,7 +1375,7 @@ class DataComponent extends Component {
       selectedPolicyPlansConnectedNodes: [],
       searchText: "",
       tutorialOpen: false,
-      tutorialIndex: -1,
+      tutorialIndex: 0,
       isStatic: false,
       zoom,
       zoomTransform,
@@ -2064,12 +2064,10 @@ class DataComponent extends Component {
         </TutorialTooltip>
 
         <TutorialButton
-          tutorialOpen={tutorialOpen}
           onClick={() => {
             this.setState({
               tutorialOpen: !tutorialOpen,
             });
-            this.onSlideChange(false);
           }}
         />
       </div>
