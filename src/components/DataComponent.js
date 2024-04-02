@@ -14,7 +14,6 @@ import classNames from "classnames";
 import html2canvas from "html2canvas";
 
 import NetworkContainer from "./NetworkContainer";
-// import MapComponent from "./MapComponent";
 import { CustomButtonGreen } from "./CustomButtons";
 import TutorialTooltip from "./TutorialTooltip";
 
@@ -2024,12 +2023,6 @@ class DataComponent extends Component {
         <Grid item className="grid-item" xs={2} style={{ padding: 0 }}>
           {this.renderRightLegend()}
         </Grid>
-        {/* <Grid item className="grid-item" xs={5}>
-            <MapComponent
-              markers={markers}
-              onMarkerClicked={(m, cb) => this.onMarkerClicked(m, cb)}
-            />
-          </Grid> */}
       </Grid>
     );
   }
