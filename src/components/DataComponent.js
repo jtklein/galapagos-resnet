@@ -1128,6 +1128,23 @@ const NodeInfo = ({ node, open, onSlideChange }) => {
     );
   };
 
+  const SDGNode = ({ info }) => {
+    return (
+      <div>
+        <br />
+        <strong>{info.id}</strong>
+        <br />
+        {info.Title_EN && (
+          <>
+            {i18n.language !== "es" ? info.Title_EN : info.Title_ES}
+            <br />
+            <br />
+          </>
+        )}
+      </div>
+    );
+  };
+
   return (
     <TutorialTooltip
       title="tutorialInformationTitle"
@@ -1161,6 +1178,7 @@ const NodeInfo = ({ node, open, onSlideChange }) => {
         ) : null}
         {node?.type === "species" ? <SpeciesNode info={node} /> : null}
         {node?.type === "plan" ? <PlanNode info={node} /> : null}
+        {node?.type === "goal" ? <SDGNode info={node} /> : null}
       </div>
     </TutorialTooltip>
   );
