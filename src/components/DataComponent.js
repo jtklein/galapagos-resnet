@@ -1954,7 +1954,6 @@ class DataComponent extends Component {
 
   renderDesktop() {
     // const markers = this.filterMarkers();
-
     return (
       <Grid container>
         <Grid item className="grid-item" xs={2} style={{ padding: 0 }}>
@@ -2041,7 +2040,14 @@ class DataComponent extends Component {
         <div style={{ marginBottom: 16 }}>
           <SearchBar
             value={searchText}
-            onChange={(e) => this.setState({ searchText: e.target.value })}
+            onChange={(e) => {
+              if (e.target.value.length === 1 && this.state.searchText.length === 0) {
+                // This happens only for the first letter from an empty search bar
+                // Reset zoom
+                this.onCenterClicked();
+              }
+              this.setState({ searchText: e.target.value });
+            }}
             open={this.openOnDesktop(8)}
             onSlideChange={this.onSlideChange}
           />
