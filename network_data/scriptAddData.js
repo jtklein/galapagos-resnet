@@ -3,6 +3,7 @@ const projectsInfo = require("./additional/MAIN");
 const organizationsInfo = require("./additional/ORGS FULL");
 const speciesInfo = require("./additional/SPECIES FULL");
 const plansInfo = require("./additional/plans_info");
+const sdgInfo = require("./additional/SDG_INFO");
 const fs = require("fs");
 
 // Get sets of the values used as node IDs
@@ -10,6 +11,7 @@ const nicknamesESSet = new Set(projectsInfo.map((d) => d.Nickname_ES));
 const orgCodeSet = new Set(organizationsInfo.map((d) => d.Org));
 const scientificNameSet = new Set(speciesInfo.map((d) => d["Scientific name"]));
 const aimSet = new Set(plansInfo.map((d) => d.Aim));
+const sdgSet = new Set(sdgInfo.map((d) => d.code));
 
 // Map through the data to add the additional info to the node
 data.nodes = data.nodes.map(node => {
@@ -63,6 +65,14 @@ data.nodes = data.nodes.map(node => {
       Plan_EN: additionalInfo.Plan_EN,
       Plan_ES: additionalInfo.Plan_ES,
       "Plan link": additionalInfo["Plan link"],
+    });
+  }
+  if (sdgSet.has(node.id)) {
+    node.type = "goal";
+    const additionalInfo = sdgInfo.find(d => d.code === node.id);
+    Object.assign(node, {
+      Title_EN: additionalInfo.nodeTitleEN,
+      Title_ES: additionalInfo.nodeTitleES,
     });
   }
   return node;
