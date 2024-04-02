@@ -1960,7 +1960,7 @@ class DataComponent extends Component {
         selectedPolicyPlansConnectedLinks={selectedPolicyPlansConnectedLinks}
         selectedPolicyPlansConnectedNodes={selectedPolicyPlansConnectedNodes}
         searchText={searchText}
-        onNodeClicked={(d, cb) => this.onNetworkClickNode(d, cb)}
+        onNodeClicked={(d) => this.onNetworkClickNode(d)}
         isStatic={isStatic}
         setZoomTransform={(t) => this.setZoomTransform(t)}
         zoom={zoom}
