@@ -1,11 +1,27 @@
 [
   {
+    "Org": "1835 Coffee Lab",
+    "English name": "1835 Coffee Lab",
+    "Spanish name": "1835 Coffee Lab",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://www.1835coffeelabec.com/"
+  },
+  {
     "Org": "ABG",
     "English name": "Agency for the Regulation and Control of Biosecurity and Quarantine for Galapagos",
     "Spanish name": "Agencia de Regulación y Control de la Bioseguridad y Cuarentena para Galápagos",
     "Country": "Ecuador",
     "Pais": "Ecuador",
     "Website": "https://bioseguridadgalapagos.gob.ec/"
+  },
+  {
+    "Org": "AFD",
+    "English name": "French Development Agency",
+    "Spanish name": "Agencia Francesa de Desarrollo",
+    "Country": "France",
+    "Pais": "Francia",
+    "Website": "https://www.afd.fr/es"
   },
   {
     "Org": "Agrohuerta",
@@ -24,6 +40,76 @@
     "Website": "https://www.facebook.com/p/Alimendar-Gal%C3%A1pagos-100083324665180/"
   },
   {
+    "Org": "AMNH",
+    "English name": "American Museum of Natural History",
+    "Spanish name": "Museo Americano de Historia Natural",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.amnh.org/"
+  },
+  {
+    "Org": "AMRI",
+    "English name": "Australian Museum Research Institute",
+    "Spanish name": "Instituto de Investigación del Museo Australiano",
+    "Country": "Australia",
+    "Pais": "Australia",
+    "Website": "https://australian.museum/get-involved/amri/"
+  },
+  {
+    "Org": "ANSES",
+    "English name": "French Agency for Food, Environmental and Occupational Health & Safety",
+    "Spanish name": "Agencia Francesa de Seguridad Alimentaria Medioambiental y Laboral",
+    "Country": "France",
+    "Pais": "Francia",
+    "Website": "https://www.anses.fr/en/content/our-identity"
+  },
+  {
+    "Org": "APA",
+    "English name": "Agricultural Producers Association",
+    "Spanish name": "Asociación de Productores Agropecuarios",
+    "Country": "Ecuador",
+    "Pais": "Ecuador"
+  },
+  {
+    "Org": "Aqua-Flask",
+    "English name": "Galapagos Aqua-Flask",
+    "Spanish name": "Galapagos Aqua-Flask",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://www.facebook.com/p/Galapagos-Aqua-Flask-100076110841388/"
+  },
+  {
+    "Org": "ARC",
+    "English name": "Australian Research Council",
+    "Spanish name": "Consejo de Investigación Australiano",
+    "Country": "Australia",
+    "Pais": "Australia",
+    "Website": "https://www.arc.gov.au/"
+  },
+  {
+    "Org": "Barrio Frio",
+    "English name": "Directive of the Frio Neighbourhood",
+    "Spanish name": "Directiva del Barrio Frio",
+    "Country": "Ecuador",
+    "Pais": "Ecuador"
+  },
+  {
+    "Org": "BBU",
+    "English name": "Babes-Bolyai University",
+    "Spanish name": "Universidad de Babes-Bolyai",
+    "Country": "Romania",
+    "Pais": "Rumanía",
+    "Website": "https://www.ubbcluj.ro/en/"
+  },
+  {
+    "Org": "Bernardino Rivadavia",
+    "English name": "Argentine Museum of Natural Sciences \"Bernardino Rivadavia\"",
+    "Spanish name": "Museo Argentino de Ciencias Naturales \"Bernardino Rivadavia\"",
+    "Country": "Argentina",
+    "Pais": "Argentina",
+    "Website": "http://www.macnconicet.gob.ar/"
+  },
+  {
     "Org": "BES",
     "English name": "British Ecological Society",
     "Spanish name": "Sociedad Ecológica Británica",
@@ -40,6 +126,14 @@
     "Website": "https://smartvillage.ieee.org/project/beyond-chacay-foundation-galapagos/"
   },
   {
+    "Org": "Blue Action Fund",
+    "English name": "Blue Action Fund",
+    "Spanish name": "Fondo Acción Azul",
+    "Country": "Germany",
+    "Pais": "Alemania",
+    "Website": "https://www.blueactionfund.org/"
+  },
+  {
     "Org": "BNI Dance Studio",
     "English name": "BNI Dance Studio",
     "Spanish name": "Estudio de Danza BNI",
@@ -48,12 +142,43 @@
     "Website": "https://www.facebook.com/BNIDanceStudio/"
   },
   {
+    "Org": "Bracenet",
+    "English name": "Bracenet",
+    "Spanish name": "Bracenet",
+    "Country": "Germany",
+    "Pais": "Alemania",
+    "Website": "https://bracenet.net/en/"
+  },
+  {
+    "Org": "British Embassy",
+    "English name": "British Embassy in Quito",
+    "Spanish name": "Embajada Británica en Quito",
+    "Country": "UK",
+    "Pais": "RU",
+    "Website": "https://www.gov.uk/world/organisations/british-embassy-in-ecuador"
+  },
+  {
     "Org": "Caltech",
     "English name": "California Institute of Technology",
     "Spanish name": "Instituto Tecnológico de California",
     "Country": "USA",
     "Pais": "EEUU",
     "Website": "https://www.caltech.edu/"
+  },
+  {
+    "Org": "CAPAYO",
+    "English name": "Captaincy of Puerto Ayora",
+    "Spanish name": "Capitania de Puerto Ayora",
+    "Country": "Ecuador",
+    "Pais": "Ecuador"
+  },
+  {
+    "Org": "CAS",
+    "English name": "California Academy of Sciences",
+    "Spanish name": "Academia de Ciencias de California",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.calacademy.org/"
   },
   {
     "Org": "CATIE",
@@ -70,6 +195,14 @@
     "Country": "USA",
     "Pais": "EEUU",
     "Website": "https://www.cave-research.org/"
+  },
+  {
+    "Org": "CCE Núcleo Galápagos",
+    "English name": "Department of Culture Galapagos Centre",
+    "Spanish name": "Casa de la Cultura Núcleo Galápagos",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://www.facebook.com/cce.galapagos/"
   },
   {
     "Org": "CENDA",
@@ -96,6 +229,22 @@
     "Website": "https://www.conservation.org/ecuador"
   },
   {
+    "Org": "CICIMAR",
+    "English name": "Interdisciplinary Centre for Marine Sciences",
+    "Spanish name": "Centro Interdisciplinario de Ciencias Marinas",
+    "Country": "Mexico",
+    "Pais": "México",
+    "Website": "https://www.cicimar.ipn.mx/"
+  },
+  {
+    "Org": "CIIFEN",
+    "English name": "International Center for Research on the El Niño Phenomenon",
+    "Spanish name": "Centro Internacional para la Investigación del Fenómeno de El Niño",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://ciifen.org/"
+  },
+  {
     "Org": "CIMAS",
     "English name": "Cooperative Institute for Marine and Atmospheric Studies",
     "Spanish name": "Instituto Cooperativo de Estudios Marinos y Atmosféricos",
@@ -104,12 +253,35 @@
     "Website": "https://ci.noaa.gov/Locations/CIMAS"
   },
   {
-    "Org": "1835 Coffee Lab",
-    "English name": "1835 Coffee Lab",
-    "Spanish name": "1835 Coffee Lab",
+    "Org": "Club300",
+    "English name": "Club300 Foundation",
+    "Spanish name": "Fundación Club300",
+    "Country": "Sweden",
+    "Pais": "Suecia",
+    "Website": "https://www.club300.se/"
+  },
+  {
+    "Org": "CMAR",
+    "English name": "Marine Corridor of the Eastern Tropical Pacific",
+    "Spanish name": "Corredor Marino del Pacífico Este Tropical",
+    "Country": "Costa Rica",
+    "Pais": "Costa Rica",
+    "Website": "http://cmarpacifico.org/"
+  },
+  {
+    "Org": "Colegio Nacional Galapagos",
+    "English name": "Galapagos National College",
+    "Spanish name": "Colegio Nacional Galapagos",
     "Country": "Ecuador",
-    "Pais": "Ecuador",
-    "Website": "https://www.1835coffeelabec.com/"
+    "Pais": "Ecuador"
+  },
+  {
+    "Org": "Colorado School of Mines",
+    "English name": "Colorado School of Mines",
+    "Spanish name": "Facultad de Minas de Colorado",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.mines.edu/"
   },
   {
     "Org": "Comité Central de Oswaldo Guayasamín",
@@ -117,6 +289,22 @@
     "Spanish name": "Comité Central de Padres de la Escuela Oswaldo Guayasamín",
     "Country": "Ecuador",
     "Pais": "Ecuador"
+  },
+  {
+    "Org": "Commonland",
+    "English name": "Commonland",
+    "Spanish name": "Commonland",
+    "Country": "Netherlands",
+    "Pais": "Holanda",
+    "Website": "https://commonland.com/"
+  },
+  {
+    "Org": "COmON",
+    "English name": "COmON Foundation",
+    "Spanish name": "Fundacion COmON",
+    "Country": "Netherlands",
+    "Pais": "Holanda",
+    "Website": "https://www.comon.earth/"
   },
   {
     "Org": "Consejo Consultivo de Jóvenes",
@@ -127,6 +315,14 @@
     "Website": "https://www.facebook.com/ConsejoConsultivoJovenesdeSantaCruz/"
   },
   {
+    "Org": "Consejo de la Judicatura",
+    "English name": "Judiciary Council",
+    "Spanish name": "Consejo de la Judicatura",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://galapagos.funcionjudicial.gob.ec/"
+  },
+  {
     "Org": "Co-op",
     "English name": "Co-op Foundation",
     "Spanish name": "Fundación Co-op",
@@ -135,20 +331,51 @@
     "Website": "https://www.coopfoundation.org.uk/"
   },
   {
-    "Org": "CSIC-IPNA",
-    "English name": "Institute of Natural Products and Agrobiology",
-    "Spanish name": "Instituto de Productos Naturales y Agrobiología",
-    "Country": "Spain",
-    "Pais": "España",
-    "Website": "https://www.ipna.csic.es/en"
+    "Org": "Cooperativas de pesca",
+    "English name": "Fishing cooperatives of Galapagos",
+    "Spanish name": "Cooperativas de pesca de Galápagos",
+    "Country": "Ecuador",
+    "Pais": "Ecuador"
   },
   {
-    "Org": "CCE Núcleo Galápagos",
-    "English name": "Department of Culture Galapagos Centre",
-    "Spanish name": "Casa de la Cultura Núcleo Galápagos",
+    "Org": "COPROPAG",
+    "English name": "Galapagos Artisanal Fishing Production Cooperative",
+    "Spanish name": "Cooperativa de Producción Pesquera Artesanal de Galápagos",
     "Country": "Ecuador",
     "Pais": "Ecuador",
-    "Website": "https://www.facebook.com/cce.galapagos/"
+    "Website": "http://coopropagalapagos.blogspot.com/"
+  },
+  {
+    "Org": "Craghoppers",
+    "English name": "Craghoppers",
+    "Spanish name": "Craghoppers",
+    "Country": "UK",
+    "Pais": "RU",
+    "Website": "https://www.craghoppers.com/"
+  },
+  {
+    "Org": "CSIC",
+    "English name": "Spanish National Research Council",
+    "Spanish name": "Consejo Superior de Investigaciones Científicas",
+    "Country": "Spain",
+    "Pais": "España",
+    "Website": "https://www.csic.es/en"
+  },
+  {
+    "Org": "CSU",
+    "English name": "California State University",
+    "Spanish name": "Universidad del Estado de California",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.calstate.edu/"
+  },
+  {
+    "Org": "Darwin & Wolf",
+    "English name": "Darwin & Wolf",
+    "Spanish name": "Darwin & Wolf",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "http://www.darwinandwolf.com/"
   },
   {
     "Org": "Darwin's Ecogarden",
@@ -159,11 +386,20 @@
     "Website": "https://www.facebook.com/darwinsecogarden/"
   },
   {
-    "Org": "Barrio Frio",
-    "English name": "Directive of the Frio Neighbourhood",
-    "Spanish name": "Directiva del Barrio Frio",
+    "Org": "DIRNEA",
+    "English name": "National Directorate of Aquatic Spaces",
+    "Spanish name": "Dirección Nacional de Los Espacios Acuáticos",
     "Country": "Ecuador",
-    "Pais": "Ecuador"
+    "Pais": "Ecuador",
+    "Website": "https://www.dirnea.org/"
+  },
+  {
+    "Org": "DPE",
+    "English name": "Ombudsman's Office",
+    "Spanish name": "Defensoria del Pueblo",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://www.dpe.gob.ec/"
   },
   {
     "Org": "DPNG",
@@ -190,6 +426,22 @@
     "Website": "https://e4ngalapagos.org/en/"
   },
   {
+    "Org": "Earthwatch",
+    "English name": "Earthwatch",
+    "Spanish name": "Earthwatch",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://earthwatch.org/"
+  },
+  {
+    "Org": "EcoGal",
+    "English name": "Galapagos Ecological Airport",
+    "Spanish name": "Aeropuerto Ecológico Galápagos",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://www.ecogal.aero/en/"
+  },
+  {
     "Org": "ECOS",
     "English name": "ECOS Foundation",
     "Spanish name": "Fundación ECOS",
@@ -212,6 +464,14 @@
     "Country": "Ecuador",
     "Pais": "Ecuador",
     "Website": "https://www.facebook.com/elmangle.apz/"
+  },
+  {
+    "Org": "Ensemble",
+    "English name": "Ensemble Foundation",
+    "Spanish name": "Fundación Ensemble",
+    "Country": "France",
+    "Pais": "Francia",
+    "Website": "https://www.fondationensemble.org/en/"
   },
   {
     "Org": "Environment Canada",
@@ -254,6 +514,21 @@
     "Website": "https://www.espol.edu.ec/"
   },
   {
+    "Org": "FAE",
+    "English name": "Ecuadorian Air Force",
+    "Spanish name": "Fuerza Aerea Ecuatoriana",
+    "Country": "Ecuador",
+    "Pais": "Ecuador"
+  },
+  {
+    "Org": "FAICO",
+    "English name": "Friends of Cocos Island Foundation",
+    "Spanish name": "Fundacion Amigos Isla del Coco",
+    "Country": "Costa Rica",
+    "Pais": "Costa Rica",
+    "Website": "https://www.cocosisland.org/en/"
+  },
+  {
     "Org": "FCD",
     "English name": "Charles Darwin Foundation",
     "Spanish name": "Fundación Charles Darwin",
@@ -270,12 +545,43 @@
     "Website": "https://www.emmadarwinfoundation.org/about"
   },
   {
+    "Org": "FFV",
+    "English name": "Foundation Fountain of Life",
+    "Spanish name": "Fundacion Fuente de Vida",
+    "Country": "Ecuador",
+    "Pais": "Ecuador"
+  },
+  {
+    "Org": "FIAS",
+    "English name": "Sustainable Environmental Investment Fund",
+    "Spanish name": "Fondo de Inversión Ambiental Sostenible",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://fias.org.ec/"
+  },
+  {
+    "Org": "Field Museum",
+    "English name": "Field Museum of Natural History",
+    "Spanish name": "Museo Field de Historia Natural",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.fieldmuseum.org/"
+  },
+  {
     "Org": "FMME",
     "English name": "Marine Megafauna Foundation",
     "Spanish name": "Fundación Megafauna Marina",
     "Country": "Ecuador",
     "Pais": "Ecuador",
     "Website": "https://marinemegafauna.org/"
+  },
+  {
+    "Org": "Focused on Nature",
+    "English name": "Focused on Nature",
+    "Spanish name": "Focused on Nature",
+    "Country": "Switzerland",
+    "Pais": "Suiza",
+    "Website": "https://focusedonnature.org/"
   },
   {
     "Org": "Frente Insular",
@@ -294,12 +600,20 @@
     "Website": "https://www.funcavid.org/"
   },
   {
-    "Org": "Verde Milenio",
-    "English name": "Green Millennium Foundation",
-    "Spanish name": "Fundación Verde Milenio",
-    "Country": "Ecuador",
-    "Pais": "Ecuador",
-    "Website": "https://www.verdemilenio.org/"
+    "Org": "FURG",
+    "English name": "Federal University of Rio Grande",
+    "Spanish name": "Universidad Federal de Rio Grande",
+    "Country": "Brazil",
+    "Pais": "Brazil",
+    "Website": "https://www.furg.br/en/"
+  },
+  {
+    "Org": "FWF",
+    "English name": "Austrian Science Fund",
+    "Spanish name": "Fondo Austriaco de la Ciencia",
+    "Country": "Austria",
+    "Pais": "Austria",
+    "Website": "https://www.fwf.ac.at/en/"
   },
   {
     "Org": "G`Dance",
@@ -308,6 +622,20 @@
     "Country": "Ecuador",
     "Pais": "Ecuador",
     "Website": "https://galapagosdance.wordpress.com/"
+  },
+  {
+    "Org": "GAD Floreana",
+    "English name": "GAD Parroquial de Floreana",
+    "Spanish name": "GAD Parroquial de Floreana",
+    "Country": "Ecuador",
+    "Pais": "Ecuador"
+  },
+  {
+    "Org": "GAD Santa Cruz",
+    "English name": "GAD de Santa Cruz",
+    "Spanish name": "GAD de Santa Cruz",
+    "Country": "Ecuador",
+    "Pais": "Ecuador"
   },
   {
     "Org": "Galapagos Horse Friends",
@@ -326,14 +654,6 @@
     "Website": "https://galapagosinfinito.com/"
   },
   {
-    "Org": "Galapagos Whale Shark Project",
-    "English name": "Galapagos Whale Shark Project",
-    "Spanish name": "Proyecto Galápagos Tiburón Ballena",
-    "Country": "Ecuador",
-    "Pais": "Ecuador",
-    "Website": "https://www.galapagoswhaleshark.org/"
-  },
-  {
     "Org": "GC",
     "English name": "Galapagos Conservancy",
     "Spanish name": "Conservando Galápagos",
@@ -342,12 +662,36 @@
     "Website": "https://www.galapagos.org/"
   },
   {
+    "Org": "GCRF",
+    "English name": "Global Challenges Research Fund",
+    "Spanish name": "Fondo de Investigación de los Desafíos Mundiales",
+    "Country": "UK",
+    "Pais": "RU",
+    "Website": "https://www.ukri.org/what-we-do/our-main-funds-and-areas-of-support/browse-our-areas-of-investment-and-support/global-challenges-research-fund/"
+  },
+  {
     "Org": "GCT",
     "English name": "Galapagos Conservation Trust",
-    "Spanish name": "Fundacion de Conservación de Galápagos",
+    "Spanish name": "Galapagos Conservation Trust",
     "Country": "UK",
     "Pais": "RU",
     "Website": "https://galapagosconservation.org.uk/"
+  },
+  {
+    "Org": "GEF",
+    "English name": "Global Environment Facility",
+    "Spanish name": "Fondo Mundial para el Medio Ambiente",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.thegef.org/"
+  },
+  {
+    "Org": "Gelato Bar",
+    "English name": "Gelato Bar",
+    "Spanish name": "Gelato Bar",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://www.facebook.com/rollsandpopsec/?locale=en_GB"
   },
   {
     "Org": "Georgia Aquarium",
@@ -366,12 +710,52 @@
     "Website": "https://www.instagram.com/gio_art_gallery/"
   },
   {
+    "Org": "Gov. S. Australia",
+    "English name": "Government of South Australia",
+    "Spanish name": "Gobierno del Sur de Australia",
+    "Country": "Australia",
+    "Pais": "Australia",
+    "Website": "https://www.environment.sa.gov.au/"
+  },
+  {
     "Org": "GSC",
     "English name": "Galapagos Science Center",
     "Spanish name": "Centro de Ciencias de Galápagos",
     "Country": "Ecuador",
     "Pais": "Ecuador",
     "Website": "https://www.galapagosscience.org/"
+  },
+  {
+    "Org": "Guardianes de Semillas",
+    "English name": "Network of Seed Guardians",
+    "Spanish name": "Red de Guardianes de Semillas",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://redsemillas.org/"
+  },
+  {
+    "Org": "GWSP",
+    "English name": "Galapagos Whale Shark Project",
+    "Spanish name": "Proyecto Galápagos Tiburón Ballena",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://www.galapagoswhaleshark.org/"
+  },
+  {
+    "Org": "Helmsley",
+    "English name": "Leona M. and Harry B. Helmsley Charitable Trust",
+    "Spanish name": "Fondo Benéfico Leona M. y Harry B. Helmsley",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://helmsleytrust.org/"
+  },
+  {
+    "Org": "HMC",
+    "English name": "Harvey Mudd College",
+    "Spanish name": "Colegio Harvey Mudd",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.hmc.edu/"
   },
   {
     "Org": "Hotel Coral Blanco",
@@ -406,12 +790,44 @@
     "Website": "https://www.islandconservation.org/"
   },
   {
-    "Org": "IMEDEA (CSIC-UIB)",
-    "English name": "Mediterranean Institute of Advanced Studies",
-    "Spanish name": "Instituto Mediterráneo de Estudios Avanzados",
+    "Org": "IGTOA",
+    "English name": "International Galapagos Tour Operators Association",
+    "Spanish name": "Asociación Internacional de Tour Operadores de Galápagos",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.igtoa.org/"
+  },
+  {
+    "Org": "IMLCF",
+    "English name": "Institute of Legal and Forensic Medicine",
+    "Spanish name": "Instituto de Medicina Legal y Forense",
     "Country": "Spain",
     "Pais": "España",
-    "Website": "https://imedea.uib-csic.es/?lang=en"
+    "Website": "https://www.administraciondejusticia.gob.es/instituto-de-medicina-legal-y-ciencias-forenses"
+  },
+  {
+    "Org": "IMO",
+    "English name": "Millennium Institute of Oceanography",
+    "Spanish name": "Instituto Milenio de Oceanografía",
+    "Country": "Chile",
+    "Pais": "Chile",
+    "Website": "https://www.imo-chile.com/en/imo"
+  },
+  {
+    "Org": "INAMHI",
+    "English name": "National Institute of Meteorology and Hydrology ",
+    "Spanish name": "Instituto Nacional de Meteorología e Hidrología",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://www.inamhi.gob.ec/"
+  },
+  {
+    "Org": "INIAP",
+    "English name": "National Institute of Agricultural Research",
+    "Spanish name": "Instituto Nacional de Investigaciones Agropecuarias",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://www.iniap.gob.ec/"
   },
   {
     "Org": "Iniciativa Co-Galápagos",
@@ -438,12 +854,68 @@
     "Website": ""
   },
   {
-    "Org": "JOCOTOCO",
+    "Org": "INTA",
+    "English name": "National Institute of Aerospace Technology",
+    "Spanish name": "Instituto Nacional de Tecnica Aeroespacial",
+    "Country": "Spain",
+    "Pais": "España",
+    "Website": "https://www.inta.es/"
+  },
+  {
+    "Org": "IOI",
+    "English name": "Intercultural Outreach Initiative",
+    "Spanish name": "Iniciativa Intercultural Outreach",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.ioi.ngo/"
+  },
+  {
+    "Org": "IRTA",
+    "English name": "Institute of Agrifood Research and Technology",
+    "Spanish name": "Instituto de Investigación y Tecnología Agroalimentaria",
+    "Country": "Spain",
+    "Pais": "España",
+    "Website": "https://www.irta.cat/en/"
+  },
+  {
+    "Org": "Islander Coffee",
+    "English name": "Islander Coffee",
+    "Spanish name": "Islander Coffee",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://www.facebook.com/profile.php?id=100070545866944"
+  },
+  {
+    "Org": "JAMSTEC",
+    "English name": "Japan Agency for Marine-Earth Science and Technology",
+    "Spanish name": "Agencia Japonesa de Ciencia y Tecnología Marino-Terrestre",
+    "Country": "Japan",
+    "Pais": "Japón",
+    "Website": "https://www.jamstec.go.jp/e/"
+  },
+  {
+    "Org": "JCU",
+    "English name": "James Cook University",
+    "Spanish name": "Universidad James Cook",
+    "Country": "Australia",
+    "Pais": "Australia",
+    "Website": "https://www.jcu.edu.au/"
+  },
+  {
+    "Org": "Jocotoco",
     "English name": "Jocotoco",
     "Spanish name": "Jocotoco",
     "Country": "Ecuador",
     "Pais": "Ecuador",
     "Website": "https://www.jocotoco.org.ec/wb#/ES/home"
+  },
+  {
+    "Org": "Khoyatan",
+    "English name": "Khoyatan Marine Laboratory",
+    "Spanish name": "Laboratorio Marino Khoyatan",
+    "Country": "Australia",
+    "Pais": "Australia",
+    "Website": "https://librariesaustralia.nla.gov.au/search/display?dbid=auth&id=36273553"
   },
   {
     "Org": "King's College Cambridge",
@@ -452,6 +924,14 @@
     "Country": "UK",
     "Pais": "RU",
     "Website": "https://www.kings.cam.ac.uk/"
+  },
+  {
+    "Org": "La Iguana",
+    "English name": "Iguana Foundation",
+    "Spanish name": "Fundacion La Iguana",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://fundacionlaiguana.org/"
   },
   {
     "Org": "La Venta",
@@ -468,6 +948,22 @@
     "Country": "Ecuador",
     "Pais": "Ecuador",
     "Website": "https://www.facebook.com/lavajavagal/"
+  },
+  {
+    "Org": "Leibniz Institute",
+    "English name": "Leibniz Institute for Zoo and Wildlife Research",
+    "Spanish name": "Instituto Leibniz de Investigación sobre Zoológicos y Fauna Silvestre",
+    "Country": "Germany",
+    "Pais": "Alemania",
+    "Website": "https://www.izw-berlin.de/en/home.html"
+  },
+  {
+    "Org": "Lindblad",
+    "English name": "Lindblad Expeditions",
+    "Spanish name": "Lindblad Expediciones",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://world.expeditions.com/"
   },
   {
     "Org": "MAG",
@@ -494,20 +990,20 @@
     "Website": "https://www.instagram.com/mardired.ec/"
   },
   {
+    "Org": "MBZ SCF",
+    "English name": "Mohamed bin Zayed Species Conservation Fund",
+    "Spanish name": "Fondo Mohamed bin Zayed para la Conservación de Especies",
+    "Country": "UAE",
+    "Pais": "EAU",
+    "Website": "https://www.speciesconservation.org/"
+  },
+  {
     "Org": "MIES",
     "English name": "Ministry of Economic and Social Inclusion",
     "Spanish name": "Ministerio de Inclusión Económica y Social",
     "Country": "Ecuador",
     "Pais": "Ecuador",
     "Website": "https://www.inclusion.gob.ec/"
-  },
-  {
-    "Org": "IMO",
-    "English name": "Millennium Institute of Oceanography",
-    "Spanish name": "Instituto Milenio de Oceanografía",
-    "Country": "Chile",
-    "Pais": "Chile",
-    "Website": "https://www.imo-chile.com/en/imo"
   },
   {
     "Org": "MINEDUC",
@@ -518,6 +1014,30 @@
     "Website": "https://educacion.gob.ec/"
   },
   {
+    "Org": "MIT",
+    "English name": "Massachusetts Institute of Technology",
+    "Spanish name": "Instituto Tecnológico de Massachusetts",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.mit.edu/"
+  },
+  {
+    "Org": "MLML",
+    "English name": "Moss Landing Marine Laboratories",
+    "Spanish name": "Laboratorios marinos Moss Landing",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://mlml.sjsu.edu/"
+  },
+  {
+    "Org": "MMU",
+    "English name": "Manchester Metropolitan University",
+    "Spanish name": "Universidad Metropolitana de Manchester",
+    "Country": "UK",
+    "Pais": "RU",
+    "Website": "https://www.mmu.ac.uk/"
+  },
+  {
     "Org": "Montemar",
     "English name": "Montemar Ecoluxury Villas",
     "Spanish name": "Montemar Ecoluxury Villas",
@@ -526,12 +1046,60 @@
     "Website": "https://www.montemar.ec/"
   },
   {
-    "Org": "Bernardino Rivadavia",
-    "English name": "Argentine Museum of Natural Sciences \"Bernardino Rivadavia\"",
-    "Spanish name": "Museo Argentino de Ciencias Naturales \"Bernardino Rivadavia\"",
-    "Country": "Argentina",
-    "Pais": "Argentina",
-    "Website": "http://www.macnconicet.gob.ar/"
+    "Org": "Moore",
+    "English name": "Gordon and Betty Moore Foundation",
+    "Spanish name": "Fundación Gordon y Betty Moore",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.moore.org/"
+  },
+  {
+    "Org": "Mote",
+    "English name": "Mote Marine Lab",
+    "Spanish name": "Laboratorio Marino Mote",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://mote.org/"
+  },
+  {
+    "Org": "Museo de Ballenas",
+    "English name": "Museum of Whales",
+    "Spanish name": "Museo de Ballenas",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://www.museodeballenas.org/"
+  },
+  {
+    "Org": "Museums Victoria",
+    "English name": "Museums Victoria",
+    "Spanish name": "Museos Victoria",
+    "Country": "Australia",
+    "Pais": "Australia",
+    "Website": "https://museumsvictoria.com.au/"
+  },
+  {
+    "Org": "NatGeo Society",
+    "English name": "National Geographic Society",
+    "Spanish name": "Sociedad National Geographic",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.nationalgeographic.org/society/"
+  },
+  {
+    "Org": "Naturalis",
+    "English name": "Naturalis Biodiversity Center",
+    "Spanish name": "Centro de Biodiversidad Naturalis",
+    "Country": "Netherlands",
+    "Pais": "Holanda",
+    "Website": "https://www.naturalis.nl/en"
+  },
+  {
+    "Org": "NAZCA",
+    "English name": "Nazca Institute of Marine Research",
+    "Spanish name": "Instituto Nazca de Investigaciones Marinas",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://institutonazca.org//"
   },
   {
     "Org": "NCSU",
@@ -550,12 +1118,52 @@
     "Website": "https://www.gov.uk/government/organisations/natural-environment-research-council"
   },
   {
+    "Org": "NERO",
+    "English name": "NERO Products",
+    "Spanish name": "Productos NERO",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://www.instagram.com/nero.galapagos/"
+  },
+  {
+    "Org": "NIST",
+    "English name": "National Institute of Standards and Technology",
+    "Spanish name": "Instituto Nacional de Normas y Tecnología",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.nist.gov/"
+  },
+  {
+    "Org": "NKU",
+    "English name": "Northern Kentucky University",
+    "Spanish name": "Universidad del Norte de Kentucky",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.nku.edu/"
+  },
+  {
     "Org": "NOAA",
     "English name": "National Oceanic and Atmospheric Administration",
     "Spanish name": "Administración Nacional Oceánica y Atmosférica",
     "Country": "USA",
     "Pais": "EEUU",
     "Website": "https://www.noaa.gov/"
+  },
+  {
+    "Org": "NSU",
+    "English name": "Nova Southeastern University",
+    "Spanish name": "Universidad Nova Southeastern",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.nova.edu/"
+  },
+  {
+    "Org": "OET",
+    "English name": "Ocean Exploration Trust",
+    "Spanish name": "Fondo para la Exploración Oceánica",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://nautiluslive.org/"
   },
   {
     "Org": "OMCA",
@@ -582,6 +1190,46 @@
     "Website": ""
   },
   {
+    "Org": "Paul M. Angell",
+    "English name": "Paul M. Angell Foundation",
+    "Spanish name": "Fundación Paul M. Angell",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://pmangellfamfound.org/"
+  },
+  {
+    "Org": "Penguin Foundation",
+    "English name": "Penguin Scholarship Foundation",
+    "Spanish name": "Fundación Penguin de Becas",
+    "Country": "Japan",
+    "Pais": "Japón",
+    "Website": "http://penguin.or.jp/en/"
+  },
+  {
+    "Org": "Peregrine Fund",
+    "English name": "Peregrine Fund",
+    "Spanish name": "Fondo Peregrino",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.peregrinefund.org/"
+  },
+  {
+    "Org": "Pew",
+    "English name": "Fundaciones Benéficas Pew",
+    "Spanish name": "Pew Charitable Trusts",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.pewtrusts.org/en/"
+  },
+  {
+    "Org": "Pikaia",
+    "English name": "Pikaia Lodge",
+    "Spanish name": "Pikaia Lodge",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://pikaialodge.com/"
+  },
+  {
     "Org": "Poesía",
     "English name": "Poesía",
     "Spanish name": "Poesía",
@@ -590,12 +1238,76 @@
     "Website": ""
   },
   {
-    "Org": "NERO",
-    "English name": "NERO Products",
-    "Spanish name": "Productos NERO",
+    "Org": "Policía Nacional",
+    "English name": "Ecuadorian National Police",
+    "Spanish name": "Policía Nacional del Ecuador",
     "Country": "Ecuador",
     "Pais": "Ecuador",
-    "Website": "https://www.instagram.com/nero.galapagos/"
+    "Website": "https://www.policia.gob.ec/"
+  },
+  {
+    "Org": "Presencing Institute",
+    "English name": "Presencing Institute",
+    "Spanish name": "Presencing Institute",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://presencinginstitute.org/"
+  },
+  {
+    "Org": "PSU",
+    "English name": "Pennsylvania State University",
+    "Spanish name": "Universidad Estatal de Pensilvania",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.psu.edu/"
+  },
+  {
+    "Org": "QUB",
+    "English name": "Queen's University Belfast",
+    "Spanish name": "Universidad Queen's de Belfast",
+    "Country": "Ireland",
+    "Pais": "Irlanda",
+    "Website": "https://www.qub.ac.uk/"
+  },
+  {
+    "Org": "Re:wild",
+    "English name": "Re:wild",
+    "Spanish name": "Re:wild",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.rewild.org/"
+  },
+  {
+    "Org": "Resources Legacy",
+    "English name": "Resources Legacy Fund",
+    "Spanish name": "Fondo de Resources Legacy",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://resourceslegacyfund.org/"
+  },
+  {
+    "Org": "Revive & Restore",
+    "English name": "Revive & Restore",
+    "Spanish name": "Revive & Restore",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://reviverestore.org/"
+  },
+  {
+    "Org": "RSPB",
+    "English name": "Royal Society for the Protection of Birds",
+    "Spanish name": "Real Sociedad de Protección de las Aves",
+    "Country": "UK",
+    "Pais": "RU",
+    "Website": "https://www.rspb.org.uk/"
+  },
+  {
+    "Org": "Rufford",
+    "English name": "Rufford Foundation",
+    "Spanish name": "Fundación Rufford",
+    "Country": "UK",
+    "Pais": "RU",
+    "Website": "https://www.rufford.org/"
   },
   {
     "Org": "Save Our Seas",
@@ -604,6 +1316,46 @@
     "Country": "Switzerland",
     "Pais": "Suiza",
     "Website": "https://saveourseas.com/"
+  },
+  {
+    "Org": "SCRIPPS",
+    "English name": "Scripps Institution of Oceanography",
+    "Spanish name": "Instituto Oceanográfico Scripps",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://scripps.ucsd.edu/"
+  },
+  {
+    "Org": "SINAC",
+    "English name": "National System of Conservation Areas",
+    "Spanish name": "Sistema Nacional de Áreas de Conservación",
+    "Country": "Costa Rica",
+    "Pais": "Costa Rica",
+    "Website": "https://www.sinac.go.cr/ES/Paginas/default.aspx"
+  },
+  {
+    "Org": "SLU",
+    "English name": "Saint Louis University",
+    "Spanish name": "Universidad de Saint Louis",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.slu.edu/"
+  },
+  {
+    "Org": "Smithsonian",
+    "English name": "Smithsonian Institution",
+    "Spanish name": "Instituto Smithsonian",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.si.edu/"
+  },
+  {
+    "Org": "St Mary's College",
+    "English name": "St Mary's College",
+    "Spanish name": "Colegio St Mary",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.saintmarys.edu/"
   },
   {
     "Org": "Tambora y Son",
@@ -630,6 +1382,14 @@
     "Website": "https://raptorcentre.co.uk/"
   },
   {
+    "Org": "TIRN",
+    "English name": "Turtle Island Research Network",
+    "Spanish name": "Turtle Island Research Network",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://seaturtles.org/"
+  },
+  {
     "Org": "Triteam Chathamensis",
     "English name": "Triteam Chathamensis Sports Club",
     "Spanish name": "Club Deportivo Triteam Chathamensis",
@@ -646,12 +1406,44 @@
     "Website": "https://international.au.dk/"
   },
   {
+    "Org": "U. Aberdeen",
+    "English name": "University of Aberdeen",
+    "Spanish name": "Universidad de Aberdeen",
+    "Country": "UK",
+    "Pais": "RU",
+    "Website": "https://www.abdn.ac.uk/"
+  },
+  {
+    "Org": "U. Aix-Marseille",
+    "English name": "Aix-Marseille University",
+    "Spanish name": "Universidad Aix-Marseille",
+    "Country": "France",
+    "Pais": "Francia",
+    "Website": "https://www.univ-amu.fr/en"
+  },
+  {
+    "Org": "U. Andes",
+    "English name": "University of the Andes",
+    "Spanish name": "Universidad de los Andes",
+    "Country": "Chile",
+    "Pais": "Chile",
+    "Website": "https://www.uandes.cl/"
+  },
+  {
     "Org": "U. Antwerp",
     "English name": "University of Antwerp",
     "Spanish name": "Universidad de Antwerp",
     "Country": "Belgium",
     "Pais": "Bélgica",
     "Website": "https://www.uantwerpen.be/en/"
+  },
+  {
+    "Org": "U. Arizona",
+    "English name": "University of Arizona",
+    "Spanish name": "Universidad de Arizona",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.arizona.edu/"
   },
   {
     "Org": "U. Arizona State",
@@ -662,9 +1454,33 @@
     "Website": "https://www.asu.edu/"
   },
   {
+    "Org": "U. Barcelona",
+    "English name": "University of Barcelona",
+    "Spanish name": "Universidad de Barcelona",
+    "Country": "Spain",
+    "Pais": "España",
+    "Website": "https://web.ub.edu/en/web/ub/"
+  },
+  {
+    "Org": "U. Boise State",
+    "English name": "Boise State University",
+    "Spanish name": "Universidad Estatal de Boise",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.boisestate.edu/"
+  },
+  {
+    "Org": "U. Bristol",
+    "English name": "University of Bristol",
+    "Spanish name": "Universidad de Bristol",
+    "Country": "UK",
+    "Pais": "RU",
+    "Website": "https://www.bristol.ac.uk/"
+  },
+  {
     "Org": "U. Brown",
     "English name": "Brown University",
-    "Spanish name": "Universidad de Brown",
+    "Spanish name": "Universidad Brown",
     "Country": "USA",
     "Pais": "EEUU",
     "Website": "https://www.brown.edu/"
@@ -694,12 +1510,28 @@
     "Website": "https://www.uc.pt/en"
   },
   {
+    "Org": "U. Colorado State",
+    "English name": "Colorado State University",
+    "Spanish name": "Universidad del Estado de Colorado",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.colostate.edu/"
+  },
+  {
     "Org": "U. Concepcion",
     "English name": "University of Concepción",
     "Spanish name": "Universidad de Concepción",
     "Country": "Chile",
     "Pais": "Chile",
     "Website": "https://www.udec.cl/pexterno/"
+  },
+  {
+    "Org": "U. Copenhagen",
+    "English name": "University of Copenhagen",
+    "Spanish name": "Universidad de Copenhagen",
+    "Country": "Denmark",
+    "Pais": "Dinamarca",
+    "Website": "https://www.ku.dk/english/"
   },
   {
     "Org": "U. Cornell",
@@ -710,12 +1542,76 @@
     "Website": "https://www.cornell.edu/"
   },
   {
+    "Org": "U. Costa Rica",
+    "English name": "University of Costa Rica",
+    "Spanish name": "Universidad de Costa Rica",
+    "Country": "Costa Rica",
+    "Pais": "Costa Rica",
+    "Website": "https://www.ucr.ac.cr/"
+  },
+  {
+    "Org": "U. Curtin",
+    "English name": "Curtin University",
+    "Spanish name": "Universidad Curtin",
+    "Country": "Australia",
+    "Pais": "Australia",
+    "Website": "https://www.curtin.edu.au/"
+  },
+  {
+    "Org": "U. Dalhousie",
+    "English name": "Dalhousie University",
+    "Spanish name": "Universidad Dalhousie",
+    "Country": "Canada",
+    "Pais": "Canadá",
+    "Website": "https://www.dal.ca/"
+  },
+  {
     "Org": "U. DePaul",
-    "English name": "Depaul University",
-    "Spanish name": "Universidad de Depaul",
+    "English name": "DePaul University",
+    "Spanish name": "Universidad DePaul",
     "Country": "USA",
     "Pais": "EEUU",
     "Website": "https://www.depaul.edu/"
+  },
+  {
+    "Org": "U. East Anglia",
+    "English name": "University of East Anglia",
+    "Spanish name": "Universidad de East Anglia",
+    "Country": "UK",
+    "Pais": "RU",
+    "Website": "https://www.uea.ac.uk/"
+  },
+  {
+    "Org": "U. Essex",
+    "English name": "University of Essex",
+    "Spanish name": "Universidad de Essex",
+    "Country": "UK",
+    "Pais": "RU",
+    "Website": "https://www.essex.ac.uk/"
+  },
+  {
+    "Org": "U. Exeter",
+    "English name": "University of Exeter",
+    "Spanish name": "Universidad de Exeter",
+    "Country": "UK",
+    "Pais": "RU",
+    "Website": "https://www.exeter.ac.uk/"
+  },
+  {
+    "Org": "U. Flinders",
+    "English name": "Flinders University",
+    "Spanish name": "Universidad Flinders",
+    "Country": "Australia",
+    "Pais": "Australia",
+    "Website": "https://www.flinders.edu.au/"
+  },
+  {
+    "Org": "U. Florida",
+    "English name": "University of Florida",
+    "Spanish name": "Universidad de Florida",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.ufl.edu/"
   },
   {
     "Org": "U. Ghent",
@@ -724,6 +1620,22 @@
     "Country": "Belgium",
     "Pais": "Bélgica",
     "Website": "https://www.ugent.be/en"
+  },
+  {
+    "Org": "U. Guayaquil",
+    "English name": "University of Guayaquil",
+    "Spanish name": "Universidad de Guayaquil",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://www.ug.edu.ec/"
+  },
+  {
+    "Org": "U. Hawaii",
+    "English name": "University of Hawaii",
+    "Spanish name": "Universidad de Hawaii",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.hawaii.edu/"
   },
   {
     "Org": "U. Idaho",
@@ -742,20 +1654,44 @@
     "Website": "https://www.indiana.edu/"
   },
   {
-    "Org": "JCU",
-    "English name": "James Cook University",
-    "Spanish name": "Universidad James Cook",
-    "Country": "Australia",
-    "Pais": "Australia",
-    "Website": "https://www.jcu.edu.au/"
-  },
-  {
     "Org": "U. Johannes Gutenberg",
     "English name": "Johannes Gutenberg University Mainz",
     "Spanish name": "Universidad Johannes Gutenberg de Mainz",
     "Country": "Germany",
     "Pais": "Alemania",
     "Website": "https://homepage.uni-mainz.de/"
+  },
+  {
+    "Org": "U. Kent",
+    "English name": "University of Kent",
+    "Spanish name": "Universidad de Kent",
+    "Country": "UK",
+    "Pais": "RU",
+    "Website": "https://www.kent.ac.uk/"
+  },
+  {
+    "Org": "U. Kobe",
+    "English name": "Kobe University",
+    "Spanish name": "Universidad de Kobe",
+    "Country": "Japan",
+    "Pais": "Japón",
+    "Website": "https://www.kobe-u.ac.jp/en/index.html"
+  },
+  {
+    "Org": "U. Kumamoto",
+    "English name": "Kumamoto University",
+    "Spanish name": "Universidad de Kumamoto",
+    "Country": "Japan",
+    "Pais": "Japón",
+    "Website": "https://ewww.kumamoto-u.ac.jp/"
+  },
+  {
+    "Org": "U. La Laguna",
+    "English name": "University of La Laguna",
+    "Spanish name": "Universidad de La Laguna",
+    "Country": "Spain",
+    "Pais": "España",
+    "Website": "https://www.ull.es/en/"
   },
   {
     "Org": "U. La Trobe",
@@ -774,6 +1710,46 @@
     "Website": "https://llu.edu/"
   },
   {
+    "Org": "U. Louisiana State",
+    "English name": "Louisiana State University ",
+    "Spanish name": "Universidad Estatal de Luisiana ",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.lsu.edu/"
+  },
+  {
+    "Org": "U. Lund",
+    "English name": "Lund University",
+    "Spanish name": "Universidad de Lund",
+    "Country": "Sweden",
+    "Pais": "Suecia",
+    "Website": "https://www.lunduniversity.lu.se/"
+  },
+  {
+    "Org": "U. Macquarie",
+    "English name": "Macquarie University",
+    "Spanish name": "Universidad de Macquarie",
+    "Country": "Australia",
+    "Pais": "Australia",
+    "Website": "https://www.mq.edu.au/"
+  },
+  {
+    "Org": "U. Malaga",
+    "English name": "University of Malaga",
+    "Spanish name": "Universidad de Malaga",
+    "Country": "Spain",
+    "Pais": "España",
+    "Website": "https://www.uma.es/?set_language=en"
+  },
+  {
+    "Org": "U. Manchester",
+    "English name": "University of Manchester",
+    "Spanish name": "Universidad de Manchester",
+    "Country": "UK",
+    "Pais": "RU",
+    "Website": "https://www.manchester.ac.uk/"
+  },
+  {
     "Org": "U. Massey",
     "English name": "Massey University",
     "Spanish name": "Universidad de Massey",
@@ -790,12 +1766,12 @@
     "Website": "https://welcome.miami.edu/"
   },
   {
-    "Org": "UNAM",
-    "English name": "National Autonomous University of Mexico",
-    "Spanish name": "Universidad Nacional Autónoma de México",
-    "Country": "Mexico",
-    "Pais": "México",
-    "Website": "https://www.unam.mx/"
+    "Org": "U. Missouri",
+    "English name": "University of Missouri",
+    "Spanish name": "Universidad de Missouri",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://missouri.edu/"
   },
   {
     "Org": "U. Nacional de Colombia",
@@ -846,20 +1822,20 @@
     "Website": "https://uni.edu/"
   },
   {
-    "Org": "NKU",
-    "English name": "Northern Kentucky University",
-    "Spanish name": "Universidad del Norte de Kentucky",
-    "Country": "USA",
-    "Pais": "EEUU",
-    "Website": "https://www.nku.edu/"
-  },
-  {
     "Org": "U. Ohio Wesleyan",
     "English name": "Ohio Wesleyan University",
     "Spanish name": "Universidad Wesleyana de Ohio",
     "Country": "USA",
     "Pais": "EEUU",
     "Website": "https://www.owu.edu/"
+  },
+  {
+    "Org": "U. Oregon State",
+    "English name": "Oregon State University",
+    "Spanish name": "Universidad Estatal de Oregon",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://oregonstate.edu/"
   },
   {
     "Org": "U. Palermo",
@@ -870,6 +1846,14 @@
     "Website": "https://www.unipa.it/"
   },
   {
+    "Org": "U. Perpignan",
+    "English name": "University of Perpignan",
+    "Spanish name": "Universidad de Perpignan",
+    "Country": "France",
+    "Pais": "Francia",
+    "Website": "https://www.univ-perp.fr/"
+  },
+  {
     "Org": "U. Pontifical Xavierian",
     "English name": "Pontifical Xavierian University",
     "Spanish name": "Pontificia Universidad Javeriana",
@@ -878,12 +1862,35 @@
     "Website": "https://www.javeriana.edu.co/inicio"
   },
   {
+    "Org": "U. Queensland",
+    "English name": "University of Queensland",
+    "Spanish name": "Universidad de Queensland",
+    "Country": "Australia",
+    "Pais": "Australia",
+    "Website": "https://www.uq.edu.au/"
+  },
+  {
     "Org": "U. Regional Amazonica",
     "English name": "Regional College Amazon Ikiam",
     "Spanish name": "Universidad Regional Amazónica Ikiam",
     "Country": "Ecuador",
     "Pais": "Ecuador",
     "Website": "https://www.ikiam.edu.ec/"
+  },
+  {
+    "Org": "U. Rhode Island",
+    "English name": "University of Rhode Island",
+    "Spanish name": "Universidad de Rhode Island",
+    "Country": "https://www.uri.edu/",
+    "Website": "https://www.uri.edu/"
+  },
+  {
+    "Org": "U. Ryukyus",
+    "English name": "University of the Ryukyus",
+    "Spanish name": "Universidad de Ryukyus",
+    "Country": "Japan",
+    "Pais": "Japón",
+    "Website": "https://www.u-ryukyu.ac.jp/en/"
   },
   {
     "Org": "U. Santiago de Compostela",
@@ -896,7 +1903,7 @@
   {
     "Org": "U. Santo Tomas",
     "English name": "University of Santo Tomas",
-    "Spanish name": "Universidad Santo Tomas",
+    "Spanish name": "Universidad de Santo Tomas",
     "Country": "Philippines",
     "Pais": "Filipinas",
     "Website": "https://www.ust.edu.ph/"
@@ -918,12 +1925,36 @@
     "Website": "https://www.usask.ca/"
   },
   {
+    "Org": "U. Sorbonne",
+    "English name": "Sorbonne University",
+    "Spanish name": "Universidad Sorbonne",
+    "Country": "France",
+    "Pais": "Francia",
+    "Website": "https://www.sorbonne-universite.fr/en"
+  },
+  {
     "Org": "U. South Alabama",
     "English name": "University of South Alabama",
     "Spanish name": "Universidad de Alabama del Sur",
     "Country": "USA",
     "Pais": "EEUU",
     "Website": "https://www.southalabama.edu/"
+  },
+  {
+    "Org": "U. Southampton",
+    "English name": "University of Southampton",
+    "Spanish name": "Universidad de Southampton",
+    "Country": "UK",
+    "Pais": "RU",
+    "Website": "https://www.southampton.ac.uk/"
+  },
+  {
+    "Org": "U. Stockholm",
+    "English name": "Stockholm University",
+    "Spanish name": "Universidad de Estocolmo",
+    "Country": "Sweden",
+    "Pais": "Suecia",
+    "Website": "https://www.su.se/english/"
   },
   {
     "Org": "U. Sunshine Coast",
@@ -934,6 +1965,14 @@
     "Website": "https://www.usc.edu.au/"
   },
   {
+    "Org": "U. Tasmania",
+    "English name": "University of Tasmania",
+    "Spanish name": "Universidad de Tasmania",
+    "Country": "Australia",
+    "Pais": "Australia",
+    "Website": "https://www.utas.edu.au/"
+  },
+  {
     "Org": "U. Técnica de Manabí",
     "English name": "Technical University of Manabí",
     "Spanish name": "Universidad Técnica de Manabí",
@@ -942,17 +1981,17 @@
     "Website": "https://www.utm.edu.ec/"
   },
   {
-    "Org": "UTPL",
-    "English name": "Technical University of Loja",
-    "Spanish name": "Universidad Técnica Particular de Loja",
-    "Country": "Ecuador",
-    "Pais": "Ecuador",
-    "Website": "http://www.utpl.edu.ec/"
+    "Org": "U. Tel Aviv",
+    "English name": "Tel Aviv University",
+    "Spanish name": "Universidad de Tel Aviv",
+    "Country": "Israel",
+    "Pais": "Israel",
+    "Website": "https://english.tau.ac.il/"
   },
   {
     "Org": "U. Texas A&M",
     "English name": "Texas A&M University",
-    "Spanish name": "Universidad Texas A&M",
+    "Spanish name": "Universidad de Texas A&M",
     "Country": "USA",
     "Pais": "EEUU",
     "Website": "https://www.tamu.edu/"
@@ -972,6 +2011,14 @@
     "Country": "Canada",
     "Pais": "Canadá",
     "Website": "https://www.utoronto.ca/"
+  },
+  {
+    "Org": "U. Vienna",
+    "English name": "University of Vienna",
+    "Spanish name": "Universidad de Vienna",
+    "Country": "Austria",
+    "Pais": "Austria",
+    "Website": "https://www.univie.ac.at/en/"
   },
   {
     "Org": "U. Villanova",
@@ -996,6 +2043,38 @@
     "Country": "Canada",
     "Pais": "Canadá",
     "Website": "https://www.uwo.ca/"
+  },
+  {
+    "Org": "U. Wisconsin",
+    "English name": "University of Wisconsin",
+    "Spanish name": "Universidad de Wisconsin",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.wisc.edu/"
+  },
+  {
+    "Org": "U. Wollongong",
+    "English name": "University of Wollongong",
+    "Spanish name": "Universidad de Wollongong",
+    "Country": "Australia",
+    "Pais": "Australia",
+    "Website": "https://www.uow.edu.au/"
+  },
+  {
+    "Org": "U. Yachay Tech",
+    "English name": "Yachay Tech University",
+    "Spanish name": "Universidad Yachay Tech",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://www.yachaytech.edu.ec/en/"
+  },
+  {
+    "Org": "UBC",
+    "English name": "University of British Columbia",
+    "Spanish name": "Universidad de British Columbia",
+    "Country": "Canada",
+    "Pais": "Canadá",
+    "Website": "https://www.ubc.ca/"
   },
   {
     "Org": "UCE",
@@ -1030,6 +2109,22 @@
     "Website": "https://ufffgalapagos.com/en/"
   },
   {
+    "Org": "UFRP",
+    "English name": "Federal Rural University of Pernambuco",
+    "Spanish name": "Universidad Federal Rural de Pernambuco",
+    "Country": "Brazil",
+    "Pais": "Brazil",
+    "Website": "https://www.ufrpe.br/en"
+  },
+  {
+    "Org": "UNAM",
+    "English name": "National Autonomous University of Mexico",
+    "Spanish name": "Universidad Nacional Autónoma de México",
+    "Country": "Mexico",
+    "Pais": "México",
+    "Website": "https://www.unam.mx/"
+  },
+  {
     "Org": "UNC",
     "English name": "University of North Carolina",
     "Spanish name": "Universidad del Norte de Carolina",
@@ -1046,6 +2141,14 @@
     "Website": "https://www.facebook.com/UpcyclingGalapagos/"
   },
   {
+    "Org": "USAID",
+    "English name": "United States Agency for International Development",
+    "Spanish name": "Agencia de los Estados Unidos para el Desarrollo Internacional",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.usaid.gov/"
+  },
+  {
     "Org": "USFQ",
     "English name": "San Fransisco University of Quito",
     "Spanish name": "Universidad San Francisco de Quito",
@@ -1054,12 +2157,52 @@
     "Website": "https://www.usfq.edu.ec/es"
   },
   {
-    "Org": "WHOI",
-    "English name": "Woods Hole Oceanographic Institute",
-    "Spanish name": "Instituto Oceanográfico de Woods Hole",
+    "Org": "UTPL",
+    "English name": "Technical University of Loja",
+    "Spanish name": "Universidad Técnica Particular de Loja",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "http://www.utpl.edu.ec/"
+  },
+  {
+    "Org": "UVIC",
+    "English name": "University of Victoria",
+    "Spanish name": "Universidad de Victoria",
+    "Country": "Canada",
+    "Pais": "Canadá",
+    "Website": "https://www.uvic.ca/"
+  },
+  {
+    "Org": "Vancouver Aquarium",
+    "English name": "Vancouver Aquarium",
+    "Spanish name": "Acuario de Vancouver",
+    "Country": "Canada",
+    "Pais": "Canadá",
+    "Website": "https://www.vanaqua.org/"
+  },
+  {
+    "Org": "Verde Milenio",
+    "English name": "Green Millennium Foundation",
+    "Spanish name": "Fundación Verde Milenio",
+    "Country": "Ecuador",
+    "Pais": "Ecuador",
+    "Website": "https://www.verdemilenio.org/"
+  },
+  {
+    "Org": "VideoRay",
+    "English name": "VideoRay",
+    "Spanish name": "VideoRay",
     "Country": "USA",
     "Pais": "EEUU",
-    "Website": "https://www.whoi.edu/"
+    "Website": "https://videoray.com/"
+  },
+  {
+    "Org": "VUB",
+    "English name": "Vrije Universiteit Brussel",
+    "Spanish name": "Vrije Universiteit Brussel",
+    "Country": "Belgium",
+    "Pais": "Bélgica",
+    "Website": "https://www.vub.be/en"
   },
   {
     "Org": "WCS",
@@ -1070,12 +2213,44 @@
     "Website": "https://www.wcs.org/"
   },
   {
-    "Org": "Winifred Violet Scott Charitable Trust",
-    "English name": "Winifred Violet Scott Charitable Trust",
-    "Spanish name": "Fondo Benéfico Winifred Violet Scott",
-    "Country": "Australia",
-    "Pais": "Australia",
-    "Website": ""
+    "Org": "WHOI",
+    "English name": "Woods Hole Oceanographic Institute",
+    "Spanish name": "Instituto Oceanográfico de Woods Hole",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.whoi.edu/"
+  },
+  {
+    "Org": "WildAid",
+    "English name": "WildAid",
+    "Spanish name": "WildAid",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://wildaid.org/"
+  },
+  {
+    "Org": "Williams College",
+    "English name": "Williams College",
+    "Spanish name": "Colegio Williams",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.williams.edu/"
+  },
+  {
+    "Org": "World Bank",
+    "English name": "World Bank",
+    "Spanish name": "Banco Mundial",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://www.worldbank.org/en/home"
+  },
+  {
+    "Org": "WSU",
+    "English name": "Washington State University",
+    "Spanish name": "Universidad del Estado de Washington",
+    "Country": "USA",
+    "Pais": "EEUU",
+    "Website": "https://wsu.edu/"
   },
   {
     "Org": "WVS",
@@ -1084,6 +2259,14 @@
     "Country": "UK",
     "Pais": "RU",
     "Website": "https://wvs.org.uk/"
+  },
+  {
+    "Org": "WVSCT",
+    "English name": "Winifred Violet Scott Charitable Trust",
+    "Spanish name": "Fondo Benéfico Winifred Violet Scott",
+    "Country": "Australia",
+    "Pais": "Australia",
+    "Website": ""
   },
   {
     "Org": "WWF",
@@ -1100,5 +2283,13 @@
     "Country": "Germany",
     "Pais": "Alemania",
     "Website": "https://bonn.leibniz-lib.de/en"
+  },
+  {
+    "Org": "ZMT",
+    "English name": "Leibniz Centre for Tropical Marine Research",
+    "Spanish name": "Centro Leibniz de Investigación Marina Tropical",
+    "Country": "Germany",
+    "Pais": "Alemania",
+    "Website": "https://www.leibniz-zmt.de/en/"
   }
 ]
