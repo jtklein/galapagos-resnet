@@ -9,7 +9,7 @@ import IconDownload from "@material-ui/icons/CloudDownload";
 import Search from "@material-ui/icons/Search";
 import { withStyles, useTheme } from "@material-ui/core/styles";
 import { isDesktop } from "react-device-detect";
-import { useTranslation } from "react-i18next";
+import { useTranslation, withTranslation } from "react-i18next";
 import classNames from "classnames";
 import html2canvas from "html2canvas";
 
@@ -1833,7 +1833,7 @@ class DataComponent extends Component {
       this.setState({
         selectedPolicyPlans: [],
         // Set to search example in English or Spanish
-        searchText: "finch"
+        searchText: this.props.i18n.language !== "es" ? "finch" : "pinzon",
       });
     }
 
@@ -2092,4 +2092,4 @@ class DataComponent extends Component {
   }
 }
 
-export default DataComponent;
+export default withTranslation()(DataComponent);
