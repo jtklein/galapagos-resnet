@@ -1784,6 +1784,15 @@ class DataComponent extends Component {
     const newIndex = backwards ? tutorialIndex - 1 : tutorialIndex + 1;
     this.onTutorialClick(newIndex, tutorialIndex !== 12);
 
+    const demoNode = {
+      id : "Manta rayas oceánicas"
+    }
+
+    const sdgNode = {
+      "color": "#EF5350",
+      "size": 3000,
+      "id": 15.5
+    }
     // TODO: do i still need this
     // if (newIndex === -1) {
     //   this.setState({
@@ -1797,6 +1806,7 @@ class DataComponent extends Component {
       });
     }
     if (newIndex >= 1) {
+      this.onNetworkClickNode(demoNode);
       this.setState({
         selectedCategories: [],
       });
@@ -1817,6 +1827,7 @@ class DataComponent extends Component {
     }
 
     if (newIndex >= 6) {
+      this.onNetworkClickNode(sdgNode);
       this.setState({
         selectedThemes: [],
       });
