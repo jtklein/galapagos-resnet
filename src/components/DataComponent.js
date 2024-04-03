@@ -1757,18 +1757,7 @@ class DataComponent extends Component {
       "size": 3000,
       "id": 15.5
     }
-    // TODO: do i still need this
-    // if (newIndex === -1) {
-    //   this.setState({
-    //     selectedCategories: [nodeCategories[1].color],
-    //   });
-    // }
-    // TODO: do i still need this
-    if (newIndex === 0) {
-      this.setState({
-        selectedCategories: [nodeCategories[1].color],
-      });
-    }
+
     if (newIndex >= 1) {
       this.onNetworkClickNode(demoNode);
       this.setState({
