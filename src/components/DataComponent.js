@@ -1759,12 +1759,18 @@ class DataComponent extends Component {
     }
 
     if (newIndex >= 1) {
+      this.setState({
+        selectedCategories: [nodeCategories[1].color],
+      });
+    }
+
+    if (newIndex >= 2) {
       this.onNetworkClickNode(demoNode);
       this.setState({
         selectedCategories: [],
       });
     }
-
+    
     if (newIndex >= 3) {
       this.setState({
         selectedNode: null,
