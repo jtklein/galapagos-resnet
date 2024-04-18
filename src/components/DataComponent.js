@@ -18,7 +18,6 @@ import { CustomButtonGreen } from "./CustomButtons";
 import TutorialTooltip from "./TutorialTooltip";
 
 import data from "../data/data";
-// import { locations } from "../data/RI_locations";
 
 import goal1EN from "../assets/icons/sdg/EN/E-WEB-Goal-01.png";
 import goal2EN from "../assets/icons/sdg/EN/E-WEB-Goal-02.png";
@@ -318,6 +317,8 @@ const questions = {
     color: "#69EC48",
   },
 };
+
+const tutorialNode = data.nodes.find((node) => node.id === "Manta rayas oceánicas");
 
 const initialData = Object.assign({}, data);
 
@@ -1748,10 +1749,6 @@ class DataComponent extends Component {
     const newIndex = backwards ? tutorialIndex - 1 : tutorialIndex + 1;
     this.onTutorialClick(newIndex, tutorialIndex !== 12);
 
-    const demoNode = {
-      id : "Manta rayas oceánicas"
-    }
-
     const sdgNode = {
       "color": "#EF5350",
       "size": 3000,
@@ -1765,7 +1762,7 @@ class DataComponent extends Component {
     }
 
     if (newIndex >= 2) {
-      this.onNetworkClickNode(demoNode);
+      this.onNetworkClickNode(tutorialNode);
       this.setState({
         selectedCategories: [],
       });
