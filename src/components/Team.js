@@ -125,7 +125,7 @@ function Team() {
       <p>
         <Trans i18nKey="contactChannels">
           Contact us on
-          <a href="mailto:info@co-galapagos.org">info@co-galapagos.org</a>.
+          <a href="mailto:uncambioxlavida@gmail.com">uncambioxlavida@gmail.com</a>.
         </Trans>
       </p>
       <p>
