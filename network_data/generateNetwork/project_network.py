@@ -207,7 +207,7 @@ for col in keywords2.columns[5:]:
 #%% Add SDGs
 
 SDGs = pd.read_excel(data,sheet_name="SDGs",engine='openpyxl',header=0)
-SDGs.drop(["RedDeProyectosDeGalapagos_Id","Sección2InformaciónSobreSusProy_Id", "Permits"],axis=1,inplace=True)
+SDGs.drop(["RedDeProyectosDeGalapagos_Id","Sección2InformaciónSobreSusProy_Id"],axis=1,inplace=True)
 SDGs = pd.concat([SDGs.iloc[:,:1], SDGs.iloc[:,1:].replace(["I", "D"], [0.5, 1])], axis=1)
 
 projs = pd.merge(projs,SDGs, on="Code",how = "left")    
