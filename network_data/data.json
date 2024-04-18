@@ -1310,7 +1310,7 @@
       "id": "Conservación en Galápagos y Cocos",
       "type": "project",
       "Leader": "Ulf Hardter",
-      "Lead_org": "Island Conservation",
+      "Lead_org": "IC",
       "Title_ES": "Reforzar la conservación en Galápagos y Cocos - Blue Action Fund",
       "Title_EN": "Strengthening conservation in Galapagos and Cocos - Blue Action Fund",
       "labelES": "Conservación en Galápagos y Cocos",
@@ -10310,6 +10310,11 @@
     {
       "color": "#006064",
       "size": 3000,
+      "id": "IMEDEA (CSIC-UIB)"
+    },
+    {
+      "color": "#006064",
+      "size": 3000,
       "id": "IMLCF",
       "type": "organization",
       "Org": "IMLCF",
@@ -12547,21 +12552,6 @@
       "Country": "Germany",
       "Pais": "Alemania",
       "Website": "https://www.leibniz-zmt.de/en/"
-    },
-    {
-      "color": "#cccccc",
-      "size": 3000,
-      "id": "IMEDEA (CSIC-UIB)"
-    },
-    {
-      "color": "#cccccc",
-      "size": 3000,
-      "id": "Island Conservation"
-    },
-    {
-      "color": "#cccccc",
-      "size": 3000,
-      "id": "Galapagos Whale Shark Project"
     },
     {
       "color": "#33691E",
@@ -16724,7 +16714,10 @@
     {
       "color": "#EF5350",
       "size": 3000,
-      "id": "4.C"
+      "id": "4.c",
+      "type": "goal",
+      "Title_EN": "Significantly increase the supply of qualified teachers, including through international cooperation for the education and training of local teachers, and implement the Galápagos contextualized curriculum",
+      "Title_ES": "Aumentar considerablemente la oferta de docentes calificados, incluso mediante la cooperación internacional para la formación y capacitación a docentes locales e implementar el currículo contextualizado de Galápagos"
     },
     {
       "color": "#EF5350",
@@ -16809,7 +16802,10 @@
     {
       "color": "#EF5350",
       "size": 3000,
-      "id": "9.C"
+      "id": "9.c",
+      "type": "goal",
+      "Title_EN": "Significantly increase access to information and communications technology and strive to provide universal and affordable access to the Internet",
+      "Title_ES": "Aumentar significativamente el acceso a la tecnología de la información y las comunicaciones y esforzarse por proporcionar acceso universal y asequible a Internet"
     },
     {
       "color": "#EF5350",
@@ -21383,6 +21379,12 @@
       "target": "GSC"
     },
     {
+      "weight": 1,
+      "color": "#006064",
+      "source": "Locomoción de las iguanas marinas",
+      "target": "IMEDEA (CSIC-UIB)"
+    },
+    {
       "weight": 2,
       "color": "#006064",
       "source": "Locomoción de las iguanas marinas",
@@ -21629,6 +21631,12 @@
       "target": "DPNG"
     },
     {
+      "weight": 2,
+      "color": "#006064",
+      "source": "Clima y redes tróficas",
+      "target": "IMEDEA (CSIC-UIB)"
+    },
+    {
       "weight": 1,
       "color": "#006064",
       "source": "Clima y redes tróficas",
@@ -21639,12 +21647,6 @@
       "color": "#006064",
       "source": "Clima y redes tróficas",
       "target": "U. Coimbra"
-    },
-    {
-      "weight": 2,
-      "color": "#cccccc",
-      "source": "Clima y redes tróficas",
-      "target": "IMEDEA (CSIC-UIB)"
     },
     {
       "weight": 1,
@@ -31607,12 +31609,6 @@
       "target": "USFQ"
     },
     {
-      "weight": 2,
-      "color": "#cccccc",
-      "source": "Tiburónes ballena",
-      "target": "Galapagos Whale Shark Project"
-    },
-    {
       "weight": 1,
       "color": "#33691E",
       "source": "Tiburónes ballena",
@@ -32600,13 +32596,13 @@
       "weight": 1,
       "color": "#EF5350",
       "source": "Galápagos Infinito Proyecto",
-      "target": "4.C"
+      "target": "4.c"
     },
     {
       "weight": 1,
       "color": "#EF5350",
       "source": "Galápagos Infinito Proyecto",
-      "target": "9.C"
+      "target": "9.c"
     },
     {
       "weight": 1,
@@ -33242,7 +33238,7 @@
       "weight": 1,
       "color": "#EF5350",
       "source": "Captación de niebla",
-      "target": "4.C"
+      "target": "4.c"
     },
     {
       "weight": 1,
@@ -36197,6 +36193,12 @@
       "target": "FCD"
     },
     {
+      "weight": 2,
+      "color": "#006064",
+      "source": "Conservación en Galápagos y Cocos",
+      "target": "IC"
+    },
+    {
       "weight": 1,
       "color": "#006064",
       "source": "Conservación en Galápagos y Cocos",
@@ -36213,12 +36215,6 @@
       "color": "#006064",
       "source": "Conservación en Galápagos y Cocos",
       "target": "WildAid"
-    },
-    {
-      "weight": 2,
-      "color": "#cccccc",
-      "source": "Conservación en Galápagos y Cocos",
-      "target": "Island Conservation"
     },
     {
       "weight": 1,
@@ -46286,7 +46282,7 @@
       "weight": 1,
       "color": "#EF5350",
       "source": "Intranet de Galápagos",
-      "target": "4.C"
+      "target": "4.c"
     },
     {
       "weight": 1,
@@ -46304,7 +46300,7 @@
       "weight": 1,
       "color": "#EF5350",
       "source": "Intranet de Galápagos",
-      "target": "9.C"
+      "target": "9.c"
     },
     {
       "weight": 1,
@@ -47066,7 +47062,7 @@
       "weight": 1,
       "color": "#EF5350",
       "source": "Las necesidades de las mujeres",
-      "target": "9.C"
+      "target": "9.c"
     },
     {
       "weight": 1,
