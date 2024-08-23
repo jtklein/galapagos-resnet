@@ -400,7 +400,8 @@ export default function Network(el, props) {
         if (themeSet) {
           context.strokeStyle = isSelectedTheme(d) ? d.color : "lightgray";
         } else if (categorySet) {
-          context.strokeStyle = isSelectedCategory(d) ? d.color : "lightgray";
+          // context.strokeStyle = isSelectedCategory(d) ? d.color : "lightgray";
+          context.strokeStyle = "lightgray";
         } else if (policyPlanSet) {
           context.strokeStyle = isSelectedPolicyPlan(d) ? d.color : "lightgray";
         } else if (!props.selectedNode) {

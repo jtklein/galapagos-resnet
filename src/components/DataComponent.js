@@ -1549,18 +1549,18 @@ class DataComponent extends Component {
         indexOfCategory !== -1
           ? selectedCategories.filter((d, index) => index !== indexOfCategory)
           : selectedCategories.concat(categoryColor),
-      selectedCategoriesConnectedLinks:
-        indexOfCategory !== -1
-          ? selectedCategoriesConnectedLinks.filter(
-              (d, index) => index !== indexOfCategory
-            )
-          : t,
-      selectedCategoriesConnectedNodes:
-        indexOfCategory !== -1
-          ? selectedCategoriesConnectedNodes.filter(
-              (d, index) => index !== indexOfCategory
-            )
-          : n,
+      // selectedCategoriesConnectedLinks:
+      //   indexOfCategory !== -1
+      //     ? selectedCategoriesConnectedLinks.filter(
+      //         (d, index) => index !== indexOfCategory
+      //       )
+      //     : t,
+      // selectedCategoriesConnectedNodes:
+      //   indexOfCategory !== -1
+      //     ? selectedCategoriesConnectedNodes.filter(
+      //         (d, index) => index !== indexOfCategory
+      //       )
+      //     : n,
     });
   };
 
