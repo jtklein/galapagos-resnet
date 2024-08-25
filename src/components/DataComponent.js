@@ -1488,9 +1488,11 @@ class DataComponent extends Component {
 
   onNetworkClickNode = (d) => {
     this.setNodeSelection(d);
+    this.setState({
+      selectedCategories: []
+    });
     if (d === null) {
       this.setState({
-        selectedCategories: [],
         selectedCategoriesConnectedLinks: [],
         selectedCategoriesConnectedNodes: [],
         selectedThemes: [],
