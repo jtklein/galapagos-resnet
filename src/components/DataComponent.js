@@ -1520,37 +1520,41 @@ class DataComponent extends Component {
   onCategoryClicked = (categoryColor) => {
     const {
       selectedCategories,
-      selectedCategoriesConnectedLinks,
-      selectedCategoriesConnectedNodes,
+      // selectedCategoriesConnectedLinks,
+      // selectedCategoriesConnectedNodes,
     } = this.state;
     const indexOfCategory = selectedCategories.indexOf(categoryColor);
-    const categoryNodes = data.nodes.filter((node) => {
-      return node.color === categoryColor;
-    });
-
-    let connectedLinks = [];
-    let connectedNodes = [];
-
-    // Map over all theme nodes
-    categoryNodes.map((themeNode) => {
-      // Map over all links to get lins of this node
-      const [connectedIDs, cL] = this.getConnectedLinks(themeNode, false);
-      connectedLinks = connectedLinks.concat(Array.from(cL));
-      // Map over all nodes to get connected nodes by ID
-      const cN = this.getConnectedNodes(connectedIDs);
-      connectedNodes = connectedNodes.concat(cN);
-      return true;
-    });
-    const t = [].concat(selectedCategoriesConnectedLinks);
-    const n = [].concat(selectedCategoriesConnectedNodes);
-    t.push(connectedLinks);
-    n.push(connectedNodes);
+    // We used to show all nodes and links connected to the selected categories
+    // but as the network grew in size it became too cluttered, and we decided to
+    // only show the nodes of the selected categories.
+    // const categoryNodes = data.nodes.filter((node) => {
+    //   return node.color === categoryColor;
+    // });
+    // let connectedLinks = [];
+    // let connectedNodes = [];
+    // // Map over all theme nodes
+    // categoryNodes.map((themeNode) => {
+    //   // Map over all links to get lins of this node
+    //   const [connectedIDs, cL] = this.getConnectedLinks(themeNode, false);
+    //   connectedLinks = connectedLinks.concat(Array.from(cL));
+    //   // Map over all nodes to get connected nodes by ID
+    //   const cN = this.getConnectedNodes(connectedIDs);
+    //   connectedNodes = connectedNodes.concat(cN);
+    //   return true;
+    // });
+    // const t = [].concat(selectedCategoriesConnectedLinks);
+    // const n = [].concat(selectedCategoriesConnectedNodes);
+    // t.push(connectedLinks);
+    // n.push(connectedNodes);
 
     this.setState({
       selectedCategories:
         indexOfCategory !== -1
           ? selectedCategories.filter((d, index) => index !== indexOfCategory)
           : selectedCategories.concat(categoryColor),
+      // We used to show all nodes and links connected to the selected categories
+      // but as the network grew in size it became too cluttered, and we decided to
+      // only show the nodes of the selected categories.
       // selectedCategoriesConnectedLinks:
       //   indexOfCategory !== -1
       //     ? selectedCategoriesConnectedLinks.filter(
