@@ -400,7 +400,11 @@ export default function Network(el, props) {
         if (themeSet) {
           context.strokeStyle = isSelectedTheme(d) ? d.color : "lightgray";
         } else if (categorySet) {
-          context.strokeStyle = isSelectedCategory(d) ? d.color : "lightgray";
+          // We used to show all nodes and links connected to the selected categories
+          // but as the network grew in size it became too cluttered, and we decided to
+          // only show the nodes of the selected categories.
+          // context.strokeStyle = isSelectedCategory(d) ? d.color : "lightgray";
+          context.strokeStyle = "lightgray";
         } else if (policyPlanSet) {
           context.strokeStyle = isSelectedPolicyPlan(d) ? d.color : "lightgray";
         } else if (!props.selectedNode) {
